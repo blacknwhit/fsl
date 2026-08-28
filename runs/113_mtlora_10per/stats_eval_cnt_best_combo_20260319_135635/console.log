@@ -1,0 +1,5 @@
+[eval] saved checkpoint meta: /data/xiangyuyue/ULLM-zf/fsl-20260209/runs/113_mtlora_10per/stats_eval_cnt_best_combo_20260319_135635/checkpoint_meta.json
+[eval][cnt] processed 0/35
+[eval][cnt] processed 20/35
+[eval][cnt] saved metrics: /data/xiangyuyue/ULLM-zf/fsl-20260209/runs/113_mtlora_10per/stats_eval_cnt_best_combo_20260319_135635/metrics_cnt_test_data_class8.json
+[eval] saved combined results: /data/xiangyuyue/ULLM-zf/fsl-20260209/runs/113_mtlora_10per/stats_eval_cnt_best_combo_20260319_135635/results.json

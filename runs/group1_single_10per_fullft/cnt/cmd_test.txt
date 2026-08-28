@@ -1,0 +1,1 @@
+bash /data/xiangyuyue/ULLM-zf/fsl-20260209/lora_multitask/test.sh runs/group1_single_10per_fullft/cnt/best_combo.pt

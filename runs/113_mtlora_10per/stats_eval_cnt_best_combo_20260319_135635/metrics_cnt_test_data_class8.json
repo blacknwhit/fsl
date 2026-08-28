@@ -1,0 +1,12 @@
+{
+  "task": "counting",
+  "data_root": "/data/xiangyuyue/ULLM-zf/fsl-20260209/data/cnt/nas/liyangguang103/newdataset/CD-Count/DSACA",
+  "test_dir": "/data/xiangyuyue/ULLM-zf/fsl-20260209/data/cnt/nas/liyangguang103/newdataset/CD-Count/DSACA/test_data_class8",
+  "image_size": 448,
+  "num_classes": 8,
+  "keep_aspect": true,
+  "mae_total": 14.167602759208123,
+  "rmse_total": 18.73378840261029,
+  "mae_per_class_mean": 3.1956805625106597,
+  "num_samples": 548
+}

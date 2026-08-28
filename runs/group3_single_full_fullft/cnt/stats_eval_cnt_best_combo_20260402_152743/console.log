@@ -1,0 +1,28 @@
+
+[multitask/eval] running cnt: /data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/bin/python counting/eval.py --checkpoint runs/group3_single_full_fullft/cnt/best_combo.pt --stats-dir runs/group3_single_full_fullft/cnt/stats_eval_cnt_best_combo_20260402_152743 --data-root /data/xiangyuyue/ULLM-zf/fsl-20260209/data/cnt/nas/liyangguang103/newdataset/CD-Count/DSACA --test-dir /data/xiangyuyue/ULLM-zf/fsl-20260209/data/cnt/nas/liyangguang103/newdataset/CD-Count/DSACA/test_data_class8 --image-size 448 --model-name dinov3_vitl16 --device cuda --backbone-checkpoint /data/xiangyuyue/ULLM-zf/fsl-20260209/dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth --batch-size 32
+
+Initializing dinov3_vitl16 backbone from local dinov3...
+Created dinov3_vitl16 backbone
+Backbone is trainable (not frozen).
+Feature dimension: 1024
+Density head initialized with 8 channels
+Loading backbone weights from --checkpoint...
+Loaded backbone weights from --checkpoint
+[Cnt][LoadSummary] backbone: provided=368, total=368, matched≈368 (100.0%), missing=0, unexpected=0
+Loading head weights (cnt_head) from --checkpoint...
+Loaded head weights (cnt_head) from --checkpoint
+[Cnt][LoadSummary] head(cnt_head): missing=0, unexpected=0
+
+Per-class MAE / RMSE:
+  class 00: MAE=5.569  RMSE=8.733
+  class 01: MAE=1.532  RMSE=2.424
+  class 02: MAE=3.775  RMSE=5.705
+  class 03: MAE=2.047  RMSE=3.463
+  class 04: MAE=0.848  RMSE=1.481
+  class 05: MAE=1.536  RMSE=2.484
+  class 06: MAE=0.307  RMSE=0.729
+  class 07: MAE=3.093  RMSE=4.692
+Overall: MAE=2.338  RMSE=3.714
+Saved metrics to runs/group3_single_full_fullft/cnt/stats_eval_cnt_best_combo_20260402_152743/metrics_cnt_test_data_class8.json
+
+[multitask/eval] done; summary: runs/group3_single_full_fullft/cnt/stats_eval_cnt_best_combo_20260402_152743/multitask_eval_summary.json

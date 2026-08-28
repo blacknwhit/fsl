@@ -1,0 +1,19 @@
+{
+  "AP@[.50:.95]": 0.40468257122445833,
+  "AP@0.50": 0.6396837513256377,
+  "AP@0.75": 0.4348485865424578,
+  "AP_small": 0.028805757677392,
+  "AP_medium": 0.3068410793189438,
+  "AP_large": 0.6463775107112464,
+  "AR@1": 0.2835655586040249,
+  "AR@10": 0.4513265415682718,
+  "AR@100": 0.47321965658013937,
+  "AR_small": 0.05062531695135165,
+  "AR_medium": 0.3628138843376402,
+  "AR_large": 0.7269622430280603,
+  "ann_file": "/data/xiangyuyue/ULLM-zf/fsl-20260209/data/det/coco/annotations/instances_test.json",
+  "img_dir": "/data/xiangyuyue/ULLM-zf/fsl-20260209/data/det/coco/images/test",
+  "checkpoint": "runs/group2_single_full_lora/det/best_combo.pt",
+  "score_thr": 0.0,
+  "num_predictions": 167286
+}

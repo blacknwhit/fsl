@@ -1,0 +1,110 @@
+[warn] Using first-order MAML (stop-grad through inner update).
+[train] using --loss-weight-bias as base/init: [15.000, 8.000, 1.000]
+[warn] Backbone is forced frozen for Full MAML (ignoring unfreeze flags).
+[LoRA-MoE] LoRA params: 6561792
+[LoRA-MoE] Det head params: 14875060
+[LoRA-MoE] Seg head params: 9451531
+[LoRA-MoE] Cnt head params: 9448456
+[train] Learnable loss weights MLP enabled (Full MAML), multilayer_grads=off, arch=joint, grad_vec_normalize=l2, prior_fuse=add, joint_task_proj64=on, joint_out=leakyrelu, joint_leaky_slope=0.010, weight_net_dropout=0.000, seg_classwise_grad=on, cnt_extra_conv_grad=off
+[init] g0 initialized on rank0 from first inner-batch gradients and broadcast to all ranks.
+[stage1] epoch 1/1 step 20 | loss 674693.4391 | det 1.8025 seg 1.5425 cnt 676810.5469 | w [14.996, 7.998, 0.993]
+[stage1] epoch 1/1 step 40 | loss 416562.6057 | det 1.4443 seg 1.4428 cnt 420235.3963 | w [14.957, 7.975, 0.904]
+[stage1] epoch 1/1 step 60 | loss 288845.6366 | det 1.1798 seg 1.3709 cnt 294175.4970 | w [14.786, 7.831, 0.597]
+[stage1] epoch 1/1 step 80 | loss 217908.5013 | det 1.0691 seg 1.3383 cnt 224099.2445 | w [14.366, 7.438, -0.013]
+[stage1] epoch 1/1 step 100 | loss 175253.8308 | det 0.9755 seg 1.3204 cnt 180514.7211 | w [13.863, 6.955, -0.604]
+[stage1] epoch 1/1 step 120 | loss 145544.7875 | det 0.9182 seg 1.2920 cnt 152779.2191 | w [13.104, 6.221, -1.511]
+[stage1] epoch 1/1 step 140 | loss 84365.5542 | det 0.8638 seg 1.2737 cnt 160988.8269 | w [12.938, 6.048, -1.697]
+[stage1] epoch 1/1 step 160 | loss -984625.2190 | det 0.8279 seg 1.2879 cnt 351517.9243 | w [7.726, 1.018, -8.666]
+[stage1] epoch 1/1 step 180 | loss -6264457.7614 | det 0.8016 seg 1.2882 cnt 688573.3813 | w [1.235, -5.461, -17.155]
+[stage1] epoch 1/1 step 200 | loss -21376551.5452 | det 0.7783 seg 1.2864 cnt 1141246.1607 | w [-19.308, -25.967, -43.874]
+[stage1] epoch 1/1 step 220 | loss -63766535.7320 | det 0.7620 seg 1.2693 cnt 1722264.0529 | w [-56.673, -63.395, -92.019]
+[warn] Using first-order MAML (stop-grad through inner update).
+[train] using --loss-weight-bias as base/init: [15.000, 8.000, 1.000]
+[warn] Backbone is forced frozen for Full MAML (ignoring unfreeze flags).
+[LoRA-MoE] LoRA params: 6561792
+[LoRA-MoE] Det head params: 14875060
+[LoRA-MoE] Seg head params: 9451531
+[LoRA-MoE] Cnt head params: 9448456
+[train] Learnable loss weights MLP enabled (Full MAML), multilayer_grads=off, arch=joint, grad_vec_normalize=l2, prior_fuse=add, joint_task_proj64=on, joint_out=leakyrelu, joint_leaky_slope=0.010, weight_net_dropout=0.000, seg_classwise_grad=on, cnt_extra_conv_grad=off
+[init] g0 initialized on rank0 from first inner-batch gradients and broadcast to all ranks.
+[stage1] epoch 1/1 step 20 | loss 677007.0375 | det 1.7916 seg 1.5419 cnt 677247.6891 | w [14.999, 7.998, 1.000]
+[stage1] epoch 1/1 step 40 | loss 420165.7029 | det 1.4218 seg 1.4412 cnt 420306.5154 | w [14.999, 7.998, 0.999]
+[stage1] epoch 1/1 step 60 | loss 294143.2805 | det 1.1630 seg 1.3704 cnt 294239.4205 | w [14.999, 7.998, 0.999]
+[stage1] epoch 1/1 step 80 | loss 224052.3668 | det 1.0564 seg 1.3387 cnt 224121.9391 | w [14.999, 7.998, 0.999]
+[stage1] epoch 1/1 step 100 | loss 180146.3970 | det 0.9510 seg 1.3142 cnt 180199.2711 | w [14.999, 7.998, 0.999]
+[stage1] epoch 1/1 step 120 | loss 150429.3124 | det 0.8899 seg 1.2688 cnt 150470.7694 | w [14.999, 7.998, 0.999]
+[stage1] epoch 1/1 step 140 | loss 129043.9971 | det 0.8296 seg 1.2378 cnt 129077.4114 | w [14.999, 7.998, 0.999]
+[stage1] epoch 1/1 step 160 | loss 112954.3591 | det 0.7887 seg 1.2301 cnt 112981.5123 | w [14.999, 7.998, 0.999]
+[stage1] epoch 1/1 step 180 | loss 100418.1476 | det 0.7557 seg 1.2229 cnt 100440.4409 | w [14.999, 7.998, 0.999]
+[stage1] epoch 1/1 step 200 | loss 90382.7232 | det 0.7289 seg 1.2082 cnt 90401.1985 | w [14.999, 7.998, 0.999]
+[stage1] epoch 1/1 step 220 | loss 82169.5579 | det 0.7102 seg 1.1771 cnt 82185.0119 | w [14.999, 7.998, 0.999]
+[stage1] epoch 1/1 step 240 | loss 75324.9829 | det 0.6963 seg 1.1818 cnt 75337.6488 | w [14.999, 7.998, 0.999]
+[stage1] epoch 1/1 step 260 | loss 69532.7575 | det 0.6877 seg 1.1735 cnt 69543.1149 | w [14.999, 7.998, 0.999]
+[stage1] epoch 1/1 | train 66711.4051
+[stage1] epoch 1/1 | w [14.999, 7.998, 0.999]
+[ckpt] saved stage1 phi -> runs/33_test/stage1_phi_last.pt
+[train] validation/model selection start from Stage2 (Stage1 validation disabled).
+[stage2] epoch 1/2 step 20 | loss 23.0599 | det 0.4211 seg 0.9715 cnt 8.9799 | w [14.999, 7.998, 0.999] | cnt_gnorm 8.644605e+01 cnt_gparams 6
+[stage2] epoch 1/2 step 40 | loss 22.5575 | det 0.4461 seg 0.9528 cnt 8.2525 | w [14.999, 7.997, 0.999] | cnt_gnorm 1.566128e+02 cnt_gparams 6
+[stage2] epoch 1/2 step 60 | loss 22.2563 | det 0.4231 seg 0.9160 cnt 8.5907 | w [14.999, 7.997, 0.999] | cnt_gnorm 3.988491e+01 cnt_gparams 6
+[stage2] epoch 1/2 step 80 | loss 23.6016 | det 0.4125 seg 0.9153 cnt 10.1016 | w [14.999, 7.998, 0.999] | cnt_gnorm 3.063935e+01 cnt_gparams 6
+[stage2] epoch 1/2 step 100 | loss 23.3878 | det 0.3971 seg 0.9303 cnt 9.9986 | w [14.999, 7.998, 0.999] | cnt_gnorm 3.154380e+01 cnt_gparams 6
+[stage2] epoch 1/2 step 120 | loss 22.6713 | det 0.3954 seg 0.9119 cnt 9.4542 | w [14.999, 7.998, 0.999] | cnt_gnorm 7.806269e+01 cnt_gparams 6
+[stage2] epoch 1/2 step 140 | loss 22.2907 | det 0.3865 seg 0.9182 cnt 9.1572 | w [14.999, 7.998, 0.999] | cnt_gnorm 3.345577e+01 cnt_gparams 6
+[stage2] epoch 1/2 step 160 | loss 21.9946 | det 0.3836 seg 0.9057 cnt 9.0034 | w [14.999, 7.998, 0.999] | cnt_gnorm 4.119196e+01 cnt_gparams 6
+[stage2] epoch 1/2 step 180 | loss 21.8277 | det 0.3876 seg 0.8952 cnt 8.8611 | w [14.999, 7.998, 0.999] | cnt_gnorm 4.273571e+01 cnt_gparams 6
+[stage2] epoch 1/2 step 200 | loss 21.4922 | det 0.3804 seg 0.8956 cnt 8.6305 | w [14.999, 7.998, 0.999] | cnt_gnorm 5.064866e+01 cnt_gparams 6
+[stage2] epoch 1/2 step 220 | loss 21.1573 | det 0.3763 seg 0.8899 cnt 8.4030 | w [14.999, 7.998, 0.999] | cnt_gnorm 3.398911e+01 cnt_gparams 6
+[stage2] epoch 1/2 step 240 | loss 21.0563 | det 0.3867 seg 0.8764 cnt 8.2523 | w [14.999, 7.998, 0.999] | cnt_gnorm 2.671877e+01 cnt_gparams 6
+[stage2] epoch 1/2 step 260 | loss 21.0420 | det 0.3844 seg 0.8743 cnt 8.2892 | w [14.999, 7.998, 0.999] | cnt_gnorm 4.230122e+01 cnt_gparams 6
+[stage2] epoch 1/2 step 280 | loss 20.9954 | det 0.3875 seg 0.8705 cnt 8.2274 | w [14.999, 7.998, 0.999] | cnt_gnorm 9.795658e+01 cnt_gparams 6
+[stage2] epoch 1/2 step 300 | loss 21.3340 | det 0.3860 seg 0.8836 cnt 8.4835 | w [14.999, 7.998, 0.999] | cnt_gnorm 6.910455e+01 cnt_gparams 6
+[stage2] epoch 1/2 step 320 | loss 21.2713 | det 0.3822 seg 0.8807 cnt 8.5017 | w [14.999, 7.998, 0.999] | cnt_gnorm 5.781051e+01 cnt_gparams 6
+[stage2] epoch 1/2 | train 21.1734
+[stage2] epoch 1/2 | w [14.999, 7.998, 0.999]
+[diag][cnt][stage2] epoch 1/2 | param_delta_l2 3.950715e+00
+[warn] Using first-order MAML (stop-grad through inner update).
+[train] using --loss-weight-bias as base/init: [15.000, 8.000, 1.000]
+[warn] Backbone is forced frozen for Full MAML (ignoring unfreeze flags).
+[LoRA-MoE] LoRA params: 6561792
+[LoRA-MoE] Det head params: 14875060
+[LoRA-MoE] Seg head params: 9451531
+[LoRA-MoE] Cnt head params: 9448456
+[train] Learnable loss weights MLP enabled (Full MAML), multilayer_grads=off, arch=joint, grad_vec_normalize=l2, prior_fuse=add, joint_task_proj64=on, joint_out=leakyrelu, joint_leaky_slope=0.010, weight_net_dropout=0.000, seg_classwise_grad=off, cnt_extra_conv_grad=on
+[init] g0 initialized on rank0 from first inner-batch gradients and broadcast to all ranks.
+[stage1] epoch 1/1 step 20 | loss 750327.0891 | det 1.8385 seg 1.5895 cnt 713174.4016 | w [14.999, 8.218, 1.063]
+[stage1] epoch 1/1 step 40 | loss 462515.6029 | det 1.4043 seg 1.5182 cnt 439434.8607 | w [14.999, 8.214, 1.066]
+[stage1] epoch 1/1 step 60 | loss 323337.7816 | det 1.1376 seg 1.4180 cnt 307462.9923 | w [14.999, 8.215, 1.051]
+[stage1] epoch 1/1 step 80 | loss 245869.3827 | det 0.9754 seg 1.4034 cnt 233875.7598 | w [14.999, 8.211, 1.026]
+[stage1] epoch 1/1 step 100 | loss 197707.2963 | det 0.8894 seg 1.3260 cnt 188084.5841 | w [14.999, 8.215, 1.045]
+[stage1] epoch 1/1 step 120 | loss 165064.5787 | det 0.8599 seg 1.2944 cnt 157033.6821 | w [14.998, 8.218, 1.000]
+[stage1] epoch 1/1 step 140 | loss 141580.9886 | det 0.8148 seg 1.2920 cnt 134692.7829 | w [14.998, 8.215, 1.038]
+[stage1] epoch 1/1 step 160 | loss 123916.5926 | det 0.7803 seg 1.2465 cnt 117886.8507 | w [14.998, 8.203, 1.022]
+[stage1] epoch 1/1 step 180 | loss 110161.6537 | det 0.7480 seg 1.2250 cnt 104799.8534 | w [14.999, 8.202, 1.046]
+[stage1] epoch 1/1 step 200 | loss 99151.0721 | det 0.7295 seg 1.2265 cnt 94323.4862 | w [14.998, 8.205, 1.056]
+[stage1] epoch 1/1 step 220 | loss 90140.8010 | det 0.7141 seg 1.2106 cnt 85750.4939 | w [14.998, 8.205, 1.014]
+[stage1] epoch 1/1 step 240 | loss 82631.2455 | det 0.6940 seg 1.1857 cnt 78605.5627 | w [14.998, 8.200, 1.028]
+[stage1] epoch 1/1 step 260 | loss 76276.8701 | det 0.6708 seg 1.1721 cnt 72559.7472 | w [14.998, 8.195, 1.050]
+[stage1] epoch 1/1 | train 73181.7112
+[stage1] epoch 1/1 | w [14.998, 8.194, 1.042]
+[ckpt] saved stage1 phi -> runs/33_test/stage1_phi_last.pt
+[train] validation/model selection start from Stage2 (Stage1 validation disabled).
+[stage2] epoch 1/2 step 20 | loss 26.7460 | det 0.4353 seg 0.8539 cnt 12.8553 | w [14.998, 8.197, 1.037] | cnt_gnorm 5.241848e+01 cnt_gparams 6
+[stage2] epoch 1/2 step 40 | loss 25.8682 | det 0.4359 seg 0.8234 cnt 12.2146 | w [14.998, 8.198, 1.015] | cnt_gnorm 4.452323e+01 cnt_gparams 6
+[stage2] epoch 1/2 step 60 | loss 24.4129 | det 0.4110 seg 0.8338 cnt 11.0827 | w [14.998, 8.192, 1.041] | cnt_gnorm 3.102224e+01 cnt_gparams 6
+[stage2] epoch 1/2 step 80 | loss 23.7550 | det 0.3897 seg 0.8489 cnt 10.6312 | w [14.998, 8.194, 1.046] | cnt_gnorm 8.675721e+01 cnt_gparams 6
+[stage2] epoch 1/2 step 100 | loss 23.5219 | det 0.3995 seg 0.8580 cnt 10.1993 | w [14.998, 8.200, 1.006] | cnt_gnorm 4.815666e+01 cnt_gparams 6
+[stage2] epoch 1/2 step 120 | loss 22.7110 | det 0.3972 seg 0.8456 cnt 9.5451 | w [14.998, 8.197, 1.054] | cnt_gnorm 2.879261e+01 cnt_gparams 6
+[stage2] epoch 1/2 step 140 | loss 22.6377 | det 0.3966 seg 0.8793 cnt 9.2202 | w [14.998, 8.200, 1.038] | cnt_gnorm 3.055428e+01 cnt_gparams 6
+[stage2] epoch 1/2 step 160 | loss 22.7811 | det 0.3964 seg 0.8796 cnt 9.3628 | w [14.998, 8.202, 1.021] | cnt_gnorm 3.547349e+01 cnt_gparams 6
+[stage2] epoch 1/2 step 180 | loss 22.5799 | det 0.3917 seg 0.8775 cnt 9.2543 | w [14.998, 8.196, 1.068] | cnt_gnorm 2.879951e+01 cnt_gparams 6
+[stage2] epoch 1/2 step 200 | loss 22.5690 | det 0.3838 seg 0.8957 cnt 9.2155 | w [14.998, 8.198, 1.022] | cnt_gnorm 6.377673e+01 cnt_gparams 6
+[stage2] epoch 1/2 step 220 | loss 22.4577 | det 0.3867 seg 0.8896 cnt 9.1193 | w [14.998, 8.195, 1.035] | cnt_gnorm 4.398629e+01 cnt_gparams 6
+[stage2] epoch 1/2 step 240 | loss 22.1080 | det 0.3798 seg 0.8758 cnt 8.9910 | w [14.998, 8.192, 1.032] | cnt_gnorm 3.660865e+01 cnt_gparams 6
+[stage2] epoch 1/2 step 260 | loss 22.3126 | det 0.3720 seg 0.8718 cnt 9.3411 | w [14.998, 8.199, 1.040] | cnt_gnorm 5.734085e+01 cnt_gparams 6
+[stage2] epoch 1/2 step 280 | loss 22.4221 | det 0.3819 seg 0.8714 cnt 9.3065 | w [14.998, 8.199, 1.009] | cnt_gnorm 4.538563e+01 cnt_gparams 6
+[stage2] epoch 1/2 step 300 | loss 22.2645 | det 0.3821 seg 0.8694 cnt 9.1648 | w [14.998, 8.194, 1.038] | cnt_gnorm 5.062808e+01 cnt_gparams 6
+[stage2] epoch 1/2 step 320 | loss 21.9900 | det 0.3750 seg 0.8641 cnt 9.0446 | w [14.998, 8.197, 1.011] | cnt_gnorm 2.722522e+01 cnt_gparams 6
+[stage2] epoch 1/2 | train 21.8183
+[stage2] epoch 1/2 | w [14.998, 8.196, 1.021]
+[diag][cnt][stage2] epoch 1/2 | param_delta_l2 3.856752e+00

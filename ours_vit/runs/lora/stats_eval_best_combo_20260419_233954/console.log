@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/lora_multitask/eval.py", line 821, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/lora_multitask/eval.py", line 765, in main
+    return _run_full_model_eval(args, tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/lora_multitask/eval.py", line 562, in _run_full_model_eval
+    model, meta, device = _build_full_multitask_model_from_ckpt(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/lora_multitask/eval.py", line 199, in _build_full_multitask_model_from_ckpt
+    shared = SharedDinoV3Backbone(
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/lora_multitask/models.py", line 37, in __init__
+    self.backbone = getattr(dino_backbones, model_name)(pretrained=False)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'dinov3.hub.backbones' has no attribute 'vit_large_patch16_224.orig_in21k'

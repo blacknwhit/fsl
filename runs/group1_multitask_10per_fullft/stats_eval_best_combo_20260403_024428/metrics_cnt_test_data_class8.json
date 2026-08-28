@@ -1,0 +1,34 @@
+{
+  "task": "counting",
+  "data_root": "/data/xiangyuyue/ULLM-zf/fsl-20260209/data/cnt/nas/liyangguang103/newdataset/CD-Count/DSACA",
+  "test_dir": "/data/xiangyuyue/ULLM-zf/fsl-20260209/data/cnt/nas/liyangguang103/newdataset/CD-Count/DSACA/test_data_class8",
+  "checkpoint": "runs/group1_multitask_10per_fullft/best_combo.pt",
+  "num_classes": 8,
+  "image_size": 448,
+  "keep_aspect": true,
+  "model_name": "dinov3_vitl16",
+  "backbone_source": "auto",
+  "per_class_mae": [
+    6.793387306867725,
+    1.7207126216283135,
+    4.512724461401031,
+    2.3849185436528963,
+    1.0417960479270911,
+    1.7781191740871618,
+    0.4673014150177856,
+    4.14850878091461
+  ],
+  "per_class_rmse": [
+    11.455237913424495,
+    2.6235064713057348,
+    6.450503968968294,
+    4.045836531280193,
+    1.7047717437112473,
+    2.9778090370681736,
+    0.7962452938961009,
+    6.119408716609688
+  ],
+  "mae": 2.855933543937077,
+  "rmse": 4.521664959532991,
+  "n_images": 548
+}

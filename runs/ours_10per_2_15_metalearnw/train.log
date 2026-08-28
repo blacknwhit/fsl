@@ -1,0 +1,730 @@
+[warn] Using first-order MAML (stop-grad through inner update).
+[train] using --loss-weight-bias as base/init: [15.000, 8.000, 1.000]
+[warn] Backbone is forced frozen for Full MAML (ignoring unfreeze flags).
+[LoRA-MoE] LoRA params: 6561792
+[LoRA-MoE] Det head params: 14875060
+[LoRA-MoE] Seg head params: 9451531
+[LoRA-MoE] Cnt head params: 9448456
+[train] Learnable loss weights MLP enabled (Full MAML)
+[init] g0 initialized on rank0 from first inner-batch gradients and broadcast to all ranks.
+[stage1] epoch 1/1 step 20 | loss 1353315.6156 | det 1.9044 seg 1.6795 cnt 676659.2250 | w [15.991, 9.015, 1.993]
+[stage1] epoch 1/1 step 40 | loss 837098.4520 | det 1.5172 seg 1.5808 cnt 418854.2246 | w [15.995, 9.016, 1.989]
+[stage1] epoch 1/1 step 60 | loss 586957.7859 | det 1.2263 seg 1.4236 cnt 293774.1773 | w [15.993, 9.026, 1.980]
+[warn] Using first-order MAML (stop-grad through inner update).
+[train] using --loss-weight-bias as base/init: [15.000, 8.000, 1.000]
+[warn] Backbone is forced frozen for Full MAML (ignoring unfreeze flags).
+[LoRA-MoE] LoRA params: 6561792
+[LoRA-MoE] Det head params: 14875060
+[LoRA-MoE] Seg head params: 9451531
+[LoRA-MoE] Cnt head params: 9448456
+[train] Learnable loss weights MLP enabled (Full MAML)
+[init] g0 initialized on rank0 from first inner-batch gradients and broadcast to all ranks.
+[stage1] epoch 1/1 step 20 | loss 1260792.9156 | det 1.8950 seg 1.7099 cnt 676647.7906 | w [16.085, 9.062, 1.853]
+[stage1] epoch 1/1 step 40 | loss 771403.8484 | det 1.4793 seg 1.5566 cnt 414648.4293 | w [16.096, 9.063, 1.841]
+[stage1] epoch 1/1 step 60 | loss 538418.4906 | det 1.2336 seg 1.4357 cnt 289557.8069 | w [16.099, 9.064, 1.837]
+[stage1] epoch 1/1 step 80 | loss 409251.7662 | det 1.0623 seg 1.3096 cnt 220129.3653 | w [16.103, 9.063, 1.834]
+[stage1] epoch 1/1 step 100 | loss 328805.4969 | det 0.9598 seg 1.2882 cnt 176867.4368 | w [16.101, 9.067, 1.833]
+[stage1] epoch 1/1 step 120 | loss 274450.9285 | det 0.8948 seg 1.2763 cnt 147631.2758 | w [16.103, 9.066, 1.831]
+[stage1] epoch 1/1 step 140 | loss 235396.5728 | det 0.8414 seg 1.2510 cnt 126623.1284 | w [16.102, 9.067, 1.831]
+[stage1] epoch 1/1 step 160 | loss 206030.2664 | det 0.7978 seg 1.2235 cnt 110825.8551 | w [16.097, 9.065, 1.838]
+[stage1] epoch 1/1 step 180 | loss 183160.2728 | det 0.7614 seg 1.2091 cnt 98522.9770 | w [16.108, 9.065, 1.827]
+[stage1] epoch 1/1 step 200 | loss 164852.5755 | det 0.7408 seg 1.1936 cnt 88674.2258 | w [16.075, 9.060, 1.865]
+[stage1] epoch 1/1 step 220 | loss 149871.0794 | det 0.7193 seg 1.1896 cnt 80614.7956 | w [16.107, 9.064, 1.829]
+[stage1] epoch 1/1 step 240 | loss 137385.3250 | det 0.7014 seg 1.1834 cnt 73897.9747 | w [16.099, 9.066, 1.835]
+[stage1] epoch 1/1 step 260 | loss 126819.9835 | det 0.6889 seg 1.1647 cnt 68214.2939 | w [16.079, 9.057, 1.864]
+[stage1] epoch 1/1 | train 121673.4247
+[stage1] epoch 1/1 | w [16.083, 9.056, 1.861]
+[ckpt] saved stage1 phi -> runs/ours_10per_2_15_metalearnw/stage1_phi_last.pt
+[stage2] epoch 1/1 step 20 | loss 32.6904 | det 0.4013 seg 0.8829 cnt 9.8703 | w [16.079, 9.060, 1.861] | cnt_gnorm 1.070155e+02 cnt_gparams 6
+[stage2] epoch 1/1 step 40 | loss 31.0248 | det 0.4135 seg 0.9018 cnt 8.7578 | w [16.080, 9.060, 1.860] | cnt_gnorm 8.271102e+01 cnt_gparams 6
+[stage2] epoch 1/1 step 60 | loss 29.8501 | det 0.4137 seg 0.8924 cnt 8.1729 | w [16.084, 9.058, 1.858] | cnt_gnorm 7.376529e+01 cnt_gparams 6
+[stage2] epoch 1/1 step 80 | loss 30.0780 | det 0.4259 seg 0.9293 cnt 8.0066 | w [16.094, 9.062, 1.844] | cnt_gnorm 1.136952e+02 cnt_gparams 6
+[stage2] epoch 1/1 step 100 | loss 29.8856 | det 0.4224 seg 0.9016 cnt 8.0645 | w [16.090, 9.063, 1.847] | cnt_gnorm 5.323061e+02 cnt_gparams 6
+[stage2] epoch 1/1 step 120 | loss 30.1701 | det 0.4239 seg 0.9055 cnt 8.1845 | w [16.079, 9.057, 1.863] | cnt_gnorm 9.607751e+01 cnt_gparams 6
+[stage2] epoch 1/1 step 140 | loss 29.8960 | det 0.4221 seg 0.8959 cnt 8.0978 | w [16.096, 9.060, 1.844] | cnt_gnorm 7.643138e+01 cnt_gparams 6
+[stage2] epoch 1/1 step 160 | loss 31.0057 | det 0.4177 seg 0.8913 cnt 8.7583 | w [16.080, 9.057, 1.862] | cnt_gnorm 1.306468e+02 cnt_gparams 6
+[stage2] epoch 1/1 step 180 | loss 31.0535 | det 0.4120 seg 0.8847 cnt 8.8650 | w [16.076, 9.056, 1.867] | cnt_gnorm 1.933126e+02 cnt_gparams 6
+[stage2] epoch 1/1 step 200 | loss 30.7137 | det 0.4121 seg 0.8847 cnt 8.6807 | w [16.081, 9.060, 1.859] | cnt_gnorm 1.198164e+02 cnt_gparams 6
+[stage2] epoch 1/1 step 220 | loss 30.8948 | det 0.4083 seg 0.8852 cnt 8.8091 | w [16.089, 9.062, 1.848] | cnt_gnorm 1.234129e+02 cnt_gparams 6
+[stage2] epoch 1/1 step 240 | loss 31.2468 | det 0.4048 seg 0.8752 cnt 9.0755 | w [16.087, 9.059, 1.854] | cnt_gnorm 3.874467e+01 cnt_gparams 6
+[stage2] epoch 1/1 step 260 | loss 30.9917 | det 0.4022 seg 0.8776 cnt 8.9470 | w [16.079, 9.058, 1.862] | cnt_gnorm 1.330214e+02 cnt_gparams 6
+[stage2] epoch 1/1 | train 30.9485
+[stage2] epoch 1/1 | w [16.098, 9.062, 1.840]
+[diag][cnt][stage2] epoch 1/1 | param_delta_l2 3.778151e+00
+[ckpt] saved best -> runs/ours_10per_2_15_metalearnw/best_combo.pt (combo -inf)
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+[rank1]:[W215 11:33:36.602733417 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 1]  using GPU 1 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+[rank3]:[W215 11:33:36.629194183 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 3]  using GPU 3 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+[rank7]:[W215 11:33:36.730717895 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 7]  using GPU 7 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+[rank2]:[W215 11:33:36.758513832 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 2]  using GPU 2 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+[rank4]:[W215 11:33:37.889962336 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 4]  using GPU 4 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+[rank0]:[W215 11:33:37.930821300 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 0]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+[rank5]:[W215 11:33:37.950066628 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 5]  using GPU 5 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+[rank6]:[W215 11:33:37.022938669 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 6]  using GPU 6 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+[warn] Using first-order MAML (stop-grad through inner update).
+[train] using --loss-weight-bias as base/init: [15.000, 8.000, 1.000]
+[warn] Backbone is forced frozen for Full MAML (ignoring unfreeze flags).
+[ddp] multi-process mode without DDP wrapper (manual theta grad all-reduce)
+[LoRA-MoE] LoRA params: 6561792
+[LoRA-MoE] Det head params: 14875060
+[LoRA-MoE] Seg head params: 9451531
+[LoRA-MoE] Cnt head params: 9448456
+[train] Learnable loss weights MLP enabled (Full MAML)
+[init] g0 initialized on rank0 from first inner-batch gradients and broadcast to all ranks.
+[stage1] epoch 1/100 step 20 | loss 368333.3105 | det 1.2483 seg 1.4786 cnt 170374.1447 | w [15.951, 8.893, 2.156]
+[stage1] epoch 1/100 | train 216705.1619
+[stage1] epoch 1/100 | w [15.953, 8.888, 2.158]
+[diag][cnt][val] pred_count_mean 3.411345 gt_count_mean 8.000130 pred_dens_mean 0.000017 gt_dens_mean 0.000040
+[stage1] epoch 1 | val det 0.5457 seg 0.8691 miou 0.4592 cnt 6.9961 dens 9.907852e-01 mae 6.0053 total_mae 34.4154 | ap50 0.0059 | combo 0.631565
+[ckpt] new best cached (stage1 epoch 1, combo 0.631565)
+[stage1] epoch 2/100 step 20 | loss 35.9698 | det 0.4892 seg 1.0296 cnt 8.8073 | w [15.954, 8.887, 2.160]
+[stage1] epoch 2/100 | train 37.7636
+[stage1] epoch 2/100 | w [15.954, 8.892, 2.155]
+[diag][cnt][val] pred_count_mean 1.325514 gt_count_mean 8.000130 pred_dens_mean 0.000007 gt_dens_mean 0.000040
+[stage1] epoch 2 | val det 0.4668 seg 0.7617 miou 0.5372 cnt 6.7536 dens 9.944593e-01 mae 5.7592 total_mae 41.8304 | ap50 0.0200 | combo 0.730833
+[ckpt] new best cached (stage1 epoch 2, combo 0.730833)
+[stage1] epoch 3/100 step 20 | loss 31.1598 | det 0.4768 seg 0.9044 cnt 7.1942 | w [15.951, 8.894, 2.155]
+[stage1] epoch 3/100 | train 31.2788
+[stage1] epoch 3/100 | w [15.952, 8.891, 2.157]
+[diag][cnt][val] pred_count_mean 4.979689 gt_count_mean 8.000130 pred_dens_mean 0.000025 gt_dens_mean 0.000040
+[stage1] epoch 3 | val det 0.3781 seg 0.7843 miou 0.5772 cnt 6.1306 dens 9.939688e-01 mae 5.1367 total_mae 26.8628 | ap50 0.0805 | combo 0.852358
+[ckpt] new best cached (stage1 epoch 3, combo 0.852358)
+[stage1] epoch 4/100 step 20 | loss 32.5590 | det 0.3877 seg 0.9193 cnt 8.4574 | w [15.953, 8.890, 2.157]
+[stage1] epoch 4/100 | train 31.9648
+[stage1] epoch 4/100 | w [15.953, 8.897, 2.150]
+[diag][cnt][val] pred_count_mean 2.072393 gt_count_mean 8.000130 pred_dens_mean 0.000010 gt_dens_mean 0.000040
+[stage1] epoch 4 | val det 0.3772 seg 0.8312 miou 0.5825 cnt 6.1778 dens 1.003604e+00 mae 5.1742 total_mae 30.3418 | ap50 0.1665 | combo 0.942299
+[ckpt] new best cached (stage1 epoch 4, combo 0.942299)
+[stage1] epoch 5/100 step 20 | loss 26.7878 | det 0.3823 seg 0.6538 cnt 6.9251 | w [15.950, 8.905, 2.144]
+[stage1] epoch 5/100 | train 27.8949
+[stage1] epoch 5/100 | w [15.950, 8.926, 2.124]
+[diag][cnt][val] pred_count_mean 3.123393 gt_count_mean 8.000130 pred_dens_mean 0.000016 gt_dens_mean 0.000040
+[stage1] epoch 5 | val det 0.3651 seg 0.7221 miou 0.6041 cnt 6.1067 dens 1.003074e+00 mae 5.1036 total_mae 28.2239 | ap50 0.3033 | combo 1.103325
+[ckpt] new best cached (stage1 epoch 5, combo 1.103325)
+[stage1] epoch 6/100 step 20 | loss 31.8466 | det 0.3616 seg 0.8862 cnt 8.5103 | w [15.950, 8.905, 2.144]
+[stage1] epoch 6/100 | train 30.6792
+[stage1] epoch 6/100 | w [15.951, 8.935, 2.114]
+[diag][cnt][val] pred_count_mean 2.278009 gt_count_mean 8.000130 pred_dens_mean 0.000011 gt_dens_mean 0.000040
+[stage1] epoch 6 | val det 0.3645 seg 0.7642 miou 0.5907 cnt 5.9475 dens 9.862338e-01 mae 4.9612 total_mae 31.3573 | ap50 0.3767 | combo 1.168967
+[ckpt] new best cached (stage1 epoch 6, combo 1.168967)
+[stage1] epoch 7/100 step 20 | loss 28.3650 | det 0.2947 seg 0.5405 cnt 8.8918 | w [15.945, 8.932, 2.122]
+[stage1] epoch 7/100 | train 27.3482
+[stage1] epoch 7/100 | w [15.944, 8.939, 2.117]
+[diag][cnt][val] pred_count_mean 3.165890 gt_count_mean 8.000130 pred_dens_mean 0.000016 gt_dens_mean 0.000040
+[stage1] epoch 7 | val det 0.3524 seg 0.7376 miou 0.6055 cnt 5.9325 dens 9.995857e-01 mae 4.9329 total_mae 28.1736 | ap50 0.4371 | combo 1.245323
+[ckpt] new best cached (stage1 epoch 7, combo 1.245323)
+[stage1] epoch 8/100 step 20 | loss 30.6019 | det 0.3610 seg 0.5706 cnt 9.3991 | w [15.954, 8.972, 2.074]
+[stage1] epoch 8/100 | train 28.8560
+[stage1] epoch 8/100 | w [15.961, 9.002, 2.037]
+[diag][cnt][val] pred_count_mean 4.258571 gt_count_mean 8.000130 pred_dens_mean 0.000021 gt_dens_mean 0.000040
+[stage1] epoch 8 | val det 0.3248 seg 0.7500 miou 0.6034 cnt 5.7867 dens 1.010513e+00 mae 4.7762 total_mae 20.3111 | ap50 0.4707 | combo 1.283439
+[ckpt] new best cached (stage1 epoch 8, combo 1.283439)
+[stage1] epoch 9/100 step 20 | loss 25.3003 | det 0.2636 seg 0.5508 cnt 7.7875 | w [15.948, 8.931, 2.121]
+[stage1] epoch 9/100 | train 24.2287
+[stage1] epoch 9/100 | w [15.949, 8.997, 2.054]
+[diag][cnt][val] pred_count_mean 1.163512 gt_count_mean 8.000130 pred_dens_mean 0.000006 gt_dens_mean 0.000040
+[stage1] epoch 9 | val det 0.3291 seg 0.7880 miou 0.6017 cnt 5.4287 dens 9.705945e-01 mae 4.4581 total_mae 23.2992 | ap50 0.5110 | combo 1.337011
+[ckpt] new best cached (stage1 epoch 9, combo 1.337011)
+[stage1] epoch 10/100 step 20 | loss 20.4921 | det 0.2977 seg 0.4743 cnt 5.6060 | w [15.954, 9.022, 2.024]
+[stage1] epoch 10/100 | train 25.4718
+[stage1] epoch 10/100 | w [15.961, 9.007, 2.032]
+[diag][cnt][val] pred_count_mean 3.607533 gt_count_mean 8.000130 pred_dens_mean 0.000018 gt_dens_mean 0.000040
+[stage1] epoch 10 | val det 0.3052 seg 0.7747 miou 0.6118 cnt 5.4889 dens 9.627703e-01 mae 4.5262 total_mae 19.1867 | ap50 0.5148 | combo 1.347558
+[ckpt] new best cached (stage1 epoch 10, combo 1.347558)
+[stage1] epoch 11/100 step 20 | loss 21.0634 | det 0.2797 seg 0.4658 cnt 6.1978 | w [15.983, 9.124, 1.894]
+[stage1] epoch 11/100 | train 21.7321
+[stage1] epoch 11/100 | w [15.973, 9.073, 1.954]
+[diag][cnt][val] pred_count_mean 5.700640 gt_count_mean 8.000130 pred_dens_mean 0.000028 gt_dens_mean 0.000040
+[stage1] epoch 11 | val det 0.3168 seg 0.8513 miou 0.6127 cnt 5.7459 dens 9.824794e-01 mae 4.7634 total_mae 23.7698 | ap50 0.5161 | combo 1.338711
+[stage1] epoch 12/100 step 20 | loss 22.1200 | det 0.1990 seg 0.6519 cnt 6.5673 | w [15.987, 9.212, 1.801]
+[stage1] epoch 12/100 | train 21.6257
+[stage1] epoch 12/100 | w [15.958, 8.986, 2.056]
+[diag][cnt][val] pred_count_mean 4.196582 gt_count_mean 8.000130 pred_dens_mean 0.000021 gt_dens_mean 0.000040
+[stage1] epoch 12 | val det 0.3133 seg 0.7393 miou 0.6018 cnt 5.2213 dens 9.527255e-01 mae 4.2686 total_mae 18.2840 | ap50 0.5444 | combo 1.380396
+[ckpt] new best cached (stage1 epoch 12, combo 1.380396)
+[stage1] epoch 13/100 step 20 | loss 22.3541 | det 0.2758 seg 0.5194 cnt 7.1276 | w [15.958, 8.959, 2.083]
+[stage1] epoch 13/100 | train 22.6153
+[stage1] epoch 13/100 | w [15.978, 9.050, 1.972]
+[diag][cnt][val] pred_count_mean 4.037482 gt_count_mean 8.000130 pred_dens_mean 0.000020 gt_dens_mean 0.000040
+[stage1] epoch 13 | val det 0.3305 seg 0.7872 miou 0.6100 cnt 5.2039 dens 9.368885e-01 mae 4.2670 total_mae 17.6004 | ap50 0.5220 | combo 1.366347
+[stage1] epoch 14/100 step 20 | loss 21.2380 | det 0.2138 seg 0.4958 cnt 7.2292 | w [15.992, 9.201, 1.807]
+[stage1] epoch 14/100 | train 20.6778
+[stage1] epoch 14/100 | w [15.998, 9.145, 1.857]
+[diag][cnt][val] pred_count_mean 2.991695 gt_count_mean 8.000130 pred_dens_mean 0.000015 gt_dens_mean 0.000040
+[stage1] epoch 14 | val det 0.3110 seg 0.7764 miou 0.6109 cnt 4.6667 dens 9.207154e-01 mae 3.7460 total_mae 16.5476 | ap50 0.5552 | combo 1.433071
+[ckpt] new best cached (stage1 epoch 14, combo 1.433071)
+[stage1] epoch 15/100 step 20 | loss 22.0712 | det 0.3194 seg 0.3900 cnt 7.3976 | w [15.968, 8.990, 2.043]
+[stage1] epoch 15/100 | train 19.8236
+[stage1] epoch 15/100 | w [16.002, 9.045, 1.953]
+[diag][cnt][val] pred_count_mean 6.193399 gt_count_mean 8.000130 pred_dens_mean 0.000031 gt_dens_mean 0.000040
+[stage1] epoch 15 | val det 0.3267 seg 0.7765 miou 0.6162 cnt 4.6434 dens 9.341824e-01 mae 3.7092 total_mae 16.3572 | ap50 0.5768 | combo 1.462634
+[ckpt] new best cached (stage1 epoch 15, combo 1.462634)
+[stage1] epoch 16/100 step 20 | loss 16.5949 | det 0.1958 seg 0.3552 cnt 5.8957 | w [16.003, 9.263, 1.734]
+[stage1] epoch 16/100 | train 17.3523
+[stage1] epoch 16/100 | w [16.039, 9.481, 1.479]
+[diag][cnt][val] pred_count_mean 7.129903 gt_count_mean 8.000130 pred_dens_mean 0.000036 gt_dens_mean 0.000040
+[stage1] epoch 16 | val det 0.3216 seg 0.7921 miou 0.6188 cnt 4.8566 dens 9.217756e-01 mae 3.9348 total_mae 20.3580 | ap50 0.5773 | combo 1.450256
+[stage1] epoch 17/100 step 20 | loss 18.3615 | det 0.2539 seg 0.3862 cnt 6.3748 | w [16.053, 9.536, 1.411]
+[stage1] epoch 17/100 | train 17.5890
+[stage1] epoch 17/100 | w [15.988, 9.041, 1.971]
+[diag][cnt][val] pred_count_mean 12.114361 gt_count_mean 8.000130 pred_dens_mean 0.000060 gt_dens_mean 0.000040
+[stage1] epoch 17 | val det 0.3156 seg 0.7467 miou 0.6310 cnt 4.8711 dens 9.290220e-01 mae 3.9421 total_mae 22.2713 | ap50 0.5953 | combo 1.479977
+[ckpt] new best cached (stage1 epoch 17, combo 1.479977)
+[stage1] epoch 18/100 step 20 | loss 23.0547 | det 0.2553 seg 0.3840 cnt 10.1647 | w [16.027, 9.383, 1.590]
+[stage1] epoch 18/100 | train 21.5552
+[stage1] epoch 18/100 | w [16.034, 9.496, 1.469]
+[diag][cnt][val] pred_count_mean 10.082216 gt_count_mean 8.000130 pred_dens_mean 0.000050 gt_dens_mean 0.000040
+[stage1] epoch 18 | val det 0.3275 seg 0.7690 miou 0.6219 cnt 4.5437 dens 9.063280e-01 mae 3.6373 total_mae 18.0735 | ap50 0.5933 | combo 1.490140
+[ckpt] new best cached (stage1 epoch 18, combo 1.490140)
+[stage1] epoch 19/100 step 20 | loss 19.4020 | det 0.2521 seg 0.5373 cnt 6.5359 | w [16.034, 9.202, 1.764]
+[stage1] epoch 19/100 | train 18.1501
+[stage1] epoch 19/100 | w [16.073, 9.677, 1.250]
+[diag][cnt][val] pred_count_mean 10.807944 gt_count_mean 8.000130 pred_dens_mean 0.000054 gt_dens_mean 0.000040
+[stage1] epoch 19 | val det 0.3368 seg 0.8287 miou 0.6216 cnt 4.6379 dens 9.213074e-01 mae 3.7166 total_mae 20.5644 | ap50 0.5812 | combo 1.471828
+[stage1] epoch 20/100 step 20 | loss 17.9382 | det 0.2678 seg 0.4164 cnt 6.9686 | w [16.051, 9.413, 1.536]
+[stage1] epoch 20/100 | train 16.9817
+[stage1] epoch 20/100 | w [16.076, 9.698, 1.226]
+[diag][cnt][val] pred_count_mean 2.289623 gt_count_mean 8.000130 pred_dens_mean 0.000011 gt_dens_mean 0.000040
+[stage1] epoch 20 | val det 0.3098 seg 0.8377 miou 0.6214 cnt 4.3811 dens 9.010537e-01 mae 3.4801 total_mae 17.6077 | ap50 0.5995 | combo 1.508211
+[ckpt] new best cached (stage1 epoch 20, combo 1.508211)
+[stage1] epoch 21/100 step 20 | loss 20.1213 | det 0.1965 seg 0.3426 cnt 9.3537 | w [16.090, 9.735, 1.174]
+[stage1] epoch 21/100 | train 18.1820
+[stage1] epoch 21/100 | w [16.094, 9.420, 1.487]
+[diag][cnt][val] pred_count_mean 6.218451 gt_count_mean 8.000130 pred_dens_mean 0.000031 gt_dens_mean 0.000040
+[stage1] epoch 21 | val det 0.3096 seg 0.8240 miou 0.6243 cnt 4.6242 dens 9.090556e-01 mae 3.7152 total_mae 14.8588 | ap50 0.6086 | combo 1.502021
+[stage1] epoch 22/100 step 20 | loss 15.8924 | det 0.1692 seg 0.3217 cnt 7.6670 | w [16.089, 9.748, 1.163]
+[stage1] epoch 22/100 | train 15.6744
+[stage1] epoch 22/100 | w [16.102, 9.754, 1.144]
+[diag][cnt][val] pred_count_mean 7.648939 gt_count_mean 8.000130 pred_dens_mean 0.000038 gt_dens_mean 0.000040
+[stage1] epoch 22 | val det 0.3292 seg 0.7834 miou 0.6254 cnt 4.6435 dens 9.088578e-01 mae 3.7347 total_mae 23.7648 | ap50 0.6061 | combo 1.499260
+[stage1] epoch 23/100 step 20 | loss 14.9550 | det 0.2756 seg 0.4679 cnt 4.5965 | w [16.126, 9.649, 1.225]
+[stage1] epoch 23/100 | train 13.7018
+[stage1] epoch 23/100 | w [16.104, 9.768, 1.128]
+[diag][cnt][val] pred_count_mean 8.581714 gt_count_mean 8.000130 pred_dens_mean 0.000043 gt_dens_mean 0.000040
+[stage1] epoch 23 | val det 0.3455 seg 0.9371 miou 0.6255 cnt 4.3666 dens 9.031547e-01 mae 3.4635 total_mae 19.0470 | ap50 0.6160 | combo 1.530138
+[ckpt] new best cached (stage1 epoch 23, combo 1.530138)
+[stage1] epoch 24/100 step 20 | loss 11.7672 | det 0.1779 seg 0.2834 cnt 4.6376 | w [16.112, 9.757, 1.131]
+[stage1] epoch 24/100 | train 11.8948
+[stage1] epoch 24/100 | w [16.086, 9.254, 1.660]
+[diag][cnt][val] pred_count_mean 23.728685 gt_count_mean 8.000130 pred_dens_mean 0.000118 gt_dens_mean 0.000040
+[stage1] epoch 24 | val det 0.3371 seg 0.8832 miou 0.6181 cnt 4.9470 dens 9.135695e-01 mae 4.0334 total_mae 19.3183 | ap50 0.5958 | combo 1.461814
+[stage1] epoch 25/100 step 20 | loss 14.7737 | det 0.1881 seg 0.2883 cnt 6.5586 | w [16.107, 9.797, 1.096]
+[stage1] epoch 25/100 | train 13.7756
+[stage1] epoch 25/100 | w [16.120, 9.777, 1.104]
+[diag][cnt][val] pred_count_mean 11.634027 gt_count_mean 8.000130 pred_dens_mean 0.000058 gt_dens_mean 0.000040
+[stage1] epoch 25 | val det 0.3246 seg 0.8599 miou 0.6301 cnt 4.3478 dens 9.071760e-01 mae 3.4406 total_mae 18.4085 | ap50 0.5991 | combo 1.519874
+[stage1] epoch 26/100 step 20 | loss 16.3605 | det 0.2394 seg 0.2494 cnt 7.4579 | w [16.163, 9.644, 1.193]
+[stage1] epoch 26/100 | train 14.5970
+[stage1] epoch 26/100 | w [16.115, 9.649, 1.236]
+[diag][cnt][val] pred_count_mean 4.436912 gt_count_mean 8.000130 pred_dens_mean 0.000022 gt_dens_mean 0.000040
+[stage1] epoch 26 | val det 0.3422 seg 0.8725 miou 0.6236 cnt 4.2333 dens 8.913151e-01 mae 3.3420 total_mae 15.2226 | ap50 0.6261 | combo 1.548912
+[ckpt] new best cached (stage1 epoch 26, combo 1.548912)
+[stage1] epoch 27/100 step 20 | loss 12.7704 | det 0.1555 seg 0.2639 cnt 6.2744 | w [16.156, 9.466, 1.378]
+[stage1] epoch 27/100 | train 13.3314
+[stage1] epoch 27/100 | w [16.134, 9.801, 1.065]
+[diag][cnt][val] pred_count_mean 7.827658 gt_count_mean 8.000130 pred_dens_mean 0.000039 gt_dens_mean 0.000040
+[stage1] epoch 27 | val det 0.3298 seg 0.9006 miou 0.6281 cnt 4.2687 dens 8.982308e-01 mae 3.3704 total_mae 18.1620 | ap50 0.6157 | combo 1.540556
+[stage1] epoch 28/100 step 20 | loss 11.9687 | det 0.1954 seg 0.2816 cnt 4.9851 | w [16.132, 9.668, 1.200]
+[stage1] epoch 28/100 | train 11.8415
+[stage1] epoch 28/100 | w [16.142, 9.374, 1.484]
+[diag][cnt][val] pred_count_mean 10.857998 gt_count_mean 8.000130 pred_dens_mean 0.000054 gt_dens_mean 0.000040
+[stage1] epoch 28 | val det 0.3281 seg 0.8919 miou 0.6260 cnt 4.2494 dens 8.878309e-01 mae 3.3616 total_mae 14.5431 | ap50 0.6290 | combo 1.552461
+[ckpt] new best cached (stage1 epoch 28, combo 1.552461)
+[stage1] epoch 29/100 step 20 | loss 10.4249 | det 0.1384 seg 0.3166 cnt 4.2163 | w [16.198, 9.736, 1.066]
+[stage1] epoch 29/100 | train 10.9356
+[stage1] epoch 29/100 | w [16.224, 9.725, 1.051]
+[diag][cnt][val] pred_count_mean 12.380205 gt_count_mean 8.000130 pred_dens_mean 0.000062 gt_dens_mean 0.000040
+[stage1] epoch 29 | val det 0.3455 seg 0.8731 miou 0.6256 cnt 4.2943 dens 8.969019e-01 mae 3.3974 total_mae 19.2519 | ap50 0.6112 | combo 1.531147
+[stage1] epoch 30/100 step 20 | loss 11.1440 | det 0.1734 seg 0.3353 cnt 4.3949 | w [16.237, 9.692, 1.071]
+[stage1] epoch 30/100 | train 11.1020
+[stage1] epoch 30/100 | w [16.202, 9.697, 1.102]
+[diag][cnt][val] pred_count_mean 13.649989 gt_count_mean 8.000130 pred_dens_mean 0.000068 gt_dens_mean 0.000040
+[stage1] epoch 30 | val det 0.3323 seg 0.8907 miou 0.6214 cnt 4.9219 dens 8.966566e-01 mae 4.0253 total_mae 17.6378 | ap50 0.6221 | combo 1.491944
+[stage1] epoch 31/100 step 20 | loss 12.8105 | det 0.1610 seg 0.2373 cnt 6.5054 | w [16.203, 9.323, 1.475]
+[stage1] epoch 31/100 | train 11.7640
+[stage1] epoch 31/100 | w [16.262, 9.515, 1.223]
+[diag][cnt][val] pred_count_mean 5.865250 gt_count_mean 8.000130 pred_dens_mean 0.000029 gt_dens_mean 0.000040
+[stage1] epoch 31 | val det 0.3233 seg 0.8692 miou 0.6317 cnt 4.6363 dens 9.203715e-01 mae 3.7159 total_mae 16.2969 | ap50 0.6274 | combo 1.528152
+[stage1] epoch 32/100 step 20 | loss 11.0766 | det 0.1704 seg 0.2886 cnt 4.8204 | w [16.188, 9.687, 1.125]
+[stage1] epoch 32/100 | train 10.5768
+[stage1] epoch 32/100 | w [16.309, 9.668, 1.023]
+[diag][cnt][val] pred_count_mean 8.518440 gt_count_mean 8.000130 pred_dens_mean 0.000042 gt_dens_mean 0.000040
+[stage1] epoch 32 | val det 0.3251 seg 0.9079 miou 0.6203 cnt 4.1527 dens 8.842883e-01 mae 3.2684 total_mae 15.8775 | ap50 0.6238 | combo 1.550088
+[stage1] epoch 33/100 step 20 | loss 11.6101 | det 0.2199 seg 0.2890 cnt 4.6612 | w [16.336, 9.617, 1.046]
+[stage1] epoch 33/100 | train 11.5345
+[stage1] epoch 33/100 | w [16.251, 9.619, 1.130]
+[diag][cnt][val] pred_count_mean 8.568293 gt_count_mean 8.000130 pred_dens_mean 0.000043 gt_dens_mean 0.000040
+[stage1] epoch 33 | val det 0.3389 seg 0.9236 miou 0.6252 cnt 4.0948 dens 8.831277e-01 mae 3.2117 total_mae 16.2421 | ap50 0.6277 | combo 1.564188
+[ckpt] new best cached (stage1 epoch 33, combo 1.564188)
+[stage1] epoch 34/100 step 20 | loss 12.7498 | det 0.1988 seg 0.4524 cnt 4.5713 | w [16.361, 9.595, 1.044]
+[stage1] epoch 34/100 | train 11.8891
+[stage1] epoch 34/100 | w [16.280, 9.646, 1.073]
+[diag][cnt][val] pred_count_mean 6.034471 gt_count_mean 8.000130 pred_dens_mean 0.000030 gt_dens_mean 0.000040
+[stage1] epoch 34 | val det 0.3389 seg 0.9650 miou 0.5863 cnt 4.1117 dens 8.849195e-01 mae 3.2267 total_mae 14.2944 | ap50 0.6259 | combo 1.522112
+[stage1] epoch 35/100 step 20 | loss 13.0192 | det 0.2576 seg 0.3716 cnt 4.6491 | w [16.331, 9.569, 1.101]
+[stage1] epoch 35/100 | train 11.4580
+[stage1] epoch 35/100 | w [16.444, 9.529, 1.027]
+[diag][cnt][val] pred_count_mean 8.231147 gt_count_mean 8.000130 pred_dens_mean 0.000041 gt_dens_mean 0.000040
+[stage1] epoch 35 | val det 0.3218 seg 0.9116 miou 0.6261 cnt 4.0108 dens 8.860414e-01 mae 3.1248 total_mae 15.6877 | ap50 0.6355 | combo 1.581566
+[ckpt] new best cached (stage1 epoch 35, combo 1.581566)
+[stage1] epoch 36/100 step 20 | loss 11.0008 | det 0.2242 seg 0.2689 cnt 4.4596 | w [16.466, 9.513, 1.021]
+[stage1] epoch 36/100 | train 10.5380
+[stage1] epoch 36/100 | w [16.333, 9.621, 1.046]
+[diag][cnt][val] pred_count_mean 9.631145 gt_count_mean 8.000130 pred_dens_mean 0.000048 gt_dens_mean 0.000040
+[stage1] epoch 36 | val det 0.3400 seg 0.8739 miou 0.6168 cnt 4.5728 dens 8.925039e-01 mae 3.6803 total_mae 16.1725 | ap50 0.6351 | combo 1.523702
+[stage1] epoch 37/100 step 20 | loss 11.6080 | det 0.1693 seg 0.3343 cnt 5.1390 | w [16.352, 9.582, 1.066]
+[stage1] epoch 37/100 | train 11.6378
+[stage1] epoch 37/100 | w [16.293, 9.241, 1.466]
+[diag][cnt][val] pred_count_mean 6.954138 gt_count_mean 8.000130 pred_dens_mean 0.000035 gt_dens_mean 0.000040
+[stage1] epoch 37 | val det 0.3177 seg 0.9001 miou 0.6246 cnt 4.3873 dens 8.969972e-01 mae 3.4903 total_mae 19.0447 | ap50 0.6355 | combo 1.546552
+[stage1] epoch 38/100 step 20 | loss 10.7837 | det 0.1914 seg 0.3013 cnt 4.3491 | w [16.350, 9.278, 1.371]
+[stage1] epoch 38/100 | train 11.0544
+[stage1] epoch 38/100 | w [16.273, 9.248, 1.479]
+[diag][cnt][val] pred_count_mean 7.083454 gt_count_mean 8.000130 pred_dens_mean 0.000035 gt_dens_mean 0.000040
+[stage1] epoch 38 | val det 0.3411 seg 0.8784 miou 0.6224 cnt 4.0960 dens 8.834938e-01 mae 3.2125 total_mae 17.7364 | ap50 0.6373 | combo 1.570955
+[stage1] epoch 39/100 step 20 | loss 10.0520 | det 0.1547 seg 0.2535 cnt 4.5076 | w [16.328, 9.223, 1.449]
+[stage1] epoch 39/100 | train 9.6631
+[stage1] epoch 39/100 | w [16.616, 9.370, 1.015]
+[diag][cnt][val] pred_count_mean 8.209803 gt_count_mean 8.000130 pred_dens_mean 0.000041 gt_dens_mean 0.000040
+[stage1] epoch 39 | val det 0.3345 seg 0.9553 miou 0.6246 cnt 4.1651 dens 8.893731e-01 mae 3.2758 total_mae 16.7676 | ap50 0.6446 | combo 1.574471
+[stage1] epoch 40/100 step 20 | loss 9.7008 | det 0.1780 seg 0.2475 cnt 4.0433 | w [16.438, 9.468, 1.095]
+[stage1] epoch 40/100 | train 9.6678
+[stage1] epoch 40/100 | w [16.659, 9.327, 1.014]
+[diag][cnt][val] pred_count_mean 4.592042 gt_count_mean 8.000130 pred_dens_mean 0.000023 gt_dens_mean 0.000040
+[stage1] epoch 40 | val det 0.3249 seg 0.9449 miou 0.6295 cnt 4.0804 dens 8.878047e-01 mae 3.1926 total_mae 17.7288 | ap50 0.6395 | combo 1.582222
+[ckpt] new best cached (stage1 epoch 40, combo 1.582222)
+[stage1] epoch 41/100 step 20 | loss 9.4316 | det 0.1582 seg 0.2182 cnt 4.4567 | w [16.606, 9.296, 1.097]
+[stage1] epoch 41/100 | train 9.1821
+[stage1] epoch 41/100 | w [16.662, 9.278, 1.060]
+[diag][cnt][val] pred_count_mean 8.667435 gt_count_mean 8.000130 pred_dens_mean 0.000043 gt_dens_mean 0.000040
+[stage1] epoch 41 | val det 0.3456 seg 0.9635 miou 0.6270 cnt 4.0606 dens 8.874955e-01 mae 3.1731 total_mae 15.3030 | ap50 0.6383 | combo 1.580463
+[stage1] epoch 42/100 step 20 | loss 9.9694 | det 0.1765 seg 0.2457 cnt 4.3617 | w [16.542, 9.415, 1.043]
+[stage1] epoch 42/100 | train 9.6693
+[stage1] epoch 42/100 | w [16.530, 9.324, 1.146]
+[diag][cnt][val] pred_count_mean 9.992410 gt_count_mean 8.000130 pred_dens_mean 0.000050 gt_dens_mean 0.000040
+[stage1] epoch 42 | val det 0.3236 seg 0.9786 miou 0.6162 cnt 4.0899 dens 8.807143e-01 mae 3.2091 total_mae 15.2772 | ap50 0.6323 | combo 1.560086
+[stage1] epoch 43/100 step 20 | loss 9.3605 | det 0.1537 seg 0.2194 cnt 4.3410 | w [16.783, 9.207, 1.010]
+[stage1] epoch 43/100 | train 9.2909
+[stage1] epoch 43/100 | w [16.609, 9.313, 1.077]
+[diag][cnt][val] pred_count_mean 7.286958 gt_count_mean 8.000130 pred_dens_mean 0.000036 gt_dens_mean 0.000040
+[stage1] epoch 43 | val det 0.3368 seg 0.9591 miou 0.6222 cnt 3.9884 dens 8.725361e-01 mae 3.1158 total_mae 13.9770 | ap50 0.6464 | combo 1.589606
+[ckpt] new best cached (stage1 epoch 43, combo 1.589606)
+[stage1] epoch 44/100 step 20 | loss 9.3388 | det 0.1447 seg 0.2613 cnt 4.2804 | w [16.747, 9.222, 1.031]
+[stage1] epoch 44/100 | train 9.3555
+[stage1] epoch 44/100 | w [16.646, 9.309, 1.044]
+[diag][cnt][val] pred_count_mean 5.723205 gt_count_mean 8.000130 pred_dens_mean 0.000029 gt_dens_mean 0.000040
+[stage1] epoch 44 | val det 0.3350 seg 0.9264 miou 0.6252 cnt 3.9743 dens 8.760064e-01 mae 3.0983 total_mae 14.2832 | ap50 0.6501 | combo 1.598011
+[ckpt] new best cached (stage1 epoch 44, combo 1.598011)
+[stage1] epoch 45/100 step 20 | loss 7.6928 | det 0.1033 seg 0.1716 cnt 4.0985 | w [16.645, 9.313, 1.042]
+[stage1] epoch 45/100 | train 8.0412
+[stage1] epoch 45/100 | w [16.821, 9.163, 1.015]
+[diag][cnt][val] pred_count_mean 5.950315 gt_count_mean 8.000130 pred_dens_mean 0.000030 gt_dens_mean 0.000040
+[stage1] epoch 45 | val det 0.3404 seg 0.9250 miou 0.6270 cnt 4.1569 dens 8.837255e-01 mae 3.2732 total_mae 15.1727 | ap50 0.6391 | combo 1.571676
+[stage1] epoch 46/100 step 20 | loss 8.5235 | det 0.1366 seg 0.1687 cnt 4.4503 | w [16.784, 9.136, 1.080]
+[stage1] epoch 46/100 | train 8.5376
+[stage1] epoch 46/100 | w [16.670, 9.253, 1.077]
+[diag][cnt][val] pred_count_mean 8.347801 gt_count_mean 8.000130 pred_dens_mean 0.000042 gt_dens_mean 0.000040
+[stage1] epoch 46 | val det 0.3375 seg 1.0075 miou 0.6284 cnt 3.9401 dens 8.717111e-01 mae 3.0684 total_mae 15.3145 | ap50 0.6381 | combo 1.592360
+[stage1] epoch 47/100 step 20 | loss 8.8565 | det 0.1445 seg 0.1936 cnt 4.4516 | w [16.660, 9.248, 1.093]
+[stage1] epoch 47/100 | train 10.4770
+[stage1] epoch 47/100 | w [16.908, 9.060, 1.032]
+[diag][cnt][val] pred_count_mean 14.402484 gt_count_mean 8.000130 pred_dens_mean 0.000072 gt_dens_mean 0.000040
+[stage1] epoch 47 | val det 0.3323 seg 1.1406 miou 0.6251 cnt 4.4759 dens 8.909182e-01 mae 3.5850 total_mae 18.2044 | ap50 0.6393 | combo 1.543359
+[stage1] epoch 48/100 step 20 | loss 11.2573 | det 0.1586 seg 0.2419 cnt 6.2028 | w [16.701, 9.140, 1.159]
+[stage1] epoch 48/100 | train 10.8995
+[stage1] epoch 48/100 | w [16.826, 9.128, 1.046]
+[diag][cnt][val] pred_count_mean 6.809823 gt_count_mean 8.000130 pred_dens_mean 0.000034 gt_dens_mean 0.000040
+[stage1] epoch 48 | val det 0.3592 seg 0.9310 miou 0.6202 cnt 4.0665 dens 8.733205e-01 mae 3.1931 total_mae 18.1642 | ap50 0.6306 | combo 1.563946
+[stage1] epoch 49/100 step 20 | loss 14.0298 | det 0.1356 seg 0.4713 cnt 7.1880 | w [17.063, 8.933, 1.005]
+[stage1] epoch 49/100 | train 13.2213
+[stage1] epoch 49/100 | w [16.858, 9.122, 1.020]
+[diag][cnt][val] pred_count_mean 10.838852 gt_count_mean 8.000130 pred_dens_mean 0.000054 gt_dens_mean 0.000040
+[stage1] epoch 49 | val det 0.3366 seg 0.9113 miou 0.6185 cnt 4.1039 dens 8.730126e-01 mae 3.2309 total_mae 14.1282 | ap50 0.6480 | combo 1.575985
+[stage1] epoch 50/100 step 20 | loss 16.4290 | det 0.1434 seg 0.2765 cnt 11.2084 | w [17.077, 8.915, 1.008]
+[stage1] epoch 50/100 | train 14.9170
+[stage1] epoch 50/100 | w [16.992, 8.984, 1.024]
+[diag][cnt][val] pred_count_mean 6.917885 gt_count_mean 8.000130 pred_dens_mean 0.000034 gt_dens_mean 0.000040
+[stage1] epoch 50 | val det 0.3556 seg 0.9369 miou 0.6248 cnt 3.9003 dens 8.703709e-01 mae 3.0300 total_mae 13.8639 | ap50 0.6440 | combo 1.598923
+[ckpt] new best cached (stage1 epoch 50, combo 1.598923)
+[stage1] epoch 51/100 step 20 | loss 7.9221 | det 0.1274 seg 0.1721 cnt 4.0159 | w [16.952, 9.033, 1.014]
+[stage1] epoch 51/100 | train 8.3454
+[stage1] epoch 51/100 | w [16.937, 9.041, 1.023]
+[diag][cnt][val] pred_count_mean 10.603446 gt_count_mean 8.000130 pred_dens_mean 0.000053 gt_dens_mean 0.000040
+[stage1] epoch 51 | val det 0.3430 seg 1.0011 miou 0.6239 cnt 4.0390 dens 8.789971e-01 mae 3.1600 total_mae 17.2398 | ap50 0.6414 | combo 1.581742
+[stage1] epoch 52/100 step 20 | loss 7.6957 | det 0.1224 seg 0.1917 cnt 3.7276 | w [16.991, 8.997, 1.012]
+[stage1] epoch 52/100 | train 7.7790
+[stage1] epoch 52/100 | w [17.025, 8.890, 1.085]
+[diag][cnt][val] pred_count_mean 10.326857 gt_count_mean 8.000130 pred_dens_mean 0.000051 gt_dens_mean 0.000040
+[stage1] epoch 52 | val det 0.3600 seg 0.9213 miou 0.6337 cnt 3.9126 dens 8.742449e-01 mae 3.0383 total_mae 14.6845 | ap50 0.6551 | combo 1.617958
+[ckpt] new best cached (stage1 epoch 52, combo 1.617958)
+[stage1] epoch 53/100 step 20 | loss 8.8729 | det 0.1770 seg 0.1930 cnt 4.0259 | w [17.042, 8.948, 1.010]
+[stage1] epoch 53/100 | train 9.0370
+[stage1] epoch 53/100 | w [16.992, 8.956, 1.051]
+[diag][cnt][val] pred_count_mean 9.321293 gt_count_mean 8.000130 pred_dens_mean 0.000046 gt_dens_mean 0.000040
+[stage1] epoch 53 | val det 0.3350 seg 0.9466 miou 0.6301 cnt 4.0071 dens 8.701289e-01 mae 3.1369 total_mae 16.0979 | ap50 0.6508 | combo 1.599681
+[stage1] epoch 54/100 step 20 | loss 8.3717 | det 0.1672 seg 0.1701 cnt 3.8800 | w [17.271, 8.724, 1.005]
+[stage1] epoch 54/100 | train 8.1202
+[stage1] epoch 54/100 | w [17.098, 8.877, 1.026]
+[diag][cnt][val] pred_count_mean 9.994594 gt_count_mean 8.000130 pred_dens_mean 0.000050 gt_dens_mean 0.000040
+[stage1] epoch 54 | val det 0.3461 seg 0.9607 miou 0.6293 cnt 3.9609 dens 8.702833e-01 mae 3.0906 total_mae 15.4353 | ap50 0.6442 | combo 1.597092
+[stage1] epoch 55/100 step 20 | loss 9.2517 | det 0.1626 seg 0.1513 cnt 4.9765 | w [17.337, 8.659, 1.004]
+[stage1] epoch 55/100 | train 9.0985
+[stage1] epoch 55/100 | w [17.284, 8.700, 1.016]
+[diag][cnt][val] pred_count_mean 11.502747 gt_count_mean 8.000130 pred_dens_mean 0.000057 gt_dens_mean 0.000040
+[stage1] epoch 55 | val det 0.3656 seg 0.9511 miou 0.6328 cnt 4.0065 dens 8.664971e-01 mae 3.1400 total_mae 13.9134 | ap50 0.6452 | combo 1.596477
+[stage1] epoch 56/100 step 20 | loss 9.1906 | det 0.1736 seg 0.1921 cnt 4.3862 | w [17.260, 8.715, 1.025]
+[stage1] epoch 56/100 | train 8.2815
+[stage1] epoch 56/100 | w [17.438, 8.561, 1.001]
+[diag][cnt][val] pred_count_mean 16.228848 gt_count_mean 8.000130 pred_dens_mean 0.000081 gt_dens_mean 0.000040
+[stage1] epoch 56 | val det 0.3549 seg 0.9790 miou 0.6299 cnt 3.9583 dens 8.686085e-01 mae 3.0897 total_mae 14.7825 | ap50 0.6458 | combo 1.599384
+[stage1] epoch 57/100 step 20 | loss 8.1490 | det 0.1981 seg 0.1819 cnt 2.9940 | w [17.140, 8.828, 1.032]
+[stage1] epoch 57/100 | train 8.2146
+[stage1] epoch 57/100 | w [17.189, 8.787, 1.025]
+[diag][cnt][val] pred_count_mean 18.202314 gt_count_mean 8.000130 pred_dens_mean 0.000091 gt_dens_mean 0.000040
+[stage1] epoch 57 | val det 0.3425 seg 0.9742 miou 0.6289 cnt 3.9907 dens 8.731881e-01 mae 3.1175 total_mae 15.8739 | ap50 0.6430 | combo 1.592653
+[stage1] epoch 58/100 step 20 | loss 8.6115 | det 0.1128 seg 0.1837 cnt 5.0050 | w [17.341, 8.647, 1.012]
+[stage1] epoch 58/100 | train 9.1106
+[stage1] epoch 58/100 | w [17.515, 8.484, 1.002]
+[diag][cnt][val] pred_count_mean 11.391025 gt_count_mean 8.000130 pred_dens_mean 0.000057 gt_dens_mean 0.000040
+[stage1] epoch 58 | val det 0.3357 seg 1.0128 miou 0.6351 cnt 4.2640 dens 8.887281e-01 mae 3.3753 total_mae 16.0088 | ap50 0.6552 | combo 1.586519
+[stage1] epoch 59/100 step 20 | loss 9.3070 | det 0.1542 seg 0.1570 cnt 5.1008 | w [17.017, 8.820, 1.163]
+[stage1] epoch 59/100 | train 9.1511
+[stage1] epoch 59/100 | w [17.541, 8.457, 1.002]
+[diag][cnt][val] pred_count_mean 7.720464 gt_count_mean 8.000130 pred_dens_mean 0.000038 gt_dens_mean 0.000040
+[stage1] epoch 59 | val det 0.3251 seg 0.9937 miou 0.6361 cnt 3.8781 dens 8.667380e-01 mae 3.0114 total_mae 14.8051 | ap50 0.6546 | combo 1.622812
+[ckpt] new best cached (stage1 epoch 59, combo 1.622812)
+[stage1] epoch 60/100 step 20 | loss 9.0925 | det 0.1496 seg 0.1699 cnt 4.8452 | w [17.167, 8.771, 1.063]
+[stage1] epoch 60/100 | train 9.4454
+[stage1] epoch 60/100 | w [17.459, 8.524, 1.017]
+[diag][cnt][val] pred_count_mean 7.764789 gt_count_mean 8.000130 pred_dens_mean 0.000039 gt_dens_mean 0.000040
+[stage1] epoch 60 | val det 0.3295 seg 0.9907 miou 0.6380 cnt 3.8947 dens 8.693847e-01 mae 3.0254 total_mae 14.8064 | ap50 0.6529 | combo 1.621477
+[stage1] epoch 61/100 step 20 | loss 8.1573 | det 0.1499 seg 0.1637 cnt 4.0537 | w [17.111, 8.781, 1.109]
+[stage1] epoch 61/100 | train 8.4829
+[stage1] epoch 61/100 | w [17.110, 8.741, 1.149]
+[diag][cnt][val] pred_count_mean 11.620174 gt_count_mean 8.000130 pred_dens_mean 0.000058 gt_dens_mean 0.000040
+[stage1] epoch 61 | val det 0.3579 seg 1.0078 miou 0.6371 cnt 3.9564 dens 8.630530e-01 mae 3.0934 total_mae 14.5287 | ap50 0.6498 | combo 1.610213
+[stage1] epoch 62/100 step 20 | loss 8.0525 | det 0.1076 seg 0.1434 cnt 4.8658 | w [17.262, 8.684, 1.054]
+[stage1] epoch 62/100 | train 7.5566
+[stage1] epoch 62/100 | w [17.440, 8.555, 1.005]
+[diag][cnt][val] pred_count_mean 8.641246 gt_count_mean 8.000130 pred_dens_mean 0.000043 gt_dens_mean 0.000040
+[stage1] epoch 62 | val det 0.3579 seg 1.0274 miou 0.6371 cnt 3.7909 dens 8.614665e-01 mae 2.9295 total_mae 14.2098 | ap50 0.6542 | combo 1.632663
+[ckpt] new best cached (stage1 epoch 62, combo 1.632663)
+[stage1] epoch 63/100 step 20 | loss 6.9832 | det 0.0965 seg 0.1571 cnt 3.8801 | w [17.532, 8.455, 1.013]
+[stage1] epoch 63/100 | train 7.3479
+[stage1] epoch 63/100 | w [17.477, 8.519, 1.004]
+[diag][cnt][val] pred_count_mean 10.200604 gt_count_mean 8.000130 pred_dens_mean 0.000051 gt_dens_mean 0.000040
+[stage1] epoch 63 | val det 0.3610 seg 1.1258 miou 0.6275 cnt 3.8306 dens 8.625891e-01 mae 2.9680 total_mae 14.0221 | ap50 0.6539 | combo 1.618382
+[stage1] epoch 64/100 step 20 | loss 7.1777 | det 0.1058 seg 0.1869 cnt 3.6926 | w [17.469, 8.524, 1.007]
+[stage1] epoch 64/100 | train 7.2204
+[stage1] epoch 64/100 | w [17.410, 8.576, 1.014]
+[diag][cnt][val] pred_count_mean 10.908198 gt_count_mean 8.000130 pred_dens_mean 0.000054 gt_dens_mean 0.000040
+[stage1] epoch 64 | val det 0.3574 seg 1.0379 miou 0.6273 cnt 3.8294 dens 8.624998e-01 mae 2.9669 total_mae 14.1977 | ap50 0.6580 | combo 1.622330
+[stage1] epoch 65/100 step 20 | loss 6.0523 | det 0.1102 seg 0.1608 cnt 2.7176 | w [17.705, 8.292, 1.003]
+[stage1] epoch 65/100 | train 6.4891
+[stage1] epoch 65/100 | w [17.719, 8.279, 1.002]
+[diag][cnt][val] pred_count_mean 10.905577 gt_count_mean 8.000130 pred_dens_mean 0.000054 gt_dens_mean 0.000040
+[stage1] epoch 65 | val det 0.3468 seg 1.0746 miou 0.6341 cnt 3.8965 dens 8.634876e-01 mae 3.0330 total_mae 14.0820 | ap50 0.6533 | combo 1.617066
+[stage1] epoch 66/100 step 20 | loss 9.3585 | det 0.1692 seg 0.1406 cnt 5.1682 | w [17.569, 8.428, 1.003]
+[stage1] epoch 66/100 | train 9.3261
+[stage1] epoch 66/100 | w [17.483, 8.506, 1.012]
+[diag][cnt][val] pred_count_mean 14.424097 gt_count_mean 8.000130 pred_dens_mean 0.000072 gt_dens_mean 0.000040
+[stage1] epoch 66 | val det 0.3484 seg 0.9964 miou 0.6304 cnt 3.9321 dens 8.665909e-01 mae 3.0655 total_mae 14.8108 | ap50 0.6518 | combo 1.608440
+[stage1] epoch 67/100 step 20 | loss 11.1266 | det 0.1283 seg 0.1954 cnt 7.1900 | w [17.429, 8.502, 1.068]
+[stage1] epoch 67/100 | train 9.8388
+[stage1] epoch 67/100 | w [17.441, 8.514, 1.045]
+[diag][cnt][val] pred_count_mean 11.949226 gt_count_mean 8.000130 pred_dens_mean 0.000060 gt_dens_mean 0.000040
+[stage1] epoch 67 | val det 0.3595 seg 1.0648 miou 0.6229 cnt 3.8296 dens 8.628238e-01 mae 2.9668 total_mae 13.7140 | ap50 0.6543 | combo 1.614209
+[stage1] epoch 68/100 step 20 | loss 9.2052 | det 0.1300 seg 0.2414 cnt 4.8360 | w [17.642, 8.341, 1.017]
+[stage1] epoch 68/100 | train 8.3647
+[stage1] epoch 68/100 | w [17.589, 8.405, 1.006]
+[diag][cnt][val] pred_count_mean 12.697000 gt_count_mean 8.000130 pred_dens_mean 0.000063 gt_dens_mean 0.000040
+[stage1] epoch 68 | val det 0.3693 seg 1.1007 miou 0.6235 cnt 3.8910 dens 8.646311e-01 mae 3.0263 total_mae 14.1807 | ap50 0.6533 | combo 1.607247
+[stage1] epoch 69/100 step 20 | loss 9.7091 | det 0.1074 seg 0.1702 cnt 6.3459 | w [17.765, 8.232, 1.003]
+[stage1] epoch 69/100 | train 8.5448
+[stage1] epoch 69/100 | w [17.786, 8.212, 1.002]
+[diag][cnt][val] pred_count_mean 11.991308 gt_count_mean 8.000130 pred_dens_mean 0.000060 gt_dens_mean 0.000040
+[stage1] epoch 69 | val det 0.3311 seg 0.9912 miou 0.6288 cnt 3.8631 dens 8.622053e-01 mae 3.0009 total_mae 15.0044 | ap50 0.6507 | combo 1.612749
+[stage1] epoch 70/100 step 20 | loss 7.8145 | det 0.1627 seg 0.1580 cnt 3.5742 | w [17.839, 8.160, 1.001]
+[stage1] epoch 70/100 | train 8.1909
+[stage1] epoch 70/100 | w [17.641, 8.355, 1.004]
+[diag][cnt][val] pred_count_mean 12.304304 gt_count_mean 8.000130 pred_dens_mean 0.000061 gt_dens_mean 0.000040
+[stage1] epoch 70 | val det 0.3559 seg 1.0526 miou 0.6320 cnt 3.8889 dens 8.552718e-01 mae 3.0337 total_mae 13.9867 | ap50 0.6576 | combo 1.619281
+[stage1] epoch 71/100 step 20 | loss 8.5599 | det 0.1477 seg 0.1383 cnt 4.7353 | w [17.760, 8.232, 1.008]
+[stage1] epoch 71/100 | train 8.7310
+[stage1] epoch 71/100 | w [17.800, 8.197, 1.003]
+[diag][cnt][val] pred_count_mean 12.818092 gt_count_mean 8.000130 pred_dens_mean 0.000064 gt_dens_mean 0.000040
+[stage1] epoch 71 | val det 0.3659 seg 1.0347 miou 0.6316 cnt 3.7957 dens 8.583983e-01 mae 2.9373 total_mae 13.7146 | ap50 0.6536 | combo 1.625586
+[stage1] epoch 72/100 step 20 | loss 8.8799 | det 0.1541 seg 0.1569 cnt 4.7842 | w [17.650, 8.336, 1.013]
+[stage1] epoch 72/100 | train 8.2346
+[stage1] epoch 72/100 | w [17.701, 8.281, 1.019]
+[diag][cnt][val] pred_count_mean 12.551765 gt_count_mean 8.000130 pred_dens_mean 0.000063 gt_dens_mean 0.000040
+[stage1] epoch 72 | val det 0.3600 seg 1.1458 miou 0.6157 cnt 3.8463 dens 8.618223e-01 mae 2.9845 total_mae 14.3223 | ap50 0.6535 | combo 1.604273
+[stage1] epoch 73/100 step 20 | loss 8.6106 | det 0.1863 seg 0.1573 cnt 3.9542 | w [17.833, 8.164, 1.002]
+[stage1] epoch 73/100 | train 8.0200
+[stage1] epoch 73/100 | w [17.859, 8.139, 1.002]
+[diag][cnt][val] pred_count_mean 13.532597 gt_count_mean 8.000130 pred_dens_mean 0.000067 gt_dens_mean 0.000040
+[stage1] epoch 73 | val det 0.3341 seg 1.0257 miou 0.6255 cnt 3.8398 dens 8.596304e-01 mae 2.9802 total_mae 13.5616 | ap50 0.6536 | combo 1.614642
+[stage1] epoch 74/100 step 20 | loss 7.7884 | det 0.1227 seg 0.1926 cnt 3.9869 | w [17.481, 8.467, 1.052]
+[stage1] epoch 74/100 | train 8.0085
+[stage1] epoch 74/100 | w [17.916, 8.084, 1.000]
+[diag][cnt][val] pred_count_mean 11.679015 gt_count_mean 8.000130 pred_dens_mean 0.000058 gt_dens_mean 0.000040
+[stage1] epoch 74 | val det 0.3349 seg 1.0293 miou 0.6332 cnt 3.8606 dens 8.591993e-01 mae 3.0014 total_mae 13.3514 | ap50 0.6672 | combo 1.633591
+[ckpt] new best cached (stage1 epoch 74, combo 1.633591)
+[stage1] epoch 75/100 step 20 | loss 7.4940 | det 0.1327 seg 0.1714 cnt 3.7013 | w [17.743, 8.241, 1.016]
+[stage1] epoch 75/100 | train 7.4073
+[stage1] epoch 75/100 | w [17.645, 8.334, 1.021]
+[diag][cnt][val] pred_count_mean 8.385022 gt_count_mean 8.000130 pred_dens_mean 0.000042 gt_dens_mean 0.000040
+[stage1] epoch 75 | val det 0.3318 seg 1.0083 miou 0.6356 cnt 3.7332 dens 8.594167e-01 mae 2.8738 total_mae 12.8762 | ap50 0.6627 | combo 1.646239
+[ckpt] new best cached (stage1 epoch 75, combo 1.646239)
+[stage1] epoch 76/100 step 20 | loss 7.9436 | det 0.1471 seg 0.1713 cnt 3.8507 | w [17.765, 8.230, 1.005]
+[stage1] epoch 76/100 | train 7.5858
+[stage1] epoch 76/100 | w [17.744, 8.251, 1.005]
+[diag][cnt][val] pred_count_mean 12.691491 gt_count_mean 8.000130 pred_dens_mean 0.000063 gt_dens_mean 0.000040
+[stage1] epoch 76 | val det 0.3447 seg 1.0227 miou 0.6311 cnt 4.0345 dens 8.594643e-01 mae 3.1750 total_mae 13.5709 | ap50 0.6585 | combo 1.604473
+[stage1] epoch 77/100 step 20 | loss 7.8685 | det 0.1453 seg 0.1816 cnt 3.7495 | w [17.901, 8.097, 1.001]
+[stage1] epoch 77/100 | train 7.7308
+[stage1] epoch 77/100 | w [17.903, 8.096, 1.001]
+[diag][cnt][val] pred_count_mean 9.116706 gt_count_mean 8.000130 pred_dens_mean 0.000045 gt_dens_mean 0.000040
+[stage1] epoch 77 | val det 0.3406 seg 0.9850 miou 0.6331 cnt 3.9264 dens 8.651629e-01 mae 3.0612 total_mae 16.1275 | ap50 0.6586 | combo 1.618357
+[stage1] epoch 78/100 step 20 | loss 9.3626 | det 0.1431 seg 0.1383 cnt 5.6610 | w [17.729, 8.264, 1.007]
+[stage1] epoch 78/100 | train 8.4645
+[stage1] epoch 78/100 | w [17.799, 8.189, 1.012]
+[diag][cnt][val] pred_count_mean 12.613712 gt_count_mean 8.000130 pred_dens_mean 0.000063 gt_dens_mean 0.000040
+[stage1] epoch 78 | val det 0.3670 seg 0.9900 miou 0.6288 cnt 3.8695 dens 8.649550e-01 mae 3.0045 total_mae 14.4071 | ap50 0.6563 | combo 1.617918
+[stage1] epoch 79/100 step 20 | loss 10.4170 | det 0.1127 seg 0.1800 cnt 6.8851 | w [17.696, 8.273, 1.031]
+[stage1] epoch 79/100 | train 9.4211
+[stage1] epoch 79/100 | w [17.917, 8.082, 1.001]
+[diag][cnt][val] pred_count_mean 9.685805 gt_count_mean 8.000130 pred_dens_mean 0.000048 gt_dens_mean 0.000040
+[stage1] epoch 79 | val det 0.3589 seg 1.0274 miou 0.6287 cnt 3.7879 dens 8.574652e-01 mae 2.9305 total_mae 14.0517 | ap50 0.6639 | combo 1.633790
+[stage1] epoch 80/100 step 20 | loss 7.5401 | det 0.1215 seg 0.1660 cnt 3.9818 | w [17.863, 8.134, 1.003]
+[stage1] epoch 80/100 | train 7.7920
+[stage1] epoch 80/100 | w [17.901, 8.096, 1.003]
+[diag][cnt][val] pred_count_mean 11.596500 gt_count_mean 8.000130 pred_dens_mean 0.000058 gt_dens_mean 0.000040
+[stage1] epoch 80 | val det 0.3800 seg 1.0590 miou 0.6344 cnt 3.7668 dens 8.557761e-01 mae 2.9110 total_mae 13.3149 | ap50 0.6641 | combo 1.642001
+[stage1] epoch 81/100 step 20 | loss 8.0388 | det 0.1469 seg 0.1745 cnt 3.9810 | w [17.955, 8.045, 1.000]
+[stage1] epoch 81/100 | train 7.5194
+[stage1] epoch 81/100 | w [17.855, 8.137, 1.008]
+[diag][cnt][val] pred_count_mean 9.457773 gt_count_mean 8.000130 pred_dens_mean 0.000047 gt_dens_mean 0.000040
+[stage1] epoch 81 | val det 0.3771 seg 1.0755 miou 0.6285 cnt 3.9403 dens 8.626343e-01 mae 3.0776 total_mae 14.5350 | ap50 0.6577 | combo 1.611133
+[stage1] epoch 82/100 step 20 | loss 7.5012 | det 0.1428 seg 0.1510 cnt 3.6863 | w [17.947, 8.053, 1.000]
+[stage1] epoch 82/100 | train 7.3625
+[stage1] epoch 82/100 | w [17.925, 8.074, 1.001]
+[diag][cnt][val] pred_count_mean 9.344382 gt_count_mean 8.000130 pred_dens_mean 0.000047 gt_dens_mean 0.000040
+[stage1] epoch 82 | val det 0.3533 seg 1.0162 miou 0.6371 cnt 3.9304 dens 8.620916e-01 mae 3.0684 total_mae 13.6262 | ap50 0.6606 | combo 1.623649
+[stage1] epoch 83/100 step 20 | loss 7.2941 | det 0.1209 seg 0.1626 cnt 3.7891 | w [17.853, 8.144, 1.002]
+[stage1] epoch 83/100 | train 7.8143
+[stage1] epoch 83/100 | w [17.944, 8.056, 1.000]
+[diag][cnt][val] pred_count_mean 14.350034 gt_count_mean 8.000130 pred_dens_mean 0.000071 gt_dens_mean 0.000040
+[stage1] epoch 83 | val det 0.3671 seg 1.0750 miou 0.6347 cnt 4.1720 dens 8.574870e-01 mae 3.3146 total_mae 16.2613 | ap50 0.6522 | combo 1.588592
+[stage1] epoch 84/100 step 20 | loss 7.9672 | det 0.1374 seg 0.1658 cnt 4.1527 | w [17.850, 8.148, 1.002]
+[stage1] epoch 84/100 | train 6.9354
+[stage1] epoch 84/100 | w [17.845, 8.153, 1.002]
+[diag][cnt][val] pred_count_mean 9.460662 gt_count_mean 8.000130 pred_dens_mean 0.000047 gt_dens_mean 0.000040
+[stage1] epoch 84 | val det 0.3672 seg 1.0519 miou 0.6344 cnt 3.8244 dens 8.582453e-01 mae 2.9661 total_mae 13.9129 | ap50 0.6604 | combo 1.631867
+[stage1] epoch 85/100 step 20 | loss 5.6317 | det 0.0859 seg 0.1550 cnt 2.8182 | w [17.790, 8.195, 1.015]
+[stage1] epoch 85/100 | train 5.9758
+[stage1] epoch 85/100 | w [17.911, 8.088, 1.002]
+[diag][cnt][val] pred_count_mean 13.250651 gt_count_mean 8.000130 pred_dens_mean 0.000066 gt_dens_mean 0.000040
+[stage1] epoch 85 | val det 0.3569 seg 1.0703 miou 0.6339 cnt 3.8878 dens 8.590637e-01 mae 3.0287 total_mae 13.9201 | ap50 0.6572 | combo 1.621283
+[stage1] epoch 86/100 step 20 | loss 6.4769 | det 0.0934 seg 0.1417 cnt 3.6355 | w [17.940, 8.059, 1.001]
+[stage1] epoch 86/100 | train 6.6995
+[stage1] epoch 86/100 | w [17.750, 8.233, 1.017]
+[diag][cnt][val] pred_count_mean 9.468919 gt_count_mean 8.000130 pred_dens_mean 0.000047 gt_dens_mean 0.000040
+[stage1] epoch 86 | val det 0.3422 seg 1.0649 miou 0.6310 cnt 3.7464 dens 8.531002e-01 mae 2.8933 total_mae 14.0012 | ap50 0.6629 | combo 1.639566
+[stage1] epoch 87/100 step 20 | loss 6.2798 | det 0.1166 seg 0.1505 cnt 2.9644 | w [17.830, 8.166, 1.004]
+[stage1] epoch 87/100 | train 6.4066
+[stage1] epoch 87/100 | w [17.928, 8.070, 1.002]
+[diag][cnt][val] pred_count_mean 9.790133 gt_count_mean 8.000130 pred_dens_mean 0.000049 gt_dens_mean 0.000040
+[stage1] epoch 87 | val det 0.3922 seg 1.0703 miou 0.6339 cnt 4.0086 dens 8.594213e-01 mae 3.1492 total_mae 14.2697 | ap50 0.6631 | combo 1.614552
+[stage1] epoch 88/100 step 20 | loss 6.0057 | det 0.1142 seg 0.1372 cnt 2.8309 | w [17.836, 8.156, 1.008]
+[stage1] epoch 88/100 | train 8.1311
+[stage1] epoch 88/100 | w [17.971, 8.029, 1.000]
+[diag][cnt][val] pred_count_mean 8.770064 gt_count_mean 8.000130 pred_dens_mean 0.000044 gt_dens_mean 0.000040
+[stage1] epoch 88 | val det 0.3615 seg 1.0332 miou 0.6387 cnt 3.8938 dens 8.601399e-01 mae 3.0337 total_mae 15.2340 | ap50 0.6619 | combo 1.630193
+[stage1] epoch 89/100 step 20 | loss 5.9774 | det 0.0890 seg 0.1386 cnt 3.2528 | w [17.971, 8.028, 1.000]
+[stage1] epoch 89/100 | train 6.6832
+[stage1] epoch 89/100 | w [17.910, 8.089, 1.001]
+[diag][cnt][val] pred_count_mean 10.447575 gt_count_mean 8.000130 pred_dens_mean 0.000052 gt_dens_mean 0.000040
+[stage1] epoch 89 | val det 0.3997 seg 1.0857 miou 0.6339 cnt 3.8670 dens 8.556654e-01 mae 3.0114 total_mae 12.7603 | ap50 0.6650 | combo 1.630929
+[stage1] epoch 90/100 step 20 | loss 6.8440 | det 0.1257 seg 0.1368 cnt 3.4783 | w [17.903, 8.093, 1.003]
+[stage1] epoch 90/100 | train 6.4402
+[stage1] epoch 90/100 | w [17.891, 8.107, 1.002]
+[diag][cnt][val] pred_count_mean 12.238947 gt_count_mean 8.000130 pred_dens_mean 0.000061 gt_dens_mean 0.000040
+[stage1] epoch 90 | val det 0.3802 seg 1.0944 miou 0.6370 cnt 3.8437 dens 8.561117e-01 mae 2.9876 total_mae 13.9853 | ap50 0.6586 | combo 1.630348
+[stage1] epoch 91/100 step 20 | loss 6.8856 | det 0.0869 seg 0.1467 cnt 4.1312 | w [17.935, 8.064, 1.000]
+[stage1] epoch 91/100 | train 6.6174
+[stage1] epoch 91/100 | w [17.893, 8.105, 1.002]
+[diag][cnt][val] pred_count_mean 9.638252 gt_count_mean 8.000130 pred_dens_mean 0.000048 gt_dens_mean 0.000040
+[stage1] epoch 91 | val det 0.3528 seg 1.1270 miou 0.6367 cnt 3.7856 dens 8.484043e-01 mae 2.9372 total_mae 13.2068 | ap50 0.6651 | combo 1.642248
+[stage1] epoch 92/100 step 20 | loss 7.0217 | det 0.1210 seg 0.1282 cnt 3.8025 | w [17.957, 8.043, 1.000]
+[stage1] epoch 92/100 | train 7.2930
+[stage1] epoch 92/100 | w [17.938, 8.062, 1.000]
+[diag][cnt][val] pred_count_mean 7.359101 gt_count_mean 8.000130 pred_dens_mean 0.000037 gt_dens_mean 0.000040
+[stage1] epoch 92 | val det 0.3950 seg 1.0855 miou 0.6353 cnt 3.8364 dens 8.572021e-01 mae 2.9792 total_mae 12.8185 | ap50 0.6621 | combo 1.633094
+[stage1] epoch 93/100 step 20 | loss 6.8308 | det 0.1053 seg 0.1289 cnt 3.8810 | w [17.822, 8.166, 1.012]
+[stage1] epoch 93/100 | train 6.9166
+[stage1] epoch 93/100 | w [17.982, 8.018, 1.000]
+[diag][cnt][val] pred_count_mean 8.992082 gt_count_mean 8.000130 pred_dens_mean 0.000045 gt_dens_mean 0.000040
+[stage1] epoch 93 | val det 0.3831 seg 1.1340 miou 0.6295 cnt 3.8018 dens 8.529033e-01 mae 2.9489 total_mae 13.5688 | ap50 0.6694 | combo 1.638019
+[stage1] epoch 94/100 step 20 | loss 6.5044 | det 0.1070 seg 0.1488 cnt 3.3789 | w [17.852, 8.140, 1.008]
+[stage1] epoch 94/100 | train 6.7703
+[stage1] epoch 94/100 | w [17.975, 8.025, 1.000]
+[diag][cnt][val] pred_count_mean 9.845201 gt_count_mean 8.000130 pred_dens_mean 0.000049 gt_dens_mean 0.000040
+[stage1] epoch 94 | val det 0.3790 seg 1.1150 miou 0.6135 cnt 3.6394 dens 8.474696e-01 mae 2.7919 total_mae 13.3673 | ap50 0.6566 | combo 1.628284
+[stage1] epoch 95/100 step 20 | loss 6.6995 | det 0.1132 seg 0.2164 cnt 2.9188 | w [17.987, 8.013, 1.000]
+[stage1] epoch 95/100 | train 6.9316
+[stage1] epoch 95/100 | w [17.978, 8.022, 1.000]
+[diag][cnt][val] pred_count_mean 10.795227 gt_count_mean 8.000130 pred_dens_mean 0.000054 gt_dens_mean 0.000040
+[stage1] epoch 95 | val det 0.3702 seg 1.1817 miou 0.6063 cnt 3.7793 dens 8.529836e-01 mae 2.9263 total_mae 13.1526 | ap50 0.6557 | combo 1.603796
+[stage1] epoch 96/100 step 20 | loss 6.7572 | det 0.1057 seg 0.2143 cnt 3.1287 | w [17.974, 8.026, 1.001]
+[stage1] epoch 96/100 | train 7.0794
+[stage1] epoch 96/100 | w [17.971, 8.029, 1.001]
+[diag][cnt][val] pred_count_mean 9.398795 gt_count_mean 8.000130 pred_dens_mean 0.000047 gt_dens_mean 0.000040
+[stage1] epoch 96 | val det 0.3559 seg 1.0568 miou 0.6115 cnt 3.7221 dens 8.538589e-01 mae 2.8682 total_mae 13.2417 | ap50 0.6666 | combo 1.626738
+[stage1] epoch 97/100 step 20 | loss 7.6762 | det 0.1509 seg 0.2146 cnt 3.2306 | w [17.960, 8.039, 1.001]
+[stage1] epoch 97/100 | train 8.0004
+[stage1] epoch 97/100 | w [17.953, 8.045, 1.002]
+[diag][cnt][val] pred_count_mean 10.296322 gt_count_mean 8.000130 pred_dens_mean 0.000051 gt_dens_mean 0.000040
+[stage1] epoch 97 | val det 0.3089 seg 1.0046 miou 0.6229 cnt 3.7599 dens 8.551220e-01 mae 2.9048 total_mae 12.9408 | ap50 0.6650 | combo 1.632163
+[stage1] epoch 98/100 step 20 | loss 6.9104 | det 0.1248 seg 0.1751 cnt 3.2475 | w [17.972, 8.027, 1.001]
+[stage1] epoch 98/100 | train 7.1466
+[stage1] epoch 98/100 | w [17.978, 8.021, 1.000]
+[diag][cnt][val] pred_count_mean 10.221786 gt_count_mean 8.000130 pred_dens_mean 0.000051 gt_dens_mean 0.000040
+[stage1] epoch 98 | val det 0.3713 seg 1.0033 miou 0.6318 cnt 3.8089 dens 8.545260e-01 mae 2.9543 total_mae 12.8641 | ap50 0.6575 | combo 1.627843
+[stage1] epoch 99/100 step 20 | loss 6.3647 | det 0.1465 seg 0.1535 cnt 2.4882 | w [17.890, 8.098, 1.012]
+[stage1] epoch 99/100 | train 7.1781
+[stage1] epoch 99/100 | w [17.916, 8.077, 1.006]
+[diag][cnt][val] pred_count_mean 11.978827 gt_count_mean 8.000130 pred_dens_mean 0.000060 gt_dens_mean 0.000040
+[stage1] epoch 99 | val det 0.3732 seg 1.0357 miou 0.6357 cnt 3.7713 dens 8.499833e-01 mae 2.9213 total_mae 13.2075 | ap50 0.6656 | combo 1.643629
+[stage1] epoch 100/100 step 20 | loss 7.5823 | det 0.1522 seg 0.1468 cnt 3.6578 | w [17.983, 8.016, 1.000]
+[stage1] epoch 100/100 | train 7.5872
+[stage1] epoch 100/100 | w [17.933, 8.065, 1.002]
+[diag][cnt][val] pred_count_mean 9.021009 gt_count_mean 8.000130 pred_dens_mean 0.000045 gt_dens_mean 0.000040
+[stage1] epoch 100 | val det 0.3600 seg 1.0195 miou 0.6397 cnt 3.6889 dens 8.522822e-01 mae 2.8366 total_mae 14.0114 | ap50 0.6652 | combo 1.657398
+[ckpt] new best cached (stage1 epoch 100, combo 1.657398)
+[ckpt] saved stage1 phi -> runs/ours_10per_2_15_metalearnw/stage1_phi_last.pt
+[stage2] epoch 1/20 step 20 | loss 6.5606 | det 0.1298 seg 0.1517 cnt 2.9907 | w [17.915, 8.083, 1.002] | cnt_gnorm 4.183878e+01 cnt_gparams 6
+[stage2] epoch 1/20 | train 6.0873
+[stage2] epoch 1/20 | w [17.929, 8.069, 1.002]
+[diag][cnt][stage2] epoch 1/20 | param_delta_l2 1.056295e+01
+[diag][cnt][val] pred_count_mean 7.351015 gt_count_mean 8.000130 pred_dens_mean 0.000037 gt_dens_mean 0.000040
+[stage2] epoch 1 | val det 0.3726 seg 1.0621 miou 0.6302 cnt 3.7394 dens 8.537925e-01 mae 2.8857 total_mae 13.7104 | ap50 0.6493 | combo 1.626006
+[stage2] epoch 2/20 step 20 | loss 6.4540 | det 0.1024 seg 0.1525 cnt 3.3835 | w [17.981, 8.019, 1.000] | cnt_gnorm 3.893100e+01 cnt_gparams 6
+[stage2] epoch 2/20 | train 7.6025
+[stage2] epoch 2/20 | w [17.978, 8.021, 1.001]
+[diag][cnt][stage2] epoch 2/20 | param_delta_l2 8.257703e+00
+[diag][cnt][val] pred_count_mean 13.296309 gt_count_mean 8.000130 pred_dens_mean 0.000066 gt_dens_mean 0.000040
+[stage2] epoch 2 | val det 0.3860 seg 1.0558 miou 0.6215 cnt 3.8053 dens 8.499105e-01 mae 2.9554 total_mae 13.3708 | ap50 0.6624 | combo 1.622214
+[stage2] epoch 3/20 step 20 | loss 6.9380 | det 0.1040 seg 0.1738 cnt 3.6650 | w [17.979, 8.021, 1.000] | cnt_gnorm 1.139379e+01 cnt_gparams 6
+[stage2] epoch 3/20 | train 6.3485
+[stage2] epoch 3/20 | w [17.915, 8.079, 1.006]
+[diag][cnt][stage2] epoch 3/20 | param_delta_l2 8.823385e+00
+[diag][cnt][val] pred_count_mean 10.344664 gt_count_mean 8.000130 pred_dens_mean 0.000052 gt_dens_mean 0.000040
+[stage2] epoch 3 | val det 0.3692 seg 1.0628 miou 0.6206 cnt 3.8700 dens 8.536761e-01 mae 3.0163 total_mae 13.5511 | ap50 0.6629 | combo 1.615018
+[stage2] epoch 4/20 step 20 | loss 6.3633 | det 0.1174 seg 0.1449 cnt 3.0781 | w [17.962, 8.038, 1.000] | cnt_gnorm 4.181713e+01 cnt_gparams 6
+[stage2] epoch 4/20 | train 6.8136
+[stage2] epoch 4/20 | w [17.982, 8.017, 1.001]
+[diag][cnt][stage2] epoch 4/20 | param_delta_l2 8.686283e+00
+[diag][cnt][val] pred_count_mean 8.276049 gt_count_mean 8.000130 pred_dens_mean 0.000041 gt_dens_mean 0.000040
+[stage2] epoch 4 | val det 0.3666 seg 1.0587 miou 0.6262 cnt 3.8997 dens 8.560405e-01 mae 3.0437 total_mae 13.5903 | ap50 0.6695 | combo 1.624320
+[stage2] epoch 5/20 step 20 | loss 9.1782 | det 0.1212 seg 0.1301 cnt 5.9521 | w [17.992, 8.008, 1.000] | cnt_gnorm 2.526968e+01 cnt_gparams 6
+[stage2] epoch 5/20 | train 8.5541
+[stage2] epoch 5/20 | w [17.948, 8.051, 1.001]
+[diag][cnt][stage2] epoch 5/20 | param_delta_l2 7.697220e+00
+[diag][cnt][val] pred_count_mean 9.877433 gt_count_mean 8.000130 pred_dens_mean 0.000049 gt_dens_mean 0.000040
+[stage2] epoch 5 | val det 0.3889 seg 1.0667 miou 0.6317 cnt 3.7707 dens 8.492891e-01 mae 2.9214 total_mae 13.2073 | ap50 0.6668 | combo 1.640759
+[stage2] epoch 6/20 step 20 | loss 6.6796 | det 0.1073 seg 0.1633 cnt 3.4345 | w [17.928, 8.066, 1.006] | cnt_gnorm 1.819090e+01 cnt_gparams 6
+[stage2] epoch 6/20 | train 6.5736
+[stage2] epoch 6/20 | w [17.927, 8.070, 1.003]
+[diag][cnt][stage2] epoch 6/20 | param_delta_l2 8.058650e+00
+[diag][cnt][val] pred_count_mean 8.836256 gt_count_mean 8.000130 pred_dens_mean 0.000044 gt_dens_mean 0.000040
+[stage2] epoch 6 | val det 0.4407 seg 1.0623 miou 0.6329 cnt 3.7566 dens 8.516211e-01 mae 2.9050 total_mae 14.0522 | ap50 0.6522 | combo 1.629317
+[stage2] epoch 7/20 step 20 | loss 7.1830 | det 0.0985 seg 0.1345 cnt 4.3207 | w [17.899, 8.095, 1.006] | cnt_gnorm 3.398987e+01 cnt_gparams 6
+[stage2] epoch 7/20 | train 7.2304
+[stage2] epoch 7/20 | w [17.964, 8.034, 1.001]
+[diag][cnt][stage2] epoch 7/20 | param_delta_l2 8.743203e+00
+[diag][cnt][val] pred_count_mean 10.925630 gt_count_mean 8.000130 pred_dens_mean 0.000054 gt_dens_mean 0.000040
+[stage2] epoch 7 | val det 0.4107 seg 1.0634 miou 0.6311 cnt 3.8820 dens 8.561472e-01 mae 3.0259 total_mae 15.2009 | ap50 0.6658 | combo 1.627357
+[stage2] epoch 8/20 step 20 | loss 8.2026 | det 0.1607 seg 0.1433 cnt 4.1466 | w [17.935, 8.060, 1.005] | cnt_gnorm 2.402695e+01 cnt_gparams 6
+[stage2] epoch 8/20 | train 7.6414
+[stage2] epoch 8/20 | w [17.956, 8.040, 1.004]
+[diag][cnt][stage2] epoch 8/20 | param_delta_l2 8.890531e+00
+[diag][cnt][val] pred_count_mean 11.324807 gt_count_mean 8.000130 pred_dens_mean 0.000056 gt_dens_mean 0.000040
+[stage2] epoch 8 | val det 0.4663 seg 1.1114 miou 0.6283 cnt 3.8408 dens 8.493177e-01 mae 2.9915 total_mae 13.7935 | ap50 0.6606 | combo 1.623176
+[stage2] epoch 9/20 step 20 | loss 6.3393 | det 0.1155 seg 0.1319 cnt 3.1985 | w [17.951, 8.046, 1.003] | cnt_gnorm 2.200110e+01 cnt_gparams 6
+[stage2] epoch 9/20 | train 6.2788
+[stage2] epoch 9/20 | w [17.966, 8.033, 1.001]
+[diag][cnt][stage2] epoch 9/20 | param_delta_l2 7.613011e+00
+[diag][cnt][val] pred_count_mean 9.304418 gt_count_mean 8.000130 pred_dens_mean 0.000046 gt_dens_mean 0.000040
+[stage2] epoch 9 | val det 0.4328 seg 1.0898 miou 0.6126 cnt 3.7942 dens 8.513868e-01 mae 2.9428 total_mae 15.6890 | ap50 0.6672 | combo 1.619612
+[stage2] epoch 10/20 step 20 | loss 5.1980 | det 0.0758 seg 0.1161 cnt 2.8936 | w [17.988, 8.012, 1.000] | cnt_gnorm 3.413345e+01 cnt_gparams 6
+[stage2] epoch 10/20 | train 6.1459
+[stage2] epoch 10/20 | w [17.916, 8.081, 1.003]
+[diag][cnt][stage2] epoch 10/20 | param_delta_l2 6.773376e+00
+[diag][cnt][val] pred_count_mean 10.518728 gt_count_mean 8.000130 pred_dens_mean 0.000052 gt_dens_mean 0.000040
+[stage2] epoch 10 | val det 0.4166 seg 1.0779 miou 0.6220 cnt 3.7090 dens 8.469234e-01 mae 2.8620 total_mae 12.6735 | ap50 0.6683 | combo 1.639687
+[stage2] epoch 11/20 step 20 | loss 6.5252 | det 0.1309 seg 0.1460 cnt 2.9883 | w [17.935, 8.064, 1.002] | cnt_gnorm 3.995749e+01 cnt_gparams 6
+[stage2] epoch 11/20 | train 6.2774
+[stage2] epoch 11/20 | w [17.965, 8.035, 1.000]
+[diag][cnt][stage2] epoch 11/20 | param_delta_l2 7.297541e+00
+[diag][cnt][val] pred_count_mean 10.293492 gt_count_mean 8.000130 pred_dens_mean 0.000051 gt_dens_mean 0.000040
+[stage2] epoch 11 | val det 0.4773 seg 1.1072 miou 0.6202 cnt 3.7460 dens 8.482023e-01 mae 2.8978 total_mae 12.7968 | ap50 0.6654 | combo 1.630723
+[stage2] epoch 12/20 step 20 | loss 6.6967 | det 0.1432 seg 0.1247 cnt 3.1079 | w [17.888, 8.103, 1.008] | cnt_gnorm 1.670168e+01 cnt_gparams 6
+[stage2] epoch 12/20 | train 6.2248
+[stage2] epoch 12/20 | w [17.950, 8.049, 1.001]
+[diag][cnt][stage2] epoch 12/20 | param_delta_l2 7.132849e+00
+[diag][cnt][val] pred_count_mean 13.887424 gt_count_mean 8.000130 pred_dens_mean 0.000069 gt_dens_mean 0.000040
+[stage2] epoch 12 | val det 0.4537 seg 1.1171 miou 0.6205 cnt 3.9506 dens 8.538800e-01 mae 3.0967 total_mae 14.8610 | ap50 0.6621 | combo 1.605586
+[stage2] epoch 13/20 step 20 | loss 5.7658 | det 0.1060 seg 0.1486 cnt 2.6601 | w [17.920, 8.075, 1.004] | cnt_gnorm 3.278103e+01 cnt_gparams 6
+[stage2] epoch 13/20 | train 5.7729
+[stage2] epoch 13/20 | w [17.938, 8.060, 1.002]
+[diag][cnt][stage2] epoch 13/20 | param_delta_l2 7.188900e+00
+[diag][cnt][val] pred_count_mean 10.600664 gt_count_mean 8.000130 pred_dens_mean 0.000053 gt_dens_mean 0.000040
+[stage2] epoch 13 | val det 0.3663 seg 1.1162 miou 0.6289 cnt 3.8299 dens 8.480538e-01 mae 2.9818 total_mae 13.8811 | ap50 0.6696 | combo 1.633955
+[stage2] epoch 14/20 step 20 | loss 6.0438 | det 0.0989 seg 0.1185 cnt 3.3034 | w [17.981, 8.018, 1.001] | cnt_gnorm 4.189930e+01 cnt_gparams 6
+[stage2] epoch 14/20 | train 6.0502
+[stage2] epoch 14/20 | w [17.904, 8.090, 1.007]
+[diag][cnt][stage2] epoch 14/20 | param_delta_l2 7.598072e+00
+[diag][cnt][val] pred_count_mean 12.962877 gt_count_mean 8.000130 pred_dens_mean 0.000065 gt_dens_mean 0.000040
+[stage2] epoch 14 | val det 0.4041 seg 1.1404 miou 0.6318 cnt 3.8122 dens 8.525487e-01 mae 2.9597 total_mae 13.5102 | ap50 0.6630 | combo 1.632644
+[stage2] epoch 15/20 step 20 | loss 5.5359 | det 0.0776 seg 0.1319 cnt 3.0658 | w [17.887, 8.095, 1.017] | cnt_gnorm 1.219666e+01 cnt_gparams 6
+[stage2] epoch 15/20 | train 6.1360
+[stage2] epoch 15/20 | w [17.905, 8.090, 1.005]
+[diag][cnt][stage2] epoch 15/20 | param_delta_l2 7.949568e+00
+[diag][cnt][val] pred_count_mean 12.144434 gt_count_mean 8.000130 pred_dens_mean 0.000061 gt_dens_mean 0.000040
+[stage2] epoch 15 | val det 0.4225 seg 1.1514 miou 0.6308 cnt 3.8184 dens 8.524881e-01 mae 2.9659 total_mae 14.1765 | ap50 0.6695 | combo 1.637437
+[stage2] epoch 16/20 step 20 | loss 6.1369 | det 0.0970 seg 0.2213 cnt 2.6028 | w [17.936, 8.063, 1.002] | cnt_gnorm 2.752097e+01 cnt_gparams 6
+[stage2] epoch 16/20 | train 6.1620
+[stage2] epoch 16/20 | w [17.981, 8.018, 1.001]
+[diag][cnt][stage2] epoch 16/20 | param_delta_l2 7.763493e+00
+[diag][cnt][val] pred_count_mean 7.825228 gt_count_mean 8.000130 pred_dens_mean 0.000039 gt_dens_mean 0.000040
+[stage2] epoch 16 | val det 0.4050 seg 1.1071 miou 0.6211 cnt 3.6663 dens 8.483957e-01 mae 2.8179 total_mae 12.6775 | ap50 0.6647 | combo 1.640666
+[stage2] epoch 17/20 step 20 | loss 7.3346 | det 0.1442 seg 0.1578 cnt 3.4704 | w [17.938, 8.060, 1.002] | cnt_gnorm 2.764224e+01 cnt_gparams 6
+[stage2] epoch 17/20 | train 6.4380
+[stage2] epoch 17/20 | w [17.953, 8.045, 1.002]
+[diag][cnt][stage2] epoch 17/20 | param_delta_l2 7.282974e+00
+[diag][cnt][val] pred_count_mean 9.603686 gt_count_mean 8.000130 pred_dens_mean 0.000048 gt_dens_mean 0.000040
+[stage2] epoch 17 | val det 0.4141 seg 1.1157 miou 0.6282 cnt 3.6570 dens 8.490401e-01 mae 2.8080 total_mae 13.4529 | ap50 0.6648 | combo 1.649090
+[stage2] epoch 18/20 step 20 | loss 9.0075 | det 0.1469 seg 0.1605 cnt 5.0709 | w [17.968, 8.031, 1.001] | cnt_gnorm 5.181868e+01 cnt_gparams 6
+[stage2] epoch 18/20 | train 7.5085
+[stage2] epoch 18/20 | w [17.974, 8.025, 1.001]
+[diag][cnt][stage2] epoch 18/20 | param_delta_l2 8.153426e+00
+[diag][cnt][val] pred_count_mean 14.193335 gt_count_mean 8.000130 pred_dens_mean 0.000071 gt_dens_mean 0.000040
+[stage2] epoch 18 | val det 0.4399 seg 1.1045 miou 0.6355 cnt 3.9989 dens 8.498648e-01 mae 3.1491 total_mae 14.6437 | ap50 0.6650 | combo 1.618003
+[stage2] epoch 19/20 step 20 | loss 7.2724 | det 0.1166 seg 0.1187 cnt 4.2178 | w [17.991, 8.009, 1.000] | cnt_gnorm 1.517092e+01 cnt_gparams 6
+[stage2] epoch 19/20 | train 6.6827
+[stage2] epoch 19/20 | w [17.976, 8.023, 1.001]
+[diag][cnt][stage2] epoch 19/20 | param_delta_l2 7.247514e+00
+[diag][cnt][val] pred_count_mean 9.034369 gt_count_mean 8.000130 pred_dens_mean 0.000045 gt_dens_mean 0.000040
+[stage2] epoch 19 | val det 0.4687 seg 1.0930 miou 0.6444 cnt 3.7195 dens 8.509478e-01 mae 2.8686 total_mae 14.0584 | ap50 0.6666 | combo 1.659645
+[ckpt] new best cached (stage2 epoch 19, combo 1.659645)
+[stage2] epoch 20/20 step 20 | loss 5.9874 | det 0.0954 seg 0.1276 cnt 3.2406 | w [17.961, 8.038, 1.001] | cnt_gnorm 6.143000e+01 cnt_gparams 6
+[stage2] epoch 20/20 | train 6.0584
+[stage2] epoch 20/20 | w [17.975, 8.025, 1.001]
+[diag][cnt][stage2] epoch 20/20 | param_delta_l2 7.241640e+00
+[diag][cnt][val] pred_count_mean 12.279350 gt_count_mean 8.000130 pred_dens_mean 0.000061 gt_dens_mean 0.000040
+[stage2] epoch 20 | val det 0.4514 seg 1.1102 miou 0.6415 cnt 3.8126 dens 8.524197e-01 mae 2.9601 total_mae 13.5813 | ap50 0.6629 | combo 1.642291
+[ckpt] saved best -> runs/ours_10per_2_15_metalearnw/best_combo.pt (combo 1.659645)

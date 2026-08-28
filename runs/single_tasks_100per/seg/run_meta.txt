@@ -1,0 +1,3 @@
+[time] 2026-04-20T17:48:13+08:00
+[pwd]  /data/xiangyuyue/ULLM-zf/fsl-20260209
+[script] /data/xiangyuyue/ULLM-zf/fsl-20260209/lora_multitask/train_100per.sh

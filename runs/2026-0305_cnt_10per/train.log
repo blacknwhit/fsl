@@ -1,0 +1,83 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/lora_multitask/train.py", line 970, in <module>
+    main()
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/lora_multitask/train.py", line 565, in main
+    cnt_train_ds, cnt_val_ds, cnt_train_loader, cnt_val_loader = build_cnt_loaders(
+                                                                 ^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/lora_multitask/datasets.py", line 186, in build_cnt_loaders
+    train_ds = DSACADensityH5Dataset(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/counting/dataset.py", line 70, in __init__
+    raise FileNotFoundError(f"No image/h5 pairs found in {self.root}")
+FileNotFoundError: No image/h5 pairs found in /nas/liyangguang103/newdataset/CD-Count/DSACA/train_data_class8_20per
+[lora] enabled: replaced_linear=48, trainable_params=1966080
+[params] trainable_total=35643752
+epoch 1/100 step 20 | loss 1029526.4375 | det 0.0000 seg 0.0000 cnt 1275218.0000
+epoch 1/100 step 40 | loss 788255.3051 | det 0.0000 seg 0.0000 cnt 229553.3281
+epoch 1/100 step 60 | loss 566438.4005 | det 0.0000 seg 0.0000 cnt 57709.6016
+epoch 1/100 step 80 | loss 432809.2599 | det 0.0000 seg 0.0000 cnt 16923.8672
+epoch 1/100 step 100 | loss 348225.5405 | det 0.0000 seg 0.0000 cnt 5263.6938
+epoch 1/100 step 120 | loss 290749.0465 | det 0.0000 seg 0.0000 cnt 1861.4485
+epoch 1/100 step 140 | loss 249383.8748 | det 0.0000 seg 0.0000 cnt 690.5588
+epoch 1/100 step 160 | loss 218264.9605 | det 0.0000 seg 0.0000 cnt 247.2724
+epoch 1/100 step 180 | loss 194032.3933 | det 0.0000 seg 0.0000 cnt 82.9011
+epoch 1/100 step 200 | loss 174635.1514 | det 0.0000 seg 0.0000 cnt 38.9697
+[lora] enabled: replaced_linear=48, trainable_params=1966080
+[params] trainable_total=35643752
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/lora_multitask/train.py", line 970, in <module>
+    main()
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/lora_multitask/train.py", line 825, in main
+    pred_dens, pred_counts = model.forward_cnt(
+                             ^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/lora_multitask/models.py", line 232, in forward_cnt
+    tokens = self.shared.forward_features(x, trainable_override=self.cnt_train_backbone)["x_norm_patchtokens"]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/lora_multitask/models.py", line 78, in forward_features
+    return self.backbone.forward_features(x)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/object_detection/dinov3/models/vision_transformer.py", line 265, in forward_features
+    return self.forward_features_list([x], [masks])[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/object_detection/dinov3/models/vision_transformer.py", line 234, in forward_features_list
+    x = blk(x, rope_sincos)
+        ^^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/object_detection/dinov3/layers/block.py", line 210, in forward
+    return self._forward_list(x_or_x_list, rope_list=rope_or_rope_list)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/object_detection/dinov3/layers/block.py", line 194, in _forward_list
+    x_ffn = x_attn + self.ls2(self.mlp(self.norm2(x_attn)))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/object_detection/dinov3/layers/ffn_layers.py", line 44, in forward
+    x = self.fc1(x)
+        ^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/lora_multitask/lora.py", line 61, in forward
+    delta = F.linear(F.linear(x_d, self.lora_A), self.lora_B)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 790.00 MiB. GPU 0 has a total capacity of 79.18 GiB of which 342.31 MiB is free. Including non-PyTorch memory, this process has 78.83 GiB memory in use. Of the allocated memory 71.34 GiB is allocated by PyTorch, and 6.82 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[lora] enabled: replaced_linear=48, trainable_params=1966080
+[params] trainable_total=35643752
+[lora] enabled: replaced_linear=48, trainable_params=1966080
+[params] trainable_total=35643752

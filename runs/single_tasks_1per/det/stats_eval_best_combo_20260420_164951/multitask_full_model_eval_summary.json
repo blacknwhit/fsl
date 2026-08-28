@@ -1,0 +1,44 @@
+{
+  "checkpoint": "/data/xiangyuyue/ULLM-zf/fsl-20260209/runs/single_tasks_1per/det/best_combo.pt",
+  "stats_dir": "/data/xiangyuyue/ULLM-zf/fsl-20260209/runs/single_tasks_1per/det/stats_eval_best_combo_20260420_164951",
+  "tasks": [
+    "det"
+  ],
+  "meta": {
+    "checkpoint": "/data/xiangyuyue/ULLM-zf/fsl-20260209/runs/single_tasks_1per/det/best_combo.pt",
+    "model_name": "dinov3_vitl16",
+    "image_size": 448,
+    "device": "cuda:0",
+    "det_fg_classes": 20,
+    "det_out_channels": 256,
+    "seg_num_classes": 11,
+    "cnt_num_classes": 8,
+    "use_lora": true,
+    "lora_cfg": {
+      "use_lora": true,
+      "lora_rank": 8,
+      "lora_alpha": 16.0,
+      "lora_dropout": 0.05
+    }
+  },
+  "results": {
+    "det": {
+      "AP@[.50:.95]": 0.09557519055335825,
+      "AP@0.50": 0.2504643446386043,
+      "AP@0.75": 0.0592284342455224,
+      "AP_small": 0.00038605873521984583,
+      "AP_medium": 0.041219110358502314,
+      "AP_large": 0.18541840832110157,
+      "AR@1": 0.08933725720885398,
+      "AR@10": 0.14924238731917172,
+      "AR@100": 0.15503866722976703,
+      "AR_small": 0.003744491902002544,
+      "AR_medium": 0.07852300198958428,
+      "AR_large": 0.2870907704801952,
+      "task": "detection",
+      "ann_file": "/data/xiangyuyue/ULLM-zf/fsl-20260209/data/det/coco/annotations/instances_test.json",
+      "img_dir": "/data/xiangyuyue/ULLM-zf/fsl-20260209/data/det/coco/images/test",
+      "score_thr": 0.0
+    }
+  }
+}

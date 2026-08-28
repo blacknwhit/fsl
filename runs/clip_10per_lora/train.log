@@ -1,0 +1,32 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 189, in _run_module_as_main
+  File "<frozen runpy>", line 159, in _get_module_details
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/lora_multitask/train.py", line 1034
+    if is_main_process and best_state is not None:
+    ^
+IndentationError: expected an indented block after 'if' statement on line 1033
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /openai/clip-vit-large-patch14/resolve/main/config.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f0725061610>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: e7016d65-cd58-4b43-8603-2276f1814cf5)')' thrown while requesting HEAD https://huggingface.co/openai/clip-vit-large-patch14/resolve/main/config.json
+Retrying in 1s [Retry 1/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /openai/clip-vit-large-patch14/resolve/main/config.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f0725062650>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: fe2a60d1-24c6-419c-a5f3-4e6d5e387ddf)')' thrown while requesting HEAD https://huggingface.co/openai/clip-vit-large-patch14/resolve/main/config.json
+Retrying in 2s [Retry 2/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /openai/clip-vit-large-patch14/resolve/main/config.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f0725063990>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: 23efc3ab-0b86-461b-949f-9ce3e1d09802)')' thrown while requesting HEAD https://huggingface.co/openai/clip-vit-large-patch14/resolve/main/config.json
+Retrying in 4s [Retry 3/5].
+[lora] enabled: replaced_linear=48, trainable_params=1966080
+[params] trainable_total=35741127
+epoch 1/100 step 20 | loss 1107830.5625 | det 3.9071 seg 2.3634 cnt 1250052.8750
+epoch 1/100 step 40 | loss 814074.6738 | det 2.4784 seg 2.4203 cnt 232220.8125
+epoch 1/100 step 60 | loss 576394.5270 | det 0.9878 seg 2.0715 cnt 44335.8203
+epoch 1/100 step 80 | loss 439465.8195 | det 0.7658 seg 2.0242 cnt 15262.9697
+epoch 1/100 step 100 | loss 353529.5480 | det 0.4547 seg 1.5331 cnt 5952.6094
+epoch 1/100 step 120 | loss 295320.5632 | det 0.8300 seg 2.1304 cnt 2759.0803
+epoch 1/100 step 140 | loss 253396.7496 | det 0.5142 seg 2.4541 cnt 1576.0675
+epoch 1/100 step 160 | loss 221819.9516 | det 0.5424 seg 1.3864 cnt 463.1062
+epoch 1/100 | train 208797.9303 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 2/100 step 20 | loss 263.0532 | det 0.3896 seg 1.3728 cnt 141.8022
+epoch 2/100 step 40 | loss 195.6579 | det 0.2728 seg 1.9841 cnt 62.8821
+epoch 2/100 step 60 | loss 157.0831 | det 0.5262 seg 2.2958 cnt 46.7180
+epoch 2/100 step 80 | loss 150.8796 | det 0.6592 seg 1.8586 cnt 32.7868
+epoch 2/100 step 100 | loss 132.4700 | det 0.8103 seg 2.0776 cnt 29.2730

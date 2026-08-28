@@ -1,0 +1,29 @@
+nohup: ignoring input
+Processing: /data/xiangyuyue/ULLM-zf/fsl-20260209/runs/mod_squad_plaintrain_sharedonly_mi_10per/stats_eval_best_combo_20260316_211610/predictions_det_instances_test.json
+annotation_file: /data/xiangyuyue/ULLM-zf/fsl-20260209/data/det/coco/annotations/instances_test.json
+backend: pycocotools
+mean_ap50: 0.516278
+csv: /data/xiangyuyue/ULLM-zf/fsl-20260209/runs/mod_squad_plaintrain_sharedonly_mi_10per/stats_eval_best_combo_20260316_211610/predictions_det_instances_test_per_category_ap50.csv
+json: /data/xiangyuyue/ULLM-zf/fsl-20260209/runs/mod_squad_plaintrain_sharedonly_mi_10per/stats_eval_best_combo_20260316_211610/predictions_det_instances_test_per_category_ap50.json
+----------------------------------------
+Processing: /data/xiangyuyue/ULLM-zf/fsl-20260209/runs/113_mtlora_small_10per/stats_eval_best_combo_20260319_180019/predictions_det_instances_test.json
+annotation_file: /data/xiangyuyue/ULLM-zf/fsl-20260209/data/det/coco/annotations/instances_test.json
+backend: pycocotools
+mean_ap50: 0.530853
+csv: /data/xiangyuyue/ULLM-zf/fsl-20260209/runs/113_mtlora_small_10per/stats_eval_best_combo_20260319_180019/predictions_det_instances_test_per_category_ap50.csv
+json: /data/xiangyuyue/ULLM-zf/fsl-20260209/runs/113_mtlora_small_10per/stats_eval_best_combo_20260319_180019/predictions_det_instances_test_per_category_ap50.json
+----------------------------------------
+Processing: /data/xiangyuyue/ULLM-zf/fsl-20260209/runs/113_pivrg_10per/stats_eval_best_combo_20260320_122311/predictions_det_instances_test.json
+annotation_file: /data/xiangyuyue/ULLM-zf/fsl-20260209/data/det/coco/annotations/instances_test.json
+backend: pycocotools
+mean_ap50: 0.485803
+csv: /data/xiangyuyue/ULLM-zf/fsl-20260209/runs/113_pivrg_10per/stats_eval_best_combo_20260320_122311/predictions_det_instances_test_per_category_ap50.csv
+json: /data/xiangyuyue/ULLM-zf/fsl-20260209/runs/113_pivrg_10per/stats_eval_best_combo_20260320_122311/predictions_det_instances_test_per_category_ap50.json
+----------------------------------------
+Processing: /data/xiangyuyue/ULLM-zf/fsl-20260209/runs/113_mtlora_vision_10per/stats_eval_best_combo_20260323_120003/predictions_det_instances_test.json
+annotation_file: /data/xiangyuyue/ULLM-zf/fsl-20260209/data/det/coco/annotations/instances_test.json
+backend: pycocotools
+mean_ap50: 0.509881
+csv: /data/xiangyuyue/ULLM-zf/fsl-20260209/runs/113_mtlora_vision_10per/stats_eval_best_combo_20260323_120003/predictions_det_instances_test_per_category_ap50.csv
+json: /data/xiangyuyue/ULLM-zf/fsl-20260209/runs/113_mtlora_vision_10per/stats_eval_best_combo_20260323_120003/predictions_det_instances_test_per_category_ap50.json
+----------------------------------------

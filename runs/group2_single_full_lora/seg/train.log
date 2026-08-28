@@ -1,0 +1,1551 @@
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+[lora] enabled: replaced_linear=48, trainable_params=1966080
+[params] trainable_total=11417611
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [11, 1024, 1, 1], strides() = [1024, 1, 1024, 1024]
+bucket_view.sizes() = [11, 1024, 1, 1], strides() = [1024, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [11, 1024, 1, 1], strides() = [1024, 1, 1024, 1024]
+bucket_view.sizes() = [11, 1024, 1, 1], strides() = [1024, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [11, 1024, 1, 1], strides() = [1024, 1, 1024, 1024]
+bucket_view.sizes() = [11, 1024, 1, 1], strides() = [1024, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [11, 1024, 1, 1], strides() = [1024, 1, 1024, 1024]
+bucket_view.sizes() = [11, 1024, 1, 1], strides() = [1024, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [11, 1024, 1, 1], strides() = [1024, 1, 1024, 1024]
+bucket_view.sizes() = [11, 1024, 1, 1], strides() = [1024, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [11, 1024, 1, 1], strides() = [1024, 1, 1024, 1024]
+bucket_view.sizes() = [11, 1024, 1, 1], strides() = [1024, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [11, 1024, 1, 1], strides() = [1024, 1, 1024, 1024]
+bucket_view.sizes() = [11, 1024, 1, 1], strides() = [1024, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [11, 1024, 1, 1], strides() = [1024, 1, 1024, 1024]
+bucket_view.sizes() = [11, 1024, 1, 1], strides() = [1024, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+epoch 1/150 step 20 | loss 1.1545 | det 0.0000 seg 0.8002 cnt 0.0000
+epoch 1/150 step 40 | loss 1.0330 | det 0.0000 seg 1.4291 cnt 0.0000
+epoch 1/150 step 60 | loss 0.9577 | det 0.0000 seg 0.7520 cnt 0.0000
+epoch 1/150 step 80 | loss 0.9209 | det 0.0000 seg 0.6877 cnt 0.0000
+epoch 1/150 step 100 | loss 0.8834 | det 0.0000 seg 0.5891 cnt 0.0000
+epoch 1/150 step 120 | loss 0.8518 | det 0.0000 seg 0.6422 cnt 0.0000
+epoch 1/150 step 140 | loss 0.8245 | det 0.0000 seg 0.5040 cnt 0.0000
+epoch 1/150 step 160 | loss 0.8151 | det 0.0000 seg 0.6744 cnt 0.0000
+epoch 1/150 | train 0.8018 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 2/150 step 20 | loss 0.6353 | det 0.0000 seg 0.6249 cnt 0.0000
+epoch 2/150 step 40 | loss 0.6371 | det 0.0000 seg 0.5223 cnt 0.0000
+epoch 2/150 step 60 | loss 0.6214 | det 0.0000 seg 0.5648 cnt 0.0000
+epoch 2/150 step 80 | loss 0.6124 | det 0.0000 seg 0.3265 cnt 0.0000
+epoch 2/150 step 100 | loss 0.6128 | det 0.0000 seg 0.4166 cnt 0.0000
+epoch 2/150 step 120 | loss 0.5985 | det 0.0000 seg 0.5859 cnt 0.0000
+epoch 2/150 step 140 | loss 0.5933 | det 0.0000 seg 0.6562 cnt 0.0000
+epoch 2/150 step 160 | loss 0.5986 | det 0.0000 seg 0.6239 cnt 0.0000
+epoch 2/150 | train 0.5969 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 3/150 step 20 | loss 0.5720 | det 0.0000 seg 0.3375 cnt 0.0000
+epoch 3/150 step 40 | loss 0.5823 | det 0.0000 seg 0.6113 cnt 0.0000
+epoch 3/150 step 60 | loss 0.5392 | det 0.0000 seg 0.4566 cnt 0.0000
+epoch 3/150 step 80 | loss 0.5294 | det 0.0000 seg 0.4917 cnt 0.0000
+epoch 3/150 step 100 | loss 0.5227 | det 0.0000 seg 0.4263 cnt 0.0000
+epoch 3/150 step 120 | loss 0.5231 | det 0.0000 seg 0.3875 cnt 0.0000
+epoch 3/150 step 140 | loss 0.5276 | det 0.0000 seg 0.4181 cnt 0.0000
+epoch 3/150 step 160 | loss 0.5301 | det 0.0000 seg 0.6854 cnt 0.0000
+epoch 3/150 | train 0.5261 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 4/150 step 20 | loss 0.4740 | det 0.0000 seg 1.0452 cnt 0.0000
+epoch 4/150 step 40 | loss 0.4682 | det 0.0000 seg 0.4675 cnt 0.0000
+epoch 4/150 step 60 | loss 0.4759 | det 0.0000 seg 0.3637 cnt 0.0000
+epoch 4/150 step 80 | loss 0.4753 | det 0.0000 seg 0.4588 cnt 0.0000
+epoch 4/150 step 100 | loss 0.4732 | det 0.0000 seg 0.3543 cnt 0.0000
+epoch 4/150 step 120 | loss 0.4787 | det 0.0000 seg 0.6655 cnt 0.0000
+epoch 4/150 step 140 | loss 0.4884 | det 0.0000 seg 0.6706 cnt 0.0000
+epoch 4/150 step 160 | loss 0.4984 | det 0.0000 seg 0.7640 cnt 0.0000
+epoch 4/150 | train 0.4970 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 5/150 step 20 | loss 0.4722 | det 0.0000 seg 0.4857 cnt 0.0000
+epoch 5/150 step 40 | loss 0.4512 | det 0.0000 seg 0.3644 cnt 0.0000
+epoch 5/150 step 60 | loss 0.4524 | det 0.0000 seg 0.3082 cnt 0.0000
+epoch 5/150 step 80 | loss 0.4423 | det 0.0000 seg 0.4485 cnt 0.0000
+epoch 5/150 step 100 | loss 0.4490 | det 0.0000 seg 0.4933 cnt 0.0000
+epoch 5/150 step 120 | loss 0.4551 | det 0.0000 seg 0.5673 cnt 0.0000
+epoch 5/150 step 140 | loss 0.4561 | det 0.0000 seg 0.5853 cnt 0.0000
+epoch 5/150 step 160 | loss 0.4543 | det 0.0000 seg 0.1391 cnt 0.0000
+epoch 5/150 | train 0.4563 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 6/150 step 20 | loss 0.4483 | det 0.0000 seg 0.5189 cnt 0.0000
+epoch 6/150 step 40 | loss 0.4207 | det 0.0000 seg 0.3538 cnt 0.0000
+epoch 6/150 step 60 | loss 0.4297 | det 0.0000 seg 0.5819 cnt 0.0000
+epoch 6/150 step 80 | loss 0.4347 | det 0.0000 seg 0.2898 cnt 0.0000
+epoch 6/150 step 100 | loss 0.4314 | det 0.0000 seg 0.3951 cnt 0.0000
+epoch 6/150 step 120 | loss 0.4247 | det 0.0000 seg 0.2639 cnt 0.0000
+epoch 6/150 step 140 | loss 0.4277 | det 0.0000 seg 0.3168 cnt 0.0000
+epoch 6/150 step 160 | loss 0.4273 | det 0.0000 seg 0.4206 cnt 0.0000
+epoch 6/150 | train 0.4271 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 7/150 step 20 | loss 0.4073 | det 0.0000 seg 0.5256 cnt 0.0000
+epoch 7/150 step 40 | loss 0.4128 | det 0.0000 seg 0.2751 cnt 0.0000
+epoch 7/150 step 60 | loss 0.4081 | det 0.0000 seg 0.3684 cnt 0.0000
+epoch 7/150 step 80 | loss 0.4079 | det 0.0000 seg 0.2525 cnt 0.0000
+epoch 7/150 step 100 | loss 0.4028 | det 0.0000 seg 0.3510 cnt 0.0000
+epoch 7/150 step 120 | loss 0.4105 | det 0.0000 seg 0.1884 cnt 0.0000
+epoch 7/150 step 140 | loss 0.4122 | det 0.0000 seg 0.4906 cnt 0.0000
+epoch 7/150 step 160 | loss 0.4085 | det 0.0000 seg 0.3985 cnt 0.0000
+epoch 7/150 | train 0.4154 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 8/150 step 20 | loss 0.3773 | det 0.0000 seg 0.3971 cnt 0.0000
+epoch 8/150 step 40 | loss 0.3927 | det 0.0000 seg 0.4883 cnt 0.0000
+epoch 8/150 step 60 | loss 0.3876 | det 0.0000 seg 0.2182 cnt 0.0000
+epoch 8/150 step 80 | loss 0.3825 | det 0.0000 seg 0.3140 cnt 0.0000
+epoch 8/150 step 100 | loss 0.3791 | det 0.0000 seg 0.5106 cnt 0.0000
+epoch 8/150 step 120 | loss 0.3789 | det 0.0000 seg 0.4115 cnt 0.0000
+epoch 8/150 step 140 | loss 0.3809 | det 0.0000 seg 0.3184 cnt 0.0000
+epoch 8/150 step 160 | loss 0.3881 | det 0.0000 seg 0.3574 cnt 0.0000
+epoch 8/150 | train 0.3901 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 9/150 step 20 | loss 0.3517 | det 0.0000 seg 0.2469 cnt 0.0000
+epoch 9/150 step 40 | loss 0.3805 | det 0.0000 seg 0.3346 cnt 0.0000
+epoch 9/150 step 60 | loss 0.3702 | det 0.0000 seg 0.2477 cnt 0.0000
+epoch 9/150 step 80 | loss 0.3606 | det 0.0000 seg 0.1796 cnt 0.0000
+epoch 9/150 step 100 | loss 0.3614 | det 0.0000 seg 0.3560 cnt 0.0000
+epoch 9/150 step 120 | loss 0.3705 | det 0.0000 seg 0.4677 cnt 0.0000
+epoch 9/150 step 140 | loss 0.3728 | det 0.0000 seg 0.3806 cnt 0.0000
+epoch 9/150 step 160 | loss 0.3718 | det 0.0000 seg 0.3729 cnt 0.0000
+epoch 9/150 | train 0.3705 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 10/150 step 20 | loss 0.4692 | det 0.0000 seg 0.5016 cnt 0.0000
+epoch 10/150 step 40 | loss 0.4187 | det 0.0000 seg 0.5319 cnt 0.0000
+epoch 10/150 step 60 | loss 0.3911 | det 0.0000 seg 0.2743 cnt 0.0000
+epoch 10/150 step 80 | loss 0.3777 | det 0.0000 seg 0.4319 cnt 0.0000
+epoch 10/150 step 100 | loss 0.3684 | det 0.0000 seg 0.2659 cnt 0.0000
+epoch 10/150 step 120 | loss 0.3629 | det 0.0000 seg 0.1994 cnt 0.0000
+epoch 10/150 step 140 | loss 0.3637 | det 0.0000 seg 0.1927 cnt 0.0000
+epoch 10/150 step 160 | loss 0.3675 | det 0.0000 seg 0.4168 cnt 0.0000
+epoch 10/150 | train 0.3684 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 11/150 step 20 | loss 0.3510 | det 0.0000 seg 0.3779 cnt 0.0000
+epoch 11/150 step 40 | loss 0.3331 | det 0.0000 seg 0.3830 cnt 0.0000
+epoch 11/150 step 60 | loss 0.3397 | det 0.0000 seg 0.3108 cnt 0.0000
+epoch 11/150 step 80 | loss 0.3549 | det 0.0000 seg 0.4934 cnt 0.0000
+epoch 11/150 step 100 | loss 0.3479 | det 0.0000 seg 0.3180 cnt 0.0000
+epoch 11/150 step 120 | loss 0.3439 | det 0.0000 seg 0.2702 cnt 0.0000
+epoch 11/150 step 140 | loss 0.3510 | det 0.0000 seg 0.2914 cnt 0.0000
+epoch 11/150 step 160 | loss 0.3534 | det 0.0000 seg 0.3071 cnt 0.0000
+epoch 11/150 | train 0.3548 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 12/150 step 20 | loss 0.3433 | det 0.0000 seg 0.3275 cnt 0.0000
+epoch 12/150 step 40 | loss 0.3644 | det 0.0000 seg 0.4537 cnt 0.0000
+epoch 12/150 step 60 | loss 0.3513 | det 0.0000 seg 0.2786 cnt 0.0000
+epoch 12/150 step 80 | loss 0.3493 | det 0.0000 seg 0.2122 cnt 0.0000
+epoch 12/150 step 100 | loss 0.3399 | det 0.0000 seg 0.2760 cnt 0.0000
+epoch 12/150 step 120 | loss 0.3360 | det 0.0000 seg 0.2909 cnt 0.0000
+epoch 12/150 step 140 | loss 0.3402 | det 0.0000 seg 0.2528 cnt 0.0000
+epoch 12/150 step 160 | loss 0.3401 | det 0.0000 seg 0.3257 cnt 0.0000
+epoch 12/150 | train 0.3400 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 13/150 step 20 | loss 0.3072 | det 0.0000 seg 0.2702 cnt 0.0000
+epoch 13/150 step 40 | loss 0.3144 | det 0.0000 seg 0.3614 cnt 0.0000
+epoch 13/150 step 60 | loss 0.3133 | det 0.0000 seg 0.4213 cnt 0.0000
+epoch 13/150 step 80 | loss 0.3081 | det 0.0000 seg 0.0475 cnt 0.0000
+epoch 13/150 step 100 | loss 0.3185 | det 0.0000 seg 0.4513 cnt 0.0000
+epoch 13/150 step 120 | loss 0.3249 | det 0.0000 seg 0.4212 cnt 0.0000
+epoch 13/150 step 140 | loss 0.3247 | det 0.0000 seg 0.3341 cnt 0.0000
+epoch 13/150 step 160 | loss 0.3239 | det 0.0000 seg 0.2973 cnt 0.0000
+epoch 13/150 | train 0.3252 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 14/150 step 20 | loss 0.3096 | det 0.0000 seg 0.3047 cnt 0.0000
+epoch 14/150 step 40 | loss 0.3024 | det 0.0000 seg 0.1452 cnt 0.0000
+epoch 14/150 step 60 | loss 0.3061 | det 0.0000 seg 0.5250 cnt 0.0000
+epoch 14/150 step 80 | loss 0.3005 | det 0.0000 seg 0.2619 cnt 0.0000
+epoch 14/150 step 100 | loss 0.3059 | det 0.0000 seg 0.2797 cnt 0.0000
+epoch 14/150 step 120 | loss 0.3056 | det 0.0000 seg 0.3350 cnt 0.0000
+epoch 14/150 step 140 | loss 0.3063 | det 0.0000 seg 0.2150 cnt 0.0000
+epoch 14/150 step 160 | loss 0.3102 | det 0.0000 seg 0.3200 cnt 0.0000
+epoch 14/150 | train 0.3074 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 15/150 step 20 | loss 0.2766 | det 0.0000 seg 0.2957 cnt 0.0000
+epoch 15/150 step 40 | loss 0.2968 | det 0.0000 seg 0.2689 cnt 0.0000
+epoch 15/150 step 60 | loss 0.2988 | det 0.0000 seg 0.3122 cnt 0.0000
+epoch 15/150 step 80 | loss 0.3020 | det 0.0000 seg 0.4964 cnt 0.0000
+epoch 15/150 step 100 | loss 0.3004 | det 0.0000 seg 0.3320 cnt 0.0000
+epoch 15/150 step 120 | loss 0.3038 | det 0.0000 seg 0.2842 cnt 0.0000
+epoch 15/150 step 140 | loss 0.2982 | det 0.0000 seg 0.1186 cnt 0.0000
+epoch 15/150 step 160 | loss 0.3013 | det 0.0000 seg 0.2299 cnt 0.0000
+epoch 15/150 | train 0.3003 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 16/150 step 20 | loss 0.3054 | det 0.0000 seg 0.2550 cnt 0.0000
+epoch 16/150 step 40 | loss 0.2676 | det 0.0000 seg 0.2108 cnt 0.0000
+epoch 16/150 step 60 | loss 0.2772 | det 0.0000 seg 0.3320 cnt 0.0000
+epoch 16/150 step 80 | loss 0.2815 | det 0.0000 seg 0.3511 cnt 0.0000
+epoch 16/150 step 100 | loss 0.2822 | det 0.0000 seg 0.3022 cnt 0.0000
+epoch 16/150 step 120 | loss 0.2862 | det 0.0000 seg 0.2366 cnt 0.0000
+epoch 16/150 step 140 | loss 0.2905 | det 0.0000 seg 0.2285 cnt 0.0000
+epoch 16/150 step 160 | loss 0.2947 | det 0.0000 seg 0.4055 cnt 0.0000
+epoch 16/150 | train 0.2955 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 17/150 step 20 | loss 0.2910 | det 0.0000 seg 0.3654 cnt 0.0000
+epoch 17/150 step 40 | loss 0.2788 | det 0.0000 seg 0.2048 cnt 0.0000
+epoch 17/150 step 60 | loss 0.2899 | det 0.0000 seg 0.2602 cnt 0.0000
+epoch 17/150 step 80 | loss 0.3001 | det 0.0000 seg 0.3274 cnt 0.0000
+epoch 17/150 step 100 | loss 0.3077 | det 0.0000 seg 0.5377 cnt 0.0000
+epoch 17/150 step 120 | loss 0.3045 | det 0.0000 seg 0.3327 cnt 0.0000
+epoch 17/150 step 140 | loss 0.3053 | det 0.0000 seg 0.2448 cnt 0.0000
+epoch 17/150 step 160 | loss 0.3025 | det 0.0000 seg 0.2160 cnt 0.0000
+epoch 17/150 | train 0.3013 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 18/150 step 20 | loss 0.2555 | det 0.0000 seg 0.2214 cnt 0.0000
+epoch 18/150 step 40 | loss 0.2895 | det 0.0000 seg 0.2619 cnt 0.0000
+epoch 18/150 step 60 | loss 0.2732 | det 0.0000 seg 0.2759 cnt 0.0000
+epoch 18/150 step 80 | loss 0.2769 | det 0.0000 seg 0.1819 cnt 0.0000
+epoch 18/150 step 100 | loss 0.2745 | det 0.0000 seg 0.2228 cnt 0.0000
+epoch 18/150 step 120 | loss 0.2732 | det 0.0000 seg 0.2687 cnt 0.0000
+epoch 18/150 step 140 | loss 0.2687 | det 0.0000 seg 0.1042 cnt 0.0000
+epoch 18/150 step 160 | loss 0.2700 | det 0.0000 seg 0.2466 cnt 0.0000
+epoch 18/150 | train 0.2711 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 19/150 step 20 | loss 0.2719 | det 0.0000 seg 0.3522 cnt 0.0000
+epoch 19/150 step 40 | loss 0.2644 | det 0.0000 seg 0.2537 cnt 0.0000
+epoch 19/150 step 60 | loss 0.2773 | det 0.0000 seg 0.2749 cnt 0.0000
+epoch 19/150 step 80 | loss 0.2669 | det 0.0000 seg 0.2582 cnt 0.0000
+epoch 19/150 step 100 | loss 0.2727 | det 0.0000 seg 0.4022 cnt 0.0000
+epoch 19/150 step 120 | loss 0.2742 | det 0.0000 seg 0.2723 cnt 0.0000
+epoch 19/150 step 140 | loss 0.2698 | det 0.0000 seg 0.1928 cnt 0.0000
+epoch 19/150 step 160 | loss 0.2740 | det 0.0000 seg 0.3579 cnt 0.0000
+epoch 19/150 | train 0.2749 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 20/150 step 20 | loss 0.2651 | det 0.0000 seg 0.1978 cnt 0.0000
+epoch 20/150 step 40 | loss 0.2611 | det 0.0000 seg 0.2277 cnt 0.0000
+epoch 20/150 step 60 | loss 0.2683 | det 0.0000 seg 0.2267 cnt 0.0000
+epoch 20/150 step 80 | loss 0.2645 | det 0.0000 seg 0.2236 cnt 0.0000
+epoch 20/150 step 100 | loss 0.2602 | det 0.0000 seg 0.1841 cnt 0.0000
+epoch 20/150 step 120 | loss 0.2601 | det 0.0000 seg 0.3631 cnt 0.0000
+epoch 20/150 step 140 | loss 0.2610 | det 0.0000 seg 0.3445 cnt 0.0000
+epoch 20/150 step 160 | loss 0.2614 | det 0.0000 seg 0.1926 cnt 0.0000
+epoch 20/150 | train 0.2642 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 21/150 step 20 | loss 0.2864 | det 0.0000 seg 0.3477 cnt 0.0000
+epoch 21/150 step 40 | loss 0.2706 | det 0.0000 seg 0.2453 cnt 0.0000
+epoch 21/150 step 60 | loss 0.2753 | det 0.0000 seg 0.1318 cnt 0.0000
+epoch 21/150 step 80 | loss 0.2732 | det 0.0000 seg 0.2186 cnt 0.0000
+epoch 21/150 step 100 | loss 0.2677 | det 0.0000 seg 0.1903 cnt 0.0000
+epoch 21/150 step 120 | loss 0.2720 | det 0.0000 seg 0.2914 cnt 0.0000
+epoch 21/150 step 140 | loss 0.2665 | det 0.0000 seg 0.2797 cnt 0.0000
+epoch 21/150 step 160 | loss 0.2666 | det 0.0000 seg 0.3096 cnt 0.0000
+epoch 21/150 | train 0.2680 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 22/150 step 20 | loss 0.2460 | det 0.0000 seg 0.1796 cnt 0.0000
+epoch 22/150 step 40 | loss 0.2432 | det 0.0000 seg 0.2418 cnt 0.0000
+epoch 22/150 step 60 | loss 0.2565 | det 0.0000 seg 0.2821 cnt 0.0000
+epoch 22/150 step 80 | loss 0.2552 | det 0.0000 seg 0.2917 cnt 0.0000
+epoch 22/150 step 100 | loss 0.2540 | det 0.0000 seg 0.1641 cnt 0.0000
+epoch 22/150 step 120 | loss 0.2512 | det 0.0000 seg 0.1708 cnt 0.0000
+epoch 22/150 step 140 | loss 0.2531 | det 0.0000 seg 0.3795 cnt 0.0000
+epoch 22/150 step 160 | loss 0.2549 | det 0.0000 seg 0.2815 cnt 0.0000
+epoch 22/150 | train 0.2542 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 23/150 step 20 | loss 0.2651 | det 0.0000 seg 0.2028 cnt 0.0000
+epoch 23/150 step 40 | loss 0.2672 | det 0.0000 seg 0.1672 cnt 0.0000
+epoch 23/150 step 60 | loss 0.2547 | det 0.0000 seg 0.2417 cnt 0.0000
+epoch 23/150 step 80 | loss 0.2485 | det 0.0000 seg 0.2761 cnt 0.0000
+epoch 23/150 step 100 | loss 0.2522 | det 0.0000 seg 0.1832 cnt 0.0000
+epoch 23/150 step 120 | loss 0.2481 | det 0.0000 seg 0.2854 cnt 0.0000
+epoch 23/150 step 140 | loss 0.2443 | det 0.0000 seg 0.1926 cnt 0.0000
+epoch 23/150 step 160 | loss 0.2425 | det 0.0000 seg 0.2090 cnt 0.0000
+epoch 23/150 | train 0.2414 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 24/150 step 20 | loss 0.2230 | det 0.0000 seg 0.2009 cnt 0.0000
+epoch 24/150 step 40 | loss 0.2325 | det 0.0000 seg 0.3621 cnt 0.0000
+epoch 24/150 step 60 | loss 0.2316 | det 0.0000 seg 0.2616 cnt 0.0000
+epoch 24/150 step 80 | loss 0.2305 | det 0.0000 seg 0.3032 cnt 0.0000
+epoch 24/150 step 100 | loss 0.2366 | det 0.0000 seg 0.3946 cnt 0.0000
+epoch 24/150 step 120 | loss 0.2391 | det 0.0000 seg 0.2195 cnt 0.0000
+epoch 24/150 step 140 | loss 0.2417 | det 0.0000 seg 0.1645 cnt 0.0000
+epoch 24/150 step 160 | loss 0.2425 | det 0.0000 seg 0.1512 cnt 0.0000
+epoch 24/150 | train 0.2442 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 25/150 step 20 | loss 0.2554 | det 0.0000 seg 0.2419 cnt 0.0000
+epoch 25/150 step 40 | loss 0.2433 | det 0.0000 seg 0.1276 cnt 0.0000
+epoch 25/150 step 60 | loss 0.2424 | det 0.0000 seg 0.2102 cnt 0.0000
+epoch 25/150 step 80 | loss 0.2409 | det 0.0000 seg 0.2152 cnt 0.0000
+epoch 25/150 step 100 | loss 0.2415 | det 0.0000 seg 0.1730 cnt 0.0000
+epoch 25/150 step 120 | loss 0.2415 | det 0.0000 seg 0.2439 cnt 0.0000
+epoch 25/150 step 140 | loss 0.2418 | det 0.0000 seg 0.1796 cnt 0.0000
+epoch 25/150 step 160 | loss 0.2430 | det 0.0000 seg 0.3116 cnt 0.0000
+epoch 25/150 | train 0.2424 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 26/150 step 20 | loss 0.2233 | det 0.0000 seg 0.1511 cnt 0.0000
+epoch 26/150 step 40 | loss 0.2113 | det 0.0000 seg 0.1408 cnt 0.0000
+epoch 26/150 step 60 | loss 0.2209 | det 0.0000 seg 0.3116 cnt 0.0000
+epoch 26/150 step 80 | loss 0.2168 | det 0.0000 seg 0.2930 cnt 0.0000
+epoch 26/150 step 100 | loss 0.2247 | det 0.0000 seg 0.2840 cnt 0.0000
+epoch 26/150 step 120 | loss 0.2291 | det 0.0000 seg 0.2180 cnt 0.0000
+epoch 26/150 step 140 | loss 0.2317 | det 0.0000 seg 0.2333 cnt 0.0000
+epoch 26/150 step 160 | loss 0.2334 | det 0.0000 seg 0.3917 cnt 0.0000
+epoch 26/150 | train 0.2308 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 27/150 step 20 | loss 0.2192 | det 0.0000 seg 0.1251 cnt 0.0000
+epoch 27/150 step 40 | loss 0.2170 | det 0.0000 seg 0.3286 cnt 0.0000
+epoch 27/150 step 60 | loss 0.2260 | det 0.0000 seg 0.2340 cnt 0.0000
+epoch 27/150 step 80 | loss 0.2232 | det 0.0000 seg 0.2512 cnt 0.0000
+epoch 27/150 step 100 | loss 0.2208 | det 0.0000 seg 0.1610 cnt 0.0000
+epoch 27/150 step 120 | loss 0.2248 | det 0.0000 seg 0.1246 cnt 0.0000
+epoch 27/150 step 140 | loss 0.2273 | det 0.0000 seg 0.2738 cnt 0.0000
+epoch 27/150 step 160 | loss 0.2246 | det 0.0000 seg 0.2982 cnt 0.0000
+epoch 27/150 | train 0.2231 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 28/150 step 20 | loss 0.2298 | det 0.0000 seg 0.1708 cnt 0.0000
+epoch 28/150 step 40 | loss 0.2116 | det 0.0000 seg 0.0691 cnt 0.0000
+epoch 28/150 step 60 | loss 0.2182 | det 0.0000 seg 0.3332 cnt 0.0000
+epoch 28/150 step 80 | loss 0.2198 | det 0.0000 seg 0.2222 cnt 0.0000
+epoch 28/150 step 100 | loss 0.2158 | det 0.0000 seg 0.1852 cnt 0.0000
+epoch 28/150 step 120 | loss 0.2180 | det 0.0000 seg 0.2647 cnt 0.0000
+epoch 28/150 step 140 | loss 0.2215 | det 0.0000 seg 0.3162 cnt 0.0000
+epoch 28/150 step 160 | loss 0.2207 | det 0.0000 seg 0.1684 cnt 0.0000
+epoch 28/150 | train 0.2211 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 29/150 step 20 | loss 0.2064 | det 0.0000 seg 0.2001 cnt 0.0000
+epoch 29/150 step 40 | loss 0.1982 | det 0.0000 seg 0.2241 cnt 0.0000
+epoch 29/150 step 60 | loss 0.1989 | det 0.0000 seg 0.1527 cnt 0.0000
+epoch 29/150 step 80 | loss 0.2125 | det 0.0000 seg 0.3591 cnt 0.0000
+epoch 29/150 step 100 | loss 0.2156 | det 0.0000 seg 0.1509 cnt 0.0000
+epoch 29/150 step 120 | loss 0.2174 | det 0.0000 seg 0.1569 cnt 0.0000
+epoch 29/150 step 140 | loss 0.2161 | det 0.0000 seg 0.1261 cnt 0.0000
+epoch 29/150 step 160 | loss 0.2175 | det 0.0000 seg 0.2284 cnt 0.0000
+epoch 29/150 | train 0.2186 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 30/150 step 20 | loss 0.1881 | det 0.0000 seg 0.1109 cnt 0.0000
+epoch 30/150 step 40 | loss 0.2062 | det 0.0000 seg 0.2188 cnt 0.0000
+epoch 30/150 step 60 | loss 0.2071 | det 0.0000 seg 0.2724 cnt 0.0000
+epoch 30/150 step 80 | loss 0.2008 | det 0.0000 seg 0.2284 cnt 0.0000
+epoch 30/150 step 100 | loss 0.2053 | det 0.0000 seg 0.2210 cnt 0.0000
+epoch 30/150 step 120 | loss 0.2090 | det 0.0000 seg 0.2923 cnt 0.0000
+epoch 30/150 step 140 | loss 0.2075 | det 0.0000 seg 0.1186 cnt 0.0000
+epoch 30/150 step 160 | loss 0.2116 | det 0.0000 seg 0.2501 cnt 0.0000
+epoch 30/150 | train 0.2123 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 31/150 step 20 | loss 0.2193 | det 0.0000 seg 0.2336 cnt 0.0000
+epoch 31/150 step 40 | loss 0.2228 | det 0.0000 seg 0.1462 cnt 0.0000
+epoch 31/150 step 60 | loss 0.2156 | det 0.0000 seg 0.1246 cnt 0.0000
+epoch 31/150 step 80 | loss 0.2172 | det 0.0000 seg 0.1371 cnt 0.0000
+epoch 31/150 step 100 | loss 0.2155 | det 0.0000 seg 0.1629 cnt 0.0000
+epoch 31/150 step 120 | loss 0.2157 | det 0.0000 seg 0.1552 cnt 0.0000
+epoch 31/150 step 140 | loss 0.2124 | det 0.0000 seg 0.2196 cnt 0.0000
+epoch 31/150 step 160 | loss 0.2136 | det 0.0000 seg 0.1656 cnt 0.0000
+epoch 31/150 | train 0.2123 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 32/150 step 20 | loss 0.1761 | det 0.0000 seg 0.1082 cnt 0.0000
+epoch 32/150 step 40 | loss 0.1861 | det 0.0000 seg 0.1956 cnt 0.0000
+epoch 32/150 step 60 | loss 0.1890 | det 0.0000 seg 0.1735 cnt 0.0000
+epoch 32/150 step 80 | loss 0.1919 | det 0.0000 seg 0.2704 cnt 0.0000
+epoch 32/150 step 100 | loss 0.1924 | det 0.0000 seg 0.2583 cnt 0.0000
+epoch 32/150 step 120 | loss 0.1962 | det 0.0000 seg 0.2138 cnt 0.0000
+epoch 32/150 step 140 | loss 0.1960 | det 0.0000 seg 0.1692 cnt 0.0000
+epoch 32/150 step 160 | loss 0.1969 | det 0.0000 seg 0.2817 cnt 0.0000
+epoch 32/150 | train 0.1984 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 33/150 step 20 | loss 0.1880 | det 0.0000 seg 0.2802 cnt 0.0000
+epoch 33/150 step 40 | loss 0.1930 | det 0.0000 seg 0.1740 cnt 0.0000
+epoch 33/150 step 60 | loss 0.2063 | det 0.0000 seg 0.1988 cnt 0.0000
+epoch 33/150 step 80 | loss 0.2056 | det 0.0000 seg 0.1296 cnt 0.0000
+epoch 33/150 step 100 | loss 0.2044 | det 0.0000 seg 0.1972 cnt 0.0000
+epoch 33/150 step 120 | loss 0.2025 | det 0.0000 seg 0.1915 cnt 0.0000
+epoch 33/150 step 140 | loss 0.2037 | det 0.0000 seg 0.3838 cnt 0.0000
+epoch 33/150 step 160 | loss 0.2024 | det 0.0000 seg 0.0456 cnt 0.0000
+epoch 33/150 | train 0.2023 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 34/150 step 20 | loss 0.2018 | det 0.0000 seg 0.1315 cnt 0.0000
+epoch 34/150 step 40 | loss 0.2050 | det 0.0000 seg 0.3103 cnt 0.0000
+epoch 34/150 step 60 | loss 0.2033 | det 0.0000 seg 0.4385 cnt 0.0000
+epoch 34/150 step 80 | loss 0.1945 | det 0.0000 seg 0.1915 cnt 0.0000
+epoch 34/150 step 100 | loss 0.1984 | det 0.0000 seg 0.2585 cnt 0.0000
+epoch 34/150 step 120 | loss 0.2016 | det 0.0000 seg 0.2803 cnt 0.0000
+epoch 34/150 step 140 | loss 0.1990 | det 0.0000 seg 0.1748 cnt 0.0000
+epoch 34/150 step 160 | loss 0.1984 | det 0.0000 seg 0.2835 cnt 0.0000
+epoch 34/150 | train 0.2010 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 35/150 step 20 | loss 0.1736 | det 0.0000 seg 0.2129 cnt 0.0000
+epoch 35/150 step 40 | loss 0.2014 | det 0.0000 seg 0.2396 cnt 0.0000
+epoch 35/150 step 60 | loss 0.2096 | det 0.0000 seg 0.2894 cnt 0.0000
+epoch 35/150 step 80 | loss 0.2031 | det 0.0000 seg 0.2001 cnt 0.0000
+epoch 35/150 step 100 | loss 0.2056 | det 0.0000 seg 0.1021 cnt 0.0000
+epoch 35/150 step 120 | loss 0.2063 | det 0.0000 seg 0.2146 cnt 0.0000
+epoch 35/150 step 140 | loss 0.2024 | det 0.0000 seg 0.2626 cnt 0.0000
+epoch 35/150 step 160 | loss 0.2019 | det 0.0000 seg 0.1235 cnt 0.0000
+epoch 35/150 | train 0.2021 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 36/150 step 20 | loss 0.1770 | det 0.0000 seg 0.1970 cnt 0.0000
+epoch 36/150 step 40 | loss 0.1877 | det 0.0000 seg 0.3504 cnt 0.0000
+epoch 36/150 step 60 | loss 0.1843 | det 0.0000 seg 0.0777 cnt 0.0000
+epoch 36/150 step 80 | loss 0.1941 | det 0.0000 seg 0.1648 cnt 0.0000
+epoch 36/150 step 100 | loss 0.1884 | det 0.0000 seg 0.2024 cnt 0.0000
+epoch 36/150 step 120 | loss 0.1855 | det 0.0000 seg 0.3036 cnt 0.0000
+epoch 36/150 step 140 | loss 0.1882 | det 0.0000 seg 0.2875 cnt 0.0000
+epoch 36/150 step 160 | loss 0.1878 | det 0.0000 seg 0.2314 cnt 0.0000
+epoch 36/150 | train 0.1902 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 37/150 step 20 | loss 0.1868 | det 0.0000 seg 0.2228 cnt 0.0000
+epoch 37/150 step 40 | loss 0.1827 | det 0.0000 seg 0.2516 cnt 0.0000
+epoch 37/150 step 60 | loss 0.1855 | det 0.0000 seg 0.1928 cnt 0.0000
+epoch 37/150 step 80 | loss 0.1912 | det 0.0000 seg 0.2323 cnt 0.0000
+epoch 37/150 step 100 | loss 0.1923 | det 0.0000 seg 0.0986 cnt 0.0000
+epoch 37/150 step 120 | loss 0.1913 | det 0.0000 seg 0.1647 cnt 0.0000
+epoch 37/150 step 140 | loss 0.1898 | det 0.0000 seg 0.2177 cnt 0.0000
+epoch 37/150 step 160 | loss 0.1877 | det 0.0000 seg 0.1758 cnt 0.0000
+epoch 37/150 | train 0.1861 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 38/150 step 20 | loss 0.1818 | det 0.0000 seg 0.1794 cnt 0.0000
+epoch 38/150 step 40 | loss 0.1818 | det 0.0000 seg 0.2363 cnt 0.0000
+epoch 38/150 step 60 | loss 0.1836 | det 0.0000 seg 0.1329 cnt 0.0000
+epoch 38/150 step 80 | loss 0.1882 | det 0.0000 seg 0.1525 cnt 0.0000
+epoch 38/150 step 100 | loss 0.1891 | det 0.0000 seg 0.1720 cnt 0.0000
+epoch 38/150 step 120 | loss 0.1886 | det 0.0000 seg 0.1061 cnt 0.0000
+epoch 38/150 step 140 | loss 0.1878 | det 0.0000 seg 0.2018 cnt 0.0000
+epoch 38/150 step 160 | loss 0.1869 | det 0.0000 seg 0.1347 cnt 0.0000
+epoch 38/150 | train 0.1873 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 39/150 step 20 | loss 0.1727 | det 0.0000 seg 0.1720 cnt 0.0000
+epoch 39/150 step 40 | loss 0.1785 | det 0.0000 seg 0.2136 cnt 0.0000
+epoch 39/150 step 60 | loss 0.1784 | det 0.0000 seg 0.1456 cnt 0.0000
+epoch 39/150 step 80 | loss 0.1765 | det 0.0000 seg 0.1418 cnt 0.0000
+epoch 39/150 step 100 | loss 0.1741 | det 0.0000 seg 0.1347 cnt 0.0000
+epoch 39/150 step 120 | loss 0.1773 | det 0.0000 seg 0.1959 cnt 0.0000
+epoch 39/150 step 140 | loss 0.1781 | det 0.0000 seg 0.1866 cnt 0.0000
+epoch 39/150 step 160 | loss 0.1794 | det 0.0000 seg 0.2016 cnt 0.0000
+epoch 39/150 | train 0.1798 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 40/150 step 20 | loss 0.1709 | det 0.0000 seg 0.1030 cnt 0.0000
+epoch 40/150 step 40 | loss 0.1785 | det 0.0000 seg 0.2458 cnt 0.0000
+epoch 40/150 step 60 | loss 0.1755 | det 0.0000 seg 0.2317 cnt 0.0000
+epoch 40/150 step 80 | loss 0.1749 | det 0.0000 seg 0.2267 cnt 0.0000
+epoch 40/150 step 100 | loss 0.1756 | det 0.0000 seg 0.2125 cnt 0.0000
+epoch 40/150 step 120 | loss 0.1758 | det 0.0000 seg 0.1292 cnt 0.0000
+epoch 40/150 step 140 | loss 0.1792 | det 0.0000 seg 0.2364 cnt 0.0000
+epoch 40/150 step 160 | loss 0.1791 | det 0.0000 seg 0.2318 cnt 0.0000
+epoch 40/150 | train 0.1788 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 41/150 step 20 | loss 0.1620 | det 0.0000 seg 0.0949 cnt 0.0000
+epoch 41/150 step 40 | loss 0.1623 | det 0.0000 seg 0.1890 cnt 0.0000
+epoch 41/150 step 60 | loss 0.1677 | det 0.0000 seg 0.2075 cnt 0.0000
+epoch 41/150 step 80 | loss 0.1621 | det 0.0000 seg 0.1189 cnt 0.0000
+epoch 41/150 step 100 | loss 0.1647 | det 0.0000 seg 0.1255 cnt 0.0000
+epoch 41/150 step 120 | loss 0.1654 | det 0.0000 seg 0.1905 cnt 0.0000
+epoch 41/150 step 140 | loss 0.1705 | det 0.0000 seg 0.3165 cnt 0.0000
+epoch 41/150 step 160 | loss 0.1717 | det 0.0000 seg 0.1583 cnt 0.0000
+epoch 41/150 | train 0.1717 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 42/150 step 20 | loss 0.1778 | det 0.0000 seg 0.0935 cnt 0.0000
+epoch 42/150 step 40 | loss 0.1809 | det 0.0000 seg 0.1140 cnt 0.0000
+epoch 42/150 step 60 | loss 0.1812 | det 0.0000 seg 0.1603 cnt 0.0000
+epoch 42/150 step 80 | loss 0.1789 | det 0.0000 seg 0.2489 cnt 0.0000
+epoch 42/150 step 100 | loss 0.1782 | det 0.0000 seg 0.1692 cnt 0.0000
+epoch 42/150 step 120 | loss 0.1789 | det 0.0000 seg 0.1680 cnt 0.0000
+epoch 42/150 step 140 | loss 0.1786 | det 0.0000 seg 0.2551 cnt 0.0000
+epoch 42/150 step 160 | loss 0.1804 | det 0.0000 seg 0.2583 cnt 0.0000
+epoch 42/150 | train 0.1796 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 43/150 step 20 | loss 0.1701 | det 0.0000 seg 0.1846 cnt 0.0000
+epoch 43/150 step 40 | loss 0.1830 | det 0.0000 seg 0.2601 cnt 0.0000
+epoch 43/150 step 60 | loss 0.1762 | det 0.0000 seg 0.1629 cnt 0.0000
+epoch 43/150 step 80 | loss 0.1754 | det 0.0000 seg 0.1350 cnt 0.0000
+epoch 43/150 step 100 | loss 0.1743 | det 0.0000 seg 0.2122 cnt 0.0000
+epoch 43/150 step 120 | loss 0.1757 | det 0.0000 seg 0.2147 cnt 0.0000
+epoch 43/150 step 140 | loss 0.1752 | det 0.0000 seg 0.1579 cnt 0.0000
+epoch 43/150 step 160 | loss 0.1744 | det 0.0000 seg 0.2056 cnt 0.0000
+epoch 43/150 | train 0.1757 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 44/150 step 20 | loss 0.1396 | det 0.0000 seg 0.1584 cnt 0.0000
+epoch 44/150 step 40 | loss 0.1472 | det 0.0000 seg 0.1394 cnt 0.0000
+epoch 44/150 step 60 | loss 0.1605 | det 0.0000 seg 0.0800 cnt 0.0000
+epoch 44/150 step 80 | loss 0.1644 | det 0.0000 seg 0.1312 cnt 0.0000
+epoch 44/150 step 100 | loss 0.1654 | det 0.0000 seg 0.1454 cnt 0.0000
+epoch 44/150 step 120 | loss 0.1694 | det 0.0000 seg 0.0844 cnt 0.0000
+epoch 44/150 step 140 | loss 0.1689 | det 0.0000 seg 0.1763 cnt 0.0000
+epoch 44/150 step 160 | loss 0.1699 | det 0.0000 seg 0.1645 cnt 0.0000
+epoch 44/150 | train 0.1708 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 45/150 step 20 | loss 0.1639 | det 0.0000 seg 0.1219 cnt 0.0000
+epoch 45/150 step 40 | loss 0.1600 | det 0.0000 seg 0.2186 cnt 0.0000
+epoch 45/150 step 60 | loss 0.1703 | det 0.0000 seg 0.2051 cnt 0.0000
+epoch 45/150 step 80 | loss 0.1711 | det 0.0000 seg 0.1242 cnt 0.0000
+epoch 45/150 step 100 | loss 0.1662 | det 0.0000 seg 0.1156 cnt 0.0000
+epoch 45/150 step 120 | loss 0.1668 | det 0.0000 seg 0.1437 cnt 0.0000
+epoch 45/150 step 140 | loss 0.1659 | det 0.0000 seg 0.0894 cnt 0.0000
+epoch 45/150 step 160 | loss 0.1661 | det 0.0000 seg 0.1378 cnt 0.0000
+epoch 45/150 | train 0.1671 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 46/150 step 20 | loss 0.1604 | det 0.0000 seg 0.1367 cnt 0.0000
+epoch 46/150 step 40 | loss 0.1698 | det 0.0000 seg 0.1683 cnt 0.0000
+epoch 46/150 step 60 | loss 0.1658 | det 0.0000 seg 0.1225 cnt 0.0000
+epoch 46/150 step 80 | loss 0.1684 | det 0.0000 seg 0.2734 cnt 0.0000
+epoch 46/150 step 100 | loss 0.1673 | det 0.0000 seg 0.1541 cnt 0.0000
+epoch 46/150 step 120 | loss 0.1687 | det 0.0000 seg 0.2101 cnt 0.0000
+epoch 46/150 step 140 | loss 0.1703 | det 0.0000 seg 0.0799 cnt 0.0000
+epoch 46/150 step 160 | loss 0.1695 | det 0.0000 seg 0.0829 cnt 0.0000
+epoch 46/150 | train 0.1717 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 47/150 step 20 | loss 0.1438 | det 0.0000 seg 0.1812 cnt 0.0000
+epoch 47/150 step 40 | loss 0.1485 | det 0.0000 seg 0.1512 cnt 0.0000
+epoch 47/150 step 60 | loss 0.1537 | det 0.0000 seg 0.1457 cnt 0.0000
+epoch 47/150 step 80 | loss 0.1618 | det 0.0000 seg 0.2140 cnt 0.0000
+epoch 47/150 step 100 | loss 0.1604 | det 0.0000 seg 0.0919 cnt 0.0000
+epoch 47/150 step 120 | loss 0.1615 | det 0.0000 seg 0.1540 cnt 0.0000
+epoch 47/150 step 140 | loss 0.1619 | det 0.0000 seg 0.1996 cnt 0.0000
+epoch 47/150 step 160 | loss 0.1626 | det 0.0000 seg 0.1099 cnt 0.0000
+epoch 47/150 | train 0.1624 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 48/150 step 20 | loss 0.1696 | det 0.0000 seg 0.1403 cnt 0.0000
+epoch 48/150 step 40 | loss 0.1666 | det 0.0000 seg 0.1681 cnt 0.0000
+epoch 48/150 step 60 | loss 0.1623 | det 0.0000 seg 0.1427 cnt 0.0000
+epoch 48/150 step 80 | loss 0.1661 | det 0.0000 seg 0.1020 cnt 0.0000
+epoch 48/150 step 100 | loss 0.1678 | det 0.0000 seg 0.1259 cnt 0.0000
+epoch 48/150 step 120 | loss 0.1687 | det 0.0000 seg 0.2298 cnt 0.0000
+epoch 48/150 step 140 | loss 0.1666 | det 0.0000 seg 0.0852 cnt 0.0000
+epoch 48/150 step 160 | loss 0.1649 | det 0.0000 seg 0.1999 cnt 0.0000
+epoch 48/150 | train 0.1640 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 49/150 step 20 | loss 0.1790 | det 0.0000 seg 0.2211 cnt 0.0000
+epoch 49/150 step 40 | loss 0.1747 | det 0.0000 seg 0.2505 cnt 0.0000
+epoch 49/150 step 60 | loss 0.1730 | det 0.0000 seg 0.2298 cnt 0.0000
+epoch 49/150 step 80 | loss 0.1707 | det 0.0000 seg 0.1350 cnt 0.0000
+epoch 49/150 step 100 | loss 0.1696 | det 0.0000 seg 0.2368 cnt 0.0000
+epoch 49/150 step 120 | loss 0.1689 | det 0.0000 seg 0.1982 cnt 0.0000
+epoch 49/150 step 140 | loss 0.1684 | det 0.0000 seg 0.2613 cnt 0.0000
+epoch 49/150 step 160 | loss 0.1672 | det 0.0000 seg 0.1813 cnt 0.0000
+epoch 49/150 | train 0.1657 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 50/150 step 20 | loss 0.1362 | det 0.0000 seg 0.1501 cnt 0.0000
+epoch 50/150 step 40 | loss 0.1525 | det 0.0000 seg 0.1413 cnt 0.0000
+epoch 50/150 step 60 | loss 0.1548 | det 0.0000 seg 0.1105 cnt 0.0000
+epoch 50/150 step 80 | loss 0.1564 | det 0.0000 seg 0.1168 cnt 0.0000
+epoch 50/150 step 100 | loss 0.1546 | det 0.0000 seg 0.1632 cnt 0.0000
+epoch 50/150 step 120 | loss 0.1534 | det 0.0000 seg 0.0978 cnt 0.0000
+epoch 50/150 step 140 | loss 0.1539 | det 0.0000 seg 0.1029 cnt 0.0000
+epoch 50/150 step 160 | loss 0.1560 | det 0.0000 seg 0.2598 cnt 0.0000
+epoch 50/150 | train 0.1552 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 51/150 step 20 | loss 0.1592 | det 0.0000 seg 0.2486 cnt 0.0000
+epoch 51/150 step 40 | loss 0.1591 | det 0.0000 seg 0.1577 cnt 0.0000
+epoch 51/150 step 60 | loss 0.1663 | det 0.0000 seg 0.1522 cnt 0.0000
+epoch 51/150 step 80 | loss 0.1654 | det 0.0000 seg 0.1662 cnt 0.0000
+epoch 51/150 step 100 | loss 0.1655 | det 0.0000 seg 0.0432 cnt 0.0000
+epoch 51/150 step 120 | loss 0.1643 | det 0.0000 seg 0.1756 cnt 0.0000
+epoch 51/150 step 140 | loss 0.1642 | det 0.0000 seg 0.1157 cnt 0.0000
+epoch 51/150 step 160 | loss 0.1638 | det 0.0000 seg 0.1165 cnt 0.0000
+epoch 51/150 | train 0.1631 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 52/150 step 20 | loss 0.1409 | det 0.0000 seg 0.1101 cnt 0.0000
+epoch 52/150 step 40 | loss 0.1351 | det 0.0000 seg 0.0885 cnt 0.0000
+epoch 52/150 step 60 | loss 0.1462 | det 0.0000 seg 0.1703 cnt 0.0000
+epoch 52/150 step 80 | loss 0.1521 | det 0.0000 seg 0.1790 cnt 0.0000
+epoch 52/150 step 100 | loss 0.1522 | det 0.0000 seg 0.1946 cnt 0.0000
+epoch 52/150 step 120 | loss 0.1538 | det 0.0000 seg 0.1247 cnt 0.0000
+epoch 52/150 step 140 | loss 0.1561 | det 0.0000 seg 0.1254 cnt 0.0000
+epoch 52/150 step 160 | loss 0.1555 | det 0.0000 seg 0.1423 cnt 0.0000
+epoch 52/150 | train 0.1551 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 53/150 step 20 | loss 0.1484 | det 0.0000 seg 0.1237 cnt 0.0000
+epoch 53/150 step 40 | loss 0.1457 | det 0.0000 seg 0.1548 cnt 0.0000
+epoch 53/150 step 60 | loss 0.1499 | det 0.0000 seg 0.1210 cnt 0.0000
+epoch 53/150 step 80 | loss 0.1565 | det 0.0000 seg 0.2661 cnt 0.0000
+epoch 53/150 step 100 | loss 0.1567 | det 0.0000 seg 0.1453 cnt 0.0000
+epoch 53/150 step 120 | loss 0.1614 | det 0.0000 seg 0.0606 cnt 0.0000
+epoch 53/150 step 140 | loss 0.1614 | det 0.0000 seg 0.1475 cnt 0.0000
+epoch 53/150 step 160 | loss 0.1596 | det 0.0000 seg 0.1423 cnt 0.0000
+epoch 53/150 | train 0.1577 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 54/150 step 20 | loss 0.1405 | det 0.0000 seg 0.1549 cnt 0.0000
+epoch 54/150 step 40 | loss 0.1427 | det 0.0000 seg 0.1529 cnt 0.0000
+epoch 54/150 step 60 | loss 0.1468 | det 0.0000 seg 0.0961 cnt 0.0000
+epoch 54/150 step 80 | loss 0.1496 | det 0.0000 seg 0.1597 cnt 0.0000
+epoch 54/150 step 100 | loss 0.1462 | det 0.0000 seg 0.2327 cnt 0.0000
+epoch 54/150 step 120 | loss 0.1460 | det 0.0000 seg 0.1186 cnt 0.0000
+epoch 54/150 step 140 | loss 0.1474 | det 0.0000 seg 0.1639 cnt 0.0000
+epoch 54/150 step 160 | loss 0.1478 | det 0.0000 seg 0.1111 cnt 0.0000
+epoch 54/150 | train 0.1476 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 55/150 step 20 | loss 0.1476 | det 0.0000 seg 0.1245 cnt 0.0000
+epoch 55/150 step 40 | loss 0.1505 | det 0.0000 seg 0.1536 cnt 0.0000
+epoch 55/150 step 60 | loss 0.1510 | det 0.0000 seg 0.1496 cnt 0.0000
+epoch 55/150 step 80 | loss 0.1529 | det 0.0000 seg 0.1334 cnt 0.0000
+epoch 55/150 step 100 | loss 0.1506 | det 0.0000 seg 0.1281 cnt 0.0000
+epoch 55/150 step 120 | loss 0.1489 | det 0.0000 seg 0.1378 cnt 0.0000
+epoch 55/150 step 140 | loss 0.1497 | det 0.0000 seg 0.1651 cnt 0.0000
+epoch 55/150 step 160 | loss 0.1458 | det 0.0000 seg 0.1990 cnt 0.0000
+epoch 55/150 | train 0.1457 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 56/150 step 20 | loss 0.1570 | det 0.0000 seg 0.1784 cnt 0.0000
+epoch 56/150 step 40 | loss 0.1555 | det 0.0000 seg 0.1464 cnt 0.0000
+epoch 56/150 step 60 | loss 0.1541 | det 0.0000 seg 0.1247 cnt 0.0000
+epoch 56/150 step 80 | loss 0.1553 | det 0.0000 seg 0.1805 cnt 0.0000
+epoch 56/150 step 100 | loss 0.1511 | det 0.0000 seg 0.1087 cnt 0.0000
+epoch 56/150 step 120 | loss 0.1502 | det 0.0000 seg 0.1746 cnt 0.0000
+epoch 56/150 step 140 | loss 0.1471 | det 0.0000 seg 0.2428 cnt 0.0000
+epoch 56/150 step 160 | loss 0.1468 | det 0.0000 seg 0.1786 cnt 0.0000
+epoch 56/150 | train 0.1475 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 57/150 step 20 | loss 0.2064 | det 0.0000 seg 0.0921 cnt 0.0000
+epoch 57/150 step 40 | loss 0.1821 | det 0.0000 seg 0.1573 cnt 0.0000
+epoch 57/150 step 60 | loss 0.1682 | det 0.0000 seg 0.1986 cnt 0.0000
+epoch 57/150 step 80 | loss 0.1592 | det 0.0000 seg 0.1380 cnt 0.0000
+epoch 57/150 step 100 | loss 0.1544 | det 0.0000 seg 0.0817 cnt 0.0000
+epoch 57/150 step 120 | loss 0.1527 | det 0.0000 seg 0.1317 cnt 0.0000
+epoch 57/150 step 140 | loss 0.1534 | det 0.0000 seg 0.1350 cnt 0.0000
+epoch 57/150 step 160 | loss 0.1532 | det 0.0000 seg 0.0980 cnt 0.0000
+epoch 57/150 | train 0.1532 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 58/150 step 20 | loss 0.1315 | det 0.0000 seg 0.1577 cnt 0.0000
+epoch 58/150 step 40 | loss 0.1380 | det 0.0000 seg 0.1239 cnt 0.0000
+epoch 58/150 step 60 | loss 0.1415 | det 0.0000 seg 0.1345 cnt 0.0000
+epoch 58/150 step 80 | loss 0.1455 | det 0.0000 seg 0.1495 cnt 0.0000
+epoch 58/150 step 100 | loss 0.1588 | det 0.0000 seg 0.0845 cnt 0.0000
+epoch 58/150 step 120 | loss 0.1573 | det 0.0000 seg 0.1317 cnt 0.0000
+epoch 58/150 step 140 | loss 0.1542 | det 0.0000 seg 0.1263 cnt 0.0000
+epoch 58/150 step 160 | loss 0.1511 | det 0.0000 seg 0.1564 cnt 0.0000
+epoch 58/150 | train 0.1508 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 59/150 step 20 | loss 0.1341 | det 0.0000 seg 0.0853 cnt 0.0000
+epoch 59/150 step 40 | loss 0.1327 | det 0.0000 seg 0.1153 cnt 0.0000
+epoch 59/150 step 60 | loss 0.1402 | det 0.0000 seg 0.1720 cnt 0.0000
+epoch 59/150 step 80 | loss 0.1421 | det 0.0000 seg 0.0913 cnt 0.0000
+epoch 59/150 step 100 | loss 0.1437 | det 0.0000 seg 0.0921 cnt 0.0000
+epoch 59/150 step 120 | loss 0.1395 | det 0.0000 seg 0.0887 cnt 0.0000
+epoch 59/150 step 140 | loss 0.1425 | det 0.0000 seg 0.1218 cnt 0.0000
+epoch 59/150 step 160 | loss 0.1422 | det 0.0000 seg 0.0762 cnt 0.0000
+epoch 59/150 | train 0.1448 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 60/150 step 20 | loss 0.1372 | det 0.0000 seg 0.1892 cnt 0.0000
+epoch 60/150 step 40 | loss 0.1413 | det 0.0000 seg 0.1214 cnt 0.0000
+epoch 60/150 step 60 | loss 0.1407 | det 0.0000 seg 0.1524 cnt 0.0000
+epoch 60/150 step 80 | loss 0.1434 | det 0.0000 seg 0.3130 cnt 0.0000
+epoch 60/150 step 100 | loss 0.1433 | det 0.0000 seg 0.1876 cnt 0.0000
+epoch 60/150 step 120 | loss 0.1394 | det 0.0000 seg 0.1219 cnt 0.0000
+epoch 60/150 step 140 | loss 0.1405 | det 0.0000 seg 0.1049 cnt 0.0000
+epoch 60/150 step 160 | loss 0.1370 | det 0.0000 seg 0.1546 cnt 0.0000
+epoch 60/150 | train 0.1369 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 61/150 step 20 | loss 0.1262 | det 0.0000 seg 0.1077 cnt 0.0000
+epoch 61/150 step 40 | loss 0.1332 | det 0.0000 seg 0.1292 cnt 0.0000
+epoch 61/150 step 60 | loss 0.1295 | det 0.0000 seg 0.1262 cnt 0.0000
+epoch 61/150 step 80 | loss 0.1365 | det 0.0000 seg 0.2239 cnt 0.0000
+epoch 61/150 step 100 | loss 0.1396 | det 0.0000 seg 0.1463 cnt 0.0000
+epoch 61/150 step 120 | loss 0.1371 | det 0.0000 seg 0.0470 cnt 0.0000
+epoch 61/150 step 140 | loss 0.1369 | det 0.0000 seg 0.1112 cnt 0.0000
+epoch 61/150 step 160 | loss 0.1365 | det 0.0000 seg 0.1230 cnt 0.0000
+epoch 61/150 | train 0.1367 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 62/150 step 20 | loss 0.1545 | det 0.0000 seg 0.1380 cnt 0.0000
+epoch 62/150 step 40 | loss 0.1486 | det 0.0000 seg 0.1559 cnt 0.0000
+epoch 62/150 step 60 | loss 0.1490 | det 0.0000 seg 0.0907 cnt 0.0000
+epoch 62/150 step 80 | loss 0.1468 | det 0.0000 seg 0.1704 cnt 0.0000
+epoch 62/150 step 100 | loss 0.1446 | det 0.0000 seg 0.2340 cnt 0.0000
+epoch 62/150 step 120 | loss 0.1443 | det 0.0000 seg 0.2074 cnt 0.0000
+epoch 62/150 step 140 | loss 0.1436 | det 0.0000 seg 0.1135 cnt 0.0000
+epoch 62/150 step 160 | loss 0.1429 | det 0.0000 seg 0.1254 cnt 0.0000
+epoch 62/150 | train 0.1417 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 63/150 step 20 | loss 0.1406 | det 0.0000 seg 0.1080 cnt 0.0000
+epoch 63/150 step 40 | loss 0.1412 | det 0.0000 seg 0.1674 cnt 0.0000
+epoch 63/150 step 60 | loss 0.1426 | det 0.0000 seg 0.1028 cnt 0.0000
+epoch 63/150 step 80 | loss 0.1451 | det 0.0000 seg 0.1272 cnt 0.0000
+epoch 63/150 step 100 | loss 0.1463 | det 0.0000 seg 0.2210 cnt 0.0000
+epoch 63/150 step 120 | loss 0.1449 | det 0.0000 seg 0.1543 cnt 0.0000
+epoch 63/150 step 140 | loss 0.1435 | det 0.0000 seg 0.1650 cnt 0.0000
+epoch 63/150 step 160 | loss 0.1437 | det 0.0000 seg 0.1310 cnt 0.0000
+epoch 63/150 | train 0.1434 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 64/150 step 20 | loss 0.1511 | det 0.0000 seg 0.1683 cnt 0.0000
+epoch 64/150 step 40 | loss 0.1369 | det 0.0000 seg 0.1492 cnt 0.0000
+epoch 64/150 step 60 | loss 0.1376 | det 0.0000 seg 0.1983 cnt 0.0000
+epoch 64/150 step 80 | loss 0.1374 | det 0.0000 seg 0.1272 cnt 0.0000
+epoch 64/150 step 100 | loss 0.1361 | det 0.0000 seg 0.0423 cnt 0.0000
+epoch 64/150 step 120 | loss 0.1332 | det 0.0000 seg 0.1155 cnt 0.0000
+epoch 64/150 step 140 | loss 0.1344 | det 0.0000 seg 0.1041 cnt 0.0000
+epoch 64/150 step 160 | loss 0.1366 | det 0.0000 seg 0.1552 cnt 0.0000
+epoch 64/150 | train 0.1361 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 65/150 step 20 | loss 0.1306 | det 0.0000 seg 0.1610 cnt 0.0000
+epoch 65/150 step 40 | loss 0.1286 | det 0.0000 seg 0.0849 cnt 0.0000
+epoch 65/150 step 60 | loss 0.1286 | det 0.0000 seg 0.1879 cnt 0.0000
+epoch 65/150 step 80 | loss 0.1297 | det 0.0000 seg 0.1597 cnt 0.0000
+epoch 65/150 step 100 | loss 0.1305 | det 0.0000 seg 0.1392 cnt 0.0000
+epoch 65/150 step 120 | loss 0.1300 | det 0.0000 seg 0.2962 cnt 0.0000
+epoch 65/150 step 140 | loss 0.1304 | det 0.0000 seg 0.1493 cnt 0.0000
+epoch 65/150 step 160 | loss 0.1310 | det 0.0000 seg 0.2336 cnt 0.0000
+epoch 65/150 | train 0.1310 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 66/150 step 20 | loss 0.1537 | det 0.0000 seg 0.2203 cnt 0.0000
+epoch 66/150 step 40 | loss 0.1397 | det 0.0000 seg 0.0869 cnt 0.0000
+epoch 66/150 step 60 | loss 0.1431 | det 0.0000 seg 0.0995 cnt 0.0000
+epoch 66/150 step 80 | loss 0.1391 | det 0.0000 seg 0.0773 cnt 0.0000
+epoch 66/150 step 100 | loss 0.1388 | det 0.0000 seg 0.1163 cnt 0.0000
+epoch 66/150 step 120 | loss 0.1389 | det 0.0000 seg 0.1250 cnt 0.0000
+epoch 66/150 step 140 | loss 0.1371 | det 0.0000 seg 0.1428 cnt 0.0000
+epoch 66/150 step 160 | loss 0.1372 | det 0.0000 seg 0.0763 cnt 0.0000
+epoch 66/150 | train 0.1360 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 67/150 step 20 | loss 0.1240 | det 0.0000 seg 0.1168 cnt 0.0000
+epoch 67/150 step 40 | loss 0.1264 | det 0.0000 seg 0.1257 cnt 0.0000
+epoch 67/150 step 60 | loss 0.1321 | det 0.0000 seg 0.1660 cnt 0.0000
+epoch 67/150 step 80 | loss 0.1297 | det 0.0000 seg 0.1156 cnt 0.0000
+epoch 67/150 step 100 | loss 0.1302 | det 0.0000 seg 0.1438 cnt 0.0000
+epoch 67/150 step 120 | loss 0.1299 | det 0.0000 seg 0.1366 cnt 0.0000
+epoch 67/150 step 140 | loss 0.1315 | det 0.0000 seg 0.1475 cnt 0.0000
+epoch 67/150 step 160 | loss 0.1309 | det 0.0000 seg 0.1634 cnt 0.0000
+epoch 67/150 | train 0.1324 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 68/150 step 20 | loss 0.1325 | det 0.0000 seg 0.1150 cnt 0.0000
+epoch 68/150 step 40 | loss 0.1344 | det 0.0000 seg 0.1343 cnt 0.0000
+epoch 68/150 step 60 | loss 0.1310 | det 0.0000 seg 0.1619 cnt 0.0000
+epoch 68/150 step 80 | loss 0.1324 | det 0.0000 seg 0.1011 cnt 0.0000
+epoch 68/150 step 100 | loss 0.1339 | det 0.0000 seg 0.0852 cnt 0.0000
+epoch 68/150 step 120 | loss 0.1316 | det 0.0000 seg 0.1336 cnt 0.0000
+epoch 68/150 step 140 | loss 0.1322 | det 0.0000 seg 0.1378 cnt 0.0000
+epoch 68/150 step 160 | loss 0.1333 | det 0.0000 seg 0.1550 cnt 0.0000
+epoch 68/150 | train 0.1326 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 69/150 step 20 | loss 0.1126 | det 0.0000 seg 0.1716 cnt 0.0000
+epoch 69/150 step 40 | loss 0.1259 | det 0.0000 seg 0.1023 cnt 0.0000
+epoch 69/150 step 60 | loss 0.1289 | det 0.0000 seg 0.1821 cnt 0.0000
+epoch 69/150 step 80 | loss 0.1262 | det 0.0000 seg 0.1223 cnt 0.0000
+epoch 69/150 step 100 | loss 0.1249 | det 0.0000 seg 0.1028 cnt 0.0000
+epoch 69/150 step 120 | loss 0.1279 | det 0.0000 seg 0.1871 cnt 0.0000
+epoch 69/150 step 140 | loss 0.1294 | det 0.0000 seg 0.0865 cnt 0.0000
+epoch 69/150 step 160 | loss 0.1271 | det 0.0000 seg 0.1168 cnt 0.0000
+epoch 69/150 | train 0.1286 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 70/150 step 20 | loss 0.1233 | det 0.0000 seg 0.1659 cnt 0.0000
+epoch 70/150 step 40 | loss 0.1225 | det 0.0000 seg 0.0987 cnt 0.0000
+epoch 70/150 step 60 | loss 0.1234 | det 0.0000 seg 0.0822 cnt 0.0000
+epoch 70/150 step 80 | loss 0.1239 | det 0.0000 seg 0.0631 cnt 0.0000
+epoch 70/150 step 100 | loss 0.1236 | det 0.0000 seg 0.1177 cnt 0.0000
+epoch 70/150 step 120 | loss 0.1249 | det 0.0000 seg 0.0752 cnt 0.0000
+epoch 70/150 step 140 | loss 0.1258 | det 0.0000 seg 0.1409 cnt 0.0000
+epoch 70/150 step 160 | loss 0.1267 | det 0.0000 seg 0.1370 cnt 0.0000
+epoch 70/150 | train 0.1263 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 71/150 step 20 | loss 0.1488 | det 0.0000 seg 0.1487 cnt 0.0000
+epoch 71/150 step 40 | loss 0.1415 | det 0.0000 seg 0.1376 cnt 0.0000
+epoch 71/150 step 60 | loss 0.1333 | det 0.0000 seg 0.1450 cnt 0.0000
+epoch 71/150 step 80 | loss 0.1296 | det 0.0000 seg 0.0671 cnt 0.0000
+epoch 71/150 step 100 | loss 0.1286 | det 0.0000 seg 0.2002 cnt 0.0000
+epoch 71/150 step 120 | loss 0.1276 | det 0.0000 seg 0.1538 cnt 0.0000
+epoch 71/150 step 140 | loss 0.1290 | det 0.0000 seg 0.1305 cnt 0.0000
+epoch 71/150 step 160 | loss 0.1275 | det 0.0000 seg 0.1001 cnt 0.0000
+epoch 71/150 | train 0.1283 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 72/150 step 20 | loss 0.1339 | det 0.0000 seg 0.2769 cnt 0.0000
+epoch 72/150 step 40 | loss 0.1337 | det 0.0000 seg 0.1927 cnt 0.0000
+epoch 72/150 step 60 | loss 0.1308 | det 0.0000 seg 0.1228 cnt 0.0000
+epoch 72/150 step 80 | loss 0.1273 | det 0.0000 seg 0.1148 cnt 0.0000
+epoch 72/150 step 100 | loss 0.1269 | det 0.0000 seg 0.1326 cnt 0.0000
+epoch 72/150 step 120 | loss 0.1271 | det 0.0000 seg 0.1253 cnt 0.0000
+epoch 72/150 step 140 | loss 0.1274 | det 0.0000 seg 0.1357 cnt 0.0000
+epoch 72/150 step 160 | loss 0.1278 | det 0.0000 seg 0.1353 cnt 0.0000
+epoch 72/150 | train 0.1264 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 73/150 step 20 | loss 0.1165 | det 0.0000 seg 0.1148 cnt 0.0000
+epoch 73/150 step 40 | loss 0.1282 | det 0.0000 seg 0.1324 cnt 0.0000
+epoch 73/150 step 60 | loss 0.1261 | det 0.0000 seg 0.1144 cnt 0.0000
+epoch 73/150 step 80 | loss 0.1227 | det 0.0000 seg 0.1120 cnt 0.0000
+epoch 73/150 step 100 | loss 0.1249 | det 0.0000 seg 0.1152 cnt 0.0000
+epoch 73/150 step 120 | loss 0.1251 | det 0.0000 seg 0.1626 cnt 0.0000
+epoch 73/150 step 140 | loss 0.1279 | det 0.0000 seg 0.1359 cnt 0.0000
+epoch 73/150 step 160 | loss 0.1300 | det 0.0000 seg 0.1038 cnt 0.0000
+epoch 73/150 | train 0.1299 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 74/150 step 20 | loss 0.1298 | det 0.0000 seg 0.1142 cnt 0.0000
+epoch 74/150 step 40 | loss 0.1292 | det 0.0000 seg 0.1216 cnt 0.0000
+epoch 74/150 step 60 | loss 0.1269 | det 0.0000 seg 0.1622 cnt 0.0000
+epoch 74/150 step 80 | loss 0.1286 | det 0.0000 seg 0.1584 cnt 0.0000
+epoch 74/150 step 100 | loss 0.1283 | det 0.0000 seg 0.1673 cnt 0.0000
+epoch 74/150 step 120 | loss 0.1270 | det 0.0000 seg 0.1158 cnt 0.0000
+epoch 74/150 step 140 | loss 0.1271 | det 0.0000 seg 0.1056 cnt 0.0000
+epoch 74/150 step 160 | loss 0.1267 | det 0.0000 seg 0.1112 cnt 0.0000
+epoch 74/150 | train 0.1246 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 75/150 step 20 | loss 0.1241 | det 0.0000 seg 0.0792 cnt 0.0000
+epoch 75/150 step 40 | loss 0.1185 | det 0.0000 seg 0.0726 cnt 0.0000
+epoch 75/150 step 60 | loss 0.1230 | det 0.0000 seg 0.1325 cnt 0.0000
+epoch 75/150 step 80 | loss 0.1230 | det 0.0000 seg 0.1588 cnt 0.0000
+epoch 75/150 step 100 | loss 0.1236 | det 0.0000 seg 0.1554 cnt 0.0000
+epoch 75/150 step 120 | loss 0.1229 | det 0.0000 seg 0.1293 cnt 0.0000
+epoch 75/150 step 140 | loss 0.1229 | det 0.0000 seg 0.1353 cnt 0.0000
+epoch 75/150 step 160 | loss 0.1222 | det 0.0000 seg 0.1207 cnt 0.0000
+epoch 75/150 | train 0.1227 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 76/150 step 20 | loss 0.1323 | det 0.0000 seg 0.1104 cnt 0.0000
+epoch 76/150 step 40 | loss 0.1279 | det 0.0000 seg 0.1618 cnt 0.0000
+epoch 76/150 step 60 | loss 0.1218 | det 0.0000 seg 0.3055 cnt 0.0000
+epoch 76/150 step 80 | loss 0.1221 | det 0.0000 seg 0.1097 cnt 0.0000
+epoch 76/150 step 100 | loss 0.1193 | det 0.0000 seg 0.1583 cnt 0.0000
+epoch 76/150 step 120 | loss 0.1197 | det 0.0000 seg 0.1114 cnt 0.0000
+epoch 76/150 step 140 | loss 0.1222 | det 0.0000 seg 0.1238 cnt 0.0000
+epoch 76/150 step 160 | loss 0.1224 | det 0.0000 seg 0.1047 cnt 0.0000
+epoch 76/150 | train 0.1231 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 77/150 step 20 | loss 0.1157 | det 0.0000 seg 0.0959 cnt 0.0000
+epoch 77/150 step 40 | loss 0.1261 | det 0.0000 seg 0.2025 cnt 0.0000
+epoch 77/150 step 60 | loss 0.1225 | det 0.0000 seg 0.1456 cnt 0.0000
+epoch 77/150 step 80 | loss 0.1217 | det 0.0000 seg 0.0957 cnt 0.0000
+epoch 77/150 step 100 | loss 0.1206 | det 0.0000 seg 0.1349 cnt 0.0000
+epoch 77/150 step 120 | loss 0.1216 | det 0.0000 seg 0.1131 cnt 0.0000
+epoch 77/150 step 140 | loss 0.1212 | det 0.0000 seg 0.1131 cnt 0.0000
+epoch 77/150 step 160 | loss 0.1204 | det 0.0000 seg 0.1973 cnt 0.0000
+epoch 77/150 | train 0.1206 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 78/150 step 20 | loss 0.1358 | det 0.0000 seg 0.1365 cnt 0.0000
+epoch 78/150 step 40 | loss 0.1308 | det 0.0000 seg 0.1301 cnt 0.0000
+epoch 78/150 step 60 | loss 0.1334 | det 0.0000 seg 0.1910 cnt 0.0000
+epoch 78/150 step 80 | loss 0.1316 | det 0.0000 seg 0.1335 cnt 0.0000
+epoch 78/150 step 100 | loss 0.1286 | det 0.0000 seg 0.1343 cnt 0.0000
+epoch 78/150 step 120 | loss 0.1262 | det 0.0000 seg 0.0988 cnt 0.0000
+epoch 78/150 step 140 | loss 0.1261 | det 0.0000 seg 0.1154 cnt 0.0000
+epoch 78/150 step 160 | loss 0.1254 | det 0.0000 seg 0.1311 cnt 0.0000
+epoch 78/150 | train 0.1265 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 79/150 step 20 | loss 0.1243 | det 0.0000 seg 0.0979 cnt 0.0000
+epoch 79/150 step 40 | loss 0.1198 | det 0.0000 seg 0.1132 cnt 0.0000
+epoch 79/150 step 60 | loss 0.1138 | det 0.0000 seg 0.1016 cnt 0.0000
+epoch 79/150 step 80 | loss 0.1117 | det 0.0000 seg 0.1103 cnt 0.0000
+epoch 79/150 step 100 | loss 0.1136 | det 0.0000 seg 0.1176 cnt 0.0000
+epoch 79/150 step 120 | loss 0.1126 | det 0.0000 seg 0.1208 cnt 0.0000
+epoch 79/150 step 140 | loss 0.1123 | det 0.0000 seg 0.1302 cnt 0.0000
+epoch 79/150 step 160 | loss 0.1134 | det 0.0000 seg 0.1017 cnt 0.0000
+epoch 79/150 | train 0.1133 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 80/150 step 20 | loss 0.1333 | det 0.0000 seg 0.1601 cnt 0.0000
+epoch 80/150 step 40 | loss 0.1256 | det 0.0000 seg 0.1663 cnt 0.0000
+epoch 80/150 step 60 | loss 0.1223 | det 0.0000 seg 0.1071 cnt 0.0000
+epoch 80/150 step 80 | loss 0.1232 | det 0.0000 seg 0.1375 cnt 0.0000
+epoch 80/150 step 100 | loss 0.1219 | det 0.0000 seg 0.0748 cnt 0.0000
+epoch 80/150 step 120 | loss 0.1224 | det 0.0000 seg 0.0978 cnt 0.0000
+epoch 80/150 step 140 | loss 0.1215 | det 0.0000 seg 0.1366 cnt 0.0000
+epoch 80/150 step 160 | loss 0.1203 | det 0.0000 seg 0.1379 cnt 0.0000
+epoch 80/150 | train 0.1220 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 81/150 step 20 | loss 0.1187 | det 0.0000 seg 0.2009 cnt 0.0000
+epoch 81/150 step 40 | loss 0.1153 | det 0.0000 seg 0.1018 cnt 0.0000
+epoch 81/150 step 60 | loss 0.1151 | det 0.0000 seg 0.1533 cnt 0.0000
+epoch 81/150 step 80 | loss 0.1135 | det 0.0000 seg 0.1280 cnt 0.0000
+epoch 81/150 step 100 | loss 0.1142 | det 0.0000 seg 0.1274 cnt 0.0000
+epoch 81/150 step 120 | loss 0.1150 | det 0.0000 seg 0.1191 cnt 0.0000
+epoch 81/150 step 140 | loss 0.1146 | det 0.0000 seg 0.1321 cnt 0.0000
+epoch 81/150 step 160 | loss 0.1166 | det 0.0000 seg 0.0769 cnt 0.0000
+epoch 81/150 | train 0.1171 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 82/150 step 20 | loss 0.1218 | det 0.0000 seg 0.0735 cnt 0.0000
+epoch 82/150 step 40 | loss 0.1217 | det 0.0000 seg 0.0645 cnt 0.0000
+epoch 82/150 step 60 | loss 0.1186 | det 0.0000 seg 0.1521 cnt 0.0000
+epoch 82/150 step 80 | loss 0.1192 | det 0.0000 seg 0.0738 cnt 0.0000
+epoch 82/150 step 100 | loss 0.1229 | det 0.0000 seg 0.1243 cnt 0.0000
+epoch 82/150 step 120 | loss 0.1233 | det 0.0000 seg 0.1335 cnt 0.0000
+epoch 82/150 step 140 | loss 0.1226 | det 0.0000 seg 0.0670 cnt 0.0000
+epoch 82/150 step 160 | loss 0.1224 | det 0.0000 seg 0.1209 cnt 0.0000
+epoch 82/150 | train 0.1219 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 83/150 step 20 | loss 0.1068 | det 0.0000 seg 0.1080 cnt 0.0000
+epoch 83/150 step 40 | loss 0.1073 | det 0.0000 seg 0.1102 cnt 0.0000
+epoch 83/150 step 60 | loss 0.1133 | det 0.0000 seg 0.2029 cnt 0.0000
+epoch 83/150 step 80 | loss 0.1152 | det 0.0000 seg 0.0966 cnt 0.0000
+epoch 83/150 step 100 | loss 0.1127 | det 0.0000 seg 0.0526 cnt 0.0000
+epoch 83/150 step 120 | loss 0.1144 | det 0.0000 seg 0.1400 cnt 0.0000
+epoch 83/150 step 140 | loss 0.1145 | det 0.0000 seg 0.1174 cnt 0.0000
+epoch 83/150 step 160 | loss 0.1155 | det 0.0000 seg 0.0716 cnt 0.0000
+epoch 83/150 | train 0.1159 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 84/150 step 20 | loss 0.1165 | det 0.0000 seg 0.1311 cnt 0.0000
+epoch 84/150 step 40 | loss 0.1200 | det 0.0000 seg 0.0860 cnt 0.0000
+epoch 84/150 step 60 | loss 0.1224 | det 0.0000 seg 0.1539 cnt 0.0000
+epoch 84/150 step 80 | loss 0.1196 | det 0.0000 seg 0.0678 cnt 0.0000
+epoch 84/150 step 100 | loss 0.1168 | det 0.0000 seg 0.1167 cnt 0.0000
+epoch 84/150 step 120 | loss 0.1152 | det 0.0000 seg 0.0587 cnt 0.0000
+epoch 84/150 step 140 | loss 0.1156 | det 0.0000 seg 0.0615 cnt 0.0000
+epoch 84/150 step 160 | loss 0.1154 | det 0.0000 seg 0.0895 cnt 0.0000
+epoch 84/150 | train 0.1159 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 85/150 step 20 | loss 0.1141 | det 0.0000 seg 0.0947 cnt 0.0000
+epoch 85/150 step 40 | loss 0.1161 | det 0.0000 seg 0.0958 cnt 0.0000
+epoch 85/150 step 60 | loss 0.1122 | det 0.0000 seg 0.0806 cnt 0.0000
+epoch 85/150 step 80 | loss 0.1151 | det 0.0000 seg 0.0779 cnt 0.0000
+epoch 85/150 step 100 | loss 0.1169 | det 0.0000 seg 0.0994 cnt 0.0000
+epoch 85/150 step 120 | loss 0.1167 | det 0.0000 seg 0.1107 cnt 0.0000
+epoch 85/150 step 140 | loss 0.1159 | det 0.0000 seg 0.1100 cnt 0.0000
+epoch 85/150 step 160 | loss 0.1147 | det 0.0000 seg 0.1020 cnt 0.0000
+epoch 85/150 | train 0.1148 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 86/150 step 20 | loss 0.1279 | det 0.0000 seg 0.1315 cnt 0.0000
+epoch 86/150 step 40 | loss 0.1277 | det 0.0000 seg 0.1722 cnt 0.0000
+epoch 86/150 step 60 | loss 0.1271 | det 0.0000 seg 0.1001 cnt 0.0000
+epoch 86/150 step 80 | loss 0.1205 | det 0.0000 seg 0.0934 cnt 0.0000
+epoch 86/150 step 100 | loss 0.1209 | det 0.0000 seg 0.1207 cnt 0.0000
+epoch 86/150 step 120 | loss 0.1194 | det 0.0000 seg 0.1449 cnt 0.0000
+epoch 86/150 step 140 | loss 0.1209 | det 0.0000 seg 0.1475 cnt 0.0000
+epoch 86/150 step 160 | loss 0.1194 | det 0.0000 seg 0.1038 cnt 0.0000
+epoch 86/150 | train 0.1194 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 87/150 step 20 | loss 0.1108 | det 0.0000 seg 0.1177 cnt 0.0000
+epoch 87/150 step 40 | loss 0.1085 | det 0.0000 seg 0.0669 cnt 0.0000
+epoch 87/150 step 60 | loss 0.1131 | det 0.0000 seg 0.1126 cnt 0.0000
+epoch 87/150 step 80 | loss 0.1109 | det 0.0000 seg 0.1175 cnt 0.0000
+epoch 87/150 step 100 | loss 0.1125 | det 0.0000 seg 0.1251 cnt 0.0000
+epoch 87/150 step 120 | loss 0.1134 | det 0.0000 seg 0.1084 cnt 0.0000
+epoch 87/150 step 140 | loss 0.1147 | det 0.0000 seg 0.1057 cnt 0.0000
+epoch 87/150 step 160 | loss 0.1145 | det 0.0000 seg 0.1133 cnt 0.0000
+epoch 87/150 | train 0.1153 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 88/150 step 20 | loss 0.1127 | det 0.0000 seg 0.1405 cnt 0.0000
+epoch 88/150 step 40 | loss 0.1128 | det 0.0000 seg 0.0917 cnt 0.0000
+epoch 88/150 step 60 | loss 0.1103 | det 0.0000 seg 0.0875 cnt 0.0000
+epoch 88/150 step 80 | loss 0.1111 | det 0.0000 seg 0.0662 cnt 0.0000
+epoch 88/150 step 100 | loss 0.1091 | det 0.0000 seg 0.0865 cnt 0.0000
+epoch 88/150 step 120 | loss 0.1117 | det 0.0000 seg 0.1382 cnt 0.0000
+epoch 88/150 step 140 | loss 0.1116 | det 0.0000 seg 0.1125 cnt 0.0000
+epoch 88/150 step 160 | loss 0.1117 | det 0.0000 seg 0.1032 cnt 0.0000
+epoch 88/150 | train 0.1124 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 89/150 step 20 | loss 0.1052 | det 0.0000 seg 0.1097 cnt 0.0000
+epoch 89/150 step 40 | loss 0.0960 | det 0.0000 seg 0.1446 cnt 0.0000
+epoch 89/150 step 60 | loss 0.0986 | det 0.0000 seg 0.1245 cnt 0.0000
+epoch 89/150 step 80 | loss 0.1001 | det 0.0000 seg 0.0851 cnt 0.0000
+epoch 89/150 step 100 | loss 0.1017 | det 0.0000 seg 0.1192 cnt 0.0000
+epoch 89/150 step 120 | loss 0.1020 | det 0.0000 seg 0.0934 cnt 0.0000
+epoch 89/150 step 140 | loss 0.1037 | det 0.0000 seg 0.0476 cnt 0.0000
+epoch 89/150 step 160 | loss 0.1061 | det 0.0000 seg 0.1715 cnt 0.0000
+epoch 89/150 | train 0.1068 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 90/150 step 20 | loss 0.1103 | det 0.0000 seg 0.1444 cnt 0.0000
+epoch 90/150 step 40 | loss 0.1156 | det 0.0000 seg 0.1973 cnt 0.0000
+epoch 90/150 step 60 | loss 0.1105 | det 0.0000 seg 0.1198 cnt 0.0000
+epoch 90/150 step 80 | loss 0.1110 | det 0.0000 seg 0.0705 cnt 0.0000
+epoch 90/150 step 100 | loss 0.1116 | det 0.0000 seg 0.1656 cnt 0.0000
+epoch 90/150 step 120 | loss 0.1113 | det 0.0000 seg 0.0935 cnt 0.0000
+epoch 90/150 step 140 | loss 0.1114 | det 0.0000 seg 0.1933 cnt 0.0000
+epoch 90/150 step 160 | loss 0.1124 | det 0.0000 seg 0.0741 cnt 0.0000
+epoch 90/150 | train 0.1109 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 91/150 step 20 | loss 0.1093 | det 0.0000 seg 0.0973 cnt 0.0000
+epoch 91/150 step 40 | loss 0.1119 | det 0.0000 seg 0.1594 cnt 0.0000
+epoch 91/150 step 60 | loss 0.1125 | det 0.0000 seg 0.0625 cnt 0.0000
+epoch 91/150 step 80 | loss 0.1135 | det 0.0000 seg 0.1392 cnt 0.0000
+epoch 91/150 step 100 | loss 0.1159 | det 0.0000 seg 0.1453 cnt 0.0000
+epoch 91/150 step 120 | loss 0.1163 | det 0.0000 seg 0.0807 cnt 0.0000
+epoch 91/150 step 140 | loss 0.1158 | det 0.0000 seg 0.1040 cnt 0.0000
+epoch 91/150 step 160 | loss 0.1164 | det 0.0000 seg 0.1069 cnt 0.0000
+epoch 91/150 | train 0.1169 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 92/150 step 20 | loss 0.1194 | det 0.0000 seg 0.1317 cnt 0.0000
+epoch 92/150 step 40 | loss 0.1150 | det 0.0000 seg 0.1030 cnt 0.0000
+epoch 92/150 step 60 | loss 0.1150 | det 0.0000 seg 0.0939 cnt 0.0000
+epoch 92/150 step 80 | loss 0.1159 | det 0.0000 seg 0.1047 cnt 0.0000
+epoch 92/150 step 100 | loss 0.1128 | det 0.0000 seg 0.1531 cnt 0.0000
+epoch 92/150 step 120 | loss 0.1133 | det 0.0000 seg 0.2210 cnt 0.0000
+epoch 92/150 step 140 | loss 0.1161 | det 0.0000 seg 0.0230 cnt 0.0000
+epoch 92/150 step 160 | loss 0.1161 | det 0.0000 seg 0.1247 cnt 0.0000
+epoch 92/150 | train 0.1165 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 93/150 step 20 | loss 0.1205 | det 0.0000 seg 0.1691 cnt 0.0000
+epoch 93/150 step 40 | loss 0.1174 | det 0.0000 seg 0.0683 cnt 0.0000
+epoch 93/150 step 60 | loss 0.1147 | det 0.0000 seg 0.0969 cnt 0.0000
+epoch 93/150 step 80 | loss 0.1149 | det 0.0000 seg 0.1460 cnt 0.0000
+epoch 93/150 step 100 | loss 0.1116 | det 0.0000 seg 0.1441 cnt 0.0000
+epoch 93/150 step 120 | loss 0.1116 | det 0.0000 seg 0.1329 cnt 0.0000
+epoch 93/150 step 140 | loss 0.1112 | det 0.0000 seg 0.1190 cnt 0.0000
+epoch 93/150 step 160 | loss 0.1102 | det 0.0000 seg 0.0698 cnt 0.0000
+epoch 93/150 | train 0.1096 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 94/150 step 20 | loss 0.1252 | det 0.0000 seg 0.0960 cnt 0.0000
+epoch 94/150 step 40 | loss 0.1169 | det 0.0000 seg 0.1123 cnt 0.0000
+epoch 94/150 step 60 | loss 0.1098 | det 0.0000 seg 0.0664 cnt 0.0000
+epoch 94/150 step 80 | loss 0.1119 | det 0.0000 seg 0.2654 cnt 0.0000
+epoch 94/150 step 100 | loss 0.1130 | det 0.0000 seg 0.1625 cnt 0.0000
+epoch 94/150 step 120 | loss 0.1146 | det 0.0000 seg 0.0841 cnt 0.0000
+epoch 94/150 step 140 | loss 0.1139 | det 0.0000 seg 0.0771 cnt 0.0000
+epoch 94/150 step 160 | loss 0.1118 | det 0.0000 seg 0.1088 cnt 0.0000
+epoch 94/150 | train 0.1116 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 95/150 step 20 | loss 0.1011 | det 0.0000 seg 0.0638 cnt 0.0000
+epoch 95/150 step 40 | loss 0.1050 | det 0.0000 seg 0.1145 cnt 0.0000
+epoch 95/150 step 60 | loss 0.1063 | det 0.0000 seg 0.1138 cnt 0.0000
+epoch 95/150 step 80 | loss 0.1041 | det 0.0000 seg 0.1147 cnt 0.0000
+epoch 95/150 step 100 | loss 0.1038 | det 0.0000 seg 0.0774 cnt 0.0000
+epoch 95/150 step 120 | loss 0.1038 | det 0.0000 seg 0.0658 cnt 0.0000
+epoch 95/150 step 140 | loss 0.1035 | det 0.0000 seg 0.0937 cnt 0.0000
+epoch 95/150 step 160 | loss 0.1043 | det 0.0000 seg 0.1367 cnt 0.0000
+epoch 95/150 | train 0.1055 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 96/150 step 20 | loss 0.1090 | det 0.0000 seg 0.1075 cnt 0.0000
+epoch 96/150 step 40 | loss 0.1092 | det 0.0000 seg 0.0671 cnt 0.0000
+epoch 96/150 step 60 | loss 0.1077 | det 0.0000 seg 0.1259 cnt 0.0000
+epoch 96/150 step 80 | loss 0.1071 | det 0.0000 seg 0.1298 cnt 0.0000
+epoch 96/150 step 100 | loss 0.1043 | det 0.0000 seg 0.0522 cnt 0.0000
+epoch 96/150 step 120 | loss 0.1050 | det 0.0000 seg 0.0864 cnt 0.0000
+epoch 96/150 step 140 | loss 0.1047 | det 0.0000 seg 0.1210 cnt 0.0000
+epoch 96/150 step 160 | loss 0.1042 | det 0.0000 seg 0.0394 cnt 0.0000
+epoch 96/150 | train 0.1044 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 97/150 step 20 | loss 0.1029 | det 0.0000 seg 0.1244 cnt 0.0000
+epoch 97/150 step 40 | loss 0.1027 | det 0.0000 seg 0.0701 cnt 0.0000
+epoch 97/150 step 60 | loss 0.1035 | det 0.0000 seg 0.1013 cnt 0.0000
+epoch 97/150 step 80 | loss 0.1112 | det 0.0000 seg 0.0843 cnt 0.0000
+epoch 97/150 step 100 | loss 0.1104 | det 0.0000 seg 0.2061 cnt 0.0000
+epoch 97/150 step 120 | loss 0.1106 | det 0.0000 seg 0.0685 cnt 0.0000
+epoch 97/150 step 140 | loss 0.1098 | det 0.0000 seg 0.0944 cnt 0.0000
+epoch 97/150 step 160 | loss 0.1090 | det 0.0000 seg 0.1807 cnt 0.0000
+epoch 97/150 | train 0.1084 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 98/150 step 20 | loss 0.0983 | det 0.0000 seg 0.1117 cnt 0.0000
+epoch 98/150 step 40 | loss 0.0994 | det 0.0000 seg 0.1171 cnt 0.0000
+epoch 98/150 step 60 | loss 0.0967 | det 0.0000 seg 0.1150 cnt 0.0000
+epoch 98/150 step 80 | loss 0.1019 | det 0.0000 seg 0.1727 cnt 0.0000
+epoch 98/150 step 100 | loss 0.1020 | det 0.0000 seg 0.1266 cnt 0.0000
+epoch 98/150 step 120 | loss 0.1025 | det 0.0000 seg 0.1630 cnt 0.0000
+epoch 98/150 step 140 | loss 0.1043 | det 0.0000 seg 0.1620 cnt 0.0000
+epoch 98/150 step 160 | loss 0.1056 | det 0.0000 seg 0.0692 cnt 0.0000
+epoch 98/150 | train 0.1054 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 99/150 step 20 | loss 0.1028 | det 0.0000 seg 0.1155 cnt 0.0000
+epoch 99/150 step 40 | loss 0.1038 | det 0.0000 seg 0.0484 cnt 0.0000
+epoch 99/150 step 60 | loss 0.0995 | det 0.0000 seg 0.0518 cnt 0.0000
+epoch 99/150 step 80 | loss 0.1004 | det 0.0000 seg 0.1035 cnt 0.0000
+epoch 99/150 step 100 | loss 0.1016 | det 0.0000 seg 0.0977 cnt 0.0000
+epoch 99/150 step 120 | loss 0.1016 | det 0.0000 seg 0.1004 cnt 0.0000
+epoch 99/150 step 140 | loss 0.1026 | det 0.0000 seg 0.1997 cnt 0.0000
+epoch 99/150 step 160 | loss 0.1048 | det 0.0000 seg 0.0506 cnt 0.0000
+epoch 99/150 | train 0.1053 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 100/150 step 20 | loss 0.1072 | det 0.0000 seg 0.0607 cnt 0.0000
+epoch 100/150 step 40 | loss 0.1043 | det 0.0000 seg 0.0791 cnt 0.0000
+epoch 100/150 step 60 | loss 0.1028 | det 0.0000 seg 0.1692 cnt 0.0000
+epoch 100/150 step 80 | loss 0.1043 | det 0.0000 seg 0.1719 cnt 0.0000
+epoch 100/150 step 100 | loss 0.1040 | det 0.0000 seg 0.0704 cnt 0.0000
+epoch 100/150 step 120 | loss 0.1039 | det 0.0000 seg 0.1615 cnt 0.0000
+epoch 100/150 step 140 | loss 0.1040 | det 0.0000 seg 0.1317 cnt 0.0000
+epoch 100/150 step 160 | loss 0.1041 | det 0.0000 seg 0.0747 cnt 0.0000
+epoch 100/150 | train 0.1037 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.000000
+epoch 101/150 step 20 | loss 0.1082 | det 0.0000 seg 0.1120 cnt 0.0000
+epoch 101/150 step 40 | loss 0.1084 | det 0.0000 seg 0.1288 cnt 0.0000
+epoch 101/150 step 60 | loss 0.1053 | det 0.0000 seg 0.0679 cnt 0.0000
+epoch 101/150 step 80 | loss 0.1092 | det 0.0000 seg 0.0995 cnt 0.0000
+epoch 101/150 step 100 | loss 0.1094 | det 0.0000 seg 0.0839 cnt 0.0000
+epoch 101/150 step 120 | loss 0.1083 | det 0.0000 seg 0.0843 cnt 0.0000
+epoch 101/150 step 140 | loss 0.1064 | det 0.0000 seg 0.0720 cnt 0.0000
+epoch 101/150 step 160 | loss 0.1047 | det 0.0000 seg 0.1279 cnt 0.0000
+epoch 101/150 | train 0.1062 | val det 0.0000 seg 0.3960 miou 0.8184 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.818386
+[ckpt] new best cached (seg_miou 0.818386)
+epoch 102/150 step 20 | loss 0.1070 | det 0.0000 seg 0.1019 cnt 0.0000
+epoch 102/150 step 40 | loss 0.1018 | det 0.0000 seg 0.0620 cnt 0.0000
+epoch 102/150 step 60 | loss 0.0993 | det 0.0000 seg 0.0562 cnt 0.0000
+epoch 102/150 step 80 | loss 0.0991 | det 0.0000 seg 0.1063 cnt 0.0000
+epoch 102/150 step 100 | loss 0.0994 | det 0.0000 seg 0.1030 cnt 0.0000
+epoch 102/150 step 120 | loss 0.1006 | det 0.0000 seg 0.0852 cnt 0.0000
+epoch 102/150 step 140 | loss 0.1006 | det 0.0000 seg 0.0778 cnt 0.0000
+epoch 102/150 step 160 | loss 0.1004 | det 0.0000 seg 0.0781 cnt 0.0000
+epoch 102/150 | train 0.1014 | val det 0.0000 seg 0.3898 miou 0.8198 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.819847
+[ckpt] new best cached (seg_miou 0.819847)
+epoch 103/150 step 20 | loss 0.1043 | det 0.0000 seg 0.1265 cnt 0.0000
+epoch 103/150 step 40 | loss 0.1070 | det 0.0000 seg 0.0840 cnt 0.0000
+epoch 103/150 step 60 | loss 0.1043 | det 0.0000 seg 0.1097 cnt 0.0000
+epoch 103/150 step 80 | loss 0.1083 | det 0.0000 seg 0.1240 cnt 0.0000
+epoch 103/150 step 100 | loss 0.1064 | det 0.0000 seg 0.0985 cnt 0.0000
+epoch 103/150 step 120 | loss 0.1067 | det 0.0000 seg 0.1185 cnt 0.0000
+epoch 103/150 step 140 | loss 0.1065 | det 0.0000 seg 0.1431 cnt 0.0000
+epoch 103/150 step 160 | loss 0.1059 | det 0.0000 seg 0.1007 cnt 0.0000
+epoch 103/150 | train 0.1059 | val det 0.0000 seg 0.3929 miou 0.8209 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.820946
+[ckpt] new best cached (seg_miou 0.820946)
+epoch 104/150 step 20 | loss 0.0998 | det 0.0000 seg 0.0604 cnt 0.0000
+epoch 104/150 step 40 | loss 0.1020 | det 0.0000 seg 0.1102 cnt 0.0000
+epoch 104/150 step 60 | loss 0.0961 | det 0.0000 seg 0.0754 cnt 0.0000
+epoch 104/150 step 80 | loss 0.0973 | det 0.0000 seg 0.1322 cnt 0.0000
+epoch 104/150 step 100 | loss 0.0966 | det 0.0000 seg 0.0370 cnt 0.0000
+epoch 104/150 step 120 | loss 0.0995 | det 0.0000 seg 0.1625 cnt 0.0000
+epoch 104/150 step 140 | loss 0.1009 | det 0.0000 seg 0.0909 cnt 0.0000
+epoch 104/150 step 160 | loss 0.1017 | det 0.0000 seg 0.1337 cnt 0.0000
+epoch 104/150 | train 0.1024 | val det 0.0000 seg 0.4015 miou 0.8216 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.821625
+[ckpt] new best cached (seg_miou 0.821625)
+epoch 105/150 step 20 | loss 0.0985 | det 0.0000 seg 0.0593 cnt 0.0000
+epoch 105/150 step 40 | loss 0.1018 | det 0.0000 seg 0.1255 cnt 0.0000
+epoch 105/150 step 60 | loss 0.1019 | det 0.0000 seg 0.0863 cnt 0.0000
+epoch 105/150 step 80 | loss 0.1024 | det 0.0000 seg 0.0778 cnt 0.0000
+epoch 105/150 step 100 | loss 0.1036 | det 0.0000 seg 0.1170 cnt 0.0000
+epoch 105/150 step 120 | loss 0.1045 | det 0.0000 seg 0.0919 cnt 0.0000
+epoch 105/150 step 140 | loss 0.1046 | det 0.0000 seg 0.1369 cnt 0.0000
+epoch 105/150 step 160 | loss 0.1027 | det 0.0000 seg 0.1245 cnt 0.0000
+epoch 105/150 | train 0.1041 | val det 0.0000 seg 0.4105 miou 0.8168 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.816845
+epoch 106/150 step 20 | loss 0.0917 | det 0.0000 seg 0.0938 cnt 0.0000
+epoch 106/150 step 40 | loss 0.0962 | det 0.0000 seg 0.1741 cnt 0.0000
+epoch 106/150 step 60 | loss 0.0966 | det 0.0000 seg 0.1215 cnt 0.0000
+epoch 106/150 step 80 | loss 0.0977 | det 0.0000 seg 0.0990 cnt 0.0000
+epoch 106/150 step 100 | loss 0.0970 | det 0.0000 seg 0.0947 cnt 0.0000
+epoch 106/150 step 120 | loss 0.0981 | det 0.0000 seg 0.1078 cnt 0.0000
+epoch 106/150 step 140 | loss 0.0995 | det 0.0000 seg 0.0768 cnt 0.0000
+epoch 106/150 step 160 | loss 0.0991 | det 0.0000 seg 0.1248 cnt 0.0000
+epoch 106/150 | train 0.0999 | val det 0.0000 seg 0.4044 miou 0.8221 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.822084
+[ckpt] new best cached (seg_miou 0.822084)
+epoch 107/150 step 20 | loss 0.1048 | det 0.0000 seg 0.1337 cnt 0.0000
+epoch 107/150 step 40 | loss 0.1004 | det 0.0000 seg 0.0690 cnt 0.0000
+epoch 107/150 step 60 | loss 0.1020 | det 0.0000 seg 0.0732 cnt 0.0000
+epoch 107/150 step 80 | loss 0.1070 | det 0.0000 seg 0.1186 cnt 0.0000
+epoch 107/150 step 100 | loss 0.1076 | det 0.0000 seg 0.1264 cnt 0.0000
+epoch 107/150 step 120 | loss 0.1093 | det 0.0000 seg 0.1540 cnt 0.0000
+epoch 107/150 step 140 | loss 0.1086 | det 0.0000 seg 0.0934 cnt 0.0000
+epoch 107/150 step 160 | loss 0.1075 | det 0.0000 seg 0.1279 cnt 0.0000
+epoch 107/150 | train 0.1068 | val det 0.0000 seg 0.4006 miou 0.8200 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.820033
+epoch 108/150 step 20 | loss 0.0974 | det 0.0000 seg 0.0667 cnt 0.0000
+epoch 108/150 step 40 | loss 0.0952 | det 0.0000 seg 0.1132 cnt 0.0000
+epoch 108/150 step 60 | loss 0.0955 | det 0.0000 seg 0.1135 cnt 0.0000
+epoch 108/150 step 80 | loss 0.0960 | det 0.0000 seg 0.0334 cnt 0.0000
+epoch 108/150 step 100 | loss 0.0964 | det 0.0000 seg 0.0976 cnt 0.0000
+epoch 108/150 step 120 | loss 0.0973 | det 0.0000 seg 0.0236 cnt 0.0000
+epoch 108/150 step 140 | loss 0.0971 | det 0.0000 seg 0.0895 cnt 0.0000
+epoch 108/150 step 160 | loss 0.0990 | det 0.0000 seg 0.0834 cnt 0.0000
+epoch 108/150 | train 0.0980 | val det 0.0000 seg 0.4024 miou 0.8209 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.820938
+epoch 109/150 step 20 | loss 0.0930 | det 0.0000 seg 0.0963 cnt 0.0000
+epoch 109/150 step 40 | loss 0.0926 | det 0.0000 seg 0.1172 cnt 0.0000
+epoch 109/150 step 60 | loss 0.0950 | det 0.0000 seg 0.1607 cnt 0.0000
+epoch 109/150 step 80 | loss 0.0952 | det 0.0000 seg 0.0762 cnt 0.0000
+epoch 109/150 step 100 | loss 0.0943 | det 0.0000 seg 0.0778 cnt 0.0000
+epoch 109/150 step 120 | loss 0.0980 | det 0.0000 seg 0.0562 cnt 0.0000
+epoch 109/150 step 140 | loss 0.0983 | det 0.0000 seg 0.1014 cnt 0.0000
+epoch 109/150 step 160 | loss 0.0988 | det 0.0000 seg 0.1065 cnt 0.0000
+epoch 109/150 | train 0.0978 | val det 0.0000 seg 0.4011 miou 0.8217 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.821724
+epoch 110/150 step 20 | loss 0.0948 | det 0.0000 seg 0.1482 cnt 0.0000
+epoch 110/150 step 40 | loss 0.0994 | det 0.0000 seg 0.0693 cnt 0.0000
+epoch 110/150 step 60 | loss 0.0975 | det 0.0000 seg 0.1515 cnt 0.0000
+epoch 110/150 step 80 | loss 0.0975 | det 0.0000 seg 0.0856 cnt 0.0000
+epoch 110/150 step 100 | loss 0.0956 | det 0.0000 seg 0.1171 cnt 0.0000
+epoch 110/150 step 120 | loss 0.0974 | det 0.0000 seg 0.0425 cnt 0.0000
+epoch 110/150 step 140 | loss 0.0988 | det 0.0000 seg 0.0541 cnt 0.0000
+epoch 110/150 step 160 | loss 0.1026 | det 0.0000 seg 0.5148 cnt 0.0000
+epoch 110/150 | train 0.1022 | val det 0.0000 seg 0.4007 miou 0.8222 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.822201
+[ckpt] new best cached (seg_miou 0.822201)
+epoch 111/150 step 20 | loss 0.0983 | det 0.0000 seg 0.0973 cnt 0.0000
+epoch 111/150 step 40 | loss 0.0905 | det 0.0000 seg 0.0736 cnt 0.0000
+epoch 111/150 step 60 | loss 0.0912 | det 0.0000 seg 0.0710 cnt 0.0000
+epoch 111/150 step 80 | loss 0.0944 | det 0.0000 seg 0.0775 cnt 0.0000
+epoch 111/150 step 100 | loss 0.0941 | det 0.0000 seg 0.0727 cnt 0.0000
+epoch 111/150 step 120 | loss 0.0958 | det 0.0000 seg 0.1251 cnt 0.0000
+epoch 111/150 step 140 | loss 0.0958 | det 0.0000 seg 0.1005 cnt 0.0000
+epoch 111/150 step 160 | loss 0.0966 | det 0.0000 seg 0.1463 cnt 0.0000
+epoch 111/150 | train 0.0965 | val det 0.0000 seg 0.4286 miou 0.8215 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.821528
+epoch 112/150 step 20 | loss 0.0944 | det 0.0000 seg 0.0886 cnt 0.0000
+epoch 112/150 step 40 | loss 0.1021 | det 0.0000 seg 0.0773 cnt 0.0000
+epoch 112/150 step 60 | loss 0.0976 | det 0.0000 seg 0.0871 cnt 0.0000
+epoch 112/150 step 80 | loss 0.0968 | det 0.0000 seg 0.1066 cnt 0.0000
+epoch 112/150 step 100 | loss 0.0987 | det 0.0000 seg 0.0630 cnt 0.0000
+epoch 112/150 step 120 | loss 0.0972 | det 0.0000 seg 0.0836 cnt 0.0000
+epoch 112/150 step 140 | loss 0.0962 | det 0.0000 seg 0.1050 cnt 0.0000
+epoch 112/150 step 160 | loss 0.0977 | det 0.0000 seg 0.1027 cnt 0.0000
+epoch 112/150 | train 0.0981 | val det 0.0000 seg 0.4103 miou 0.8216 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.821590
+epoch 113/150 step 20 | loss 0.0934 | det 0.0000 seg 0.0860 cnt 0.0000
+epoch 113/150 step 40 | loss 0.0984 | det 0.0000 seg 0.1000 cnt 0.0000
+epoch 113/150 step 60 | loss 0.1003 | det 0.0000 seg 0.0819 cnt 0.0000
+epoch 113/150 step 80 | loss 0.0980 | det 0.0000 seg 0.0565 cnt 0.0000
+epoch 113/150 step 100 | loss 0.0980 | det 0.0000 seg 0.1238 cnt 0.0000
+epoch 113/150 step 120 | loss 0.0973 | det 0.0000 seg 0.1139 cnt 0.0000
+epoch 113/150 step 140 | loss 0.0977 | det 0.0000 seg 0.1771 cnt 0.0000
+epoch 113/150 step 160 | loss 0.0983 | det 0.0000 seg 0.1016 cnt 0.0000
+epoch 113/150 | train 0.0985 | val det 0.0000 seg 0.4150 miou 0.8211 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.821132
+epoch 114/150 step 20 | loss 0.0891 | det 0.0000 seg 0.0892 cnt 0.0000
+epoch 114/150 step 40 | loss 0.0977 | det 0.0000 seg 0.1207 cnt 0.0000
+epoch 114/150 step 60 | loss 0.0981 | det 0.0000 seg 0.0825 cnt 0.0000
+epoch 114/150 step 80 | loss 0.0979 | det 0.0000 seg 0.0878 cnt 0.0000
+epoch 114/150 step 100 | loss 0.0983 | det 0.0000 seg 0.0885 cnt 0.0000
+epoch 114/150 step 120 | loss 0.0989 | det 0.0000 seg 0.0784 cnt 0.0000
+epoch 114/150 step 140 | loss 0.0974 | det 0.0000 seg 0.1218 cnt 0.0000
+epoch 114/150 step 160 | loss 0.0977 | det 0.0000 seg 0.0900 cnt 0.0000
+epoch 114/150 | train 0.0976 | val det 0.0000 seg 0.4208 miou 0.8225 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.822534
+[ckpt] new best cached (seg_miou 0.822534)
+epoch 115/150 step 20 | loss 0.0996 | det 0.0000 seg 0.0574 cnt 0.0000
+epoch 115/150 step 40 | loss 0.0974 | det 0.0000 seg 0.1270 cnt 0.0000
+epoch 115/150 step 60 | loss 0.0957 | det 0.0000 seg 0.0466 cnt 0.0000
+epoch 115/150 step 80 | loss 0.0940 | det 0.0000 seg 0.1262 cnt 0.0000
+epoch 115/150 step 100 | loss 0.0973 | det 0.0000 seg 0.1333 cnt 0.0000
+epoch 115/150 step 120 | loss 0.0943 | det 0.0000 seg 0.1058 cnt 0.0000
+epoch 115/150 step 140 | loss 0.0967 | det 0.0000 seg 0.1523 cnt 0.0000
+epoch 115/150 step 160 | loss 0.0972 | det 0.0000 seg 0.0909 cnt 0.0000
+epoch 115/150 | train 0.0970 | val det 0.0000 seg 0.4198 miou 0.8201 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.820118
+epoch 116/150 step 20 | loss 0.1048 | det 0.0000 seg 0.0675 cnt 0.0000
+epoch 116/150 step 40 | loss 0.1003 | det 0.0000 seg 0.0442 cnt 0.0000
+epoch 116/150 step 60 | loss 0.1006 | det 0.0000 seg 0.1083 cnt 0.0000
+epoch 116/150 step 80 | loss 0.1007 | det 0.0000 seg 0.0788 cnt 0.0000
+epoch 116/150 step 100 | loss 0.0967 | det 0.0000 seg 0.0678 cnt 0.0000
+epoch 116/150 step 120 | loss 0.0945 | det 0.0000 seg 0.0842 cnt 0.0000
+epoch 116/150 step 140 | loss 0.0944 | det 0.0000 seg 0.0906 cnt 0.0000
+epoch 116/150 step 160 | loss 0.0951 | det 0.0000 seg 0.1242 cnt 0.0000
+epoch 116/150 | train 0.0952 | val det 0.0000 seg 0.4203 miou 0.8192 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.819235
+epoch 117/150 step 20 | loss 0.1032 | det 0.0000 seg 0.1524 cnt 0.0000
+epoch 117/150 step 40 | loss 0.1045 | det 0.0000 seg 0.1488 cnt 0.0000
+epoch 117/150 step 60 | loss 0.1066 | det 0.0000 seg 0.0593 cnt 0.0000
+epoch 117/150 step 80 | loss 0.1070 | det 0.0000 seg 0.0998 cnt 0.0000
+epoch 117/150 step 100 | loss 0.1040 | det 0.0000 seg 0.0927 cnt 0.0000
+epoch 117/150 step 120 | loss 0.1034 | det 0.0000 seg 0.0892 cnt 0.0000
+epoch 117/150 step 140 | loss 0.1023 | det 0.0000 seg 0.1497 cnt 0.0000
+epoch 117/150 step 160 | loss 0.1007 | det 0.0000 seg 0.1035 cnt 0.0000
+epoch 117/150 | train 0.1013 | val det 0.0000 seg 0.4121 miou 0.8225 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.822483
+epoch 118/150 step 20 | loss 0.0986 | det 0.0000 seg 0.1442 cnt 0.0000
+epoch 118/150 step 40 | loss 0.0988 | det 0.0000 seg 0.1189 cnt 0.0000
+epoch 118/150 step 60 | loss 0.0965 | det 0.0000 seg 0.0885 cnt 0.0000
+epoch 118/150 step 80 | loss 0.0980 | det 0.0000 seg 0.1001 cnt 0.0000
+epoch 118/150 step 100 | loss 0.0981 | det 0.0000 seg 0.1612 cnt 0.0000
+epoch 118/150 step 120 | loss 0.0959 | det 0.0000 seg 0.0590 cnt 0.0000
+epoch 118/150 step 140 | loss 0.0951 | det 0.0000 seg 0.0453 cnt 0.0000
+epoch 118/150 step 160 | loss 0.0956 | det 0.0000 seg 0.1798 cnt 0.0000
+epoch 118/150 | train 0.0946 | val det 0.0000 seg 0.4146 miou 0.8233 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.823287
+[ckpt] new best cached (seg_miou 0.823287)
+epoch 119/150 step 20 | loss 0.0945 | det 0.0000 seg 0.0633 cnt 0.0000
+epoch 119/150 step 40 | loss 0.0986 | det 0.0000 seg 0.1068 cnt 0.0000
+epoch 119/150 step 60 | loss 0.0936 | det 0.0000 seg 0.0655 cnt 0.0000
+epoch 119/150 step 80 | loss 0.0909 | det 0.0000 seg 0.0940 cnt 0.0000
+epoch 119/150 step 100 | loss 0.0920 | det 0.0000 seg 0.1155 cnt 0.0000
+epoch 119/150 step 120 | loss 0.0929 | det 0.0000 seg 0.0972 cnt 0.0000
+epoch 119/150 step 140 | loss 0.0936 | det 0.0000 seg 0.1633 cnt 0.0000
+epoch 119/150 step 160 | loss 0.0944 | det 0.0000 seg 0.0884 cnt 0.0000
+epoch 119/150 | train 0.0946 | val det 0.0000 seg 0.4048 miou 0.8244 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.824413
+[ckpt] new best cached (seg_miou 0.824413)
+epoch 120/150 step 20 | loss 0.0863 | det 0.0000 seg 0.0407 cnt 0.0000
+epoch 120/150 step 40 | loss 0.0891 | det 0.0000 seg 0.0644 cnt 0.0000
+epoch 120/150 step 60 | loss 0.0912 | det 0.0000 seg 0.1215 cnt 0.0000
+epoch 120/150 step 80 | loss 0.0900 | det 0.0000 seg 0.0724 cnt 0.0000
+epoch 120/150 step 100 | loss 0.0920 | det 0.0000 seg 0.0831 cnt 0.0000
+epoch 120/150 step 120 | loss 0.0927 | det 0.0000 seg 0.0760 cnt 0.0000
+epoch 120/150 step 140 | loss 0.0937 | det 0.0000 seg 0.1049 cnt 0.0000
+epoch 120/150 step 160 | loss 0.0940 | det 0.0000 seg 0.1403 cnt 0.0000
+epoch 120/150 | train 0.0943 | val det 0.0000 seg 0.4135 miou 0.8228 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.822849
+epoch 121/150 step 20 | loss 0.0958 | det 0.0000 seg 0.0786 cnt 0.0000
+epoch 121/150 step 40 | loss 0.0970 | det 0.0000 seg 0.0718 cnt 0.0000
+epoch 121/150 step 60 | loss 0.0973 | det 0.0000 seg 0.1446 cnt 0.0000
+epoch 121/150 step 80 | loss 0.0968 | det 0.0000 seg 0.0646 cnt 0.0000
+epoch 121/150 step 100 | loss 0.0958 | det 0.0000 seg 0.1825 cnt 0.0000
+epoch 121/150 step 120 | loss 0.0962 | det 0.0000 seg 0.0597 cnt 0.0000
+epoch 121/150 step 140 | loss 0.0945 | det 0.0000 seg 0.0732 cnt 0.0000
+epoch 121/150 step 160 | loss 0.0952 | det 0.0000 seg 0.0443 cnt 0.0000
+epoch 121/150 | train 0.0951 | val det 0.0000 seg 0.4167 miou 0.8214 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.821352
+epoch 122/150 step 20 | loss 0.0953 | det 0.0000 seg 0.1239 cnt 0.0000
+epoch 122/150 step 40 | loss 0.1031 | det 0.0000 seg 0.1197 cnt 0.0000
+epoch 122/150 step 60 | loss 0.0998 | det 0.0000 seg 0.1366 cnt 0.0000
+epoch 122/150 step 80 | loss 0.0987 | det 0.0000 seg 0.1162 cnt 0.0000
+epoch 122/150 step 100 | loss 0.0976 | det 0.0000 seg 0.0867 cnt 0.0000
+epoch 122/150 step 120 | loss 0.0973 | det 0.0000 seg 0.1395 cnt 0.0000
+epoch 122/150 step 140 | loss 0.0955 | det 0.0000 seg 0.1384 cnt 0.0000
+epoch 122/150 step 160 | loss 0.0953 | det 0.0000 seg 0.0592 cnt 0.0000
+epoch 122/150 | train 0.0944 | val det 0.0000 seg 0.4070 miou 0.8246 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.824571
+[ckpt] new best cached (seg_miou 0.824571)
+epoch 123/150 step 20 | loss 0.0909 | det 0.0000 seg 0.1737 cnt 0.0000
+epoch 123/150 step 40 | loss 0.0903 | det 0.0000 seg 0.0931 cnt 0.0000
+epoch 123/150 step 60 | loss 0.0877 | det 0.0000 seg 0.0830 cnt 0.0000
+epoch 123/150 step 80 | loss 0.0879 | det 0.0000 seg 0.1144 cnt 0.0000
+epoch 123/150 step 100 | loss 0.0913 | det 0.0000 seg 0.1250 cnt 0.0000
+epoch 123/150 step 120 | loss 0.0896 | det 0.0000 seg 0.0781 cnt 0.0000
+epoch 123/150 step 140 | loss 0.0910 | det 0.0000 seg 0.0807 cnt 0.0000
+epoch 123/150 step 160 | loss 0.0909 | det 0.0000 seg 0.0820 cnt 0.0000
+epoch 123/150 | train 0.0917 | val det 0.0000 seg 0.4186 miou 0.8248 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.824760
+[ckpt] new best cached (seg_miou 0.824760)
+epoch 124/150 step 20 | loss 0.0840 | det 0.0000 seg 0.0777 cnt 0.0000
+epoch 124/150 step 40 | loss 0.1468 | det 0.0000 seg 0.1049 cnt 0.0000
+epoch 124/150 step 60 | loss 0.1344 | det 0.0000 seg 0.0779 cnt 0.0000
+epoch 124/150 step 80 | loss 0.1233 | det 0.0000 seg 0.1240 cnt 0.0000
+epoch 124/150 step 100 | loss 0.1207 | det 0.0000 seg 0.0816 cnt 0.0000
+epoch 124/150 step 120 | loss 0.1164 | det 0.0000 seg 0.1331 cnt 0.0000
+epoch 124/150 step 140 | loss 0.1122 | det 0.0000 seg 0.1055 cnt 0.0000
+epoch 124/150 step 160 | loss 0.1096 | det 0.0000 seg 0.0581 cnt 0.0000
+epoch 124/150 | train 0.1081 | val det 0.0000 seg 0.4210 miou 0.8208 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.820810
+epoch 125/150 step 20 | loss 0.0973 | det 0.0000 seg 0.1245 cnt 0.0000
+epoch 125/150 step 40 | loss 0.0897 | det 0.0000 seg 0.0901 cnt 0.0000
+epoch 125/150 step 60 | loss 0.0872 | det 0.0000 seg 0.0869 cnt 0.0000
+epoch 125/150 step 80 | loss 0.0866 | det 0.0000 seg 0.1503 cnt 0.0000
+epoch 125/150 step 100 | loss 0.0875 | det 0.0000 seg 0.0815 cnt 0.0000
+epoch 125/150 step 120 | loss 0.0878 | det 0.0000 seg 0.1014 cnt 0.0000
+epoch 125/150 step 140 | loss 0.0873 | det 0.0000 seg 0.1106 cnt 0.0000
+epoch 125/150 step 160 | loss 0.0901 | det 0.0000 seg 0.0813 cnt 0.0000
+epoch 125/150 | train 0.0905 | val det 0.0000 seg 0.4095 miou 0.8226 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.822583
+epoch 126/150 step 20 | loss 0.0901 | det 0.0000 seg 0.0476 cnt 0.0000
+epoch 126/150 step 40 | loss 0.0895 | det 0.0000 seg 0.0863 cnt 0.0000
+epoch 126/150 step 60 | loss 0.0918 | det 0.0000 seg 0.0886 cnt 0.0000
+epoch 126/150 step 80 | loss 0.0905 | det 0.0000 seg 0.0822 cnt 0.0000
+epoch 126/150 step 100 | loss 0.0905 | det 0.0000 seg 0.0563 cnt 0.0000
+epoch 126/150 step 120 | loss 0.0914 | det 0.0000 seg 0.1003 cnt 0.0000
+epoch 126/150 step 140 | loss 0.0902 | det 0.0000 seg 0.0818 cnt 0.0000
+epoch 126/150 step 160 | loss 0.0903 | det 0.0000 seg 0.0579 cnt 0.0000
+epoch 126/150 | train 0.0898 | val det 0.0000 seg 0.4046 miou 0.8249 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.824852
+[ckpt] new best cached (seg_miou 0.824852)
+epoch 127/150 step 20 | loss 0.0838 | det 0.0000 seg 0.0937 cnt 0.0000
+epoch 127/150 step 40 | loss 0.0912 | det 0.0000 seg 0.1128 cnt 0.0000
+epoch 127/150 step 60 | loss 0.0917 | det 0.0000 seg 0.0531 cnt 0.0000
+epoch 127/150 step 80 | loss 0.0905 | det 0.0000 seg 0.1872 cnt 0.0000
+epoch 127/150 step 100 | loss 0.0904 | det 0.0000 seg 0.1247 cnt 0.0000
+epoch 127/150 step 120 | loss 0.0922 | det 0.0000 seg 0.1075 cnt 0.0000
+epoch 127/150 step 140 | loss 0.0927 | det 0.0000 seg 0.0921 cnt 0.0000
+epoch 127/150 step 160 | loss 0.0904 | det 0.0000 seg 0.0744 cnt 0.0000
+epoch 127/150 | train 0.0919 | val det 0.0000 seg 0.4182 miou 0.8246 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.824606
+epoch 128/150 step 20 | loss 0.1008 | det 0.0000 seg 0.0981 cnt 0.0000
+epoch 128/150 step 40 | loss 0.0887 | det 0.0000 seg 0.0830 cnt 0.0000
+epoch 128/150 step 60 | loss 0.0893 | det 0.0000 seg 0.0843 cnt 0.0000
+epoch 128/150 step 80 | loss 0.0861 | det 0.0000 seg 0.0422 cnt 0.0000
+epoch 128/150 step 100 | loss 0.0871 | det 0.0000 seg 0.1212 cnt 0.0000
+epoch 128/150 step 120 | loss 0.0870 | det 0.0000 seg 0.0706 cnt 0.0000
+epoch 128/150 step 140 | loss 0.0870 | det 0.0000 seg 0.0675 cnt 0.0000
+epoch 128/150 step 160 | loss 0.0874 | det 0.0000 seg 0.1769 cnt 0.0000
+epoch 128/150 | train 0.0879 | val det 0.0000 seg 0.4109 miou 0.8246 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.824580
+epoch 129/150 step 20 | loss 0.0841 | det 0.0000 seg 0.1222 cnt 0.0000
+epoch 129/150 step 40 | loss 0.0915 | det 0.0000 seg 0.1248 cnt 0.0000
+epoch 129/150 step 60 | loss 0.0921 | det 0.0000 seg 0.0815 cnt 0.0000
+epoch 129/150 step 80 | loss 0.0923 | det 0.0000 seg 0.0299 cnt 0.0000
+epoch 129/150 step 100 | loss 0.0914 | det 0.0000 seg 0.0551 cnt 0.0000
+epoch 129/150 step 120 | loss 0.0925 | det 0.0000 seg 0.1157 cnt 0.0000
+epoch 129/150 step 140 | loss 0.0907 | det 0.0000 seg 0.0688 cnt 0.0000
+epoch 129/150 step 160 | loss 0.0914 | det 0.0000 seg 0.1001 cnt 0.0000
+epoch 129/150 | train 0.0902 | val det 0.0000 seg 0.4095 miou 0.8235 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.823497
+epoch 130/150 step 20 | loss 0.1035 | det 0.0000 seg 0.0763 cnt 0.0000
+epoch 130/150 step 40 | loss 0.1033 | det 0.0000 seg 0.1037 cnt 0.0000
+epoch 130/150 step 60 | loss 0.0966 | det 0.0000 seg 0.0688 cnt 0.0000
+epoch 130/150 step 80 | loss 0.0928 | det 0.0000 seg 0.1081 cnt 0.0000
+epoch 130/150 step 100 | loss 0.0900 | det 0.0000 seg 0.0842 cnt 0.0000
+epoch 130/150 step 120 | loss 0.0893 | det 0.0000 seg 0.0858 cnt 0.0000
+epoch 130/150 step 140 | loss 0.0891 | det 0.0000 seg 0.0816 cnt 0.0000
+epoch 130/150 step 160 | loss 0.0888 | det 0.0000 seg 0.0643 cnt 0.0000
+epoch 130/150 | train 0.0881 | val det 0.0000 seg 0.4144 miou 0.8257 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.825697
+[ckpt] new best cached (seg_miou 0.825697)
+epoch 131/150 step 20 | loss 0.0840 | det 0.0000 seg 0.0900 cnt 0.0000
+epoch 131/150 step 40 | loss 0.0844 | det 0.0000 seg 0.1071 cnt 0.0000
+epoch 131/150 step 60 | loss 0.0860 | det 0.0000 seg 0.0921 cnt 0.0000
+epoch 131/150 step 80 | loss 0.0910 | det 0.0000 seg 0.1291 cnt 0.0000
+epoch 131/150 step 100 | loss 0.0906 | det 0.0000 seg 0.0451 cnt 0.0000
+epoch 131/150 step 120 | loss 0.0907 | det 0.0000 seg 0.0830 cnt 0.0000
+epoch 131/150 step 140 | loss 0.0904 | det 0.0000 seg 0.0919 cnt 0.0000
+epoch 131/150 step 160 | loss 0.0913 | det 0.0000 seg 0.1139 cnt 0.0000
+epoch 131/150 | train 0.0912 | val det 0.0000 seg 0.4206 miou 0.8246 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.824599
+epoch 132/150 step 20 | loss 0.0873 | det 0.0000 seg 0.0773 cnt 0.0000
+epoch 132/150 step 40 | loss 0.0960 | det 0.0000 seg 0.1413 cnt 0.0000
+epoch 132/150 step 60 | loss 0.0935 | det 0.0000 seg 0.1160 cnt 0.0000
+epoch 132/150 step 80 | loss 0.0907 | det 0.0000 seg 0.1223 cnt 0.0000
+epoch 132/150 step 100 | loss 0.0902 | det 0.0000 seg 0.0748 cnt 0.0000
+epoch 132/150 step 120 | loss 0.0897 | det 0.0000 seg 0.0592 cnt 0.0000
+epoch 132/150 step 140 | loss 0.0898 | det 0.0000 seg 0.1614 cnt 0.0000
+epoch 132/150 step 160 | loss 0.0916 | det 0.0000 seg 0.0688 cnt 0.0000
+epoch 132/150 | train 0.0925 | val det 0.0000 seg 0.4251 miou 0.8252 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.825153
+epoch 133/150 step 20 | loss 0.0982 | det 0.0000 seg 0.0969 cnt 0.0000
+epoch 133/150 step 40 | loss 0.0909 | det 0.0000 seg 0.0562 cnt 0.0000
+epoch 133/150 step 60 | loss 0.0924 | det 0.0000 seg 0.1061 cnt 0.0000
+epoch 133/150 step 80 | loss 0.0936 | det 0.0000 seg 0.1103 cnt 0.0000
+epoch 133/150 step 100 | loss 0.0940 | det 0.0000 seg 0.1093 cnt 0.0000
+epoch 133/150 step 120 | loss 0.0932 | det 0.0000 seg 0.0881 cnt 0.0000
+epoch 133/150 step 140 | loss 0.0916 | det 0.0000 seg 0.0483 cnt 0.0000
+epoch 133/150 step 160 | loss 0.0906 | det 0.0000 seg 0.0446 cnt 0.0000
+epoch 133/150 | train 0.0908 | val det 0.0000 seg 0.4228 miou 0.8240 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.824015
+epoch 134/150 step 20 | loss 0.0908 | det 0.0000 seg 0.0742 cnt 0.0000
+epoch 134/150 step 40 | loss 0.0948 | det 0.0000 seg 0.0598 cnt 0.0000
+epoch 134/150 step 60 | loss 0.0939 | det 0.0000 seg 0.0899 cnt 0.0000
+epoch 134/150 step 80 | loss 0.0911 | det 0.0000 seg 0.0901 cnt 0.0000
+epoch 134/150 step 100 | loss 0.0875 | det 0.0000 seg 0.0653 cnt 0.0000
+epoch 134/150 step 120 | loss 0.0876 | det 0.0000 seg 0.1406 cnt 0.0000
+epoch 134/150 step 140 | loss 0.0876 | det 0.0000 seg 0.1433 cnt 0.0000
+epoch 134/150 step 160 | loss 0.0880 | det 0.0000 seg 0.0797 cnt 0.0000
+epoch 134/150 | train 0.0884 | val det 0.0000 seg 0.4234 miou 0.8239 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.823943
+epoch 135/150 step 20 | loss 0.0880 | det 0.0000 seg 0.0571 cnt 0.0000
+epoch 135/150 step 40 | loss 0.0854 | det 0.0000 seg 0.0635 cnt 0.0000
+epoch 135/150 step 60 | loss 0.0845 | det 0.0000 seg 0.0938 cnt 0.0000
+epoch 135/150 step 80 | loss 0.0851 | det 0.0000 seg 0.1206 cnt 0.0000
+epoch 135/150 step 100 | loss 0.0834 | det 0.0000 seg 0.0807 cnt 0.0000
+epoch 135/150 step 120 | loss 0.0850 | det 0.0000 seg 0.0850 cnt 0.0000
+epoch 135/150 step 140 | loss 0.0848 | det 0.0000 seg 0.0645 cnt 0.0000
+epoch 135/150 step 160 | loss 0.0854 | det 0.0000 seg 0.0702 cnt 0.0000
+epoch 135/150 | train 0.0869 | val det 0.0000 seg 0.4135 miou 0.8234 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.823362
+epoch 136/150 step 20 | loss 0.0954 | det 0.0000 seg 0.1637 cnt 0.0000
+epoch 136/150 step 40 | loss 0.0932 | det 0.0000 seg 0.1541 cnt 0.0000
+epoch 136/150 step 60 | loss 0.0924 | det 0.0000 seg 0.1191 cnt 0.0000
+epoch 136/150 step 80 | loss 0.0907 | det 0.0000 seg 0.0713 cnt 0.0000
+epoch 136/150 step 100 | loss 0.0893 | det 0.0000 seg 0.0782 cnt 0.0000
+epoch 136/150 step 120 | loss 0.0888 | det 0.0000 seg 0.1057 cnt 0.0000
+epoch 136/150 step 140 | loss 0.0893 | det 0.0000 seg 0.0755 cnt 0.0000
+epoch 136/150 step 160 | loss 0.0893 | det 0.0000 seg 0.0574 cnt 0.0000
+epoch 136/150 | train 0.0884 | val det 0.0000 seg 0.4254 miou 0.8248 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.824801
+epoch 137/150 step 20 | loss 0.0994 | det 0.0000 seg 0.0855 cnt 0.0000
+epoch 137/150 step 40 | loss 0.0939 | det 0.0000 seg 0.0686 cnt 0.0000
+epoch 137/150 step 60 | loss 0.0942 | det 0.0000 seg 0.0821 cnt 0.0000
+epoch 137/150 step 80 | loss 0.0896 | det 0.0000 seg 0.0513 cnt 0.0000
+epoch 137/150 step 100 | loss 0.0871 | det 0.0000 seg 0.0314 cnt 0.0000
+epoch 137/150 step 120 | loss 0.0873 | det 0.0000 seg 0.1082 cnt 0.0000
+epoch 137/150 step 140 | loss 0.0878 | det 0.0000 seg 0.0902 cnt 0.0000
+epoch 137/150 step 160 | loss 0.0880 | det 0.0000 seg 0.0888 cnt 0.0000
+epoch 137/150 | train 0.0878 | val det 0.0000 seg 0.4132 miou 0.8253 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.825282
+epoch 138/150 step 20 | loss 0.0900 | det 0.0000 seg 0.0559 cnt 0.0000
+epoch 138/150 step 40 | loss 0.0897 | det 0.0000 seg 0.1812 cnt 0.0000
+epoch 138/150 step 60 | loss 0.0905 | det 0.0000 seg 0.0753 cnt 0.0000
+epoch 138/150 step 80 | loss 0.0848 | det 0.0000 seg 0.0631 cnt 0.0000
+epoch 138/150 step 100 | loss 0.0860 | det 0.0000 seg 0.0849 cnt 0.0000
+epoch 138/150 step 120 | loss 0.0870 | det 0.0000 seg 0.0726 cnt 0.0000
+epoch 138/150 step 140 | loss 0.0879 | det 0.0000 seg 0.1135 cnt 0.0000
+epoch 138/150 step 160 | loss 0.0882 | det 0.0000 seg 0.0978 cnt 0.0000
+epoch 138/150 | train 0.0881 | val det 0.0000 seg 0.4157 miou 0.8255 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.825519
+epoch 139/150 step 20 | loss 0.0845 | det 0.0000 seg 0.0648 cnt 0.0000
+epoch 139/150 step 40 | loss 0.0872 | det 0.0000 seg 0.0885 cnt 0.0000
+epoch 139/150 step 60 | loss 0.0859 | det 0.0000 seg 0.0503 cnt 0.0000
+epoch 139/150 step 80 | loss 0.0854 | det 0.0000 seg 0.0759 cnt 0.0000
+epoch 139/150 step 100 | loss 0.0862 | det 0.0000 seg 0.1014 cnt 0.0000
+epoch 139/150 step 120 | loss 0.0880 | det 0.0000 seg 0.0866 cnt 0.0000
+epoch 139/150 step 140 | loss 0.0888 | det 0.0000 seg 0.0918 cnt 0.0000
+epoch 139/150 step 160 | loss 0.0898 | det 0.0000 seg 0.1010 cnt 0.0000
+epoch 139/150 | train 0.0897 | val det 0.0000 seg 0.4213 miou 0.8256 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.825588
+epoch 140/150 step 20 | loss 0.0898 | det 0.0000 seg 0.1275 cnt 0.0000
+epoch 140/150 step 40 | loss 0.0860 | det 0.0000 seg 0.0983 cnt 0.0000
+epoch 140/150 step 60 | loss 0.0868 | det 0.0000 seg 0.0783 cnt 0.0000
+epoch 140/150 step 80 | loss 0.0870 | det 0.0000 seg 0.1582 cnt 0.0000
+epoch 140/150 step 100 | loss 0.0871 | det 0.0000 seg 0.1008 cnt 0.0000
+epoch 140/150 step 120 | loss 0.0853 | det 0.0000 seg 0.0673 cnt 0.0000
+epoch 140/150 step 140 | loss 0.0852 | det 0.0000 seg 0.0690 cnt 0.0000
+epoch 140/150 step 160 | loss 0.0852 | det 0.0000 seg 0.1114 cnt 0.0000
+epoch 140/150 | train 0.0846 | val det 0.0000 seg 0.4197 miou 0.8270 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.826976
+[ckpt] new best cached (seg_miou 0.826976)
+epoch 141/150 step 20 | loss 0.0820 | det 0.0000 seg 0.0714 cnt 0.0000
+epoch 141/150 step 40 | loss 0.0890 | det 0.0000 seg 0.1981 cnt 0.0000
+epoch 141/150 step 60 | loss 0.0894 | det 0.0000 seg 0.1186 cnt 0.0000
+epoch 141/150 step 80 | loss 0.0862 | det 0.0000 seg 0.0730 cnt 0.0000
+epoch 141/150 step 100 | loss 0.0871 | det 0.0000 seg 0.0675 cnt 0.0000
+epoch 141/150 step 120 | loss 0.0864 | det 0.0000 seg 0.0677 cnt 0.0000
+epoch 141/150 step 140 | loss 0.0872 | det 0.0000 seg 0.0340 cnt 0.0000
+epoch 141/150 step 160 | loss 0.0871 | det 0.0000 seg 0.0904 cnt 0.0000
+epoch 141/150 | train 0.0873 | val det 0.0000 seg 0.4153 miou 0.8260 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.825961
+epoch 142/150 step 20 | loss 0.0773 | det 0.0000 seg 0.0662 cnt 0.0000
+epoch 142/150 step 40 | loss 0.0856 | det 0.0000 seg 0.0839 cnt 0.0000
+epoch 142/150 step 60 | loss 0.0871 | det 0.0000 seg 0.0794 cnt 0.0000
+epoch 142/150 step 80 | loss 0.0882 | det 0.0000 seg 0.0726 cnt 0.0000
+epoch 142/150 step 100 | loss 0.0872 | det 0.0000 seg 0.0363 cnt 0.0000
+epoch 142/150 step 120 | loss 0.0898 | det 0.0000 seg 0.0507 cnt 0.0000
+epoch 142/150 step 140 | loss 0.0900 | det 0.0000 seg 0.1232 cnt 0.0000
+epoch 142/150 step 160 | loss 0.0910 | det 0.0000 seg 0.1223 cnt 0.0000
+epoch 142/150 | train 0.0897 | val det 0.0000 seg 0.4152 miou 0.8264 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.826384
+epoch 143/150 step 20 | loss 0.0923 | det 0.0000 seg 0.0882 cnt 0.0000
+epoch 143/150 step 40 | loss 0.0913 | det 0.0000 seg 0.0449 cnt 0.0000
+epoch 143/150 step 60 | loss 0.0894 | det 0.0000 seg 0.0444 cnt 0.0000
+epoch 143/150 step 80 | loss 0.0893 | det 0.0000 seg 0.0895 cnt 0.0000
+epoch 143/150 step 100 | loss 0.0889 | det 0.0000 seg 0.1099 cnt 0.0000
+epoch 143/150 step 120 | loss 0.0891 | det 0.0000 seg 0.1303 cnt 0.0000
+epoch 143/150 step 140 | loss 0.0878 | det 0.0000 seg 0.1207 cnt 0.0000
+epoch 143/150 step 160 | loss 0.0871 | det 0.0000 seg 0.0679 cnt 0.0000
+epoch 143/150 | train 0.0867 | val det 0.0000 seg 0.4196 miou 0.8272 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.827234
+[ckpt] new best cached (seg_miou 0.827234)
+epoch 144/150 step 20 | loss 0.0810 | det 0.0000 seg 0.1119 cnt 0.0000
+epoch 144/150 step 40 | loss 0.0878 | det 0.0000 seg 0.1150 cnt 0.0000
+epoch 144/150 step 60 | loss 0.0875 | det 0.0000 seg 0.0854 cnt 0.0000
+epoch 144/150 step 80 | loss 0.0851 | det 0.0000 seg 0.0612 cnt 0.0000
+epoch 144/150 step 100 | loss 0.0860 | det 0.0000 seg 0.0618 cnt 0.0000
+epoch 144/150 step 120 | loss 0.0863 | det 0.0000 seg 0.1282 cnt 0.0000
+epoch 144/150 step 140 | loss 0.0850 | det 0.0000 seg 0.0570 cnt 0.0000
+epoch 144/150 step 160 | loss 0.0854 | det 0.0000 seg 0.1017 cnt 0.0000
+epoch 144/150 | train 0.0865 | val det 0.0000 seg 0.4171 miou 0.8268 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.826826
+epoch 145/150 step 20 | loss 0.0689 | det 0.0000 seg 0.1142 cnt 0.0000
+epoch 145/150 step 40 | loss 0.0737 | det 0.0000 seg 0.0794 cnt 0.0000
+epoch 145/150 step 60 | loss 0.0802 | det 0.0000 seg 0.0270 cnt 0.0000
+epoch 145/150 step 80 | loss 0.0810 | det 0.0000 seg 0.0764 cnt 0.0000
+epoch 145/150 step 100 | loss 0.0803 | det 0.0000 seg 0.0683 cnt 0.0000
+epoch 145/150 step 120 | loss 0.0798 | det 0.0000 seg 0.0739 cnt 0.0000
+epoch 145/150 step 140 | loss 0.0797 | det 0.0000 seg 0.0868 cnt 0.0000
+epoch 145/150 step 160 | loss 0.0807 | det 0.0000 seg 0.0744 cnt 0.0000
+epoch 145/150 | train 0.0814 | val det 0.0000 seg 0.4149 miou 0.8268 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.826765
+epoch 146/150 step 20 | loss 0.0883 | det 0.0000 seg 0.1182 cnt 0.0000
+epoch 146/150 step 40 | loss 0.0891 | det 0.0000 seg 0.0817 cnt 0.0000
+epoch 146/150 step 60 | loss 0.0854 | det 0.0000 seg 0.0592 cnt 0.0000
+epoch 146/150 step 80 | loss 0.0841 | det 0.0000 seg 0.1290 cnt 0.0000
+epoch 146/150 step 100 | loss 0.0880 | det 0.0000 seg 0.1773 cnt 0.0000
+epoch 146/150 step 120 | loss 0.0871 | det 0.0000 seg 0.0576 cnt 0.0000
+epoch 146/150 step 140 | loss 0.0864 | det 0.0000 seg 0.1450 cnt 0.0000
+epoch 146/150 step 160 | loss 0.0860 | det 0.0000 seg 0.0795 cnt 0.0000
+epoch 146/150 | train 0.0855 | val det 0.0000 seg 0.4320 miou 0.8272 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.827152
+epoch 147/150 step 20 | loss 0.0832 | det 0.0000 seg 0.0999 cnt 0.0000
+epoch 147/150 step 40 | loss 0.0879 | det 0.0000 seg 0.1030 cnt 0.0000
+epoch 147/150 step 60 | loss 0.0885 | det 0.0000 seg 0.1161 cnt 0.0000
+epoch 147/150 step 80 | loss 0.0867 | det 0.0000 seg 0.0516 cnt 0.0000
+epoch 147/150 step 100 | loss 0.0845 | det 0.0000 seg 0.1054 cnt 0.0000
+epoch 147/150 step 120 | loss 0.0839 | det 0.0000 seg 0.1013 cnt 0.0000
+epoch 147/150 step 140 | loss 0.0837 | det 0.0000 seg 0.0611 cnt 0.0000
+epoch 147/150 step 160 | loss 0.0845 | det 0.0000 seg 0.0876 cnt 0.0000
+epoch 147/150 | train 0.0837 | val det 0.0000 seg 0.4144 miou 0.8278 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.827818
+[ckpt] new best cached (seg_miou 0.827818)
+epoch 148/150 step 20 | loss 0.0802 | det 0.0000 seg 0.0593 cnt 0.0000
+epoch 148/150 step 40 | loss 0.0808 | det 0.0000 seg 0.0704 cnt 0.0000
+epoch 148/150 step 60 | loss 0.0790 | det 0.0000 seg 0.0994 cnt 0.0000
+epoch 148/150 step 80 | loss 0.0827 | det 0.0000 seg 0.0841 cnt 0.0000
+epoch 148/150 step 100 | loss 0.0825 | det 0.0000 seg 0.0578 cnt 0.0000
+epoch 148/150 step 120 | loss 0.0837 | det 0.0000 seg 0.0560 cnt 0.0000
+epoch 148/150 step 140 | loss 0.0830 | det 0.0000 seg 0.0431 cnt 0.0000
+epoch 148/150 step 160 | loss 0.0823 | det 0.0000 seg 0.0443 cnt 0.0000
+epoch 148/150 | train 0.0824 | val det 0.0000 seg 0.4205 miou 0.8274 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.827399
+epoch 149/150 step 20 | loss 0.0924 | det 0.0000 seg 0.0916 cnt 0.0000
+epoch 149/150 step 40 | loss 0.0899 | det 0.0000 seg 0.0846 cnt 0.0000
+epoch 149/150 step 60 | loss 0.0842 | det 0.0000 seg 0.0667 cnt 0.0000
+epoch 149/150 step 80 | loss 0.0849 | det 0.0000 seg 0.1056 cnt 0.0000
+epoch 149/150 step 100 | loss 0.0858 | det 0.0000 seg 0.0724 cnt 0.0000
+epoch 149/150 step 120 | loss 0.0859 | det 0.0000 seg 0.0859 cnt 0.0000
+epoch 149/150 step 140 | loss 0.0867 | det 0.0000 seg 0.0786 cnt 0.0000
+epoch 149/150 step 160 | loss 0.0851 | det 0.0000 seg 0.0746 cnt 0.0000
+epoch 149/150 | train 0.0850 | val det 0.0000 seg 0.4245 miou 0.8282 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.828250
+[ckpt] new best cached (seg_miou 0.828250)
+epoch 150/150 step 20 | loss 0.0835 | det 0.0000 seg 0.0701 cnt 0.0000
+epoch 150/150 step 40 | loss 0.0822 | det 0.0000 seg 0.0859 cnt 0.0000
+epoch 150/150 step 60 | loss 0.0827 | det 0.0000 seg 0.1228 cnt 0.0000
+epoch 150/150 step 80 | loss 0.0814 | det 0.0000 seg 0.0719 cnt 0.0000
+epoch 150/150 step 100 | loss 0.0799 | det 0.0000 seg 0.0774 cnt 0.0000
+epoch 150/150 step 120 | loss 0.0823 | det 0.0000 seg 0.0655 cnt 0.0000
+epoch 150/150 step 140 | loss 0.0824 | det 0.0000 seg 0.0462 cnt 0.0000
+epoch 150/150 step 160 | loss 0.0829 | det 0.0000 seg 0.0549 cnt 0.0000
+epoch 150/150 | train 0.0826 | val det 0.0000 seg 0.4209 miou 0.8280 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected seg_miou 0.828019
+[ckpt] saved best -> runs/group2_single_full_lora/seg/best_combo.pt (seg_miou 0.828250)
+[run] project: /data/xiangyuyue/ULLM-zf/fsl-20260209
+[run] ckpt: runs/group2_single_full_lora/seg/best_combo.pt
+[run] stats: runs/group2_single_full_lora/seg/stats_eval_seg_best_combo_20260402_142020
+[run] cmd: /data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/bin/python -m lora_multitask.eval --checkpoint runs/group2_single_full_lora/seg/best_combo.pt --tasks seg --stats-dir runs/group2_single_full_lora/seg/stats_eval_seg_best_combo_20260402_142020 --device cuda --image-size 448 --model-name dinov3_vitl16 --det-data-root /data/xiangyuyue/ULLM-zf/fsl-20260209/data/det/coco --det-ann-file /data/xiangyuyue/ULLM-zf/fsl-20260209/data/det/coco/annotations/instances_test.json --det-img-dir /data/xiangyuyue/ULLM-zf/fsl-20260209/data/det/coco/images/test --det-backbone-checkpoint /data/xiangyuyue/ULLM-zf/fsl-20260209/dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth --det-score-thr 0 --seg-data-dir /data/xiangyuyue/ULLM-zf/fsl-20260209/data/seg/nas/liyangguang103/newdataset/CD-SematicSeg/EvLab-SS/mydataset/test --seg-backbone-checkpoint /data/xiangyuyue/ULLM-zf/fsl-20260209/dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth --cnt-data-root /data/xiangyuyue/ULLM-zf/fsl-20260209/data/cnt/nas/liyangguang103/newdataset/CD-Count/DSACA --cnt-test-dir /data/xiangyuyue/ULLM-zf/fsl-20260209/data/cnt/nas/liyangguang103/newdataset/CD-Count/DSACA/test_data_class8 --cnt-backbone-checkpoint /data/xiangyuyue/ULLM-zf/fsl-20260209/dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth --det-use-coco-eval
+
+
+[multitask/eval] running seg: /data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/bin/python segmentation/eval.py --checkpoint runs/group2_single_full_lora/seg/best_combo.pt --stats-dir runs/group2_single_full_lora/seg/stats_eval_seg_best_combo_20260402_142020 --data-dir /data/xiangyuyue/ULLM-zf/fsl-20260209/data/seg/nas/liyangguang103/newdataset/CD-SematicSeg/EvLab-SS/mydataset/test --image-size 448 --model-name dinov3_vitl16 --device cuda --backbone-checkpoint /data/xiangyuyue/ULLM-zf/fsl-20260209/dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth
+
+Initializing dinov3_vitl16 backbone from local dinov3...
+Created dinov3_vitl16 backbone
+Warning: No checkpoint provided, using random initialization
+Feature dimension: 1024
+Segmentation head initialized with 11 classes
+[Seg] Injected LoRA into dinov3 FFN (replaced_linear=48)
+[Seg][LoadSummary] backbone: provided=464, total=464, matched≈464 (100.0%), missing=0, unexpected=0
+[Seg][LoadSummary] head: missing=0, unexpected=0
+Processing 0/1112...
+Processing 10/1112...
+Processing 20/1112...
+Processing 30/1112...
+Processing 40/1112...
+Processing 50/1112...
+Processing 60/1112...
+Processing 70/1112...
+Processing 80/1112...
+Processing 90/1112...
+Processing 100/1112...
+Processing 110/1112...
+Processing 120/1112...
+Processing 130/1112...
+Processing 140/1112...
+Processing 150/1112...
+Processing 160/1112...
+Processing 170/1112...
+Processing 180/1112...
+Processing 190/1112...
+Processing 200/1112...
+Processing 210/1112...
+Processing 220/1112...
+Processing 230/1112...
+Processing 240/1112...
+Processing 250/1112...
+Processing 260/1112...
+Processing 270/1112...
+Processing 280/1112...
+Processing 290/1112...
+Processing 300/1112...
+Processing 310/1112...
+Processing 320/1112...
+Processing 330/1112...
+Processing 340/1112...
+Processing 350/1112...
+Processing 360/1112...
+Processing 370/1112...
+Processing 380/1112...
+Processing 390/1112...
+Processing 400/1112...
+Processing 410/1112...
+Processing 420/1112...
+Processing 430/1112...
+Processing 440/1112...
+Processing 450/1112...
+Processing 460/1112...
+Processing 470/1112...
+Processing 480/1112...
+Processing 490/1112...
+Processing 500/1112...
+Processing 510/1112...
+Processing 520/1112...
+Processing 530/1112...
+Processing 540/1112...
+Processing 550/1112...
+Processing 560/1112...
+Processing 570/1112...
+Processing 580/1112...
+Processing 590/1112...
+Processing 600/1112...
+Processing 610/1112...
+Processing 620/1112...
+Processing 630/1112...
+Processing 640/1112...
+Processing 650/1112...
+Processing 660/1112...
+Processing 670/1112...
+Processing 680/1112...
+Processing 690/1112...
+Processing 700/1112...
+Processing 710/1112...
+Processing 720/1112...
+Processing 730/1112...
+Processing 740/1112...
+Processing 750/1112...
+Processing 760/1112...
+Processing 770/1112...
+Processing 780/1112...
+Processing 790/1112...
+Processing 800/1112...
+Processing 810/1112...
+Processing 820/1112...
+Processing 830/1112...
+Processing 840/1112...
+Processing 850/1112...
+Processing 860/1112...
+Processing 870/1112...
+Processing 880/1112...
+Processing 890/1112...
+Processing 900/1112...
+Processing 910/1112...
+Processing 920/1112...
+Processing 930/1112...
+Processing 940/1112...
+Processing 950/1112...
+Processing 960/1112...
+Processing 970/1112...
+Processing 980/1112...
+Processing 990/1112...
+Processing 1000/1112...
+Processing 1010/1112...
+Processing 1020/1112...
+Processing 1030/1112...
+Processing 1040/1112...
+Processing 1050/1112...
+Processing 1060/1112...
+Processing 1070/1112...
+Processing 1080/1112...
+Processing 1090/1112...
+Processing 1100/1112...
+Processing 1110/1112...
+
+Per-class IoU (%):
+  class 00: 96.13
+  class 01: 87.57
+  class 02: 82.38
+  class 03: 82.89
+  class 04: 72.95
+  class 05: 87.20
+  class 06: 73.20
+  class 07: 73.57
+  class 08: 79.64
+  class 09: 80.70
+  class 10: 96.56
+Mean IoU (%): 82.98
+Saved metrics to runs/group2_single_full_lora/seg/stats_eval_seg_best_combo_20260402_142020/metrics_seg_test.json
+
+[multitask/eval] done; summary: runs/group2_single_full_lora/seg/stats_eval_seg_best_combo_20260402_142020/multitask_eval_summary.json

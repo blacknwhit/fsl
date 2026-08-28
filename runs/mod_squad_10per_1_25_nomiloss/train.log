@@ -1,0 +1,216 @@
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/cuda/__init__.py:129: UserWarning: CUDA initialization: Unexpected error from cudaGetDeviceCount(). Did you run some cuda functions before calling NumCudaDevices() that might have already set an error? Error 803: system has unsupported display driver / cuda driver combination (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
+  return torch._C._cuda_getDeviceCount() > 0
+usage: train.py [-h] [--model-name MODEL_NAME] [--image-size IMAGE_SIZE]
+                [--backbone-checkpoint BACKBONE_CHECKPOINT]
+                [--unfreeze-backbone] [--use-lora-moe] [--lora-rank LORA_RANK]
+                [--num-experts-private NUM_EXPERTS_PRIVATE]
+                [--num-experts-shared NUM_EXPERTS_SHARED]
+                [--moe-k-private MOE_K_PRIVATE] [--moe-k-shared MOE_K_SHARED]
+                [--learn-loss-weights] [--learn-loss-weights-mlp]
+                [--dynamic-loss-weight]
+                [--grad-checkpointing | --no-grad-checkpointing]
+                [--det-unfreeze-backbone | --det-freeze-backbone]
+                [--seg-full-finetune | --seg-freeze-backbone]
+                [--cnt-full-finetune | --cnt-freeze-backbone] --det-data-root
+                DET_DATA_ROOT [--det-train-ann DET_TRAIN_ANN]
+                [--det-val-ann DET_VAL_ANN]
+                [--det-train-img-dir DET_TRAIN_IMG_DIR]
+                [--det-val-img-dir DET_VAL_IMG_DIR]
+                [--det-num-classes DET_NUM_CLASSES]
+                [--det-ap-score-thr DET_AP_SCORE_THR] --seg-train-dir
+                SEG_TRAIN_DIR --seg-val-dir SEG_VAL_DIR
+                [--seg-num-classes SEG_NUM_CLASSES] --cnt-data-root
+                CNT_DATA_ROOT [--cnt-train-dir CNT_TRAIN_DIR]
+                [--cnt-val-dir CNT_VAL_DIR]
+                [--cnt-num-classes CNT_NUM_CLASSES]
+                [--cnt-count-loss-weight CNT_COUNT_LOSS_WEIGHT]
+                [--cnt-keep-aspect | --cnt-no-keep-aspect] [--epochs EPOCHS]
+                [--val-every VAL_EVERY] [--stage1-epochs STAGE1_EPOCHS]
+                [--stage2-epochs STAGE2_EPOCHS] [--meta-split META_SPLIT]
+                [--meta-seed META_SEED] [--meta-alpha META_ALPHA]
+                [--meta-beta META_BETA] [--det-batch-size DET_BATCH_SIZE]
+                [--seg-batch-size SEG_BATCH_SIZE]
+                [--cnt-batch-size CNT_BATCH_SIZE] [--lr LR]
+                [--backbone-lr BACKBONE_LR]
+                [--backbone-lr-mult BACKBONE_LR_MULT] [--det-lr DET_LR]
+                [--seg-lr SEG_LR] [--cnt-lr CNT_LR]
+                [--weight-decay WEIGHT_DECAY]
+                [--backbone-weight-decay BACKBONE_WEIGHT_DECAY]
+                [--det-weight-decay DET_WEIGHT_DECAY]
+                [--seg-weight-decay SEG_WEIGHT_DECAY]
+                [--cnt-weight-decay CNT_WEIGHT_DECAY]
+                [--loss-weights LOSS_WEIGHTS]
+                [--loss-weight-bias LOSS_WEIGHT_BIAS]
+                [--primary-task PRIMARY_TASK] [--best-by {total,det,seg,cnt}]
+                [--save-dir SAVE_DIR] [--log-interval LOG_INTERVAL]
+                [--debug-cnt] [--debug-cnt-interval DEBUG_CNT_INTERVAL]
+                [--debug-first-n-steps DEBUG_FIRST_N_STEPS] [--amp]
+                [--grad-clip-norm GRAD_CLIP_NORM] [--num-workers NUM_WORKERS]
+                [--device DEVICE] [--max-train-steps MAX_TRAIN_STEPS]
+                [--max-val-steps MAX_VAL_STEPS] [--first-order | --full-maml]
+                [--save-epochs SAVE_EPOCHS]
+                [--fuse-seg-cnt-backbone | --no-fuse-seg-cnt-backbone]
+                [--cnt-backbone-grad-mult CNT_BACKBONE_GRAD_MULT]
+train.py: error: unrecognized arguments: --moe-mi-loss-shared 0.005 --no-mi-shared
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/cuda/__init__.py:129: UserWarning: CUDA initialization: Unexpected error from cudaGetDeviceCount(). Did you run some cuda functions before calling NumCudaDevices() that might have already set an error? Error 803: system has unsupported display driver / cuda driver combination (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
+  return torch._C._cuda_getDeviceCount() > 0
+usage: train.py [-h] [--model-name MODEL_NAME] [--image-size IMAGE_SIZE]
+                [--backbone-checkpoint BACKBONE_CHECKPOINT]
+                [--unfreeze-backbone] [--use-lora-moe] [--lora-rank LORA_RANK]
+                [--num-experts-private NUM_EXPERTS_PRIVATE]
+                [--num-experts-shared NUM_EXPERTS_SHARED]
+                [--moe-k-private MOE_K_PRIVATE] [--moe-k-shared MOE_K_SHARED]
+                [--moe-mi-loss-shared MOE_MI_LOSS_SHARED]
+                [--use-mi-shared | --no-mi-shared] [--use-auto-weighted-loss]
+                [--dynamic-loss-weight]
+                [--grad-checkpointing | --no-grad-checkpointing]
+                [--det-unfreeze-backbone | --det-freeze-backbone]
+                [--seg-full-finetune | --seg-freeze-backbone]
+                [--cnt-full-finetune | --cnt-freeze-backbone] --det-data-root
+                DET_DATA_ROOT [--det-train-ann DET_TRAIN_ANN]
+                [--det-val-ann DET_VAL_ANN]
+                [--det-train-img-dir DET_TRAIN_IMG_DIR]
+                [--det-val-img-dir DET_VAL_IMG_DIR]
+                [--det-num-classes DET_NUM_CLASSES] --seg-train-dir
+                SEG_TRAIN_DIR --seg-val-dir SEG_VAL_DIR
+                [--seg-num-classes SEG_NUM_CLASSES] --cnt-data-root
+                CNT_DATA_ROOT [--cnt-train-dir CNT_TRAIN_DIR]
+                [--cnt-val-dir CNT_VAL_DIR]
+                [--cnt-num-classes CNT_NUM_CLASSES]
+                [--cnt-count-loss-weight CNT_COUNT_LOSS_WEIGHT]
+                [--cnt-keep-aspect | --cnt-no-keep-aspect] [--epochs EPOCHS]
+                [--val-every VAL_EVERY] [--det-batch-size DET_BATCH_SIZE]
+                [--seg-batch-size SEG_BATCH_SIZE]
+                [--cnt-batch-size CNT_BATCH_SIZE] [--lr LR]
+                [--backbone-lr BACKBONE_LR]
+                [--backbone-lr-mult BACKBONE_LR_MULT] [--det-lr DET_LR]
+                [--seg-lr SEG_LR] [--cnt-lr CNT_LR]
+                [--weight-decay WEIGHT_DECAY]
+                [--backbone-weight-decay BACKBONE_WEIGHT_DECAY]
+                [--det-weight-decay DET_WEIGHT_DECAY]
+                [--seg-weight-decay SEG_WEIGHT_DECAY]
+                [--cnt-weight-decay CNT_WEIGHT_DECAY]
+                [--loss-weights LOSS_WEIGHTS] [--primary-task PRIMARY_TASK]
+                [--best-by {total,det,seg,cnt}] [--save-dir SAVE_DIR]
+                [--log-interval LOG_INTERVAL] [--amp]
+                [--grad-clip-norm GRAD_CLIP_NORM] [--num-workers NUM_WORKERS]
+                [--device DEVICE] [--max-train-steps MAX_TRAIN_STEPS]
+                [--max-val-steps MAX_VAL_STEPS] [--save-epochs SAVE_EPOCHS]
+                [--fuse-seg-cnt-backbone | --no-fuse-seg-cnt-backbone]
+                [--cnt-backbone-grad-mult CNT_BACKBONE_GRAD_MULT]
+train.py: error: unrecognized arguments: --loss-weight-bias 15:8:1 --debug-cnt --debug-cnt-interval 20 --debug-first-n-steps 3
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/cuda/__init__.py:129: UserWarning: CUDA initialization: Unexpected error from cudaGetDeviceCount(). Did you run some cuda functions before calling NumCudaDevices() that might have already set an error? Error 803: system has unsupported display driver / cuda driver combination (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
+  return torch._C._cuda_getDeviceCount() > 0
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/113_test_ori/train.py", line 860, in <module>
+    main()
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/113_test_ori/train.py", line 463, in main
+    det_train_ds, det_val_ds, det_train_loader, det_val_loader = build_det_loaders(
+                                                                 ^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/113_test_ori/datasets.py", line 91, in build_det_loaders
+    train_ds = CocoDetectionDataset(str(train_ann_p), str(train_img_p), transform=DetTransform(True))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/object_detection/dataset.py", line 36, in __init__
+    with self.ann_file.open("r", encoding="utf-8") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/pathlib.py", line 1044, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/nas/liyangguang103/newdataset/CD-ObjectDetection/DIOR/coco/annotations/instances_train_10per.json'
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/cuda/__init__.py:129: UserWarning: CUDA initialization: Unexpected error from cudaGetDeviceCount(). Did you run some cuda functions before calling NumCudaDevices() that might have already set an error? Error 803: system has unsupported display driver / cuda driver combination (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
+  return torch._C._cuda_getDeviceCount() > 0
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/113_test_ori/train.py", line 860, in <module>
+    main()
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/113_test_ori/train.py", line 463, in main
+    det_train_ds, det_val_ds, det_train_loader, det_val_loader = build_det_loaders(
+                                                                 ^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/113_test_ori/datasets.py", line 91, in build_det_loaders
+    train_ds = CocoDetectionDataset(str(train_ann_p), str(train_img_p), transform=DetTransform(True))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/object_detection/dataset.py", line 36, in __init__
+    with self.ann_file.open("r", encoding="utf-8") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/pathlib.py", line 1044, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/nas/liyangguang103/newdataset/CD-ObjectDetection/DIOR/coco/annotations/instances_train_10per.json'
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/cuda/__init__.py:129: UserWarning: CUDA initialization: Unexpected error from cudaGetDeviceCount(). Did you run some cuda functions before calling NumCudaDevices() that might have already set an error? Error 803: system has unsupported display driver / cuda driver combination (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
+  return torch._C._cuda_getDeviceCount() > 0
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/113_test_ori/train.py", line 860, in <module>
+    main()
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/113_test_ori/train.py", line 526, in main
+    ).to(device)
+      ^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1340, in to
+    return self._apply(convert)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/nn/modules/module.py", line 900, in _apply
+    module._apply(fn)
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/nn/modules/module.py", line 900, in _apply
+    module._apply(fn)
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/nn/modules/module.py", line 900, in _apply
+    module._apply(fn)
+  [Previous line repeated 1 more time]
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/nn/modules/module.py", line 927, in _apply
+    param_applied = fn(param)
+                    ^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1326, in convert
+    return t.to(
+           ^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/cuda/__init__.py", line 319, in _lazy_init
+    torch._C._cuda_init()
+RuntimeError: Unexpected error from cudaGetDeviceCount(). Did you run some cuda functions before calling NumCudaDevices() that might have already set an error? Error 803: system has unsupported display driver / cuda driver combination
+[LoRA-MoE] LoRA params: 6561792
+[LoRA-MoE] Det head params: 14875060
+[LoRA-MoE] Seg head params: 9451531
+[LoRA-MoE] Cnt head params: 9448456
+[LoRA-MoE] LoRA params: 6561792
+[LoRA-MoE] Det head params: 14875060
+[LoRA-MoE] Seg head params: 9451531
+[LoRA-MoE] Cnt head params: 9448456
+epoch 1/100 step 20 | loss 904538.7562 | det 3.7942 seg 2.4614 cnt 1037638.6875 | aux 0.0000
+epoch 1/100 step 40 | loss 688145.1457 | det 3.8005 seg 1.4817 cnt 235443.7812 | aux 0.0000
+epoch 1/100 step 60 | loss 498122.3955 | det 4.0189 seg 0.9694 cnt 56191.6719 | aux 0.0000
+epoch 1/100 step 80 | loss 381320.3500 | det 0.8790 seg 1.4148 cnt 18874.4707 | aux 0.0000
+epoch 1/100 step 100 | loss 307097.3752 | det 0.9860 seg 1.2207 cnt 5525.4307 | aux 0.0000
+epoch 1/100 step 120 | loss 256478.1380 | det 0.6010 seg 1.2941 cnt 2799.7200 | aux 0.0000
+epoch 1/100 step 140 | loss 220027.1575 | det 0.6456 seg 1.6956 cnt 701.1494 | aux 0.0000
+epoch 1/100 step 160 | loss 192589.1468 | det 0.5127 seg 0.9526 cnt 241.9739 | aux 0.0000
+epoch 1/100 step 180 | loss 171214.4642 | det 0.3844 seg 1.3927 cnt 243.0372 | aux 0.0000
+epoch 1/100 step 200 | loss 154102.3622 | det 0.4379 seg 1.1596 cnt 43.3156 | aux 0.0000
+epoch 1/100 step 220 | loss 140095.7117 | det 0.8027 seg 0.6605 cnt 17.5579 | aux 0.0000
+epoch 1/100 step 240 | loss 128422.4245 | det 0.3634 seg 0.7802 cnt 13.7624 | aux 0.0000
+epoch 1/100 step 260 | loss 118544.8814 | det 0.4663 seg 0.8590 cnt 5.8198 | aux 0.0000
+epoch 1/100 step 280 | loss 110078.1452 | det 0.2397 seg 1.2992 cnt 6.8858 | aux 0.0000
+epoch 1/100 step 300 | loss 102740.4343 | det 1.8911 seg 0.7781 cnt 4.3166 | aux 0.0000
+epoch 1/100 step 320 | loss 96319.8858 | det 0.6075 seg 1.3502 cnt 5.1393 | aux 0.0000
+epoch 1/100 | train 90922.0211 | val det 0.3892 seg 0.7695 miou 0.5656 cnt 8.4779 dens 1.035154e+00 mae 7.4428 total_mae 39.1383 | ap50 0.1606 | combo 0.860591
+[ckpt] new best cached (combo 0.860591)
+[LoRA-MoE] LoRA params: 6561792
+[LoRA-MoE] Det head params: 14875060
+[LoRA-MoE] Seg head params: 9451531
+[LoRA-MoE] Cnt head params: 9448456
+epoch 1/100 step 20 | loss 1054604.3094 | det 3.8348 seg 2.4137 cnt 1188155.7500 | aux 0.0000
+epoch 1/100 step 40 | loss 805377.9613 | det 3.7598 seg 1.8372 cnt 244452.8281 | aux 0.0000
+epoch 1/100 step 60 | loss 581610.3363 | det 3.3736 seg 1.4279 cnt 73015.7812 | aux 0.0000
+epoch 1/100 step 80 | loss 445331.3832 | det 1.0632 seg 1.2366 cnt 18731.0586 | aux 0.0000
+epoch 1/100 step 100 | loss 358512.4336 | det 0.9745 seg 0.8389 cnt 6284.0635 | aux 0.0000
+epoch 1/100 step 120 | loss 299424.0949 | det 0.5965 seg 0.6793 cnt 2249.5276 | aux 0.0000
+epoch 1/100 step 140 | loss 256882.3233 | det 0.3174 seg 1.2295 cnt 878.9097 | aux 0.0000
+epoch 1/100 step 160 | loss 224843.6899 | det 0.5235 seg 1.6655 cnt 296.8258 | aux 0.0000
+epoch 1/100 step 180 | loss 199888.6997 | det 0.6777 seg 0.7886 cnt 121.4787 | aux 0.0000
+epoch 1/100 step 200 | loss 179908.5772 | det 0.4094 seg 1.3983 cnt 61.7892 | aux 0.0000
+epoch 1/100 step 220 | loss 163556.4476 | det 0.5664 seg 0.7136 cnt 13.2495 | aux 0.0000
+epoch 1/100 step 240 | loss 149928.1342 | det 0.6401 seg 0.5651 cnt 15.0333 | aux 0.0000
+epoch 1/100 step 260 | loss 138396.0970 | det 0.1558 seg 0.8427 cnt 4.9164 | aux 0.0000
+epoch 1/100 step 280 | loss 128511.4536 | det 0.6273 seg 0.6969 cnt 13.2932 | aux 0.0000
+epoch 1/100 step 300 | loss 119944.8296 | det 0.2873 seg 1.0993 cnt 6.3257 | aux 0.0000
+epoch 1/100 step 320 | loss 112448.8345 | det 0.4203 seg 1.0405 cnt 3.7618 | aux 0.0000

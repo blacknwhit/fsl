@@ -1,0 +1,138 @@
+{
+  "meta": {
+    "checkpoint": "/data/xiangyuyue/ULLM-zf/fsl-20260209/runs/113_consmtl_10per/best_combo.pt",
+    "device": "cuda:0",
+    "model_config": {
+      "model_name": "dinov3_vitl16",
+      "image_size": 448,
+      "use_lora": true,
+      "lora_rank": 8,
+      "lora_alpha": 16.0,
+      "lora_dropout": 0.05,
+      "det_num_classes": 20,
+      "seg_num_classes": 11,
+      "cnt_num_classes": 8,
+      "det_out_channels": 256,
+      "det_train_backbone": false,
+      "seg_train_backbone": false,
+      "cnt_train_backbone": false
+    },
+    "checkpoint_info": {
+      "model_config": {
+        "model_name": "dinov3_vitl16",
+        "image_size": 448,
+        "use_lora": true,
+        "lora_rank": 8,
+        "lora_alpha": 16.0,
+        "lora_dropout": 0.05,
+        "det_num_classes": 20,
+        "seg_num_classes": 11,
+        "cnt_num_classes": 8,
+        "det_out_channels": 256,
+        "det_train_backbone": false,
+        "seg_train_backbone": false,
+        "cnt_train_backbone": false
+      },
+      "cons_config": {
+        "cons_lambda": 1.0,
+        "cons_extra_clip_factor": 0.1
+      },
+      "train_strategy": "consmtl_lora_heads",
+      "metrics": {
+        "best_metric": 1.5486042528654016,
+        "best_epoch": 144,
+        "val_det_loss": 0.2999346274774594,
+        "val_seg_loss": 1.3785334072100057,
+        "val_seg_miou": 0.6372758775028395,
+        "val_cnt_loss": 5.318004217111006,
+        "val_cnt_density_mse": 0.9267617910985321,
+        "val_cnt_mae": 4.391242410961725,
+        "val_cnt_total_mae": 32.759976688223,
+        "val_ap50": 0.6836023911391155,
+        "selected_metric": 1.5486042528654016
+      },
+      "epoch": 144
+    }
+  },
+  "results": {
+    "det": {
+      "AP@[.50:.95]": 0.337303586014092,
+      "AP@0.50": 0.5633694956265913,
+      "AP@0.75": 0.35193383616488,
+      "AP_small": 0.017239933143002158,
+      "AP_medium": 0.23156970087707915,
+      "AP_large": 0.5447298392542539,
+      "AR@1": 0.24968375395502182,
+      "AR@10": 0.39343401523415567,
+      "AR@100": 0.41011832748256216,
+      "AR_small": 0.03729377331278241,
+      "AR_medium": 0.30508956760488,
+      "AR_large": 0.6323368587801229,
+      "task": "detection",
+      "ann_file": "/data/xiangyuyue/ULLM-zf/fsl-20260209/data/det/coco/annotations/instances_test.json",
+      "img_dir": "/data/xiangyuyue/ULLM-zf/fsl-20260209/data/det/coco/images/test",
+      "score_thr": 0.0,
+      "num_predictions": 177117,
+      "use_coco_eval": true
+    },
+    "seg": {
+      "task": "segmentation",
+      "data_dir": "/data/xiangyuyue/ULLM-zf/fsl-20260209/data/seg/nas/liyangguang103/newdataset/CD-SematicSeg/EvLab-SS/mydataset/test",
+      "num_classes": 11,
+      "image_size": 448,
+      "ignore_indices": [
+        255,
+        11
+      ],
+      "per_class_iou": [
+        0.5770599538702639,
+        0.748717221182789,
+        0.477130932930491,
+        0.7034413894510014,
+        0.49461506039275893,
+        0.7949184566343767,
+        0.5614851093094101,
+        0.5099441574832055,
+        0.5758945102988902,
+        0.594244211763514,
+        0.9242525734831215
+      ],
+      "miou": 0.6328821433454384
+    },
+    "cnt": {
+      "task": "counting",
+      "data_root": "/data/xiangyuyue/ULLM-zf/fsl-20260209/data/cnt/nas/liyangguang103/newdataset/CD-Count/DSACA",
+      "test_dir": "/data/xiangyuyue/ULLM-zf/fsl-20260209/data/cnt/nas/liyangguang103/newdataset/CD-Count/DSACA/test_data_class8",
+      "image_size": 448,
+      "num_classes": 8,
+      "keep_aspect": true,
+      "per_class_mae": [
+        11.64741619195055,
+        2.1982218688292288,
+        13.599346008178962,
+        3.153643824112513,
+        1.299315904503362,
+        2.3886255342699205,
+        0.48425642830144655,
+        8.018396974975893
+      ],
+      "per_class_rmse": [
+        18.40761292645488,
+        4.101934490735749,
+        18.9927573447645,
+        5.437855146664973,
+        2.444333297989873,
+        3.9601674223342553,
+        1.1773650803323574,
+        11.143271119625581
+      ],
+      "mae": 5.348652841890234,
+      "rmse": 8.208162103612771,
+      "mae_total": 41.0621443784585,
+      "rmse_total": 51.406488528891906,
+      "mae_per_class_mean": 5.348652841890234,
+      "num_samples": 548,
+      "n_images": 548
+    }
+  }
+}

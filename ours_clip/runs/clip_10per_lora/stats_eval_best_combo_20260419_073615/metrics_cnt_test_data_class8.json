@@ -1,0 +1,31 @@
+{
+  "task": "counting",
+  "data_root": "/data/xiangyuyue/ULLM-zf/fsl-20260209/data/cnt/nas/liyangguang103/newdataset/CD-Count/DSACA",
+  "test_dir": "/data/xiangyuyue/ULLM-zf/fsl-20260209/data/cnt/nas/liyangguang103/newdataset/CD-Count/DSACA/test_data_class8",
+  "num_classes": 8,
+  "image_size": 448,
+  "keep_aspect": true,
+  "per_class_mae": [
+    9.018659479752944,
+    2.0004869967046446,
+    7.522889443720779,
+    2.471161654586122,
+    1.3472825818198875,
+    2.0163057194138965,
+    0.6791948555649197,
+    4.308753039483933
+  ],
+  "per_class_rmse": [
+    13.162476059882682,
+    3.202656898913545,
+    10.713276164269793,
+    3.950299308299582,
+    2.269854483550154,
+    3.42213459408147,
+    0.999141464433988,
+    6.193351025583551
+  ],
+  "mae": 3.670591721380891,
+  "rmse": 5.489148749876845,
+  "n_images": 548
+}

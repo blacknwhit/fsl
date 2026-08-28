@@ -1,0 +1,553 @@
+from __future__ import annotations
+
+import math
+from copy import deepcopy
+from dataclasses import dataclass
+from typing import Dict
+
+import numpy as np
+import torch
+import torch.distributed as dist
+import torch.nn.functional as F
+try:
+    from torch.func import functional_call
+except Exception:
+    from torch.nn.utils.stateless import functional_call
+
+from .models import MultiTaskModel
+from segmentation.utils import per_class_iou_from_confusion, update_confusion_matrix
+
+
+def to_device_det(batch, device: torch.device):
+    # 检测 batch 的张量搬运。
+    images, targets = batch
+    images = [img.to(device, non_blocking=True) for img in images]
+    targets = [{k: v.to(device, non_blocking=True) for k, v in tgt.items()} for tgt in targets]
+    return images, targets
+
+
+def to_device_seg(batch, device: torch.device):
+    # 分割 batch 的张量搬运。
+    imgs, masks = batch
+    return imgs.to(device, non_blocking=True), masks.to(device, non_blocking=True)
+
+
+def to_device_cnt(batch, device: torch.device):
+    # 计数 batch 的张量搬运，并统一为 float。
+    imgs, dens = batch
+    return imgs.to(device, non_blocking=True).float(), dens.to(device, non_blocking=True).float()
+
+
+def ddp_allreduce_param_grads(params: list[torch.nn.Parameter], world_size: int) -> None:
+    # 手动做参数梯度平均，供未包 DDP 的训练路径使用。
+    if not dist.is_initialized():
+        return
+    for param in params:
+        if param.grad is None:
+            continue
+        dist.all_reduce(param.grad, op=dist.ReduceOp.SUM)
+        param.grad.div_(float(world_size))
+
+
+def ddp_allreduce_float_buffers(module: torch.nn.Module, world_size: int) -> None:
+    if not dist.is_initialized():
+        return
+    for buffer in module.buffers():
+        if not torch.is_tensor(buffer) or not buffer.dtype.is_floating_point:
+            continue
+        dist.all_reduce(buffer, op=dist.ReduceOp.SUM)
+        buffer.div_(float(world_size))
+
+
+def param_delta_l2_norm(params: list[torch.nn.Parameter], refs: list[torch.Tensor]) -> float:
+    # 计算一组参数相对参考值的整体变化量。
+    total_sq = 0.0
+    for param, ref in zip(params, refs):
+        delta = param.detach().float() - ref
+        total_sq += float(delta.pow(2).sum().item())
+    return math.sqrt(total_sq)
+
+
+def state_dict_cpu_clone(state: Dict[str, torch.Tensor]) -> Dict[str, torch.Tensor]:
+    # 把状态拷到 CPU，便于缓存最佳权重。
+    out: Dict[str, torch.Tensor] = {}
+    for key, value in state.items():
+        if torch.is_tensor(value):
+            out[key] = value.detach().cpu().clone()
+        else:
+            out[key] = deepcopy(value)
+    return out
+
+
+def build_functional_state(model: torch.nn.Module, updates: Dict[str, torch.Tensor]) -> Dict[str, torch.Tensor]:
+    # functional_call 既要参数也要 buffer，因此统一组装成完整状态。
+    state = {name: param for name, param in model.named_parameters()}
+    for name, buffer in model.named_buffers():
+        state[name] = buffer
+    state.update(updates)
+    return state
+
+
+def combine_weighted_grads(
+    task_grads: dict[str, tuple[torch.Tensor | None, ...]],
+    weights: torch.Tensor,
+) -> tuple[torch.Tensor | None, ...]:
+    # 把 det/seg/cnt 三路梯度按权重线性组合。
+    out = []
+    for grads in zip(task_grads["det"], task_grads["seg"], task_grads["cnt"]):
+        cur = None
+        for task_idx, grad in enumerate(grads):
+            if grad is None:
+                continue
+            contrib = float(weights[task_idx].detach().item()) * grad.detach()
+            cur = contrib if cur is None else cur + contrib
+        out.append(cur)
+    return tuple(out)
+
+
+def assign_grads(
+    params: list[torch.nn.Parameter],
+    grads: tuple[torch.Tensor | None, ...],
+) -> None:
+    # 直接把组合后的梯度写回真实参数。
+    for param, grad in zip(params, grads):
+        param.grad = None if grad is None else grad.detach().clone()
+
+
+def build_virtual_updates(
+    param_names: list[str],
+    params: list[torch.nn.Parameter],
+    grads: tuple[torch.Tensor | None, ...],
+    step_size: float,
+) -> Dict[str, torch.Tensor]:
+    # 生成“虚拟更新后”的参数字典，不改真实模型。
+    updates = {}
+    for name, param, grad in zip(param_names, params, grads):
+        updates[name] = param if grad is None else (param - float(step_size) * grad.detach())
+    return updates
+
+
+@torch.no_grad()
+def eval_det_loss(model: MultiTaskModel, loader, device: torch.device, *, max_steps: int) -> float:
+    # 评估检测任务平均损失。
+    model.train()
+    total = 0.0
+    samples = 0
+    steps = 0
+    for images, targets in loader:
+        images, targets = to_device_det((images, targets), device)
+        loss_dict = model("det", images, targets)
+        loss = sum(loss_dict.values())
+        total += float(loss.item()) * len(images)
+        samples += len(images)
+        steps += 1
+        if max_steps and steps >= max_steps:
+            break
+    if dist.is_initialized():
+        stats = torch.tensor([total, float(samples)], device=device, dtype=torch.float64)
+        dist.all_reduce(stats, op=dist.ReduceOp.SUM)
+        total = float(stats[0].item())
+        samples = int(stats[1].item())
+    return total / max(samples, 1)
+
+
+@torch.no_grad()
+def eval_seg_loss(
+    model: MultiTaskModel,
+    loader,
+    device: torch.device,
+    *,
+    max_steps: int,
+    num_classes: int,
+) -> tuple[float, float]:
+    # 评估分割损失和 mIoU。
+    model.eval()
+    total = 0.0
+    samples = 0
+    steps = 0
+    conf = torch.zeros((num_classes, num_classes), dtype=torch.int64)
+    for imgs, masks in loader:
+        imgs, masks = to_device_seg((imgs, masks), device)
+        logits = model("seg", imgs)
+        loss = F.cross_entropy(logits, masks)
+        total += float(loss.item()) * imgs.size(0)
+        samples += imgs.size(0)
+        steps += 1
+        update_confusion_matrix(
+            conf=conf,
+            logits_or_preds=logits.detach(),
+            target=masks.detach(),
+            num_classes=num_classes,
+            ignore_indices=(255, 11),
+        )
+        if max_steps and steps >= max_steps:
+            break
+    if dist.is_initialized():
+        stats = torch.tensor([total, float(samples)], device=device, dtype=torch.float64)
+        dist.all_reduce(stats, op=dist.ReduceOp.SUM)
+        total = float(stats[0].item())
+        samples = int(stats[1].item())
+        conf_dev = conf.to(device=device)
+        dist.all_reduce(conf_dev, op=dist.ReduceOp.SUM)
+        conf = conf_dev.cpu()
+    _, miou = per_class_iou_from_confusion(conf)
+    return total / max(samples, 1), float(miou.item())
+
+
+@torch.no_grad()
+def eval_cnt_loss(
+    model: MultiTaskModel,
+    loader,
+    device: torch.device,
+    *,
+    max_steps: int,
+    count_loss_weight: float,
+) -> tuple[float, float, float, float]:
+    # 评估计数任务的总损失、密度损失和计数误差。
+    model.eval()
+    total = 0.0
+    total_density = 0.0
+    total_count_mae = 0.0
+    total_total_mae = 0.0
+    samples = 0
+    steps = 0
+    for imgs, dens in loader:
+        imgs, dens = to_device_cnt((imgs, dens), device)
+        gt_counts = dens.flatten(2).sum(dim=2)
+        pred_dens, pred_counts = model("cnt", imgs)
+        dens_loss = F.mse_loss(pred_dens, dens, reduction="sum") / imgs.size(0)
+        cnt_l1 = F.l1_loss(pred_counts, gt_counts)
+        loss = dens_loss + float(count_loss_weight) * cnt_l1
+        count_mae = (pred_counts - gt_counts).abs().mean()
+        total_mae = (pred_counts.sum(dim=1) - gt_counts.sum(dim=1)).abs().mean()
+        total += float(loss.item()) * imgs.size(0)
+        total_density += float(dens_loss.item()) * imgs.size(0)
+        total_count_mae += float(count_mae.item()) * imgs.size(0)
+        total_total_mae += float(total_mae.item()) * imgs.size(0)
+        samples += imgs.size(0)
+        steps += 1
+        if max_steps and steps >= max_steps:
+            break
+    if dist.is_initialized():
+        stats = torch.tensor(
+            [total, total_density, total_count_mae, total_total_mae, float(samples)],
+            device=device,
+            dtype=torch.float64,
+        )
+        dist.all_reduce(stats, op=dist.ReduceOp.SUM)
+        total = float(stats[0].item())
+        total_density = float(stats[1].item())
+        total_count_mae = float(stats[2].item())
+        total_total_mae = float(stats[3].item())
+        samples = int(stats[4].item())
+    denom = max(samples, 1)
+    return total / denom, total_density / denom, total_count_mae / denom, total_total_mae / denom
+
+
+def _box_iou_np(a: np.ndarray, b: np.ndarray) -> np.ndarray:
+    # Numpy 版 IoU，供快速 AP50 计算。
+    if a.size == 0 or b.size == 0:
+        return np.zeros((a.shape[0], b.shape[0]), dtype=np.float32)
+    tl = np.maximum(a[:, None, :2], b[None, :, :2])
+    br = np.minimum(a[:, None, 2:], b[None, :, 2:])
+    wh = np.maximum(0.0, br - tl)
+    inter = wh[..., 0] * wh[..., 1]
+    area_a = (a[:, 2] - a[:, 0]) * (a[:, 3] - a[:, 1])
+    area_b = (b[:, 2] - b[:, 0]) * (b[:, 3] - b[:, 1])
+    union = area_a[:, None] + area_b[None, :] - inter
+    return inter / np.maximum(union, 1e-12)
+
+
+def _ap_from_pr(rec: np.ndarray, prec: np.ndarray) -> float:
+    # 101 点插值 AP。
+    ap = 0.0
+    for threshold in np.linspace(0, 1, 101):
+        precision = prec[rec >= threshold].max() if np.any(rec >= threshold) else 0.0
+        ap += precision
+    return ap / 101.0
+
+
+@torch.no_grad()
+def eval_det_ap50_fast(
+    model: MultiTaskModel,
+    loader,
+    device: torch.device,
+    *,
+    num_classes: int,
+    score_thresh: float,
+) -> float:
+    # 训练期快速 AP50 评估，逻辑保持和旧项目一致。
+    model.eval()
+    preds_by_cls = {cls_id: [] for cls_id in range(1, num_classes + 1)}
+    gts_by_cls = {cls_id: {} for cls_id in range(1, num_classes + 1)}
+    rank = dist.get_rank() if dist.is_initialized() else 0
+    image_counter = 0
+
+    for images, targets in loader:
+        images = [img.to(device, non_blocking=True) for img in images]
+        outputs = model("det", images)
+        for output, target in zip(outputs, targets):
+            default_id = rank * 10_000_000_000 + image_counter
+            img_id = int(target.get("image_id", torch.tensor([default_id])).item())
+            image_counter += 1
+            gt_boxes = target["boxes"].detach().cpu().numpy()
+            gt_labels = target["labels"].detach().cpu().numpy().astype(int)
+            for box, cls_id in zip(gt_boxes, gt_labels):
+                gts_by_cls[cls_id].setdefault(img_id, []).append(box)
+            pred_boxes = output["boxes"].detach().cpu().numpy()
+            pred_labels = output["labels"].detach().cpu().numpy().astype(int)
+            pred_scores = output["scores"].detach().cpu().numpy()
+            keep = pred_scores >= score_thresh
+            for box, cls_id, score in zip(pred_boxes[keep], pred_labels[keep], pred_scores[keep]):
+                preds_by_cls[cls_id].append((img_id, float(score), box))
+
+    if dist.is_initialized():
+        # 多卡下先汇总预测，再统一算 AP。
+        gathered = [None for _ in range(dist.get_world_size())]
+        dist.all_gather_object(gathered, (preds_by_cls, gts_by_cls))
+        merged_preds = {cls_id: [] for cls_id in range(1, num_classes + 1)}
+        merged_gts = {cls_id: {} for cls_id in range(1, num_classes + 1)}
+        for rank_preds, rank_gts in gathered:
+            for cls_id in range(1, num_classes + 1):
+                merged_preds[cls_id].extend(rank_preds.get(cls_id, []))
+                for img_id, boxes in rank_gts.get(cls_id, {}).items():
+                    merged_gts[cls_id].setdefault(img_id, []).extend(boxes)
+        preds_by_cls = merged_preds
+        gts_by_cls = merged_gts
+
+    ap_list = []
+    for cls_id in range(1, num_classes + 1):
+        preds = preds_by_cls[cls_id]
+        gts = gts_by_cls[cls_id]
+        num_gt = sum(len(v) for v in gts.values())
+        if num_gt == 0:
+            continue
+        preds.sort(key=lambda item: item[1], reverse=True)
+        matched = {img_id: [False] * len(boxes) for img_id, boxes in gts.items()}
+        tp = np.zeros(len(preds), dtype=np.float32)
+        fp = np.zeros(len(preds), dtype=np.float32)
+        for idx, (img_id, _score, pred_box) in enumerate(preds):
+            if img_id not in gts:
+                fp[idx] = 1.0
+                continue
+            gt_boxes = np.array(gts[img_id], dtype=np.float32)
+            ious = _box_iou_np(np.array([pred_box], dtype=np.float32), gt_boxes)[0]
+            best_idx = int(np.argmax(ious)) if ious.size > 0 else -1
+            if best_idx >= 0 and ious[best_idx] >= 0.5 and not matched[img_id][best_idx]:
+                tp[idx] = 1.0
+                matched[img_id][best_idx] = True
+            else:
+                fp[idx] = 1.0
+        tp_cum = np.cumsum(tp)
+        fp_cum = np.cumsum(fp)
+        rec = tp_cum / max(num_gt, 1)
+        prec = tp_cum / np.maximum(tp_cum + fp_cum, 1e-12)
+        ap_list.append(_ap_from_pr(rec, prec))
+    return float(np.mean(ap_list)) if ap_list else 0.0
+
+
+def compute_task_losses(
+    model,
+    det_batch,
+    seg_batch,
+    cnt_batch,
+    *,
+    device: torch.device,
+    cnt_count_loss_weight: float,
+    cnt_backbone_grad_mult: float,
+    params: Dict[str, torch.Tensor] | None = None,
+) -> tuple[torch.Tensor, torch.Tensor, torch.Tensor]:
+    # 一次同时计算 det/seg/cnt 三个原始损失。
+    model.train()
+    det_images, det_targets = to_device_det(det_batch, device)
+    seg_imgs, seg_masks = to_device_seg(seg_batch, device)
+    cnt_imgs, cnt_dens = to_device_cnt(cnt_batch, device)
+    cnt_gt_counts = cnt_dens.flatten(2).sum(dim=2)
+    if params is None:
+        # 常规前向：直接用当前模型参数。
+        det_loss_dict = model("det", det_images, det_targets)
+        seg_logits = model("seg", seg_imgs)
+        pred_dens, pred_counts = model("cnt", cnt_imgs, cnt_backbone_grad_mult=float(cnt_backbone_grad_mult))
+    else:
+        # 虚拟前向：用 functional_call 替换成候选参数。
+        det_loss_dict = functional_call(model, params, args=("det", det_images, det_targets), kwargs={})
+        seg_logits = functional_call(model, params, args=("seg", seg_imgs), kwargs={})
+        pred_dens, pred_counts = functional_call(
+            model,
+            params,
+            args=("cnt", cnt_imgs),
+            kwargs={"cnt_backbone_grad_mult": float(cnt_backbone_grad_mult)},
+        )
+    det_loss = sum(det_loss_dict.values())
+    seg_loss = F.cross_entropy(seg_logits, seg_masks)
+    dens_loss = F.mse_loss(pred_dens, cnt_dens, reduction="sum") / cnt_imgs.size(0)
+    cnt_l1 = F.l1_loss(pred_counts, cnt_gt_counts)
+    cnt_loss = dens_loss + float(cnt_count_loss_weight) * cnt_l1
+    return det_loss, seg_loss, cnt_loss
+
+
+@torch.no_grad()
+def validation_total_loss(
+    model,
+    val_loaders: dict[str, object],
+    *,
+    device: torch.device,
+    cnt_count_loss_weight: float,
+    cnt_backbone_grad_mult: float,
+    max_val_steps: int,
+    params: Dict[str, torch.Tensor] | None = None,
+    return_breakdown: bool = False,
+) -> float | tuple[float, dict[str, float]]:
+    # Stage1 reward 使用 det/seg/cnt 三任务验证损失直接求和。
+    was_training = model.training
+    model.train()
+    det_total = 0.0
+    det_samples = 0
+    det_steps = 0
+    for det_batch in val_loaders["det"]:
+        # 检测验证仍需 train 模式，才能从 FasterRCNN 拿到 loss。
+        det_images, det_targets = to_device_det(det_batch, device)
+        if params is None:
+            det_loss_dict = model("det", det_images, det_targets)
+        else:
+            det_loss_dict = functional_call(model, params, args=("det", det_images, det_targets), kwargs={})
+        det_total += float(sum(det_loss_dict.values()).item()) * len(det_images)
+        det_samples += len(det_images)
+        det_steps += 1
+        if max_val_steps and det_steps >= max_val_steps:
+            break
+
+    model.eval()
+    seg_total = 0.0
+    seg_samples = 0
+    seg_steps = 0
+    for seg_batch in val_loaders["seg"]:
+        seg_imgs, seg_masks = to_device_seg(seg_batch, device)
+        if params is None:
+            seg_logits = model("seg", seg_imgs)
+        else:
+            seg_logits = functional_call(model, params, args=("seg", seg_imgs), kwargs={})
+        seg_total += float(F.cross_entropy(seg_logits, seg_masks).item()) * seg_imgs.size(0)
+        seg_samples += seg_imgs.size(0)
+        seg_steps += 1
+        if max_val_steps and seg_steps >= max_val_steps:
+            break
+
+    cnt_total = 0.0
+    cnt_samples = 0
+    cnt_steps = 0
+    for cnt_batch in val_loaders["cnt"]:
+        cnt_imgs, cnt_dens = to_device_cnt(cnt_batch, device)
+        cnt_gt_counts = cnt_dens.flatten(2).sum(dim=2)
+        if params is None:
+            pred_dens, pred_counts = model("cnt", cnt_imgs, cnt_backbone_grad_mult=float(cnt_backbone_grad_mult))
+        else:
+            pred_dens, pred_counts = functional_call(
+                model,
+                params,
+                args=("cnt", cnt_imgs),
+                kwargs={"cnt_backbone_grad_mult": float(cnt_backbone_grad_mult)},
+            )
+        dens_loss = F.mse_loss(pred_dens, cnt_dens, reduction="sum") / cnt_imgs.size(0)
+        cnt_l1 = F.l1_loss(pred_counts, cnt_gt_counts)
+        cnt_total += float((dens_loss + float(cnt_count_loss_weight) * cnt_l1).item()) * cnt_imgs.size(0)
+        cnt_samples += cnt_imgs.size(0)
+        cnt_steps += 1
+        if max_val_steps and cnt_steps >= max_val_steps:
+            break
+
+    if dist.is_initialized():
+        # 各任务先各自求平均，再按文档定义直接相加。
+        stats = torch.tensor(
+            [det_total, float(det_samples), seg_total, float(seg_samples), cnt_total, float(cnt_samples)],
+            device=device,
+            dtype=torch.float64,
+        )
+        dist.all_reduce(stats, op=dist.ReduceOp.SUM)
+        det_total = float(stats[0].item())
+        det_samples = int(stats[1].item())
+        seg_total = float(stats[2].item())
+        seg_samples = int(stats[3].item())
+        cnt_total = float(stats[4].item())
+        cnt_samples = int(stats[5].item())
+    det_avg = det_total / max(det_samples, 1)
+    seg_avg = seg_total / max(seg_samples, 1)
+    cnt_avg = cnt_total / max(cnt_samples, 1)
+    total = det_avg + seg_avg + cnt_avg
+    if was_training:
+        model.train()
+    else:
+        model.eval()
+    if return_breakdown:
+        return total, {
+            "det": float(det_avg),
+            "seg": float(seg_avg),
+            "cnt": float(cnt_avg),
+        }
+    return total
+
+
+@dataclass
+class ValidationResult:
+    # Stage2 一次验证后的组合指标和明细指标。
+    combo_metric: float
+    metrics: Dict[str, float]
+
+
+def run_stage2_validation(
+    model,
+    val_loaders: dict[str, object],
+    *,
+    device: torch.device,
+    seg_num_classes: int,
+    det_num_classes: int,
+    det_ap_score_thr: float,
+    cnt_count_loss_weight: float,
+    max_val_steps: int,
+    epoch: int,
+    stage_name: str,
+) -> ValidationResult:
+    # Stage2 选模入口：复用旧项目的组合指标定义。
+    val_det = eval_det_loss(model, val_loaders["det"], device, max_steps=max_val_steps)
+    val_seg, val_seg_miou = eval_seg_loss(
+        model,
+        val_loaders["seg"],
+        device,
+        max_steps=max_val_steps,
+        num_classes=seg_num_classes,
+    )
+    val_cnt, val_cnt_density, val_cnt_mae, val_cnt_total_mae = eval_cnt_loss(
+        model,
+        val_loaders["cnt"],
+        device,
+        max_steps=max_val_steps,
+        count_loss_weight=cnt_count_loss_weight,
+    )
+    val_ap50 = eval_det_ap50_fast(
+        model,
+        val_loaders["det"],
+        device,
+        num_classes=det_num_classes,
+        score_thresh=det_ap_score_thr,
+    )
+    combo_metric = float(val_ap50) + float(val_seg_miou) + 1.0 / max(float(val_cnt_mae), 1e-8)
+    print(
+        f"[{stage_name}] epoch {epoch} | "
+        f"val det {val_det:.4f} seg {val_seg:.4f} miou {val_seg_miou:.4f} "
+        f"cnt {val_cnt:.4f} dens {val_cnt_density:.6e} mae {val_cnt_mae:.4f} total_mae {val_cnt_total_mae:.4f} | "
+        f"ap50 {val_ap50:.4f} | combo {combo_metric:.6f}"
+    )
+    return ValidationResult(
+        combo_metric=combo_metric,
+        metrics={
+            "val_det_loss": float(val_det),
+            "val_seg_loss": float(val_seg),
+            "val_seg_miou": float(val_seg_miou),
+            "val_cnt_loss": float(val_cnt),
+            "val_cnt_density_mse": float(val_cnt_density),
+            "val_cnt_mae": float(val_cnt_mae),
+            "val_cnt_total_mae": float(val_cnt_total_mae),
+            "val_ap50": float(val_ap50),
+            "selected_metric": float(combo_metric),
+        },
+    )

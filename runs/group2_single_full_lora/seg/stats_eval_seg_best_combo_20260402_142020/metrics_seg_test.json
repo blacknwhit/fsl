@@ -1,0 +1,26 @@
+{
+  "task": "segmentation",
+  "data_dir": "/data/xiangyuyue/ULLM-zf/fsl-20260209/data/seg/nas/liyangguang103/newdataset/CD-SematicSeg/EvLab-SS/mydataset/test",
+  "checkpoint": "runs/group2_single_full_lora/seg/best_combo.pt",
+  "num_classes": 11,
+  "image_size": 448,
+  "model_name": "dinov3_vitl16",
+  "ignore_indices": [
+    255,
+    11
+  ],
+  "per_class_iou": [
+    0.9612565010096393,
+    0.8756726690623269,
+    0.823816124560504,
+    0.8289243694913164,
+    0.7294911796508005,
+    0.8720136447981358,
+    0.7319732243948044,
+    0.7356875143273827,
+    0.7963816863909505,
+    0.8070319441557535,
+    0.9656373115028476
+  ],
+  "miou": 0.8298078335767692
+}

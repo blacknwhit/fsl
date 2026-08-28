@@ -1,0 +1,24 @@
+{
+  "task": "segmentation",
+  "data_dir": "/data/xiangyuyue/ULLM-zf/fsl-20260209/data/seg/nas/liyangguang103/newdataset/CD-SematicSeg/EvLab-SS/mydataset/test",
+  "num_classes": 11,
+  "image_size": 448,
+  "ignore_indices": [
+    255,
+    11
+  ],
+  "per_class_iou": [
+    0.9607304775810673,
+    0.878976268502324,
+    0.8241407583616627,
+    0.8281499950654844,
+    0.7227933240519421,
+    0.8730818444962667,
+    0.724089111518833,
+    0.7291383727103455,
+    0.7934370613723224,
+    0.8021034241190693,
+    0.9652086174152049
+  ],
+  "miou": 0.8274408413813202
+}

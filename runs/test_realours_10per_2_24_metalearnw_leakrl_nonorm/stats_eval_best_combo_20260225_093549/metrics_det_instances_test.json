@@ -1,0 +1,20 @@
+{
+  "AP@[.50:.95]": 0.3036884402574859,
+  "AP@0.50": 0.5426587703177074,
+  "AP@0.75": 0.31246525952654197,
+  "AP_small": 0.01051924664659084,
+  "AP_medium": 0.1981151761529108,
+  "AP_large": 0.4972879043906272,
+  "AR@1": 0.22634237386629152,
+  "AR@10": 0.35721918721111623,
+  "AR@100": 0.3717738391706166,
+  "AR_small": 0.024198495377629775,
+  "AR_medium": 0.2623386053198145,
+  "AR_large": 0.5838154616029798,
+  "task": "detection",
+  "ann_file": "/data/xiangyuyue/ULLM-zf/fsl-20260209/data/det/coco/annotations/instances_test.json",
+  "img_dir": "/data/xiangyuyue/ULLM-zf/fsl-20260209/data/det/coco/images/test",
+  "score_thr": 0.0,
+  "num_predictions": 183369,
+  "use_coco_eval": true
+}

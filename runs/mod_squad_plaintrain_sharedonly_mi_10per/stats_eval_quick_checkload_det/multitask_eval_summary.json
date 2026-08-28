@@ -1,0 +1,33 @@
+{
+  "checkpoint": "runs/mod_squad_plaintrain_sharedonly_mi_10per/stats_eval_quick_checkload_det/compat_multitask_ckpt.pt",
+  "stats_dir": "runs/mod_squad_plaintrain_sharedonly_mi_10per/stats_eval_quick_checkload_det",
+  "tasks": [
+    "det"
+  ],
+  "runs": {
+    "det": {
+      "cmd": [
+        "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/bin/python",
+        "object_detection/eval.py",
+        "--checkpoint",
+        "runs/mod_squad_plaintrain_sharedonly_mi_10per/stats_eval_quick_checkload_det/compat_multitask_ckpt.pt",
+        "--stats-dir",
+        "runs/mod_squad_plaintrain_sharedonly_mi_10per/stats_eval_quick_checkload_det",
+        "--check-load-only",
+        "--data-root",
+        "data/det/coco",
+        "--ann-file",
+        "data/det/coco/annotations/instances_test.json",
+        "--img-dir",
+        "data/det/coco/images/test",
+        "--device",
+        "cuda",
+        "--batch-size",
+        "32"
+      ],
+      "returncode": 1,
+      "elapsed_sec": 77.3571560382843,
+      "artifacts": {}
+    }
+  }
+}

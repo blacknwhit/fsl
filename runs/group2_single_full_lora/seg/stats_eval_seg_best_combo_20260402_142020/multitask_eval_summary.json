@@ -1,0 +1,34 @@
+{
+  "checkpoint": "runs/group2_single_full_lora/seg/best_combo.pt",
+  "stats_dir": "runs/group2_single_full_lora/seg/stats_eval_seg_best_combo_20260402_142020",
+  "tasks": [
+    "seg"
+  ],
+  "runs": {
+    "seg": {
+      "cmd": [
+        "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/bin/python",
+        "segmentation/eval.py",
+        "--checkpoint",
+        "runs/group2_single_full_lora/seg/best_combo.pt",
+        "--stats-dir",
+        "runs/group2_single_full_lora/seg/stats_eval_seg_best_combo_20260402_142020",
+        "--data-dir",
+        "/data/xiangyuyue/ULLM-zf/fsl-20260209/data/seg/nas/liyangguang103/newdataset/CD-SematicSeg/EvLab-SS/mydataset/test",
+        "--image-size",
+        "448",
+        "--model-name",
+        "dinov3_vitl16",
+        "--device",
+        "cuda",
+        "--backbone-checkpoint",
+        "/data/xiangyuyue/ULLM-zf/fsl-20260209/dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth"
+      ],
+      "returncode": 0,
+      "elapsed_sec": 1005.4839813709259,
+      "artifacts": {
+        "metrics": "runs/group2_single_full_lora/seg/stats_eval_seg_best_combo_20260402_142020/metrics_seg_test.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "det_fg_classes": 20,
+    "seg_num_classes": 11,
+    "cnt_num_classes": 8,
+    "use_lora_moe": true,
+    "model_name": "dinov3_vitl16",
+    "image_size": 448,
+    "moe_cfg": {
+      "use_lora_moe": true,
+      "task_num": 3,
+      "lora_rank": 8,
+      "num_experts_private": 3,
+      "num_experts_shared": 6,
+      "moe_k_private": 2,
+      "moe_k_shared": 2
+    }
+  },
+  "tasks": [
+    "det",
+    "seg",
+    "cnt"
+  ],
+  "results": {
+    "det": {
+      "AP@[.50:.95]": 0.32133711751576993,
+      "AP@0.50": 0.5614346126817642,
+      "AP@0.75": 0.3369341911055242,
+      "AP_small": 0.01062109582177385,
+      "AP_medium": 0.22170211246787816,
+      "AP_large": 0.5204017696328134,
+      "AR@1": 0.23476566476670357,
+      "AR@10": 0.3733041729939397,
+      "AR@100": 0.388705125802423,
+      "AR_small": 0.026039210640370104,
+      "AR_medium": 0.2919101687373172,
+      "AR_large": 0.6007299417691352,
+      "task": "detection",
+      "ann_file": "/data/xiangyuyue/ULLM-zf/fsl-20260209/data/det/coco/annotations/instances_test.json",
+      "img_dir": "/data/xiangyuyue/ULLM-zf/fsl-20260209/data/det/coco/images/test",
+      "score_thr": 0.0,
+      "num_predictions": 193315,
+      "use_coco_eval": true
+    },
+    "seg": {
+      "task": "segmentation",
+      "data_dir": "/data/xiangyuyue/ULLM-zf/fsl-20260209/data/seg/nas/liyangguang103/newdataset/CD-SematicSeg/EvLab-SS/mydataset/test",
+      "num_classes": 11,
+      "image_size": 448,
+      "ignore_indices": [
+        255,
+        11
+      ],
+      "per_class_iou": [
+        0.8250742741189855,
+        0.7620949440260181,
+        0.5191184954514397,
+        0.6866400589130317,
+        0.47508638108628326,
+        0.7925302789735793,
+        0.5559977444661335,
+        0.5291991396592354,
+        0.5850124618735099,
+        0.5995762737036437,
+        0.9134645173057533
+      ],
+      "miou": 0.6585267790525102
+    },
+    "cnt": {
+      "task": "counting",
+      "data_root": "/data/xiangyuyue/ULLM-zf/fsl-20260209/data/cnt/nas/liyangguang103/newdataset/CD-Count/DSACA",
+      "test_dir": "/data/xiangyuyue/ULLM-zf/fsl-20260209/data/cnt/nas/liyangguang103/newdataset/CD-Count/DSACA/test_data_class8",
+      "num_classes": 8,
+      "image_size": 448,
+      "keep_aspect": true,
+      "per_class_mae": [
+        7.520392182643396,
+        1.9050552432095407,
+        5.3199100622186695,
+        2.2031678416221645,
+        1.0228121788621232,
+        1.7192847578706438,
+        0.4195956455945514,
+        3.9215461166493126
+      ],
+      "per_class_rmse": [
+        12.555653541434152,
+        2.951215208487085,
+        7.538031837932255,
+        3.930985533771626,
+        1.863007383818512,
+        2.6660250757233865,
+        0.7337364145537705,
+        6.1178576417154655
+      ],
+      "mae": 3.0039705035838002,
+      "rmse": 4.794564079679532,
+      "n_images": 548
+    }
+  }
+}

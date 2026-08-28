@@ -1,0 +1,291 @@
+[warn] Using first-order MAML (stop-grad through inner update).
+[train] using --loss-weight-bias as base/init: [15.000, 8.000, 1.000]
+[train] counting neck mode: segdino (layers=[4, 11, 17, 23], features=128, project=[96, 192, 384, 768])
+[warn] Backbone is forced frozen for Full MAML (ignoring unfreeze flags).
+[LoRA-MoE] LoRA params: 6561792
+[LoRA-MoE] Det head params: 14875060
+[LoRA-MoE] Seg head params: 9451531
+[LoRA-MoE] Cnt head params: 9448456
+[LoRA-MoE] Cnt neck params: 3922336
+[train] Learnable loss weights MLP enabled (Full MAML), multilayer_grads=off, arch=joint, grad_vec_normalize=l2, prior_fuse=add, joint_task_proj64=on, joint_out=leakyrelu, joint_leaky_slope=0.010, weight_net_dropout=0.000
+[init] g0 initialized on rank0 from first inner-batch gradients and broadcast to all ranks.
+[stage1] epoch 1/1 step 20 | loss 666966.1594 | det 1.9048 seg 1.6329 cnt 667471.1375 | w [14.998, 8.137, 0.999]
+[stage1] epoch 1/1 step 40 | loss 404119.1658 | det 1.4198 seg 1.4175 cnt 404453.9572 | w [14.998, 8.119, 0.998]
+[stage1] epoch 1/1 step 60 | loss 281899.2785 | det 1.1898 seg 1.3577 cnt 282138.2984 | w [14.998, 8.129, 0.998]
+[stage1] epoch 1/1 step 80 | loss 214250.9871 | det 1.0181 seg 1.2992 cnt 214432.1738 | w [14.997, 8.106, 0.998]
+[stage1] epoch 1/1 step 100 | loss 172184.0354 | det 0.9304 seg 1.2738 cnt 172327.2012 | w [14.997, 8.118, 0.998]
+[stage1] epoch 1/1 step 120 | loss 143719.5216 | det 0.8502 seg 1.2539 cnt 143836.7200 | w [14.997, 8.110, 0.998]
+[stage1] epoch 1/1 step 140 | loss 123260.1339 | det 0.8012 seg 1.2399 cnt 123358.3379 | w [14.997, 8.096, 0.998]
+[stage1] epoch 1/1 step 160 | loss 107876.2379 | det 0.7805 seg 1.2119 cnt 107960.0002 | w [14.997, 8.089, 0.997]
+[stage1] epoch 1/1 step 180 | loss 95897.9136 | det 0.7574 seg 1.1952 cnt 95970.4765 | w [14.997, 8.095, 0.998]
+[stage1] epoch 1/1 step 200 | loss 86311.8218 | det 0.7309 seg 1.1955 cnt 86375.4239 | w [14.997, 8.073, 0.998]
+[stage1] epoch 1/1 step 220 | loss 78467.6813 | det 0.7095 seg 1.1853 cnt 78524.0313 | w [14.997, 8.086, 0.998]
+[stage1] epoch 1/1 step 240 | loss 71930.9044 | det 0.6882 seg 1.1726 cnt 71981.2951 | w [14.997, 8.072, 0.998]
+[stage1] epoch 1/1 step 260 | loss 66399.8783 | det 0.6755 seg 1.1590 cnt 66445.1700 | w [14.998, 8.117, 1.000]
+[stage1] epoch 1/1 | train 63705.6712
+[stage1] epoch 1/1 | w [14.997, 8.085, 0.998]
+[ckpt] saved stage1 phi -> runs/31_test/stage1_phi_last.pt
+[train] validation/model selection start from Stage2 (Stage1 validation disabled).
+[stage2] epoch 1/2 step 20 | loss 23.1885 | det 0.4167 seg 0.9055 cnt 9.6112 | w [14.998, 8.108, 0.999] | cnt_gnorm 2.225904e+01 cnt_gparams 6
+[stage2] epoch 1/2 step 40 | loss 21.6171 | det 0.3971 seg 0.8625 cnt 8.6731 | w [14.998, 8.114, 0.999] | cnt_gnorm 5.447044e+01 cnt_gparams 6
+[stage2] epoch 1/2 step 60 | loss 21.7083 | det 0.3958 seg 0.8528 cnt 8.8613 | w [14.998, 8.118, 1.000] | cnt_gnorm 3.134271e+01 cnt_gparams 6
+[stage2] epoch 1/2 step 80 | loss 22.0703 | det 0.4037 seg 0.9120 cnt 8.6228 | w [14.998, 8.114, 0.999] | cnt_gnorm 3.183659e+01 cnt_gparams 6
+[stage2] epoch 1/2 step 100 | loss 21.7356 | det 0.3905 seg 0.9185 cnt 8.4325 | w [14.998, 8.120, 0.999] | cnt_gnorm 3.609193e+01 cnt_gparams 6
+[stage2] epoch 1/2 step 120 | loss 21.8267 | det 0.3936 seg 0.9091 cnt 8.5537 | w [14.998, 8.095, 0.999] | cnt_gnorm 5.188239e+01 cnt_gparams 6
+[stage2] epoch 1/2 step 140 | loss 21.4807 | det 0.3810 seg 0.8894 cnt 8.5557 | w [14.998, 8.126, 1.000] | cnt_gnorm 4.828940e+01 cnt_gparams 6
+[stage2] epoch 1/2 step 160 | loss 21.6899 | det 0.3788 seg 0.8847 cnt 8.8364 | w [14.998, 8.115, 0.999] | cnt_gnorm 9.887892e+00 cnt_gparams 6
+[stage2] epoch 1/2 step 180 | loss 21.7105 | det 0.3862 seg 0.8765 cnt 8.8129 | w [14.998, 8.112, 1.000] | cnt_gnorm 7.174926e+01 cnt_gparams 6
+[stage2] epoch 1/2 step 200 | loss 21.5785 | det 0.3842 seg 0.8800 cnt 8.6821 | w [14.998, 8.116, 1.000] | cnt_gnorm 5.189767e+01 cnt_gparams 6
+[stage2] epoch 1/2 step 220 | loss 21.5214 | det 0.3810 seg 0.8757 cnt 8.7074 | w [14.998, 8.107, 1.000] | cnt_gnorm 3.618340e+01 cnt_gparams 6
+[stage2] epoch 1/2 step 240 | loss 21.4815 | det 0.3787 seg 0.8754 cnt 8.7027 | w [14.998, 8.137, 0.999] | cnt_gnorm 2.050008e+01 cnt_gparams 6
+[stage2] epoch 1/2 step 260 | loss 21.3913 | det 0.3814 seg 0.8764 cnt 8.5631 | w [14.998, 8.112, 1.000] | cnt_gnorm 4.117641e+01 cnt_gparams 6
+[stage2] epoch 1/2 step 280 | loss 21.4124 | det 0.3811 seg 0.8711 cnt 8.6317 | w [14.998, 8.107, 0.999] | cnt_gnorm 8.822097e+00 cnt_gparams 6
+[stage2] epoch 1/2 step 300 | loss 21.1572 | det 0.3768 seg 0.8597 cnt 8.5336 | w [14.998, 8.106, 0.999] | cnt_gnorm 4.142582e+01 cnt_gparams 6
+[stage2] epoch 1/2 step 320 | loss 20.9397 | det 0.3707 seg 0.8558 cnt 8.4402 | w [14.998, 8.115, 1.000] | cnt_gnorm 6.337573e+00 cnt_gparams 6
+[stage2] epoch 1/2 | train 20.7946
+[stage2] epoch 1/2 | w [14.998, 8.101, 0.999]
+[diag][cnt][stage2] epoch 1/2 | param_delta_l2 3.231726e+00
+[diag][cnt][val] pred_count_mean 10.116163 gt_count_mean 7.312485 pred_dens_mean 0.000050 gt_dens_mean 0.000036
+[stage2] epoch 1 | val det 0.3238 seg 0.6872 miou 0.5894 cnt 8.0774 dens 9.901689e-01 mae 7.0873 total_mae 37.1445 | ap50 0.3794 | combo 1.109906
+[ckpt] new best cached (stage2 epoch 1, combo 1.109906)
+[stage2] epoch 2/2 step 20 | loss 19.3728 | det 0.2529 seg 0.7586 cnt 9.4309 | w [14.998, 8.138, 0.999] | cnt_gnorm 2.905180e+01 cnt_gparams 6
+[stage2] epoch 2/2 step 40 | loss 21.7075 | det 0.2837 seg 0.7697 cnt 11.2157 | w [14.997, 8.089, 0.998] | cnt_gnorm 3.898714e+01 cnt_gparams 6
+[stage2] epoch 2/2 step 60 | loss 21.2426 | det 0.3061 seg 0.8001 cnt 10.1655 | w [14.998, 8.118, 0.999] | cnt_gnorm 4.605716e+01 cnt_gparams 6
+[stage2] epoch 2/2 step 80 | loss 21.4843 | det 0.3491 seg 0.8037 cnt 9.7337 | w [14.998, 8.095, 0.999] | cnt_gnorm 4.017836e+01 cnt_gparams 6
+[stage2] epoch 2/2 step 100 | loss 20.9548 | det 0.3337 seg 0.7968 cnt 9.4899 | w [14.998, 8.099, 1.012] | cnt_gnorm 8.789341e+00 cnt_gparams 6
+[stage2] epoch 2/2 step 120 | loss 20.7560 | det 0.3427 seg 0.8011 cnt 9.1206 | w [14.998, 8.123, 0.999] | cnt_gnorm 5.026008e+01 cnt_gparams 6
+[stage2] epoch 2/2 step 140 | loss 20.4189 | det 0.3467 seg 0.7799 cnt 8.8949 | w [14.998, 8.113, 1.000] | cnt_gnorm 4.849864e+01 cnt_gparams 6
+[stage2] epoch 2/2 step 160 | loss 20.3058 | det 0.3548 seg 0.7811 cnt 8.6507 | w [14.998, 8.099, 0.998] | cnt_gnorm 4.410973e+01 cnt_gparams 6
+[stage2] epoch 2/2 step 180 | loss 20.1942 | det 0.3516 seg 0.7880 cnt 8.5323 | w [14.998, 8.111, 0.999] | cnt_gnorm 3.990216e+01 cnt_gparams 6
+[stage2] epoch 2/2 step 200 | loss 20.6800 | det 0.3466 seg 0.8071 cnt 8.9378 | w [14.998, 8.106, 0.999] | cnt_gnorm 4.784723e+01 cnt_gparams 6
+[stage2] epoch 2/2 step 220 | loss 20.6592 | det 0.3503 seg 0.8013 cnt 8.9082 | w [14.998, 8.122, 1.000] | cnt_gnorm 3.925039e+01 cnt_gparams 6
+[stage2] epoch 2/2 step 240 | loss 20.6033 | det 0.3454 seg 0.7988 cnt 8.9464 | w [14.998, 8.129, 1.000] | cnt_gnorm 6.682120e+01 cnt_gparams 6
+[stage2] epoch 2/2 step 260 | loss 20.4648 | det 0.3424 seg 0.8042 cnt 8.8080 | w [14.997, 8.082, 0.998] | cnt_gnorm 4.930435e+01 cnt_gparams 6
+[stage2] epoch 2/2 step 280 | loss 20.4324 | det 0.3411 seg 0.8002 cnt 8.8285 | w [14.998, 8.119, 1.000] | cnt_gnorm 1.715834e+01 cnt_gparams 6
+[stage2] epoch 2/2 step 300 | loss 20.4089 | det 0.3420 seg 0.7977 cnt 8.8113 | w [14.998, 8.133, 1.000] | cnt_gnorm 5.486813e+01 cnt_gparams 6
+[stage2] epoch 2/2 step 320 | loss 20.2857 | det 0.3400 seg 0.7954 cnt 8.7365 | w [14.998, 8.122, 1.000] | cnt_gnorm 6.440996e+01 cnt_gparams 6
+[stage2] epoch 2/2 | train 20.1815
+[stage2] epoch 2/2 | w [14.998, 8.094, 1.015]
+[diag][cnt][stage2] epoch 2/2 | param_delta_l2 1.860774e+00
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+[rank1]:[W307 08:54:10.478629051 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 1]  using GPU 1 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+[rank0]:[W307 08:54:10.490257138 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 0]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+[warn] Using first-order MAML (stop-grad through inner update).
+[train] using --loss-weight-bias as base/init: [15.000, 8.000, 1.000]
+[train] counting neck mode: segdino (layers=[4, 11, 17, 23], features=128, project=[96, 192, 384, 768])
+[warn] Backbone is forced frozen for Full MAML (ignoring unfreeze flags).
+[ddp] multi-process mode without DDP wrapper (manual theta grad all-reduce)
+[LoRA-MoE] LoRA params: 6561792
+[LoRA-MoE] Det head params: 14875060
+[LoRA-MoE] Seg head params: 9451531
+[LoRA-MoE] Cnt head params: 9448456
+[LoRA-MoE] Cnt neck params: 3922336
+[train] Learnable loss weights MLP enabled (Full MAML), multilayer_grads=off, arch=joint, grad_vec_normalize=l2, prior_fuse=add, joint_task_proj64=on, joint_out=leakyrelu, joint_leaky_slope=0.010, weight_net_dropout=0.000
+[init] g0 initialized on rank0 from first inner-batch gradients and broadcast to all ranks.
+[stage1] epoch 1/1 step 20 | loss 539385.8797 | det 1.5550 seg 1.3508 cnt 539734.3441 | w [14.998, 8.129, 0.999]
+[stage1] epoch 1/1 step 40 | loss 284708.3078 | det 1.0612 seg 1.2060 cnt 284891.2187 | w [14.998, 8.126, 0.999]
+[stage1] epoch 1/1 step 60 | loss 190714.3317 | det 0.9062 seg 1.1728 cnt 190831.4719 | w [14.998, 8.118, 0.999]
+[stage1] epoch 1/1 step 80 | loss 143122.2850 | det 0.8285 seg 1.1626 cnt 143205.7210 | w [14.998, 8.122, 0.999]
+[stage1] epoch 1/1 step 100 | loss 114507.8986 | det 0.7577 seg 1.1591 cnt 114571.3758 | w [14.998, 8.109, 0.999]
+[stage1] epoch 1/1 step 120 | loss 95427.7740 | det 0.7232 seg 1.1519 cnt 95477.7837 | w [14.998, 8.142, 0.999]
+[stage1] epoch 1/1 | train 84204.0649
+[stage1] epoch 1/1 | w [14.998, 8.136, 0.999]
+[ckpt] saved stage1 phi -> runs/31_test/stage1_phi_last.pt
+[train] validation/model selection start from Stage2 (Stage1 validation disabled).
+[stage2] epoch 1/2 step 20 | loss 25.1398 | det 0.4956 seg 0.9756 cnt 9.7825 | w [14.998, 8.133, 0.999] | cnt_gnorm 3.508434e+01 cnt_gparams 6
+[stage2] epoch 1/2 step 40 | loss 24.3786 | det 0.4497 seg 0.9360 cnt 10.0293 | w [14.998, 8.127, 0.999] | cnt_gnorm 2.707222e+01 cnt_gparams 6
+[stage2] epoch 1/2 step 60 | loss 23.9760 | det 0.4475 seg 0.9176 cnt 9.8088 | w [14.998, 8.128, 1.000] | cnt_gnorm 2.935445e+01 cnt_gparams 6
+[stage2] epoch 1/2 step 80 | loss 23.2270 | det 0.4293 seg 0.9094 cnt 9.3987 | w [14.998, 8.138, 0.999] | cnt_gnorm 3.119818e+01 cnt_gparams 6
+[stage2] epoch 1/2 step 100 | loss 23.5468 | det 0.4238 seg 0.9292 cnt 9.6399 | w [14.998, 8.140, 1.000] | cnt_gnorm 2.066062e+01 cnt_gparams 6
+[stage2] epoch 1/2 step 120 | loss 23.3811 | det 0.4233 seg 0.9069 cnt 9.6607 | w [14.998, 8.142, 0.999] | cnt_gnorm 2.084988e+01 cnt_gparams 6
+[stage2] epoch 1/2 step 140 | loss 23.3850 | det 0.4182 seg 0.9006 cnt 9.7940 | w [14.998, 8.119, 1.000] | cnt_gnorm 1.652681e+01 cnt_gparams 6
+[stage2] epoch 1/2 step 160 | loss 23.1168 | det 0.4116 seg 0.8860 cnt 9.7437 | w [14.998, 8.132, 0.999] | cnt_gnorm 1.771437e+01 cnt_gparams 6
+[stage2] epoch 1/2 | train 23.0828
+[stage2] epoch 1/2 | w [14.998, 8.133, 1.000]
+[diag][cnt][stage2] epoch 1/2 | param_delta_l2 4.994717e+00
+[diag][cnt][val] pred_count_mean 9.841743 gt_count_mean 6.500002 pred_dens_mean 0.000049 gt_dens_mean 0.000032
+[stage2] epoch 1 | val det 0.3470 seg 0.6640 miou 0.5888 cnt 9.5003 dens 1.059360e+00 mae 8.4409 total_mae 50.3324 | ap50 0.3369 | combo 1.044117
+[ckpt] new best cached (stage2 epoch 1, combo 1.044117)
+[stage2] epoch 2/2 step 20 | loss 22.7276 | det 0.4059 seg 0.8359 cnt 9.8482 | w [14.998, 8.130, 0.999] | cnt_gnorm 2.831458e+01 cnt_gparams 6
+[stage2] epoch 2/2 step 40 | loss 21.5422 | det 0.3815 seg 0.8408 cnt 8.9851 | w [14.998, 8.141, 1.000] | cnt_gnorm 3.219320e+01 cnt_gparams 6
+[stage2] epoch 2/2 step 60 | loss 21.4933 | det 0.3604 seg 0.8139 cnt 9.4725 | w [14.998, 8.127, 0.999] | cnt_gnorm 1.542327e+01 cnt_gparams 6
+[stage2] epoch 2/2 step 80 | loss 21.5318 | det 0.3543 seg 0.8254 cnt 9.5056 | w [14.998, 8.127, 0.999] | cnt_gnorm 2.448942e+01 cnt_gparams 6
+[stage2] epoch 2/2 step 100 | loss 21.2125 | det 0.3578 seg 0.8008 cnt 9.3356 | w [14.998, 8.119, 1.000] | cnt_gnorm 3.280561e+01 cnt_gparams 6
+[stage2] epoch 2/2 step 120 | loss 21.0468 | det 0.3615 seg 0.8032 cnt 9.0948 | w [14.998, 8.132, 1.000] | cnt_gnorm 1.443522e+01 cnt_gparams 6
+[stage2] epoch 2/2 step 140 | loss 21.5372 | det 0.3665 seg 0.7966 cnt 9.5643 | w [14.998, 8.138, 0.999] | cnt_gnorm 1.695197e+01 cnt_gparams 6
+[stage2] epoch 2/2 step 160 | loss 21.0913 | det 0.3655 seg 0.7979 cnt 9.1229 | w [14.998, 8.133, 1.000] | cnt_gnorm 2.963845e+01 cnt_gparams 6
+[stage2] epoch 2/2 | train 21.1577
+[stage2] epoch 2/2 | w [14.998, 8.130, 0.999]
+[diag][cnt][stage2] epoch 2/2 | param_delta_l2 2.987051e+00
+[diag][cnt][val] pred_count_mean 8.799957 gt_count_mean 6.500002 pred_dens_mean 0.000044 gt_dens_mean 0.000032
+[stage2] epoch 2 | val det 0.3021 seg 0.6560 miou 0.5977 cnt 9.9512 dens 1.483820e+00 mae 8.4674 total_mae 49.4353 | ap50 0.4405 | combo 1.156278
+[ckpt] new best cached (stage2 epoch 2, combo 1.156278)
+[ckpt] saved best -> runs/31_test/best_combo.pt (combo 1.156278)
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+[rank0]:[W307 09:45:11.029223898 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 0]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+[rank1]:[W307 09:45:11.037213444 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 1]  using GPU 1 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+[warn] Using first-order MAML (stop-grad through inner update).
+[train] using --loss-weight-bias as base/init: [15.000, 8.000, 1.000]
+[train] counting neck mode: segdino (layers=[4, 11, 17, 23], features=128, project=[96, 192, 384, 768])
+[warn] Backbone is forced frozen for Full MAML (ignoring unfreeze flags).
+[ddp] multi-process mode without DDP wrapper (manual theta grad all-reduce)
+[LoRA-MoE] LoRA params: 6561792
+[LoRA-MoE] Det head params: 14875060
+[LoRA-MoE] Seg head params: 9451531
+[LoRA-MoE] Cnt head params: 8200
+[LoRA-MoE] Cnt neck params: 3922336
+[train] Learnable loss weights MLP enabled (Full MAML), multilayer_grads=off, arch=joint, grad_vec_normalize=l2, prior_fuse=add, joint_task_proj64=on, joint_out=leakyrelu, joint_leaky_slope=0.010, weight_net_dropout=0.000
+[init] g0 initialized on rank0 from first inner-batch gradients and broadcast to all ranks.
+[stage1] epoch 1/1 step 20 | loss 103527.0238 | det 1.4431 seg 1.3365 cnt 103709.3488 | w [14.998, 8.000, 0.996]
+[stage1] epoch 1/1 step 40 | loss 51777.3926 | det 0.9963 seg 1.2198 cnt 51859.9287 | w [14.998, 8.000, 1.035]
+[stage1] epoch 1/1 step 60 | loss 34527.1217 | det 0.8546 seg 1.1806 cnt 34576.3552 | w [14.998, 7.999, 0.998]
+[stage1] epoch 1/1 step 80 | loss 25901.8500 | det 0.7863 seg 1.1504 cnt 25934.4780 | w [14.997, 7.999, 1.000]
+[stage1] epoch 1/1 step 100 | loss 20726.5005 | det 0.7145 seg 1.1482 cnt 20749.5026 | w [14.997, 7.999, 0.999]
+[stage1] epoch 1/1 step 120 | loss 17276.5747 | det 0.6811 seg 1.1354 cnt 17293.0314 | w [14.997, 7.999, 0.997]
+[stage1] epoch 1/1 | train 15247.1746
+[stage1] epoch 1/1 | w [14.997, 7.999, 1.000]
+[ckpt] saved stage1 phi -> runs/31_test/stage1_phi_last.pt
+[train] validation/model selection start from Stage2 (Stage1 validation disabled).
+[stage2] epoch 1/2 step 20 | loss 27.6348 | det 0.5100 seg 1.0210 cnt 11.8338 | w [14.997, 7.999, 0.999] | cnt_gnorm 4.998587e-09 cnt_gparams 2
+[stage2] epoch 1/2 step 40 | loss 27.0608 | det 0.4745 seg 0.9733 cnt 12.1748 | w [14.997, 7.999, 0.999] | cnt_gnorm 5.896138e-08 cnt_gparams 2
+[stage2] epoch 1/2 step 60 | loss 39.3473 | det 0.4707 seg 0.9493 cnt 24.7418 | w [14.997, 7.999, 0.996] | cnt_gnorm 6.355722e-05 cnt_gparams 2
+[stage2] epoch 1/2 step 80 | loss 35.0318 | det 0.4510 seg 0.9332 cnt 20.8427 | w [14.997, 7.999, 0.999] | cnt_gnorm 8.438786e-14 cnt_gparams 2
+[stage2] epoch 1/2 step 100 | loss 33.4622 | det 0.4460 seg 0.9545 cnt 19.1741 | w [14.997, 7.999, 0.998] | cnt_gnorm 7.371302e-13 cnt_gparams 2
+[stage2] epoch 1/2 step 120 | loss 32.1304 | det 0.4467 seg 0.9368 cnt 17.9686 | w [14.997, 7.999, 1.000] | cnt_gnorm 4.816089e-10 cnt_gparams 2
+[stage2] epoch 1/2 step 140 | loss 31.2528 | det 0.4388 seg 0.9297 cnt 17.2620 | w [14.997, 7.999, 1.000] | cnt_gnorm 1.566420e-10 cnt_gparams 2
+[stage2] epoch 1/2 step 160 | loss 30.1950 | det 0.4313 seg 0.9115 cnt 16.4575 | w [14.997, 7.999, 1.031] | cnt_gnorm 9.775562e-12 cnt_gparams 2
+[stage2] epoch 1/2 | train 29.8453
+[stage2] epoch 1/2 | w [14.996, 7.999, 0.999]
+[diag][cnt][stage2] epoch 1/2 | param_delta_l2 2.644471e-02
+[diag][cnt][val] pred_count_mean 0.000000 gt_count_mean 6.500002 pred_dens_mean 0.000000 gt_dens_mean 0.000032
+[stage2] epoch 1 | val det 0.3380 seg 0.6855 miou 0.5886 cnt 7.7628 dens 9.913172e-01 mae 6.7715 total_mae 54.1722 | ap50 0.3269 | combo 1.063159
+[ckpt] new best cached (stage2 epoch 1, combo 1.063159)
+[stage2] epoch 2/2 step 20 | loss 24.7332 | det 0.3916 seg 0.8562 cnt 12.0016 | w [14.997, 7.998, 1.017] | cnt_gnorm 6.072452e-14 cnt_gparams 2
+[stage2] epoch 2/2 step 40 | loss 23.6722 | det 0.3744 seg 0.8670 cnt 11.1199 | w [14.997, 7.999, 1.000] | cnt_gnorm 2.523766e-12 cnt_gparams 2
+[stage2] epoch 2/2 step 60 | loss 23.5962 | det 0.3589 seg 0.8270 cnt 11.5943 | w [14.997, 8.000, 0.995] | cnt_gnorm 4.015792e-12 cnt_gparams 2
+[stage2] epoch 2/2 step 80 | loss 23.7860 | det 0.3505 seg 0.8338 cnt 11.8620 | w [14.997, 7.999, 1.000] | cnt_gnorm 4.725578e-11 cnt_gparams 2
+[stage2] epoch 2/2 step 100 | loss 23.5814 | det 0.3582 seg 0.8115 cnt 11.7176 | w [14.997, 7.999, 1.000] | cnt_gnorm 4.735020e-09 cnt_gparams 2
+[stage2] epoch 2/2 step 120 | loss 23.3796 | det 0.3638 seg 0.8152 cnt 11.4047 | w [14.997, 7.999, 0.997] | cnt_gnorm 1.252190e-14 cnt_gparams 2
+[stage2] epoch 2/2 step 140 | loss 23.9084 | det 0.3687 seg 0.8102 cnt 11.9015 | w [14.997, 7.999, 1.000] | cnt_gnorm 2.685519e-12 cnt_gparams 2
+[stage2] epoch 2/2 step 160 | loss 23.4912 | det 0.3699 seg 0.8120 cnt 11.4526 | w [14.997, 7.999, 0.998] | cnt_gnorm 1.548812e-10 cnt_gparams 2
+[stage2] epoch 2/2 | train 23.6134
+[stage2] epoch 2/2 | w [14.997, 7.999, 0.999]
+[diag][cnt][stage2] epoch 2/2 | param_delta_l2 1.703367e-04
+[diag][cnt][val] pred_count_mean 0.000000 gt_count_mean 6.500002 pred_dens_mean 0.000000 gt_dens_mean 0.000032
+[stage2] epoch 2 | val det 0.3136 seg 0.6579 miou 0.6025 cnt 7.7628 dens 9.913172e-01 mae 6.7715 total_mae 54.1722 | ap50 0.4259 | combo 1.176046
+[ckpt] new best cached (stage2 epoch 2, combo 1.176046)
+[ckpt] saved best -> runs/31_test/best_combo.pt (combo 1.176046)
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+[rank0]:[W307 10:18:56.575790882 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 0]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+[rank1]:[W307 10:18:56.581967309 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 1]  using GPU 1 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+[warn] Using first-order MAML (stop-grad through inner update).
+[train] using --loss-weight-bias as base/init: [15.000, 8.000, 1.000]
+[train] counting neck mode: segdino (layers=[4, 11, 17, 23], features=128, project=[96, 192, 384, 768])
+[warn] Backbone is forced frozen for Full MAML (ignoring unfreeze flags).
+[ddp] multi-process mode without DDP wrapper (manual theta grad all-reduce)
+[LoRA-MoE] LoRA params: 6561792
+[LoRA-MoE] Det head params: 14875060
+[LoRA-MoE] Seg head params: 9451531
+[LoRA-MoE] Cnt head params: 8200
+[LoRA-MoE] Cnt neck params: 3922336
+[train] Learnable loss weights MLP enabled (Full MAML), multilayer_grads=off, arch=joint, grad_vec_normalize=l2, prior_fuse=add, joint_task_proj64=on, joint_out=leakyrelu, joint_leaky_slope=0.010, weight_net_dropout=0.000
+[init] g0 initialized on rank0 from first inner-batch gradients and broadcast to all ranks.
+[stage1] epoch 1/1 step 20 | loss 43.2294 | det 1.5733 seg 1.3845 cnt 8.5699 | w [14.998, 7.999, 0.998]
+[stage1] epoch 1/1 step 40 | loss 35.4660 | det 1.1342 seg 1.2529 cnt 8.4179 | w [14.999, 7.999, 0.997]
+[stage1] epoch 1/1 step 60 | loss 32.0693 | det 0.9538 seg 1.2058 cnt 8.1151 | w [14.997, 7.998, 0.998]
+[stage1] epoch 1/1 step 80 | loss 30.1502 | det 0.8664 seg 1.1708 cnt 7.7917 | w [14.997, 7.998, 0.999]
+[stage1] epoch 1/1 step 100 | loss 28.5675 | det 0.7854 seg 1.1614 cnt 7.5039 | w [14.999, 7.995, 0.992]
+[stage1] epoch 1/1 step 120 | loss 27.8676 | det 0.7505 seg 1.1474 cnt 7.4424 | w [14.994, 7.997, 0.996]
+[stage1] epoch 1/1 | train 27.5180
+[stage1] epoch 1/1 | w [14.997, 7.998, 0.999]
+[ckpt] saved stage1 phi -> runs/31_test/stage1_phi_last.pt
+[train] validation/model selection start from Stage2 (Stage1 validation disabled).
+[stage2] epoch 1/2 step 20 | loss 25.4196 | det 0.5577 seg 1.0211 cnt 8.9229 | w [14.995, 7.998, 0.998] | cnt_gnorm 1.215795e+02 cnt_gparams 2
+[stage2] epoch 1/2 step 40 | loss 24.1843 | det 0.5235 seg 0.9837 cnt 8.5020 | w [14.997, 7.998, 0.999] | cnt_gnorm 4.239397e+01 cnt_gparams 2
+[stage2] epoch 1/2 step 60 | loss 23.8703 | det 0.5085 seg 0.9572 cnt 8.6275 | w [14.995, 7.995, 0.992] | cnt_gnorm 3.085547e+01 cnt_gparams 2
+[stage2] epoch 1/2 step 80 | loss 22.9432 | det 0.4828 seg 0.9447 cnt 8.1841 | w [14.995, 7.998, 0.998] | cnt_gnorm 2.034245e+01 cnt_gparams 2
+[stage2] epoch 1/2 step 100 | loss 23.5192 | det 0.4802 seg 0.9763 cnt 8.5506 | w [14.997, 7.998, 0.999] | cnt_gnorm 1.573618e+01 cnt_gparams 2
+[stage2] epoch 1/2 step 120 | loss 23.3178 | det 0.4823 seg 0.9556 cnt 8.4837 | w [14.997, 7.993, 0.989] | cnt_gnorm 1.565388e+01 cnt_gparams 2
+[stage2] epoch 1/2 step 140 | loss 23.2328 | det 0.4704 seg 0.9459 cnt 8.6551 | w [14.996, 7.996, 0.995] | cnt_gnorm 5.185632e+01 cnt_gparams 2
+[stage2] epoch 1/2 step 160 | loss 22.8629 | det 0.4616 seg 0.9272 cnt 8.5669 | w [14.998, 7.997, 0.999] | cnt_gnorm 5.027086e+01 cnt_gparams 2
+[stage2] epoch 1/2 | train 22.7886
+[stage2] epoch 1/2 | w [14.998, 7.996, 0.994]
+[diag][cnt][stage2] epoch 1/2 | param_delta_l2 2.621181e-01
+[diag][cnt][val] pred_count_mean 3.334056 gt_count_mean 6.500002 pred_dens_mean 0.000017 gt_dens_mean 0.000032
+[stage2] epoch 1 | val det 0.3493 seg 0.6660 miou 0.5950 cnt 5.7246 dens 9.680114e-01 mae 4.7565 total_mae 21.2221 | ap50 0.2955 | combo 1.100737
+[ckpt] new best cached (stage2 epoch 1, combo 1.100737)
+[stage2] epoch 2/2 step 20 | loss 22.6031 | det 0.4047 seg 0.8727 cnt 9.5783 | w [14.998, 7.997, 0.998] | cnt_gnorm 2.034953e+01 cnt_gparams 2
+[stage2] epoch 2/2 step 40 | loss 20.7891 | det 0.3801 seg 0.8761 cnt 8.1093 | w [14.997, 7.997, 0.997] | cnt_gnorm 6.921055e+01 cnt_gparams 2
+[stage2] epoch 2/2 step 60 | loss 20.7276 | det 0.3709 seg 0.8381 cnt 8.4916 | w [14.997, 7.997, 0.998] | cnt_gnorm 8.162581e+00 cnt_gparams 2
+[stage2] epoch 2/2 step 80 | loss 20.7066 | det 0.3652 seg 0.8442 cnt 8.5099 | w [14.997, 7.998, 0.999] | cnt_gnorm 1.615928e+01 cnt_gparams 2
+[stage2] epoch 2/2 step 100 | loss 20.3592 | det 0.3716 seg 0.8197 cnt 8.2619 | w [14.995, 7.994, 0.991] | cnt_gnorm 7.742111e+00 cnt_gparams 2
+[stage2] epoch 2/2 step 120 | loss 20.2327 | det 0.3780 seg 0.8207 cnt 8.0317 | w [14.994, 7.991, 0.984] | cnt_gnorm 6.099568e+00 cnt_gparams 2
+[stage2] epoch 2/2 step 140 | loss 20.6310 | det 0.3831 seg 0.8164 cnt 8.3891 | w [14.997, 7.994, 0.990] | cnt_gnorm 1.363447e+01 cnt_gparams 2
+[stage2] epoch 2/2 step 160 | loss 20.2770 | det 0.3832 seg 0.8181 cnt 8.0194 | w [14.994, 7.992, 0.987] | cnt_gnorm 1.093518e+01 cnt_gparams 2
+[stage2] epoch 2/2 | train 20.3248
+[stage2] epoch 2/2 | w [14.998, 7.995, 0.994]
+[diag][cnt][stage2] epoch 2/2 | param_delta_l2 1.618191e-01
+[diag][cnt][val] pred_count_mean 6.488169 gt_count_mean 6.500002 pred_dens_mean 0.000032 gt_dens_mean 0.000032
+[stage2] epoch 2 | val det 0.3147 seg 0.6736 miou 0.6000 cnt 5.8203 dens 9.631453e-01 mae 4.8571 total_mae 24.1461 | ap50 0.4229 | combo 1.228767
+[ckpt] new best cached (stage2 epoch 2, combo 1.228767)
+[ckpt] saved best -> runs/31_test/best_combo.pt (combo 1.228767)
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+[rank0]:[W307 10:50:42.516911332 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 0]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+[rank1]:[W307 10:50:42.521721303 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 1]  using GPU 1 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+[warn] Using first-order MAML (stop-grad through inner update).
+[train] using --loss-weight-bias as base/init: [15.000, 8.000, 1.000]
+[train] counting neck mode: segdino (layers=[4, 11, 17, 23], features=128, project=[96, 192, 384, 768])
+[warn] Backbone is forced frozen for Full MAML (ignoring unfreeze flags).
+[ddp] multi-process mode without DDP wrapper (manual theta grad all-reduce)
+[LoRA-MoE] LoRA params: 6561792
+[LoRA-MoE] Det head params: 14875060
+[LoRA-MoE] Seg head params: 9451531
+[LoRA-MoE] Cnt head params: 8200
+[LoRA-MoE] Cnt neck params: 3922336
+[train] Learnable loss weights MLP enabled (Full MAML), multilayer_grads=off, arch=joint, grad_vec_normalize=l2, prior_fuse=add, joint_task_proj64=on, joint_out=leakyrelu, joint_leaky_slope=0.010, weight_net_dropout=0.000
+[init] g0 initialized on rank0 from first inner-batch gradients and broadcast to all ranks.
+[stage1] epoch 1/10 step 20 | loss 43.3908 | det 1.5806 seg 1.3927 cnt 8.5567 | w [14.998, 7.999, 0.997]
+[stage1] epoch 1/10 step 40 | loss 35.6562 | det 1.1409 seg 1.2548 cnt 8.5179 | w [14.998, 7.999, 0.999]
+[stage1] epoch 1/10 step 60 | loss 32.2251 | det 0.9584 seg 1.2049 cnt 8.2261 | w [14.997, 7.999, 0.998]
+[stage1] epoch 1/10 step 80 | loss 30.1923 | det 0.8690 seg 1.1679 cnt 7.8293 | w [14.998, 7.998, 0.999]
+[stage1] epoch 1/10 step 100 | loss 28.6040 | det 0.7858 seg 1.1582 cnt 7.5686 | w [14.999, 7.995, 0.992]
+[stage1] epoch 1/10 step 120 | loss 27.9938 | det 0.7508 seg 1.1436 cnt 7.6022 | w [14.994, 7.996, 0.997]
+[stage1] epoch 1/10 | train 27.7094
+[stage1] epoch 1/10 | w [14.996, 7.998, 0.999]
+[stage1] epoch 2/10 step 20 | loss 19.8049 | det 0.4465 seg 0.9441 cnt 5.5848 | w [14.996, 7.994, 0.994]
+[stage1] epoch 2/10 step 40 | loss 20.6017 | det 0.4856 seg 0.8938 cnt 6.2000 | w [14.995, 7.998, 0.998]
+[stage1] epoch 2/10 step 60 | loss 20.9885 | det 0.4898 seg 0.8985 cnt 6.4945 | w [14.993, 7.996, 0.998]
+[stage1] epoch 2/10 step 80 | loss 20.9531 | det 0.4797 seg 0.9117 cnt 6.5112 | w [14.990, 7.997, 0.997]
+[stage1] epoch 2/10 step 100 | loss 21.1304 | det 0.4781 seg 0.9251 cnt 6.6133 | w [14.990, 7.996, 0.996]
+[stage1] epoch 2/10 step 120 | loss 21.1116 | det 0.4799 seg 0.9271 cnt 6.5701 | w [14.990, 7.983, 0.984]
+[stage1] epoch 2/10 | train 20.7323
+[stage1] epoch 2/10 | w [14.972, 7.992, 0.988]
+[stage1] epoch 3/10 step 20 | loss 19.1480 | det 0.4368 seg 0.7715 cnt 6.8816 | w [14.960, 7.987, 0.982]
+[stage1] epoch 3/10 step 40 | loss 18.8794 | det 0.3944 seg 0.8058 cnt 6.9730 | w [14.967, 7.958, 0.955]
+[stage1] epoch 3/10 step 60 | loss 18.5366 | det 0.3789 seg 0.8041 cnt 6.9105 | w [14.842, 7.805, 0.779]
+[stage1] epoch 3/10 step 80 | loss 18.6470 | det 0.3643 seg 0.8101 cnt 7.2854 | w [14.847, 7.818, 0.792]
+[stage1] epoch 3/10 step 100 | loss 18.7135 | det 0.3548 seg 0.8257 cnt 7.6280 | w [14.710, 7.660, 0.609]
+[stage1] epoch 3/10 step 120 | loss 18.2037 | det 0.3485 seg 0.8178 cnt 8.1555 | w [14.402, 7.312, 0.216]
+[stage1] epoch 3/10 | train 17.7992
+[stage1] epoch 3/10 | w [14.562, 7.790, 0.750]
+[stage1] epoch 4/10 step 20 | loss 15.9256 | det 0.3440 seg 0.6425 cnt 8.1194 | w [14.938, 7.967, 0.966]
+[stage1] epoch 4/10 step 40 | loss 14.7320 | det 0.3672 seg 0.7097 cnt 7.3121 | w [13.793, 6.674, -0.460]
+[stage1] epoch 4/10 step 60 | loss 14.5460 | det 0.3715 seg 0.7179 cnt 8.7865 | w [13.470, 6.337, -0.837]
+[stage1] epoch 4/10 step 80 | loss 13.8749 | det 0.3656 seg 0.7288 cnt 8.2252 | w [13.701, 7.228, 0.189]
+[stage1] epoch 4/10 step 100 | loss 489.0449 | det 0.3601 seg 0.7237 cnt 3839.7605 | w [14.135, 7.058, -0.002]
+[stage1] epoch 4/10 step 120 | loss 408.0667 | det 0.3502 seg 0.7182 cnt 3201.4946 | w [14.020, 7.361, 0.373]
+[stage1] epoch 4/10 | train -8057200.3825
+[stage1] epoch 4/10 | w [14.313, 7.449, 0.443]
+[stage1] epoch 5/10 step 20 | loss -7769369497545.5996 | det 0.4443 seg 0.5632 cnt 4173372063814.3999 | w [9.380, 4.094, -2.839]

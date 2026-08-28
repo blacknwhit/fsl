@@ -1,0 +1,44 @@
+{
+  "checkpoint": "runs/group3_single_full_fullft/det/best_combo.pt",
+  "stats_dir": "runs/group3_single_full_fullft/det/stats_eval_det_best_combo_20260402_125354",
+  "tasks": [
+    "det"
+  ],
+  "runs": {
+    "det": {
+      "cmd": [
+        "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/bin/python",
+        "object_detection/eval.py",
+        "--checkpoint",
+        "runs/group3_single_full_fullft/det/best_combo.pt",
+        "--stats-dir",
+        "runs/group3_single_full_fullft/det/stats_eval_det_best_combo_20260402_125354",
+        "--data-root",
+        "/data/xiangyuyue/ULLM-zf/fsl-20260209/data/det/coco",
+        "--ann-file",
+        "/data/xiangyuyue/ULLM-zf/fsl-20260209/data/det/coco/annotations/instances_test.json",
+        "--img-dir",
+        "/data/xiangyuyue/ULLM-zf/fsl-20260209/data/det/coco/images/test",
+        "--image-size",
+        "448",
+        "--model-name",
+        "dinov3_vitl16",
+        "--device",
+        "cuda",
+        "--backbone-checkpoint",
+        "/data/xiangyuyue/ULLM-zf/fsl-20260209/dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth",
+        "--score-thr",
+        "0.0",
+        "--use-coco-eval",
+        "--batch-size",
+        "32"
+      ],
+      "returncode": 0,
+      "elapsed_sec": 266.06505846977234,
+      "artifacts": {
+        "predictions": "runs/group3_single_full_fullft/det/stats_eval_det_best_combo_20260402_125354/predictions_instances_test.json",
+        "metrics": "runs/group3_single_full_fullft/det/stats_eval_det_best_combo_20260402_125354/metrics_instances_test.json"
+      }
+    }
+  }
+}

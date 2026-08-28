@@ -1,0 +1,7 @@
+[lora] enabled: replaced_linear=48, trainable_params=1966080
+[multitask/eval] shared(full): total=464, matched=464 (100.0%), missing=0, unexpected=0
+[multitask/eval] detector: missing=464 (expected_shared_missing=464, real_missing=0), unexpected=0
+[multitask/eval] seg_head: missing=0, unexpected=0
+[multitask/eval] cnt_head: missing=0, unexpected=0
+Saved metrics to /data/xiangyuyue/ULLM-zf/fsl-20260209/runs/single_tasks_20per/cnt/stats_eval_best_combo_20260420_183928/metrics_cnt_test_data_class8.json
+[multitask/eval] wrote full-model summary: /data/xiangyuyue/ULLM-zf/fsl-20260209/runs/single_tasks_20per/cnt/stats_eval_best_combo_20260420_183928/multitask_full_model_eval_summary.json

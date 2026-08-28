@@ -1,0 +1,6 @@
+[FullLoadCheck] shared: use_lora_moe=True, total=1064, matched=1064 (100.0%), missing=0, unexpected=0
+[FullLoadCheck] detector: provided=16, missing=1064 (expected_backbone_missing=1064, real_missing=0), unexpected=0
+[FullLoadCheck] seg_head: missing=0, unexpected=0
+[FullLoadCheck] cnt_head: missing=0, unexpected=0
+[FullLoadCheck] lora_moe_keys_present: shared=True
+[FullLoadCheck] done (no dataset/eval)

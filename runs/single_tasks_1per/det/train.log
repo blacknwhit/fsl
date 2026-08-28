@@ -1,0 +1,198 @@
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+[lora] enabled: replaced_linear=48, trainable_params=1966080
+[params] trainable_total=16841140
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [60, 256, 1, 1], strides() = [256, 1, 256, 256]
+bucket_view.sizes() = [60, 256, 1, 1], strides() = [256, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [60, 256, 1, 1], strides() = [256, 1, 256, 256]
+bucket_view.sizes() = [60, 256, 1, 1], strides() = [256, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [60, 256, 1, 1], strides() = [256, 1, 256, 256]
+bucket_view.sizes() = [60, 256, 1, 1], strides() = [256, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [60, 256, 1, 1], strides() = [256, 1, 256, 256]
+bucket_view.sizes() = [60, 256, 1, 1], strides() = [256, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [60, 256, 1, 1], strides() = [256, 1, 256, 256]
+bucket_view.sizes() = [60, 256, 1, 1], strides() = [256, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [60, 256, 1, 1], strides() = [256, 1, 256, 256]
+bucket_view.sizes() = [60, 256, 1, 1], strides() = [256, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [60, 256, 1, 1], strides() = [256, 1, 256, 256]
+bucket_view.sizes() = [60, 256, 1, 1], strides() = [256, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [60, 256, 1, 1], strides() = [256, 1, 256, 256]
+bucket_view.sizes() = [60, 256, 1, 1], strides() = [256, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+epoch 1/100 | train 3.4720 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected det_ap50 0.000000
+epoch 2/100 | train 1.5691 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected det_ap50 0.000000
+epoch 3/100 | train 1.3492 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected det_ap50 0.000000
+epoch 4/100 | train 0.9162 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected det_ap50 0.000000
+epoch 5/100 | train 1.2684 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected det_ap50 0.000000
+epoch 6/100 | train 0.7835 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected det_ap50 0.000000
+epoch 7/100 | train 0.7193 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected det_ap50 0.000000
+epoch 8/100 | train 0.5004 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected det_ap50 0.000000
+epoch 9/100 | train 0.4603 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected det_ap50 0.000000
+epoch 10/100 | train 0.4237 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected det_ap50 0.000000
+epoch 11/100 | train 0.5878 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected det_ap50 0.000000
+epoch 12/100 | train 0.3344 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected det_ap50 0.000000
+epoch 13/100 | train 0.3847 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected det_ap50 0.000000
+epoch 14/100 | train 0.4519 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected det_ap50 0.000000
+epoch 15/100 | train 0.6825 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected det_ap50 0.000000
+epoch 16/100 | train 0.5043 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected det_ap50 0.000000
+epoch 17/100 | train 0.3650 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected det_ap50 0.000000
+epoch 18/100 | train 0.4436 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected det_ap50 0.000000
+epoch 19/100 | train 0.3335 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected det_ap50 0.000000
+epoch 20/100 | train 0.3703 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected det_ap50 0.000000
+epoch 21/100 | train 0.3483 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected det_ap50 0.000000
+epoch 22/100 | train 0.2292 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected det_ap50 0.000000
+epoch 23/100 | train 0.4147 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected det_ap50 0.000000
+epoch 24/100 | train 0.2668 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected det_ap50 0.000000
+epoch 25/100 | train 0.2372 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected det_ap50 0.000000
+epoch 26/100 | train 0.2920 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected det_ap50 0.000000
+epoch 27/100 | train 0.2722 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected det_ap50 0.000000
+epoch 28/100 | train 0.2684 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected det_ap50 0.000000
+epoch 29/100 | train 0.3372 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected det_ap50 0.000000
+epoch 30/100 | train 0.1948 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected det_ap50 0.000000
+epoch 31/100 | train 0.1939 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected det_ap50 0.000000
+epoch 32/100 | train 0.2170 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected det_ap50 0.000000
+epoch 33/100 | train 0.2035 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected det_ap50 0.000000
+epoch 34/100 | train 0.2734 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected det_ap50 0.000000
+epoch 35/100 | train 0.3121 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected det_ap50 0.000000
+epoch 36/100 | train 0.1916 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected det_ap50 0.000000
+epoch 37/100 | train 0.2812 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected det_ap50 0.000000
+epoch 38/100 | train 0.1584 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected det_ap50 0.000000
+epoch 39/100 | train 0.2039 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected det_ap50 0.000000
+epoch 40/100 | train 0.1741 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected det_ap50 0.000000
+epoch 41/100 | train 0.2348 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected det_ap50 0.000000
+epoch 42/100 | train 0.2814 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected det_ap50 0.000000
+epoch 43/100 | train 0.1593 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected det_ap50 0.000000
+epoch 44/100 | train 0.1145 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected det_ap50 0.000000
+epoch 45/100 | train 0.1347 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected det_ap50 0.000000
+epoch 46/100 | train 0.3265 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected det_ap50 0.000000
+epoch 47/100 | train 0.2054 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected det_ap50 0.000000
+epoch 48/100 | train 0.4054 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected det_ap50 0.000000
+epoch 49/100 | train 0.2396 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected det_ap50 0.000000
+epoch 50/100 | train 0.2084 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected det_ap50 0.000000
+epoch 51/100 | train 0.2507 | val det 0.3539 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.3557 | selected det_ap50 0.355650
+[ckpt] new best cached (det_ap50 0.355650)
+epoch 52/100 | train 0.1134 | val det 0.3528 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.3621 | selected det_ap50 0.362097
+[ckpt] new best cached (det_ap50 0.362097)
+epoch 53/100 | train 0.1379 | val det 0.3507 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.3640 | selected det_ap50 0.364020
+[ckpt] new best cached (det_ap50 0.364020)
+epoch 54/100 | train 0.1765 | val det 0.3488 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.3805 | selected det_ap50 0.380530
+[ckpt] new best cached (det_ap50 0.380530)
+epoch 55/100 | train 0.1051 | val det 0.3574 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.3649 | selected det_ap50 0.364948
+epoch 56/100 | train 0.1193 | val det 0.3523 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.3619 | selected det_ap50 0.361912
+epoch 57/100 | train 0.2242 | val det 0.3587 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.3840 | selected det_ap50 0.384020
+[ckpt] new best cached (det_ap50 0.384020)
+epoch 58/100 | train 0.1180 | val det 0.3725 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.3693 | selected det_ap50 0.369301
+epoch 59/100 | train 0.1304 | val det 0.3505 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.3718 | selected det_ap50 0.371778
+epoch 60/100 | train 0.0983 | val det 0.3633 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.3741 | selected det_ap50 0.374117
+epoch 61/100 | train 0.1389 | val det 0.3554 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.3771 | selected det_ap50 0.377083
+epoch 62/100 | train 0.1788 | val det 0.3695 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.3635 | selected det_ap50 0.363504
+epoch 63/100 | train 0.2122 | val det 0.3572 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.3710 | selected det_ap50 0.371001
+epoch 64/100 | train 0.1268 | val det 0.3773 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.3697 | selected det_ap50 0.369694
+epoch 65/100 | train 0.1344 | val det 0.3619 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.3782 | selected det_ap50 0.378227
+epoch 66/100 | train 0.1153 | val det 0.3739 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.3809 | selected det_ap50 0.380949
+epoch 67/100 | train 0.1211 | val det 0.3804 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.3704 | selected det_ap50 0.370441
+epoch 68/100 | train 0.0685 | val det 0.3704 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.3760 | selected det_ap50 0.375953
+epoch 69/100 | train 0.1306 | val det 0.3852 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.3709 | selected det_ap50 0.370891
+epoch 70/100 | train 0.1434 | val det 0.3816 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.3872 | selected det_ap50 0.387217
+[ckpt] new best cached (det_ap50 0.387217)
+epoch 71/100 | train 0.1068 | val det 0.3810 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.3897 | selected det_ap50 0.389715
+[ckpt] new best cached (det_ap50 0.389715)
+epoch 72/100 | train 0.1383 | val det 0.3864 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.3812 | selected det_ap50 0.381202
+epoch 73/100 | train 0.1144 | val det 0.3789 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.3898 | selected det_ap50 0.389767
+[ckpt] new best cached (det_ap50 0.389767)
+epoch 74/100 | train 0.1118 | val det 0.3978 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.3808 | selected det_ap50 0.380843
+epoch 75/100 | train 0.2058 | val det 0.3759 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.3825 | selected det_ap50 0.382503
+epoch 76/100 | train 0.1082 | val det 0.3890 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.3874 | selected det_ap50 0.387373
+epoch 77/100 | train 0.1828 | val det 0.3875 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.3905 | selected det_ap50 0.390489
+[ckpt] new best cached (det_ap50 0.390489)
+epoch 78/100 | train 0.1356 | val det 0.3871 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.3879 | selected det_ap50 0.387931
+epoch 79/100 | train 0.1372 | val det 0.3939 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.3839 | selected det_ap50 0.383898
+epoch 80/100 | train 0.0990 | val det 0.3901 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.3919 | selected det_ap50 0.391887
+[ckpt] new best cached (det_ap50 0.391887)
+epoch 81/100 | train 0.1014 | val det 0.3867 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.3842 | selected det_ap50 0.384243
+epoch 82/100 | train 0.1681 | val det 0.4080 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.3905 | selected det_ap50 0.390521
+epoch 83/100 | train 0.0999 | val det 0.3906 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.3837 | selected det_ap50 0.383707
+epoch 84/100 | train 0.0787 | val det 0.4048 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.3868 | selected det_ap50 0.386767
+epoch 85/100 | train 0.1038 | val det 0.3961 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.3889 | selected det_ap50 0.388867
+epoch 86/100 | train 0.1095 | val det 0.3968 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.3934 | selected det_ap50 0.393353
+[ckpt] new best cached (det_ap50 0.393353)
+epoch 87/100 | train 0.1302 | val det 0.4022 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.3960 | selected det_ap50 0.396005
+[ckpt] new best cached (det_ap50 0.396005)
+epoch 88/100 | train 0.2056 | val det 0.4129 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.3895 | selected det_ap50 0.389512
+epoch 89/100 | train 0.1445 | val det 0.4139 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.4033 | selected det_ap50 0.403318
+[ckpt] new best cached (det_ap50 0.403318)
+epoch 90/100 | train 0.0685 | val det 0.3994 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.3995 | selected det_ap50 0.399471
+epoch 91/100 | train 0.0835 | val det 0.4083 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.3963 | selected det_ap50 0.396305
+epoch 92/100 | train 0.1655 | val det 0.4116 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.3946 | selected det_ap50 0.394552
+epoch 93/100 | train 0.1236 | val det 0.4155 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.4002 | selected det_ap50 0.400231
+epoch 94/100 | train 0.2174 | val det 0.4165 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.3984 | selected det_ap50 0.398405
+epoch 95/100 | train 0.1069 | val det 0.4258 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.3990 | selected det_ap50 0.399030
+epoch 96/100 | train 0.1036 | val det 0.4296 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.3956 | selected det_ap50 0.395627
+epoch 97/100 | train 0.1037 | val det 0.4112 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.4033 | selected det_ap50 0.403275
+epoch 98/100 | train 0.1642 | val det 0.4291 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.4041 | selected det_ap50 0.404097
+[ckpt] new best cached (det_ap50 0.404097)
+epoch 99/100 | train 0.2072 | val det 0.4116 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.3980 | selected det_ap50 0.398044
+epoch 100/100 | train 0.0897 | val det 0.4156 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.3925 | selected det_ap50 0.392477
+[ckpt] saved best -> runs/single_tasks_1per/det/best_combo.pt (det_ap50 0.404097)
+[run] project: /data/xiangyuyue/ULLM-zf/fsl-20260209
+[run] ckpt: /data/xiangyuyue/ULLM-zf/fsl-20260209/runs/single_tasks_1per/det/best_combo.pt
+[run] stats: /data/xiangyuyue/ULLM-zf/fsl-20260209/runs/single_tasks_1per/det/stats_eval_best_combo_20260420_164951
+[run] cmd: /data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/bin/python -m lora_multitask.eval --checkpoint /data/xiangyuyue/ULLM-zf/fsl-20260209/runs/single_tasks_1per/det/best_combo.pt --tasks det --stats-dir /data/xiangyuyue/ULLM-zf/fsl-20260209/runs/single_tasks_1per/det/stats_eval_best_combo_20260420_164951 --device cuda --image-size 448 --model-name dinov3_vitl16 --det-data-root /data/xiangyuyue/ULLM-zf/fsl-20260209/data/det/coco --det-ann-file /data/xiangyuyue/ULLM-zf/fsl-20260209/data/det/coco/annotations/instances_test.json --det-img-dir /data/xiangyuyue/ULLM-zf/fsl-20260209/data/det/coco/images/test --det-backbone-checkpoint /data/xiangyuyue/ULLM-zf/fsl-20260209/dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth --det-score-thr 0 --seg-data-dir /data/xiangyuyue/ULLM-zf/fsl-20260209/data/seg/nas/liyangguang103/newdataset/CD-SematicSeg/EvLab-SS/mydataset/test --seg-backbone-checkpoint /data/xiangyuyue/ULLM-zf/fsl-20260209/dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth --cnt-data-root /data/xiangyuyue/ULLM-zf/fsl-20260209/data/cnt/nas/liyangguang103/newdataset/CD-Count/DSACA --cnt-test-dir /data/xiangyuyue/ULLM-zf/fsl-20260209/data/cnt/nas/liyangguang103/newdataset/CD-Count/DSACA/test_data_class8 --cnt-backbone-checkpoint /data/xiangyuyue/ULLM-zf/fsl-20260209/dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth --det-use-coco-eval
+
+[lora] enabled: replaced_linear=48, trainable_params=1966080
+[multitask/eval] shared(full): total=464, matched=464 (100.0%), missing=0, unexpected=0
+[multitask/eval] detector: missing=464 (expected_shared_missing=464, real_missing=0), unexpected=0
+[multitask/eval] seg_head: missing=0, unexpected=0
+[multitask/eval] cnt_head: missing=0, unexpected=0
+[multitask/eval][det] processed 50/367
+[multitask/eval][det] processed 100/367
+[multitask/eval][det] processed 150/367
+[multitask/eval][det] processed 200/367
+[multitask/eval][det] processed 250/367
+[multitask/eval][det] processed 300/367
+[multitask/eval][det] processed 350/367
+loading annotations into memory...
+Done (t=0.48s)
+creating index...
+index created!
+Loading and preparing results...
+DONE (t=0.38s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=44.71s).
+Accumulating evaluation results...
+DONE (t=2.18s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.096
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.250
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.059
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.041
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.185
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.089
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.149
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.155
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.004
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.079
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.287
+Saved predictions to /data/xiangyuyue/ULLM-zf/fsl-20260209/runs/single_tasks_1per/det/stats_eval_best_combo_20260420_164951/predictions_det_instances_test.json
+Saved metrics to /data/xiangyuyue/ULLM-zf/fsl-20260209/runs/single_tasks_1per/det/stats_eval_best_combo_20260420_164951/metrics_det_instances_test.json
+[multitask/eval] wrote full-model summary: /data/xiangyuyue/ULLM-zf/fsl-20260209/runs/single_tasks_1per/det/stats_eval_best_combo_20260420_164951/multitask_full_model_eval_summary.json

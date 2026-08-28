@@ -1,0 +1,82 @@
+{
+  "checkpoint": "/data/xiangyuyue/ULLM-zf/fsl-20260209/runs/113_tadformer_10per/best_combo.pt",
+  "device": "cuda:0",
+  "model_config": {
+    "model_name": "dinov3_vitl16",
+    "image_size": 448,
+    "tad_rank": 16,
+    "tad_scale": 4.0,
+    "tad_dropout": 0.05,
+    "tad_specialize_blocks": [
+      5,
+      11,
+      17,
+      23
+    ],
+    "tad_filter_kernel": 3,
+    "tad_qkv_enabled": true,
+    "tad_proj_enabled": true,
+    "tad_fc1_enabled": true,
+    "tad_fc2_enabled": true,
+    "tad_prompt_enabled": true,
+    "tad_prompt_len": 1,
+    "tad_tpc_enabled": true,
+    "tad_prompt_update_rank": 64,
+    "grad_checkpointing": true,
+    "det_num_classes": 20,
+    "seg_num_classes": 11,
+    "cnt_num_classes": 8,
+    "det_out_channels": 256,
+    "det_train_backbone": true,
+    "seg_train_backbone": true,
+    "cnt_train_backbone": true
+  },
+  "checkpoint_info": {
+    "model_config": {
+      "model_name": "dinov3_vitl16",
+      "image_size": 448,
+      "tad_rank": 16,
+      "tad_scale": 4.0,
+      "tad_dropout": 0.05,
+      "tad_specialize_blocks": [
+        5,
+        11,
+        17,
+        23
+      ],
+      "tad_filter_kernel": 3,
+      "tad_qkv_enabled": true,
+      "tad_proj_enabled": true,
+      "tad_fc1_enabled": true,
+      "tad_fc2_enabled": true,
+      "tad_prompt_enabled": true,
+      "tad_prompt_len": 1,
+      "tad_tpc_enabled": true,
+      "tad_prompt_update_rank": 64,
+      "grad_checkpointing": true,
+      "det_num_classes": 20,
+      "seg_num_classes": 11,
+      "cnt_num_classes": 8,
+      "det_out_channels": 256,
+      "det_train_backbone": true,
+      "seg_train_backbone": true,
+      "cnt_train_backbone": true
+    },
+    "sel_config": {},
+    "train_strategy": "joint_tadformer_single_scale",
+    "metrics": {
+      "best_metric": 1.705585160908241,
+      "best_epoch": 149,
+      "val_det_loss": 0.43825744402481787,
+      "val_seg_loss": 1.0357776404705772,
+      "val_seg_miou": 0.6380511854541214,
+      "val_cnt_loss": 3.2672277019347673,
+      "val_cnt_density_mse": 0.8247327386045161,
+      "val_cnt_mae": 2.4424949476012476,
+      "val_cnt_total_mae": 11.877225125277484,
+      "val_ap50": 0.6581165471879563,
+      "selected_metric": 1.705585160908241
+    },
+    "epoch": 149
+  }
+}

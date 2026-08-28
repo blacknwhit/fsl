@@ -1,0 +1,52 @@
+
+[multitask/eval] running det: /data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/bin/python object_detection/eval.py --checkpoint runs/group2_single_full_lora/det/best_combo.pt --stats-dir runs/group2_single_full_lora/det/stats_eval_det_best_combo_20260402_125848 --data-root /data/xiangyuyue/ULLM-zf/fsl-20260209/data/det/coco --ann-file /data/xiangyuyue/ULLM-zf/fsl-20260209/data/det/coco/annotations/instances_test.json --img-dir /data/xiangyuyue/ULLM-zf/fsl-20260209/data/det/coco/images/test --image-size 448 --model-name dinov3_vitl16 --device cuda --backbone-checkpoint /data/xiangyuyue/ULLM-zf/fsl-20260209/dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth --score-thr 0.0 --use-coco-eval --batch-size 32
+
+[Eval] backbone-source=auto: detected backbone weights in det checkpoint; will use finetuned backbone.
+Initializing dinov3_vitl16 backbone from local dinov3...
+Created dinov3_vitl16 backbone
+Warning: No checkpoint provided, using random initialization
+Freezing backbone parameters...
+Feature dimension: 1024
+[Eval] Injected LoRA into dinov3 FFN (replaced_linear=48)
+[Eval] Loading multitask backbone weights from --checkpoint...
+[Eval][LoadSummary] backbone: provided=464, total=464, matched≈464 (100.0%), missing=0, unexpected=0
+[Eval][LoadSummary] det_head: provided=16, head_candidates=16, kept=16, dropped=0
+[Eval][LoadSummary] det_head.backbone.proj: provided=2, missing=0, unexpected=0
+[Eval][LoadSummary] det_head.rpn: provided=6, missing=0, unexpected=0
+[Eval][LoadSummary] det_head.roi_heads: provided=8, missing=0, unexpected=0
+Processed 50/367
+Processed 100/367
+Processed 150/367
+Processed 200/367
+Processed 250/367
+Processed 300/367
+Processed 350/367
+loading annotations into memory...
+Done (t=0.47s)
+creating index...
+index created!
+Loading and preparing results...
+DONE (t=0.34s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=53.51s).
+Accumulating evaluation results...
+DONE (t=1.81s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.405
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.640
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.435
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.029
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.307
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.646
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.284
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.451
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.473
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.051
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.363
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.727
+Saved predictions to runs/group2_single_full_lora/det/stats_eval_det_best_combo_20260402_125848/predictions_instances_test.json
+Saved metrics to runs/group2_single_full_lora/det/stats_eval_det_best_combo_20260402_125848/metrics_instances_test.json
+
+[multitask/eval] done; summary: runs/group2_single_full_lora/det/stats_eval_det_best_combo_20260402_125848/multitask_eval_summary.json

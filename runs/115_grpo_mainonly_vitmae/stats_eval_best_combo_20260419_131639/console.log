@@ -1,0 +1,151 @@
+[FullEval][det] processed 50/367
+[FullEval][det] processed 100/367
+[FullEval][det] processed 150/367
+[FullEval][det] processed 200/367
+[FullEval][det] processed 250/367
+[FullEval][det] processed 300/367
+[FullEval][det] processed 350/367
+loading annotations into memory...
+Done (t=0.43s)
+creating index...
+index created!
+Loading and preparing results...
+DONE (t=0.34s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=36.01s).
+Accumulating evaluation results...
+DONE (t=2.21s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.213
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.407
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.207
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.002
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.089
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.395
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.178
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.274
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.281
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.006
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.145
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.495
+[FullEval][det] saved predictions: /data/xiangyuyue/ULLM-zf/fsl-20260209/runs/115_grpo_mainonly_vitmae/stats_eval_best_combo_20260419_131639/predictions_det_instances_test.json
+[FullEval][det] saved metrics: /data/xiangyuyue/ULLM-zf/fsl-20260209/runs/115_grpo_mainonly_vitmae/stats_eval_best_combo_20260419_131639/metrics_det_instances_test.json
+[FullEval][seg] processed 0/1112
+[FullEval][seg] processed 10/1112
+[FullEval][seg] processed 20/1112
+[FullEval][seg] processed 30/1112
+[FullEval][seg] processed 40/1112
+[FullEval][seg] processed 50/1112
+[FullEval][seg] processed 60/1112
+[FullEval][seg] processed 70/1112
+[FullEval][seg] processed 80/1112
+[FullEval][seg] processed 90/1112
+[FullEval][seg] processed 100/1112
+[FullEval][seg] processed 110/1112
+[FullEval][seg] processed 120/1112
+[FullEval][seg] processed 130/1112
+[FullEval][seg] processed 140/1112
+[FullEval][seg] processed 150/1112
+[FullEval][seg] processed 160/1112
+[FullEval][seg] processed 170/1112
+[FullEval][seg] processed 180/1112
+[FullEval][seg] processed 190/1112
+[FullEval][seg] processed 200/1112
+[FullEval][seg] processed 210/1112
+[FullEval][seg] processed 220/1112
+[FullEval][seg] processed 230/1112
+[FullEval][seg] processed 240/1112
+[FullEval][seg] processed 250/1112
+[FullEval][seg] processed 260/1112
+[FullEval][seg] processed 270/1112
+[FullEval][seg] processed 280/1112
+[FullEval][seg] processed 290/1112
+[FullEval][seg] processed 300/1112
+[FullEval][seg] processed 310/1112
+[FullEval][seg] processed 320/1112
+[FullEval][seg] processed 330/1112
+[FullEval][seg] processed 340/1112
+[FullEval][seg] processed 350/1112
+[FullEval][seg] processed 360/1112
+[FullEval][seg] processed 370/1112
+[FullEval][seg] processed 380/1112
+[FullEval][seg] processed 390/1112
+[FullEval][seg] processed 400/1112
+[FullEval][seg] processed 410/1112
+[FullEval][seg] processed 420/1112
+[FullEval][seg] processed 430/1112
+[FullEval][seg] processed 440/1112
+[FullEval][seg] processed 450/1112
+[FullEval][seg] processed 460/1112
+[FullEval][seg] processed 470/1112
+[FullEval][seg] processed 480/1112
+[FullEval][seg] processed 490/1112
+[FullEval][seg] processed 500/1112
+[FullEval][seg] processed 510/1112
+[FullEval][seg] processed 520/1112
+[FullEval][seg] processed 530/1112
+[FullEval][seg] processed 540/1112
+[FullEval][seg] processed 550/1112
+[FullEval][seg] processed 560/1112
+[FullEval][seg] processed 570/1112
+[FullEval][seg] processed 580/1112
+[FullEval][seg] processed 590/1112
+[FullEval][seg] processed 600/1112
+[FullEval][seg] processed 610/1112
+[FullEval][seg] processed 620/1112
+[FullEval][seg] processed 630/1112
+[FullEval][seg] processed 640/1112
+[FullEval][seg] processed 650/1112
+[FullEval][seg] processed 660/1112
+[FullEval][seg] processed 670/1112
+[FullEval][seg] processed 680/1112
+[FullEval][seg] processed 690/1112
+[FullEval][seg] processed 700/1112
+[FullEval][seg] processed 710/1112
+[FullEval][seg] processed 720/1112
+[FullEval][seg] processed 730/1112
+[FullEval][seg] processed 740/1112
+[FullEval][seg] processed 750/1112
+[FullEval][seg] processed 760/1112
+[FullEval][seg] processed 770/1112
+[FullEval][seg] processed 780/1112
+[FullEval][seg] processed 790/1112
+[FullEval][seg] processed 800/1112
+[FullEval][seg] processed 810/1112
+[FullEval][seg] processed 820/1112
+[FullEval][seg] processed 830/1112
+[FullEval][seg] processed 840/1112
+[FullEval][seg] processed 850/1112
+[FullEval][seg] processed 860/1112
+[FullEval][seg] processed 870/1112
+[FullEval][seg] processed 880/1112
+[FullEval][seg] processed 890/1112
+[FullEval][seg] processed 900/1112
+[FullEval][seg] processed 910/1112
+[FullEval][seg] processed 920/1112
+[FullEval][seg] processed 930/1112
+[FullEval][seg] processed 940/1112
+[FullEval][seg] processed 950/1112
+[FullEval][seg] processed 960/1112
+[FullEval][seg] processed 970/1112
+[FullEval][seg] processed 980/1112
+[FullEval][seg] processed 990/1112
+[FullEval][seg] processed 1000/1112
+[FullEval][seg] processed 1010/1112
+[FullEval][seg] processed 1020/1112
+[FullEval][seg] processed 1030/1112
+[FullEval][seg] processed 1040/1112
+[FullEval][seg] processed 1050/1112
+[FullEval][seg] processed 1060/1112
+[FullEval][seg] processed 1070/1112
+[FullEval][seg] processed 1080/1112
+[FullEval][seg] processed 1090/1112
+[FullEval][seg] processed 1100/1112
+[FullEval][seg] processed 1110/1112
+[FullEval][seg] saved metrics: /data/xiangyuyue/ULLM-zf/fsl-20260209/runs/115_grpo_mainonly_vitmae/stats_eval_best_combo_20260419_131639/metrics_seg_test.json
+[FullEval][cnt] processed 50/137
+[FullEval][cnt] processed 100/137
+[FullEval][cnt] saved metrics: /data/xiangyuyue/ULLM-zf/fsl-20260209/runs/115_grpo_mainonly_vitmae/stats_eval_best_combo_20260419_131639/metrics_cnt_test_data_class8.json
+[FullEval] wrote summary: /data/xiangyuyue/ULLM-zf/fsl-20260209/runs/115_grpo_mainonly_vitmae/stats_eval_best_combo_20260419_131639/multitask_full_model_eval_summary.json

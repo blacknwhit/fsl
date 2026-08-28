@@ -1,0 +1,20 @@
+{
+  "AP@[.50:.95]": null,
+  "AP@0.50": null,
+  "AP@0.75": null,
+  "AP_small": null,
+  "AP_medium": null,
+  "AP_large": null,
+  "AR@1": null,
+  "AR@10": null,
+  "AR@100": null,
+  "AR_small": null,
+  "AR_medium": null,
+  "AR_large": null,
+  "task": "detection",
+  "ann_file": "/data/xiangyuyue/ULLM-zf/fsl-20260209/data/det/coco/annotations/instances_test.json",
+  "img_dir": "/data/xiangyuyue/ULLM-zf/fsl-20260209/data/det/coco/images/test",
+  "score_thr": 0.0,
+  "num_predictions": 0,
+  "use_coco_eval": true
+}

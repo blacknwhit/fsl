@@ -1,0 +1,1666 @@
+[train] fixed task weights det/seg/cnt = [15.000, 8.000, 1.000]
+[train] mi_loss_weight = 0.005000
+[train] trainable params | shared=2801664 det=14875060 seg=9451531 cnt=9448456
+[train] primary task loader = seg
+[train] validation/model selection enabled from epoch 101 to 150 (last 50 epochs)
+[diag][cnt][train] epoch 1/150 step 1 | dens(mean 7.035177e-01/2.242156e-05, ratio 3.138e+04) | count(mean 141198.812/4.500, ratio 3.138e+04, mae 141194.312, total 1129590.500/36.001) | pixels 200704
+[train] epoch 1/150 step 20 | loss 608249.5922 | det 1.9055 seg 1.6616 cnt 608207.7141 mi 0.0134
+[train] epoch 1/150 step 40 | loss 377006.0745 | det 1.4000 seg 1.4318 cnt 376973.6194 mi -0.0025
+[train] epoch 1/150 step 60 | loss 265045.2858 | det 1.1471 seg 1.4359 cnt 265016.5922 mi -0.0552
+[train] epoch 1/150 step 80 | loss 201995.1813 | det 0.9714 seg 1.3569 cnt 201969.7546 mi -0.1400
+[train] epoch 1/150 step 100 | loss 162435.1892 | det 0.8845 seg 1.3134 cnt 162411.4158 mi -0.3111
+[train] epoch 1/150 step 120 | loss 135627.2352 | det 0.8365 seg 1.2492 cnt 135604.6958 mi -0.5392
+[train] epoch 1/150 step 140 | loss 116341.8094 | det 0.8016 seg 1.2358 cnt 116319.9031 mi -0.8134
+[train] epoch 1/150 step 160 | loss 101830.1622 | det 0.7649 seg 1.2246 cnt 101808.8980 mi -1.1260
+[train] epoch 1/150 step 180 | loss 90528.4253 | det 0.7505 seg 1.2206 cnt 90507.4098 mi -1.4749
+[train] epoch 1/150 step 200 | loss 81480.6980 | det 0.7311 seg 1.1954 cnt 81460.1785 mi -1.8947
+[train] epoch 1/150 step 220 | loss 74076.5942 | det 0.7185 seg 1.1946 cnt 74056.2717 mi -2.3339
+[train] epoch 1/150 step 240 | loss 67905.9590 | det 0.7004 seg 1.1698 cnt 67886.1085 mi -2.7690
+[train] epoch 1/150 step 260 | loss 62684.1382 | det 0.6812 seg 1.1508 cnt 62664.7300 mi -3.1739
+[train] epoch 1/150 step 280 | loss 58208.2791 | det 0.6656 seg 1.1320 cnt 58189.2570 mi -3.5550
+[train] epoch 1/150 step 300 | loss 54329.4616 | det 0.6563 seg 1.1232 cnt 54310.6509 mi -3.9171
+[train] epoch 1/150 step 320 | loss 50935.2299 | det 0.6377 seg 1.1179 cnt 50916.7423 mi -4.2621
+[train] epoch 1/150 | loss 48081.7846 | det 0.6239 seg 1.1225 cnt 48063.4691 mi -4.5665
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 2/150 step 1 | dens(mean 4.247824e-05/9.155317e-05, ratio 4.640e-01) | count(mean 8.526/18.375, ratio 4.640e-01, mae 13.760, total 68.204/147.001) | pixels 200704
+[train] epoch 2/150 step 20 | loss 27.5604 | det 0.4017 seg 0.8547 cnt 14.7474 mi -10.0529
+[train] epoch 2/150 step 40 | loss 25.1850 | det 0.3992 seg 0.9324 cnt 11.7888 mi -10.1622
+[train] epoch 2/150 step 60 | loss 24.4558 | det 0.3988 seg 0.9583 cnt 10.8586 mi -10.3444
+[train] epoch 2/150 step 80 | loss 22.7829 | det 0.3768 seg 0.9192 cnt 9.8294 mi -10.4733
+[train] epoch 2/150 step 100 | loss 22.0920 | det 0.3801 seg 0.9224 cnt 9.0636 mi -10.6046
+[train] epoch 2/150 step 120 | loss 21.6539 | det 0.3890 seg 0.9146 cnt 8.5554 mi -10.7470
+[train] epoch 2/150 step 140 | loss 21.4063 | det 0.3900 seg 0.9040 cnt 8.3783 mi -10.8640
+[train] epoch 2/150 step 160 | loss 21.6391 | det 0.4008 seg 0.8948 cnt 8.5234 mi -10.9938
+[train] epoch 2/150 step 180 | loss 21.3988 | det 0.3997 seg 0.8719 cnt 8.4832 mi -11.0997
+[train] epoch 2/150 step 200 | loss 21.5333 | det 0.4036 seg 0.8690 cnt 8.5827 mi -11.2191
+[train] epoch 2/150 step 220 | loss 21.3032 | det 0.4000 seg 0.8633 cnt 8.4529 mi -11.3146
+[train] epoch 2/150 step 240 | loss 21.0501 | det 0.3934 seg 0.8607 cnt 8.3205 mi -11.4097
+[train] epoch 2/150 step 260 | loss 21.0296 | det 0.3937 seg 0.8611 cnt 8.2928 mi -11.4963
+[train] epoch 2/150 step 280 | loss 20.8308 | det 0.3891 seg 0.8678 cnt 8.1091 mi -11.5795
+[train] epoch 2/150 step 300 | loss 20.8044 | det 0.3833 seg 0.8726 cnt 8.1331 mi -11.6661
+[train] epoch 2/150 step 320 | loss 20.7538 | det 0.3825 seg 0.8730 cnt 8.0906 mi -11.7513
+[train] epoch 2/150 | loss 20.7898 | det 0.3820 seg 0.8639 cnt 8.2073 mi -11.8364
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 3/150 step 1 | dens(mean 6.875673e-05/3.549361e-05, ratio 1.937e+00) | count(mean 13.800/7.124, ratio 1.937e+00, mae 7.881, total 110.398/56.990) | pixels 200704
+[train] epoch 3/150 step 20 | loss 21.8868 | det 0.2725 seg 0.8530 cnt 11.0415 mi -13.2775
+[train] epoch 3/150 step 40 | loss 21.2448 | det 0.3266 seg 0.8155 cnt 9.8889 mi -13.3629
+[train] epoch 3/150 step 60 | loss 20.7136 | det 0.3261 seg 0.7967 cnt 9.5158 mi -13.4731
+[train] epoch 3/150 step 80 | loss 19.6359 | det 0.3231 seg 0.7835 cnt 8.5882 mi -13.5640
+[train] epoch 3/150 step 100 | loss 19.5449 | det 0.3235 seg 0.7795 cnt 8.5243 mi -13.6425
+[train] epoch 3/150 step 120 | loss 19.3461 | det 0.3326 seg 0.7573 cnt 8.3670 mi -13.6947
+[train] epoch 3/150 step 140 | loss 19.2474 | det 0.3276 seg 0.7703 cnt 8.2401 mi -13.7514
+[train] epoch 3/150 step 160 | loss 18.9689 | det 0.3242 seg 0.7762 cnt 7.9651 mi -13.8132
+[train] epoch 3/150 step 180 | loss 18.9119 | det 0.3157 seg 0.7658 cnt 8.1203 mi -13.8538
+[train] epoch 3/150 step 200 | loss 18.6285 | det 0.3142 seg 0.7583 cnt 7.9191 mi -13.9020
+[train] epoch 3/150 step 220 | loss 18.6052 | det 0.3156 seg 0.7586 cnt 7.8723 mi -13.9513
+[train] epoch 3/150 step 240 | loss 18.4841 | det 0.3225 seg 0.7543 cnt 7.6832 mi -13.9945
+[train] epoch 3/150 step 260 | loss 18.4597 | det 0.3293 seg 0.7505 cnt 7.5858 mi -14.0228
+[train] epoch 3/150 step 280 | loss 18.8175 | det 0.3426 seg 0.7677 cnt 7.6070 mi -14.0512
+[train] epoch 3/150 step 300 | loss 18.8646 | det 0.3443 seg 0.7808 cnt 7.5238 mi -14.0781
+[train] epoch 3/150 step 320 | loss 18.8268 | det 0.3400 seg 0.7892 cnt 7.4841 mi -14.1061
+[train] epoch 3/150 | loss 18.8035 | det 0.3399 seg 0.7891 cnt 7.4629 mi -14.1358
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 4/150 step 1 | dens(mean 2.758168e-05/5.511809e-05, ratio 5.004e-01) | count(mean 5.536/11.062, ratio 5.004e-01, mae 5.753, total 44.286/88.499) | pixels 200704
+[train] epoch 4/150 step 20 | loss 17.6457 | det 0.3165 seg 0.6332 cnt 7.9064 mi -14.6567
+[train] epoch 4/150 step 40 | loss 18.3516 | det 0.3044 seg 0.7449 cnt 7.8997 mi -14.6815
+[train] epoch 4/150 step 60 | loss 18.0067 | det 0.3134 seg 0.7515 cnt 7.3672 mi -14.7956
+[train] epoch 4/150 step 80 | loss 18.9462 | det 0.3199 seg 0.7514 cnt 8.2118 mi -14.8738
+[train] epoch 4/150 step 100 | loss 18.5792 | det 0.3258 seg 0.7453 cnt 7.8042 mi -14.9214
+[train] epoch 4/150 step 120 | loss 18.2819 | det 0.3258 seg 0.7396 cnt 7.5534 mi -14.9697
+[train] epoch 4/150 step 140 | loss 18.5164 | det 0.3235 seg 0.7448 cnt 7.7802 mi -15.0080
+[train] epoch 4/150 step 160 | loss 18.2543 | det 0.3227 seg 0.7449 cnt 7.5296 mi -15.0383
+[train] epoch 4/150 step 180 | loss 18.0194 | det 0.3196 seg 0.7401 cnt 7.3799 mi -15.0462
+[train] epoch 4/150 step 200 | loss 17.8808 | det 0.3184 seg 0.7391 cnt 7.2683 mi -15.0754
+[train] epoch 4/150 step 220 | loss 17.6265 | det 0.3156 seg 0.7337 cnt 7.0984 mi -15.0960
+[train] epoch 4/150 step 240 | loss 17.6342 | det 0.3205 seg 0.7302 cnt 7.0608 mi -15.1246
+[train] epoch 4/150 step 260 | loss 17.5628 | det 0.3228 seg 0.7252 cnt 6.9953 mi -15.1503
+[train] epoch 4/150 step 280 | loss 17.5380 | det 0.3175 seg 0.7263 cnt 7.0404 mi -15.1773
+[train] epoch 4/150 step 300 | loss 17.6640 | det 0.3114 seg 0.7220 cnt 7.2936 mi -15.1867
+[train] epoch 4/150 step 320 | loss 17.6810 | det 0.3121 seg 0.7157 cnt 7.3508 mi -15.2008
+[train] epoch 4/150 | loss 17.6027 | det 0.3115 seg 0.7140 cnt 7.2951 mi -15.2241
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 5/150 step 1 | dens(mean 2.506766e-05/3.176325e-05, ratio 7.892e-01) | count(mean 5.031/6.375, ratio 7.892e-01, mae 4.258, total 40.249/51.000) | pixels 200704
+[train] epoch 5/150 step 20 | loss 15.9155 | det 0.3427 seg 0.6424 cnt 5.7146 mi -15.5580
+[train] epoch 5/150 step 40 | loss 15.4164 | det 0.2787 seg 0.7094 cnt 5.6385 mi -15.6581
+[train] epoch 5/150 step 60 | loss 16.5162 | det 0.2743 seg 0.6963 cnt 6.9097 mi -15.7101
+[train] epoch 5/150 step 80 | loss 16.0957 | det 0.2787 seg 0.6905 cnt 6.4698 mi -15.7103
+[train] epoch 5/150 step 100 | loss 16.0821 | det 0.2765 seg 0.6791 cnt 6.5809 mi -15.7524
+[train] epoch 5/150 step 120 | loss 16.1906 | det 0.2874 seg 0.6929 cnt 6.4156 mi -15.7856
+[train] epoch 5/150 step 140 | loss 16.4750 | det 0.2929 seg 0.6872 cnt 6.6631 mi -15.8098
+[train] epoch 5/150 step 160 | loss 16.6266 | det 0.2996 seg 0.6819 cnt 6.7562 mi -15.8329
+[train] epoch 5/150 step 180 | loss 16.6007 | det 0.3013 seg 0.6751 cnt 6.7606 mi -15.8692
+[train] epoch 5/150 step 200 | loss 16.6207 | det 0.3062 seg 0.6746 cnt 6.7097 mi -15.9018
+[train] epoch 5/150 step 220 | loss 16.6498 | det 0.3135 seg 0.6736 cnt 6.6387 mi -15.9255
+[train] epoch 5/150 step 240 | loss 16.6486 | det 0.3086 seg 0.6725 cnt 6.7186 mi -15.9549
+[train] epoch 5/150 step 260 | loss 16.5244 | det 0.3094 seg 0.6689 cnt 6.6122 mi -15.9787
+[train] epoch 5/150 step 280 | loss 16.5552 | det 0.3072 seg 0.6768 cnt 6.6129 mi -16.0005
+[train] epoch 5/150 step 300 | loss 16.4776 | det 0.3020 seg 0.6801 cnt 6.5860 mi -16.0065
+[train] epoch 5/150 step 320 | loss 16.4135 | det 0.3037 seg 0.6792 cnt 6.5040 mi -16.0230
+[train] epoch 5/150 | loss 16.5777 | det 0.3014 seg 0.6774 cnt 6.7184 mi -16.0410
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+[rank6]:[W315 07:35:08.198064121 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 6]  using GPU 6 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+[rank3]:[W315 07:35:08.218523378 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 3]  using GPU 3 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+[rank7]:[W315 07:35:08.518056299 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 7]  using GPU 7 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+[rank0]:[W315 07:35:08.598733948 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 0]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+[rank5]:[W315 07:35:08.691867250 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 5]  using GPU 5 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+[rank1]:[W315 07:35:08.735878500 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 1]  using GPU 1 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+[rank4]:[W315 07:35:09.788409383 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 4]  using GPU 4 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+[rank2]:[W315 07:35:09.810856900 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 2]  using GPU 2 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+[train] fixed task weights det/seg/cnt = [15.000, 8.000, 1.000]
+[train] mi_loss_weight = 0.005000
+[train] trainable params | shared=2801664 det=14875060 seg=9451531 cnt=9448456
+[train] primary task loader = seg
+[train] validation/model selection enabled from epoch 101 to 150 (last 50 epochs)
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1024, 1024]
+bucket_view.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1024, 1024]
+bucket_view.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1024, 1024]
+bucket_view.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1024, 1024]
+bucket_view.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1024, 1024]
+bucket_view.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1024, 1024]
+bucket_view.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1024, 1024]
+bucket_view.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1024, 1024]
+bucket_view.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank6]: Traceback (most recent call last):
+[rank6]:   File "<frozen runpy>", line 198, in _run_module_as_main
+[rank6]:   File "<frozen runpy>", line 88, in _run_code
+[rank6]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/train.py", line 905, in <module>
+[rank6]:     main()
+[rank6]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/train.py", line 792, in main
+[rank6]:     total.backward()
+[rank6]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/_tensor.py", line 581, in backward
+[rank6]:     torch.autograd.backward(
+[rank6]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/__init__.py", line 347, in backward
+[rank6]:     _engine_run_backward(
+[rank6]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py", line 825, in _engine_run_backward
+[rank6]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank6]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank6]: RuntimeError: one of the variables needed for gradient computation has been modified by an inplace operation: [torch.cuda.FloatTensor [1024]] is at version 4; expected version 3 instead. Hint: enable anomaly detection to find the operation that failed to compute its gradient, with torch.autograd.set_detect_anomaly(True).
+[rank5]: Traceback (most recent call last):
+[rank5]:   File "<frozen runpy>", line 198, in _run_module_as_main
+[rank5]:   File "<frozen runpy>", line 88, in _run_code
+[rank5]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/train.py", line 905, in <module>
+[rank5]:     main()
+[rank5]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/train.py", line 792, in main
+[rank5]:     total.backward()
+[rank5]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/_tensor.py", line 581, in backward
+[rank5]:     torch.autograd.backward(
+[rank5]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/__init__.py", line 347, in backward
+[rank5]:     _engine_run_backward(
+[rank5]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py", line 825, in _engine_run_backward
+[rank5]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank5]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank5]: RuntimeError: one of the variables needed for gradient computation has been modified by an inplace operation: [torch.cuda.FloatTensor [1024]] is at version 4; expected version 3 instead. Hint: enable anomaly detection to find the operation that failed to compute its gradient, with torch.autograd.set_detect_anomaly(True).
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "<frozen runpy>", line 198, in _run_module_as_main
+[rank3]:   File "<frozen runpy>", line 88, in _run_code
+[rank3]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/train.py", line 905, in <module>
+[rank3]:     main()
+[rank3]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/train.py", line 792, in main
+[rank3]:     total.backward()
+[rank3]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/_tensor.py", line 581, in backward
+[rank3]:     torch.autograd.backward(
+[rank3]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/__init__.py", line 347, in backward
+[rank3]:     _engine_run_backward(
+[rank3]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py", line 825, in _engine_run_backward
+[rank3]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]: RuntimeError: one of the variables needed for gradient computation has been modified by an inplace operation: [torch.cuda.FloatTensor [1024]] is at version 4; expected version 3 instead. Hint: enable anomaly detection to find the operation that failed to compute its gradient, with torch.autograd.set_detect_anomaly(True).
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "<frozen runpy>", line 198, in _run_module_as_main
+[rank1]:   File "<frozen runpy>", line 88, in _run_code
+[rank1]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/train.py", line 905, in <module>
+[rank1]:     main()
+[rank1]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/train.py", line 792, in main
+[rank1]:     total.backward()
+[rank1]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/_tensor.py", line 581, in backward
+[rank1]:     torch.autograd.backward(
+[rank1]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/__init__.py", line 347, in backward
+[rank1]:     _engine_run_backward(
+[rank1]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py", line 825, in _engine_run_backward
+[rank1]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]: RuntimeError: one of the variables needed for gradient computation has been modified by an inplace operation: [torch.cuda.FloatTensor [1024]] is at version 4; expected version 3 instead. Hint: enable anomaly detection to find the operation that failed to compute its gradient, with torch.autograd.set_detect_anomaly(True).
+[rank4]: Traceback (most recent call last):
+[rank4]:   File "<frozen runpy>", line 198, in _run_module_as_main
+[rank4]:   File "<frozen runpy>", line 88, in _run_code
+[rank4]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/train.py", line 905, in <module>
+[rank4]:     main()
+[rank4]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/train.py", line 792, in main
+[rank4]:     total.backward()
+[rank4]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/_tensor.py", line 581, in backward
+[rank4]:     torch.autograd.backward(
+[rank4]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/__init__.py", line 347, in backward
+[rank4]:     _engine_run_backward(
+[rank4]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py", line 825, in _engine_run_backward
+[rank4]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank4]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank4]: RuntimeError: one of the variables needed for gradient computation has been modified by an inplace operation: [torch.cuda.FloatTensor [1024]] is at version 4; expected version 3 instead. Hint: enable anomaly detection to find the operation that failed to compute its gradient, with torch.autograd.set_detect_anomaly(True).
+[rank7]: Traceback (most recent call last):
+[rank7]:   File "<frozen runpy>", line 198, in _run_module_as_main
+[rank7]:   File "<frozen runpy>", line 88, in _run_code
+[rank7]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/train.py", line 905, in <module>
+[rank7]:     main()
+[rank7]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/train.py", line 792, in main
+[rank7]:     total.backward()
+[rank7]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/_tensor.py", line 581, in backward
+[rank7]:     torch.autograd.backward(
+[rank7]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/__init__.py", line 347, in backward
+[rank7]:     _engine_run_backward(
+[rank7]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py", line 825, in _engine_run_backward
+[rank7]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank7]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank7]: RuntimeError: one of the variables needed for gradient computation has been modified by an inplace operation: [torch.cuda.FloatTensor [1024]] is at version 4; expected version 3 instead. Hint: enable anomaly detection to find the operation that failed to compute its gradient, with torch.autograd.set_detect_anomaly(True).
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "<frozen runpy>", line 198, in _run_module_as_main
+[rank0]:   File "<frozen runpy>", line 88, in _run_code
+[rank0]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/train.py", line 905, in <module>
+[rank0]:     main()
+[rank0]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/train.py", line 792, in main
+[rank0]:     total.backward()
+[rank0]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/_tensor.py", line 581, in backward
+[rank0]:     torch.autograd.backward(
+[rank0]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/__init__.py", line 347, in backward
+[rank0]:     _engine_run_backward(
+[rank0]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py", line 825, in _engine_run_backward
+[rank0]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]: RuntimeError: one of the variables needed for gradient computation has been modified by an inplace operation: [torch.cuda.FloatTensor [1024]] is at version 4; expected version 3 instead. Hint: enable anomaly detection to find the operation that failed to compute its gradient, with torch.autograd.set_detect_anomaly(True).
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "<frozen runpy>", line 198, in _run_module_as_main
+[rank2]:   File "<frozen runpy>", line 88, in _run_code
+[rank2]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/train.py", line 905, in <module>
+[rank2]:     main()
+[rank2]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/train.py", line 792, in main
+[rank2]:     total.backward()
+[rank2]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/_tensor.py", line 581, in backward
+[rank2]:     torch.autograd.backward(
+[rank2]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/__init__.py", line 347, in backward
+[rank2]:     _engine_run_backward(
+[rank2]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py", line 825, in _engine_run_backward
+[rank2]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank2]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]: RuntimeError: one of the variables needed for gradient computation has been modified by an inplace operation: [torch.cuda.FloatTensor [1024]] is at version 4; expected version 3 instead. Hint: enable anomaly detection to find the operation that failed to compute its gradient, with torch.autograd.set_detect_anomaly(True).
+[rank0]:[W315 07:35:50.208781728 ProcessGroupNCCL.cpp:1250] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+W0315 07:35:52.214000 36 miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 103 closing signal SIGTERM
+W0315 07:35:52.230000 36 miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 104 closing signal SIGTERM
+W0315 07:35:52.230000 36 miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 105 closing signal SIGTERM
+W0315 07:35:52.230000 36 miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 107 closing signal SIGTERM
+W0315 07:35:52.230000 36 miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 108 closing signal SIGTERM
+W0315 07:35:52.231000 36 miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 109 closing signal SIGTERM
+W0315 07:35:52.231000 36 miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 110 closing signal SIGTERM
+E0315 07:35:53.410000 36 miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 3 (pid: 106) of binary: /data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/bin/python
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/run.py", line 923, in <module>
+    main()
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/run.py", line 919, in main
+    run(args)
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/run.py", line 910, in run
+    elastic_launch(
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+mod_squad_plaintrain.train FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-03-15_07:35:52
+  host      : pt-2ebd6ff551fb43f58ac15aa8e7fdd9a4-worker-0.pt-2ebd6ff551fb43f58ac15aa8e7fdd9a4.ns-zhicheng-f9bddac6.svc.cluster.local
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 106)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+[train] fixed task weights det/seg/cnt = [15.000, 8.000, 1.000]
+[train] mi_loss_weight = 0.005000
+[train] trainable params | shared=2801664 det=14875060 seg=9451531 cnt=9448456
+[train] primary task loader = seg
+[train] validation/model selection enabled from epoch 101 to 150 (last 50 epochs)
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1024, 1024]
+bucket_view.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1024, 1024]
+bucket_view.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "<frozen runpy>", line 198, in _run_module_as_main
+[rank0]:   File "<frozen runpy>", line 88, in _run_code
+[rank0]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/train.py", line 919, in <module>
+[rank0]:     main()
+[rank0]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/train.py", line 803, in main
+[rank0]:     total.backward()
+[rank0]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/_tensor.py", line 581, in backward
+[rank0]:     torch.autograd.backward(
+[rank0]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/__init__.py", line 347, in backward
+[rank0]:     _engine_run_backward(
+[rank0]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py", line 825, in _engine_run_backward
+[rank0]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]: RuntimeError: one of the variables needed for gradient computation has been modified by an inplace operation: [torch.cuda.FloatTensor [1024]] is at version 4; expected version 3 instead. Hint: enable anomaly detection to find the operation that failed to compute its gradient, with torch.autograd.set_detect_anomaly(True).
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "<frozen runpy>", line 198, in _run_module_as_main
+[rank1]:   File "<frozen runpy>", line 88, in _run_code
+[rank1]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/train.py", line 919, in <module>
+[rank1]:     main()
+[rank1]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/train.py", line 803, in main
+[rank1]:     total.backward()
+[rank1]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/_tensor.py", line 581, in backward
+[rank1]:     torch.autograd.backward(
+[rank1]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/__init__.py", line 347, in backward
+[rank1]:     _engine_run_backward(
+[rank1]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py", line 825, in _engine_run_backward
+[rank1]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]: RuntimeError: one of the variables needed for gradient computation has been modified by an inplace operation: [torch.cuda.FloatTensor [1024]] is at version 4; expected version 3 instead. Hint: enable anomaly detection to find the operation that failed to compute its gradient, with torch.autograd.set_detect_anomaly(True).
+W0316 09:13:32.543000 691 miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 801 closing signal SIGTERM
+E0316 09:13:32.712000 691 miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 0 (pid: 800) of binary: /data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/bin/python
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/run.py", line 923, in <module>
+    main()
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/run.py", line 919, in main
+    run(args)
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/run.py", line 910, in run
+    elastic_launch(
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+mod_squad_plaintrain.train FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-03-16_09:13:32
+  host      : app-589282473804479ca815133d67d3c6a4-86bd4dc47f-lffqk
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 800)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+[train] fixed task weights det/seg/cnt = [15.000, 8.000, 1.000]
+[train] mi_loss_weight = 0.005000
+[train] trainable params | shared=2801664 det=14875060 seg=9451531 cnt=9448456
+[train] primary task loader = seg
+[train] validation/model selection enabled from epoch 101 to 150 (last 50 epochs)
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1024, 1024]
+bucket_view.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1024, 1024]
+bucket_view.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "<frozen runpy>", line 198, in _run_module_as_main
+[rank1]:   File "<frozen runpy>", line 88, in _run_code
+[rank1]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/train.py", line 919, in <module>
+[rank1]:     main()
+[rank1]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/train.py", line 803, in main
+[rank1]:     total.backward()
+[rank1]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/_tensor.py", line 581, in backward
+[rank1]:     torch.autograd.backward(
+[rank1]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/__init__.py", line 347, in backward
+[rank1]:     _engine_run_backward(
+[rank1]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py", line 825, in _engine_run_backward
+[rank1]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]: RuntimeError: one of the variables needed for gradient computation has been modified by an inplace operation: [torch.cuda.FloatTensor [1024]] is at version 4; expected version 3 instead. Hint: enable anomaly detection to find the operation that failed to compute its gradient, with torch.autograd.set_detect_anomaly(True).
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "<frozen runpy>", line 198, in _run_module_as_main
+[rank0]:   File "<frozen runpy>", line 88, in _run_code
+[rank0]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/train.py", line 919, in <module>
+[rank0]:     main()
+[rank0]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/train.py", line 803, in main
+[rank0]:     total.backward()
+[rank0]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/_tensor.py", line 581, in backward
+[rank0]:     torch.autograd.backward(
+[rank0]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/__init__.py", line 347, in backward
+[rank0]:     _engine_run_backward(
+[rank0]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py", line 825, in _engine_run_backward
+[rank0]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]: RuntimeError: one of the variables needed for gradient computation has been modified by an inplace operation: [torch.cuda.FloatTensor [1024]] is at version 4; expected version 3 instead. Hint: enable anomaly detection to find the operation that failed to compute its gradient, with torch.autograd.set_detect_anomaly(True).
+W0316 09:25:27.265000 3245 miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 3358 closing signal SIGTERM
+E0316 09:25:27.432000 3245 miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 0 (pid: 3357) of binary: /data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/bin/python
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/run.py", line 923, in <module>
+    main()
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/run.py", line 919, in main
+    run(args)
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/run.py", line 910, in run
+    elastic_launch(
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+mod_squad_plaintrain.train FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-03-16_09:25:27
+  host      : app-589282473804479ca815133d67d3c6a4-86bd4dc47f-lffqk
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 3357)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+[train] fixed task weights det/seg/cnt = [15.000, 8.000, 1.000]
+[train] mi_loss_weight = 0.005000
+[train] trainable params | shared=2801664 det=14875060 seg=9451531 cnt=9448456
+[train] primary task loader = seg
+[train] validation/model selection enabled from epoch 101 to 150 (last 50 epochs)
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1024, 1024]
+bucket_view.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1024, 1024]
+bucket_view.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "<frozen runpy>", line 198, in _run_module_as_main
+[rank1]:   File "<frozen runpy>", line 88, in _run_code
+[rank1]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/train.py", line 924, in <module>
+[rank1]:     main()
+[rank1]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/train.py", line 808, in main
+[rank1]:     total.backward()
+[rank1]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/_tensor.py", line 581, in backward
+[rank1]:     torch.autograd.backward(
+[rank1]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/__init__.py", line 347, in backward
+[rank1]:     _engine_run_backward(
+[rank1]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py", line 825, in _engine_run_backward
+[rank1]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]: RuntimeError: one of the variables needed for gradient computation has been modified by an inplace operation: [torch.cuda.FloatTensor [1024]] is at version 4; expected version 3 instead. Hint: enable anomaly detection to find the operation that failed to compute its gradient, with torch.autograd.set_detect_anomaly(True).
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "<frozen runpy>", line 198, in _run_module_as_main
+[rank0]:   File "<frozen runpy>", line 88, in _run_code
+[rank0]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/train.py", line 924, in <module>
+[rank0]:     main()
+[rank0]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/train.py", line 808, in main
+[rank0]:     total.backward()
+[rank0]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/_tensor.py", line 581, in backward
+[rank0]:     torch.autograd.backward(
+[rank0]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/__init__.py", line 347, in backward
+[rank0]:     _engine_run_backward(
+[rank0]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py", line 825, in _engine_run_backward
+[rank0]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]: RuntimeError: one of the variables needed for gradient computation has been modified by an inplace operation: [torch.cuda.FloatTensor [1024]] is at version 4; expected version 3 instead. Hint: enable anomaly detection to find the operation that failed to compute its gradient, with torch.autograd.set_detect_anomaly(True).
+W0316 09:29:50.827000 4853 miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 4962 closing signal SIGTERM
+E0316 09:29:50.997000 4853 miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 1 (pid: 4963) of binary: /data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/bin/python
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/run.py", line 923, in <module>
+    main()
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/run.py", line 919, in main
+    run(args)
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/run.py", line 910, in run
+    elastic_launch(
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+mod_squad_plaintrain.train FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-03-16_09:29:50
+  host      : app-589282473804479ca815133d67d3c6a4-86bd4dc47f-lffqk
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 4963)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+[train] fixed task weights det/seg/cnt = [15.000, 8.000, 1.000]
+[train] mi_loss_weight = 0.005000
+[train] trainable params | shared=2801664 det=14875060 seg=9451531 cnt=9448456
+[train] primary task loader = seg
+[train] validation/model selection enabled from epoch 101 to 150 (last 50 epochs)
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1024, 1024]
+bucket_view.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1024, 1024]
+bucket_view.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[diag][cnt][train] epoch 1/150 step 1 | dens(mean 7.039284e-01/2.833789e-05, ratio 2.484e+04) | count(mean 141281.234/5.688, ratio 2.484e+04, mae 141275.547, total 1130249.875/45.500) | pixels 200704
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "<frozen runpy>", line 198, in _run_module_as_main
+[rank0]:   File "<frozen runpy>", line 88, in _run_code
+[rank0]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/train.py", line 926, in <module>
+[rank0]:     main()
+[rank0]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/train.py", line 788, in main
+[rank0]:     det_loss, seg_loss, cnt_loss, cnt_stats = _compute_losses(
+[rank0]:                                               ^^^^^^^^^^^^^^^^
+[rank0]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/train.py", line 691, in _compute_losses
+[rank0]:     det_loss = sum(model("det", det_images, det_targets).values())
+[rank0]:                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/nn/parallel/distributed.py", line 1639, in forward
+[rank0]:     inputs, kwargs = self._pre_forward(*inputs, **kwargs)
+[rank0]:                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/nn/parallel/distributed.py", line 1528, in _pre_forward
+[rank0]:     if torch.is_grad_enabled() and self.reducer._rebuild_buckets():
+[rank0]:                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]: RuntimeError: Expected to have finished reduction in the prior iteration before starting a new one. This error indicates that your module has parameters that were not used in producing loss. You can enable unused parameter detection by passing the keyword argument `find_unused_parameters=True` to `torch.nn.parallel.DistributedDataParallel`, and by 
+[rank0]: making sure all `forward` function outputs participate in calculating loss. 
+[rank0]: If you already have done the above, then the distributed data parallel module wasn't able to locate the output tensors in the return value of your module's `forward` function. Please include the loss function and the structure of the return value of `forward` of your module when reporting this issue (e.g. list, dict, iterable).
+[rank0]: Parameter indices which did not receive grad for rank 0: 0 1 7 8 14 15 21 22 28 29 35 36 42 43 49 50 56 57 63 64 70 71 77 78 84 85 91 92 98 99 105 106 112 113 119 120 126 127 133 134 140 141 147 148 154 155 161 162
+[rank0]:  In addition, you can set the environment variable TORCH_DISTRIBUTED_DEBUG to either INFO or DETAIL to print out information about which particular parameters did not receive gradient on this rank as part of this error
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "<frozen runpy>", line 198, in _run_module_as_main
+[rank1]:   File "<frozen runpy>", line 88, in _run_code
+[rank1]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/train.py", line 926, in <module>
+[rank1]:     main()
+[rank1]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/train.py", line 788, in main
+[rank1]:     det_loss, seg_loss, cnt_loss, cnt_stats = _compute_losses(
+[rank1]:                                               ^^^^^^^^^^^^^^^^
+[rank1]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/train.py", line 691, in _compute_losses
+[rank1]:     det_loss = sum(model("det", det_images, det_targets).values())
+[rank1]:                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+[rank1]:     return self._call_impl(*args, **kwargs)
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+[rank1]:     return forward_call(*args, **kwargs)
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/nn/parallel/distributed.py", line 1639, in forward
+[rank1]:     inputs, kwargs = self._pre_forward(*inputs, **kwargs)
+[rank1]:                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/nn/parallel/distributed.py", line 1528, in _pre_forward
+[rank1]:     if torch.is_grad_enabled() and self.reducer._rebuild_buckets():
+[rank1]:                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]: RuntimeError: Expected to have finished reduction in the prior iteration before starting a new one. This error indicates that your module has parameters that were not used in producing loss. You can enable unused parameter detection by passing the keyword argument `find_unused_parameters=True` to `torch.nn.parallel.DistributedDataParallel`, and by 
+[rank1]: making sure all `forward` function outputs participate in calculating loss. 
+[rank1]: If you already have done the above, then the distributed data parallel module wasn't able to locate the output tensors in the return value of your module's `forward` function. Please include the loss function and the structure of the return value of `forward` of your module when reporting this issue (e.g. list, dict, iterable).
+[rank1]: Parameter indices which did not receive grad for rank 1: 0 1 7 8 14 15 21 22 28 29 35 36 42 43 49 50 56 57 63 64 70 71 77 78 84 85 91 92 98 99 105 106 112 113 119 120 126 127 133 134 140 141 147 148 154 155 161 162
+[rank1]:  In addition, you can set the environment variable TORCH_DISTRIBUTED_DEBUG to either INFO or DETAIL to print out information about which particular parameters did not receive gradient on this rank as part of this error
+W0316 09:33:23.633000 6431 miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 6540 closing signal SIGTERM
+E0316 09:33:23.753000 6431 miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 1 (pid: 6541) of binary: /data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/bin/python
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/run.py", line 923, in <module>
+    main()
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/run.py", line 919, in main
+    run(args)
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/run.py", line 910, in run
+    elastic_launch(
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+mod_squad_plaintrain.train FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-03-16_09:33:23
+  host      : app-589282473804479ca815133d67d3c6a4-86bd4dc47f-lffqk
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 6541)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+[train] fixed task weights det/seg/cnt = [15.000, 8.000, 1.000]
+[train] mi_loss_weight = 0.005000
+[train] trainable params | shared=2801664 det=14875060 seg=9451531 cnt=9448456
+[train] primary task loader = seg
+[train] validation/model selection enabled from epoch 101 to 150 (last 50 epochs)
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1024, 1024]
+bucket_view.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1024, 1024]
+bucket_view.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "<frozen runpy>", line 198, in _run_module_as_main
+[rank1]:   File "<frozen runpy>", line 88, in _run_code
+[rank1]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/train.py", line 926, in <module>
+[rank1]:     main()
+[rank1]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/train.py", line 810, in main
+[rank1]:     total.backward()
+[rank1]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/_tensor.py", line 581, in backward
+[rank1]:     torch.autograd.backward(
+[rank1]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/__init__.py", line 347, in backward
+[rank1]:     _engine_run_backward(
+[rank1]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py", line 825, in _engine_run_backward
+[rank1]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]: RuntimeError: Expected to mark a variable ready only once. This error is caused by one of the following reasons: 1) Use of a module parameter outside the `forward` function. Please make sure model parameters are not shared across multiple concurrent forward-backward passes. or try to use _set_static_graph() as a workaround if this module graph does not change during training loop.2) Reused parameters in multiple reentrant backward passes. For example, if you use multiple `checkpoint` functions to wrap the same part of your model, it would result in the same set of parameters been used by different reentrant backward passes multiple times, and hence marking a variable ready multiple times. DDP does not support such use cases in default. You can try to use _set_static_graph() as a workaround if your module graph does not change over iterations.
+[rank1]: Parameter at index 188 with name seg_head.decode.3.weight has been marked as ready twice. This means that multiple autograd engine  hooks have fired for this particular parameter during this iteration.
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "<frozen runpy>", line 198, in _run_module_as_main
+[rank0]:   File "<frozen runpy>", line 88, in _run_code
+[rank0]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/train.py", line 926, in <module>
+[rank0]:     main()
+[rank0]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/train.py", line 810, in main
+[rank0]:     total.backward()
+[rank0]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/_tensor.py", line 581, in backward
+[rank0]:     torch.autograd.backward(
+[rank0]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/__init__.py", line 347, in backward
+[rank0]:     _engine_run_backward(
+[rank0]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py", line 825, in _engine_run_backward
+[rank0]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]: RuntimeError: Expected to mark a variable ready only once. This error is caused by one of the following reasons: 1) Use of a module parameter outside the `forward` function. Please make sure model parameters are not shared across multiple concurrent forward-backward passes. or try to use _set_static_graph() as a workaround if this module graph does not change during training loop.2) Reused parameters in multiple reentrant backward passes. For example, if you use multiple `checkpoint` functions to wrap the same part of your model, it would result in the same set of parameters been used by different reentrant backward passes multiple times, and hence marking a variable ready multiple times. DDP does not support such use cases in default. You can try to use _set_static_graph() as a workaround if your module graph does not change over iterations.
+[rank0]: Parameter at index 188 with name seg_head.decode.3.weight has been marked as ready twice. This means that multiple autograd engine  hooks have fired for this particular parameter during this iteration.
+W0316 09:35:45.710000 7983 miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 8096 closing signal SIGTERM
+E0316 09:35:45.829000 7983 miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 0 (pid: 8095) of binary: /data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/bin/python
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/run.py", line 923, in <module>
+    main()
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/run.py", line 919, in main
+    run(args)
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/run.py", line 910, in run
+    elastic_launch(
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+mod_squad_plaintrain.train FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-03-16_09:35:45
+  host      : app-589282473804479ca815133d67d3c6a4-86bd4dc47f-lffqk
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 8095)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+[train] fixed task weights det/seg/cnt = [15.000, 8.000, 1.000]
+[train] mi_loss_weight = 0.005000
+[train] trainable params | shared=2801664 det=14875060 seg=9451531 cnt=9448456
+[train] primary task loader = seg
+[train] validation/model selection enabled from epoch 101 to 150 (last 50 epochs)
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1024, 1024]
+bucket_view.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1024, 1024]
+bucket_view.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[diag][cnt][train] epoch 1/150 step 1 | dens(mean 7.039284e-01/2.833789e-05, ratio 2.484e+04) | count(mean 141281.234/5.688, ratio 2.484e+04, mae 141275.547, total 1130249.875/45.500) | pixels 200704
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "<frozen runpy>", line 198, in _run_module_as_main
+[rank1]:   File "<frozen runpy>", line 88, in _run_code
+[rank1]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/train.py", line 928, in <module>
+[rank1]:     main()
+[rank1]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/train.py", line 790, in main
+[rank1]:     det_loss, seg_loss, cnt_loss, cnt_stats = _compute_losses(
+[rank1]:                                               ^^^^^^^^^^^^^^^^
+[rank1]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/train.py", line 691, in _compute_losses
+[rank1]:     det_losses, seg_logits, pred_dens, pred_counts = model(
+[rank1]:                                                      ^^^^^^
+[rank1]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+[rank1]:     return self._call_impl(*args, **kwargs)
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+[rank1]:     return forward_call(*args, **kwargs)
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/nn/parallel/distributed.py", line 1639, in forward
+[rank1]:     inputs, kwargs = self._pre_forward(*inputs, **kwargs)
+[rank1]:                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/nn/parallel/distributed.py", line 1528, in _pre_forward
+[rank1]:     if torch.is_grad_enabled() and self.reducer._rebuild_buckets():
+[rank1]:                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]: RuntimeError: Expected to have finished reduction in the prior iteration before starting a new one. This error indicates that your module has parameters that were not used in producing loss. You can enable unused parameter detection by passing the keyword argument `find_unused_parameters=True` to `torch.nn.parallel.DistributedDataParallel`, and by 
+[rank1]: making sure all `forward` function outputs participate in calculating loss. 
+[rank1]: If you already have done the above, then the distributed data parallel module wasn't able to locate the output tensors in the return value of your module's `forward` function. Please include the loss function and the structure of the return value of `forward` of your module when reporting this issue (e.g. list, dict, iterable).
+[rank1]: Parameter indices which did not receive grad for rank 1: 0 1 7 8 14 15 21 22 28 29 35 36 42 43 49 50 56 57 63 64 70 71 77 78 84 85 91 92 98 99 105 106 112 113 119 120 126 127 133 134 140 141 147 148 154 155 161 162
+[rank1]:  In addition, you can set the environment variable TORCH_DISTRIBUTED_DEBUG to either INFO or DETAIL to print out information about which particular parameters did not receive gradient on this rank as part of this error
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "<frozen runpy>", line 198, in _run_module_as_main
+[rank0]:   File "<frozen runpy>", line 88, in _run_code
+[rank0]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/train.py", line 928, in <module>
+[rank0]:     main()
+[rank0]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/train.py", line 790, in main
+[rank0]:     det_loss, seg_loss, cnt_loss, cnt_stats = _compute_losses(
+[rank0]:                                               ^^^^^^^^^^^^^^^^
+[rank0]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/train.py", line 691, in _compute_losses
+[rank0]:     det_losses, seg_logits, pred_dens, pred_counts = model(
+[rank0]:                                                      ^^^^^^
+[rank0]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/nn/parallel/distributed.py", line 1639, in forward
+[rank0]:     inputs, kwargs = self._pre_forward(*inputs, **kwargs)
+[rank0]:                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/nn/parallel/distributed.py", line 1528, in _pre_forward
+[rank0]:     if torch.is_grad_enabled() and self.reducer._rebuild_buckets():
+[rank0]:                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]: RuntimeError: Expected to have finished reduction in the prior iteration before starting a new one. This error indicates that your module has parameters that were not used in producing loss. You can enable unused parameter detection by passing the keyword argument `find_unused_parameters=True` to `torch.nn.parallel.DistributedDataParallel`, and by 
+[rank0]: making sure all `forward` function outputs participate in calculating loss. 
+[rank0]: If you already have done the above, then the distributed data parallel module wasn't able to locate the output tensors in the return value of your module's `forward` function. Please include the loss function and the structure of the return value of `forward` of your module when reporting this issue (e.g. list, dict, iterable).
+[rank0]: Parameter indices which did not receive grad for rank 0: 0 1 7 8 14 15 21 22 28 29 35 36 42 43 49 50 56 57 63 64 70 71 77 78 84 85 91 92 98 99 105 106 112 113 119 120 126 127 133 134 140 141 147 148 154 155 161 162
+[rank0]:  In addition, you can set the environment variable TORCH_DISTRIBUTED_DEBUG to either INFO or DETAIL to print out information about which particular parameters did not receive gradient on this rank as part of this error
+W0316 09:38:16.712000 9542 miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 9652 closing signal SIGTERM
+E0316 09:38:16.830000 9542 miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 0 (pid: 9651) of binary: /data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/bin/python
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/run.py", line 923, in <module>
+    main()
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/run.py", line 919, in main
+    run(args)
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/run.py", line 910, in run
+    elastic_launch(
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+mod_squad_plaintrain.train FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-03-16_09:38:16
+  host      : app-589282473804479ca815133d67d3c6a4-86bd4dc47f-lffqk
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 9651)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+[train] fixed task weights det/seg/cnt = [15.000, 8.000, 1.000]
+[train] mi_loss_weight = 0.005000
+[train] trainable params | shared=2801664 det=14875060 seg=9451531 cnt=9448456
+[train] primary task loader = seg
+[train] validation/model selection enabled from epoch 101 to 150 (last 50 epochs)
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1024, 1024]
+bucket_view.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1024, 1024]
+bucket_view.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[diag][cnt][train] epoch 1/150 step 1 | dens(mean 7.039284e-01/2.833789e-05, ratio 2.484e+04) | count(mean 141281.234/5.688, ratio 2.484e+04, mae 141275.547, total 1130249.875/45.500) | pixels 200704
+[train] epoch 1/150 step 20 | loss 484715.9547 | det 1.5284 seg 1.4244 cnt 484681.6316 mi 0.0044
+[train] epoch 1/150 step 40 | loss 255749.9214 | det 1.1192 seg 1.3009 cnt 255722.7259 mi -0.1177
+[train] epoch 1/150 step 60 | loss 171518.6211 | det 0.9707 seg 1.2138 cnt 171494.3511 mi -0.4115
+[train] epoch 1/150 step 80 | loss 128735.5056 | det 0.8517 seg 1.2020 cnt 128713.1184 mi -0.8865
+[train] epoch 1/150 step 100 | loss 103002.6955 | det 0.7708 seg 1.1666 cnt 102981.8064 mi -1.4023
+[train] epoch 1/150 step 120 | loss 85840.8573 | det 0.7319 seg 1.1621 cnt 85820.5914 mi -2.0725
+[train] epoch 1/150 step 140 | loss 73581.0649 | det 0.6823 seg 1.1515 cnt 73561.6318 mi -2.7667
+[train] epoch 1/150 step 160 | loss 64386.2678 | det 0.6538 seg 1.1350 cnt 64367.3968 mi -3.3669
+[train] epoch 1/150 | loss 60600.2566 | det 0.6359 seg 1.1343 cnt 60581.6621 mi -3.6575
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[ckpt] validation skipped or no best update; wrote fallback best checkpoint -> runs/mod_squad_plaintrain_sharedonly_mi_10per/best_combo.pt
+[diag][cnt][train] epoch 2/150 step 1 | dens(mean 2.022978e-05/3.394338e-05, ratio 5.960e-01) | count(mean 4.060/6.813, ratio 5.960e-01, mae 4.804, total 32.482/54.501) | pixels 200704
+[train] epoch 2/150 step 20 | loss 23.1967 | det 0.4416 seg 0.9046 cnt 9.3776 mi -8.4758
+[train] epoch 2/150 step 40 | loss 23.3760 | det 0.4220 seg 0.9210 cnt 9.7221 mi -8.7850
+[train] epoch 2/150 step 60 | loss 23.5935 | det 0.4225 seg 0.9141 cnt 9.9894 mi -9.0566
+[train] epoch 2/150 step 80 | loss 22.6275 | det 0.4071 seg 0.8995 cnt 9.3713 mi -9.2298
+[train] epoch 2/150 step 100 | loss 22.8526 | det 0.4006 seg 0.9243 cnt 9.4956 mi -9.4156
+[train] epoch 2/150 step 120 | loss 22.6850 | det 0.4022 seg 0.9072 cnt 9.4420 mi -9.5950
+[train] epoch 2/150 step 140 | loss 22.7351 | det 0.4005 seg 0.8988 cnt 9.5870 mi -9.7863
+[train] epoch 2/150 step 160 | loss 22.4005 | det 0.3954 seg 0.8808 cnt 9.4738 mi -9.9645
+[train] epoch 2/150 | loss 22.3720 | det 0.3948 seg 0.8927 cnt 9.3579 mi -10.0449
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 3/150 step 1 | dens(mean 3.367767e-05/5.729873e-05, ratio 5.878e-01) | count(mean 6.759/11.500, ratio 5.878e-01, mae 7.402, total 54.074/92.001) | pixels 200704
+[train] epoch 3/150 step 20 | loss 25.2766 | det 0.4727 seg 0.8279 cnt 11.6217 mi -11.8866
+[train] epoch 3/150 step 40 | loss 21.7024 | det 0.3826 seg 0.8338 cnt 9.3522 mi -11.9191
+[train] epoch 3/150 step 60 | loss 21.3912 | det 0.3880 seg 0.8123 cnt 9.1338 mi -11.9845
+[train] epoch 3/150 step 80 | loss 21.1266 | det 0.3824 seg 0.8184 cnt 8.9044 mi -12.0759
+[train] epoch 3/150 step 100 | loss 20.3617 | det 0.3669 seg 0.7945 cnt 8.5623 mi -12.1649
+[train] epoch 3/150 step 120 | loss 20.5059 | det 0.3542 seg 0.7941 cnt 8.9013 mi -12.2696
+[train] epoch 3/150 step 140 | loss 20.1241 | det 0.3498 seg 0.7894 cnt 8.6240 mi -12.3799
+[train] epoch 3/150 step 160 | loss 20.3848 | det 0.3656 seg 0.7877 cnt 8.6613 mi -12.4750
+[train] epoch 3/150 | loss 20.1415 | det 0.3579 seg 0.7829 cnt 8.5721 mi -12.5057
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 4/150 step 1 | dens(mean 2.150449e-05/5.605416e-05, ratio 3.836e-01) | count(mean 4.316/11.250, ratio 3.836e-01, mae 7.340, total 34.528/90.002) | pixels 200704
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+[train] fixed task weights det/seg/cnt = [15.000, 8.000, 1.000]
+[train] mi_loss_weight = 0.005000
+[train] trainable params | shared=2801664 det=14875060 seg=9451531 cnt=9448456
+[train] primary task loader = seg
+[train] validation/model selection enabled from epoch 1 to 150 (last 150 epochs)
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1024, 1024]
+bucket_view.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1024, 1024]
+bucket_view.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[diag][cnt][train] epoch 1/150 step 1 | dens(mean 7.039284e-01/2.833789e-05, ratio 2.484e+04) | count(mean 141281.234/5.688, ratio 2.484e+04, mae 141275.547, total 1130249.875/45.500) | pixels 200704
+[train] epoch 1/150 step 20 | loss 484132.1789 | det 1.5331 seg 1.4331 cnt 484097.7184 mi 0.0047
+[train] epoch 1/150 step 40 | loss 255482.7138 | det 1.1208 seg 1.3123 cnt 255455.4045 mi -0.1144
+[train] epoch 1/150 step 60 | loss 171343.6366 | det 0.9730 seg 1.2235 cnt 171319.2560 mi -0.4031
+[train] epoch 1/150 step 80 | loss 128604.9824 | det 0.8545 seg 1.2082 cnt 128582.5042 mi -0.8797
+[train] epoch 1/150 step 100 | loss 102898.2777 | det 0.7701 seg 1.1712 cnt 102877.3642 mi -1.4342
+[train] epoch 1/150 step 120 | loss 85753.8669 | det 0.7310 seg 1.1641 cnt 85733.6003 mi -2.1764
+[train] epoch 1/150 step 140 | loss 73506.5253 | det 0.6822 seg 1.1526 cnt 73487.0858 mi -2.9459
+[train] epoch 1/150 step 160 | loss 64321.0777 | det 0.6537 seg 1.1347 cnt 64302.2132 mi -3.6281
+[train] epoch 1/150 | loss 60538.9060 | det 0.6369 seg 1.1336 cnt 60520.3037 mi -3.9640
+[val] epoch 1 | det 0.3781 seg 0.6981 miou 0.5654 cnt 6.3505 dens 9.936033e-01 mae 5.3569 total_mae 32.6470 | ap50 0.1774 | combo 0.929496
+[ckpt] saved new best -> runs/mod_squad_plaintrain_sharedonly_mi_10per/best_combo.pt (combo 0.929496)
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 2/150 step 1 | dens(mean 2.133382e-05/3.394338e-05, ratio 6.285e-01) | count(mean 4.282/6.813, ratio 6.285e-01, mae 5.612, total 34.254/54.501) | pixels 200704
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+[train] fixed task weights det/seg/cnt = [15.000, 8.000, 1.000]
+[train] mi_loss_weight = 0.005000
+[train] trainable params | shared=2801664 det=14875060 seg=9451531 cnt=9448456
+[train] primary task loader = seg
+[train] validation/model selection enabled from epoch 1 to 150 (last 150 epochs)
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1024, 1024]
+bucket_view.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1024, 1024]
+bucket_view.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[diag][cnt][train] epoch 1/150 step 1 | dens(mean 7.040869e-01/6.718357e-05, ratio 1.048e+04) | count(mean 141313.062/13.484, ratio 1.048e+04, mae 141299.562, total 1130504.500/107.872) | pixels 200704
+[train] epoch 1/150 step 20 | loss 453572.2270 | det 1.5556 seg 1.0152 cnt 453540.7816 mi -0.0019
+[train] epoch 1/150 step 40 | loss 239255.4135 | det 1.0634 seg 0.9186 cnt 239232.1190 mi -0.1684
+[train] epoch 1/150 | loss 222916.9720 | det 1.0208 seg 0.9230 cnt 222894.2811 mi -0.2197
+[val] epoch 1 | det 0.4685 seg 0.6701 miou 0.5751 cnt 3959.2760 dens 5.479251e+02 mae 3411.3509 total_mae 27290.8074 | ap50 0.0194 | combo 0.594805
+[ckpt] saved new best -> runs/mod_squad_plaintrain_sharedonly_mi_10per/best_combo.pt (combo 0.594805)
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 2/150 step 1 | dens(mean 1.704119e-02/4.756725e-05, ratio 3.583e+02) | count(mean 3420.235/9.547, ratio 3.583e+02, mae 3410.688, total 27361.879/76.375) | pixels 200704
+[train] epoch 2/150 step 20 | loss 1808.9919 | det 0.5215 seg 0.7639 cnt 1795.0675 mi -1.7170
+[train] epoch 2/150 step 40 | loss 1025.5307 | det 0.4860 seg 0.7537 cnt 1012.2232 mi -2.4962
+[train] epoch 2/150 | loss 959.4142 | det 0.4833 seg 0.7521 cnt 946.1612 mi -2.6081
+[val] epoch 2 | det 0.3679 seg 0.6578 miou 0.5804 cnt 37.8851 dens 1.057611e+00 mae 36.8275 total_mae 286.1102 | ap50 0.1992 | combo 0.806758
+[ckpt] saved new best -> runs/mod_squad_plaintrain_sharedonly_mi_10per/best_combo.pt (combo 0.806758)
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 3/150 step 1 | dens(mean 2.515586e-04/4.748943e-05, ratio 5.297e+00) | count(mean 50.489/9.531, ratio 5.297e+00, mae 41.132, total 403.910/76.251) | pixels 200704
+[train] epoch 3/150 step 20 | loss 35.3126 | det 0.4272 seg 0.7497 cnt 22.9345 mi -5.3629
+[train] epoch 3/150 step 40 | loss 28.0023 | det 0.3936 seg 0.7365 cnt 16.2391 mi -6.5034
+[train] epoch 3/150 | loss 27.6280 | det 0.3990 seg 0.7295 cnt 15.8400 mi -6.6473
+[val] epoch 3 | det 0.3370 seg 0.6176 miou 0.5718 cnt 5.6679 dens 9.686805e-01 mae 4.6992 total_mae 21.7170 | ap50 0.3160 | combo 1.100600
+[ckpt] saved new best -> runs/mod_squad_plaintrain_sharedonly_mi_10per/best_combo.pt (combo 1.100600)
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 4/150 step 1 | dens(mean 3.943390e-05/3.464418e-05, ratio 1.138e+00) | count(mean 7.915/6.953, ratio 1.138e+00, mae 4.228, total 63.316/55.626) | pixels 200704
+[train] epoch 4/150 step 20 | loss 17.4330 | det 0.3545 seg 0.5929 cnt 7.4196 mi -9.4222
+[train] epoch 4/150 step 40 | loss 17.3271 | det 0.3373 seg 0.6047 cnt 7.4802 mi -9.8394
+[train] epoch 4/150 | loss 17.2356 | det 0.3362 seg 0.6103 cnt 7.3590 mi -9.8999
+[val] epoch 4 | det 0.3225 seg 0.6057 miou 0.5978 cnt 5.4573 dens 9.542838e-01 mae 4.5030 total_mae 25.0005 | ap50 0.4285 | combo 1.248373
+[ckpt] saved new best -> runs/mod_squad_plaintrain_sharedonly_mi_10per/best_combo.pt (combo 1.248373)
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 5/150 step 1 | dens(mean 3.463169e-05/3.394282e-05, ratio 1.020e+00) | count(mean 6.951/6.812, ratio 1.020e+00, mae 3.000, total 55.606/54.500) | pixels 200704
+[train] epoch 5/150 step 20 | loss 17.6195 | det 0.3426 seg 0.5822 cnt 7.8788 mi -11.3664
+[train] epoch 5/150 step 40 | loss 17.0499 | det 0.3237 seg 0.5631 cnt 7.7484 mi -11.6057
+[train] epoch 5/150 | loss 16.9522 | det 0.3242 seg 0.5611 cnt 7.6584 mi -11.6403
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+[train] fixed task weights det/seg/cnt = [15.000, 8.000, 1.000]
+[train] mi_loss_weight = 0.005000
+[train] trainable params | shared=2801664 det=14875060 seg=9451531 cnt=9448456
+[train] primary task loader = seg
+[train] validation/model selection enabled from epoch 1 to 150 (last 150 epochs)
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1024, 1024]
+bucket_view.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1024, 1024]
+bucket_view.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1024, 1024]
+bucket_view.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1024, 1024]
+bucket_view.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1024, 1024]
+bucket_view.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1024, 1024]
+bucket_view.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1024, 1024]
+bucket_view.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1024, 1024]
+bucket_view.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[diag][cnt][train] epoch 1/150 step 1 | dens(mean 7.048467e-01/3.931498e-05, ratio 1.793e+04) | count(mean 141465.562/7.891, ratio 1.793e+04, mae 141457.672, total 1131724.500/63.125) | pixels 200704
+[train] epoch 1/150 | loss 729638.2976 | det 1.3943 seg 1.2096 cnt 729607.6914 mi -0.0847
+[val] epoch 1 | det 0.5551 seg 0.7212 miou 0.5464 cnt 21698.8492 dens 1.003080e+04 mae 11668.0509 total_mae 93344.4071 | ap50 0.0000 | combo 0.546512
+[ckpt] saved new best -> runs/mod_squad_plaintrain_sharedonly_mi_10per/best_combo.pt (combo 0.546512)
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 2/150 step 1 | dens(mean 6.126859e-02/4.865674e-05, ratio 1.259e+03) | count(mean 12296.852/9.766, ratio 1.259e+03, mae 12287.086, total 98374.812/78.125) | pixels 200704
+[train] epoch 2/150 | loss 5082.3164 | det 0.6444 seg 0.7657 cnt 5066.5291 mi -0.7492
+[val] epoch 2 | det 0.5079 seg 0.6713 miou 0.5850 cnt 258.2082 dens 8.532139e+00 mae 249.6761 total_mae 1997.3462 | ap50 0.0604 | combo 0.649453
+[ckpt] saved new best -> runs/mod_squad_plaintrain_sharedonly_mi_10per/best_combo.pt (combo 0.649453)
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 3/150 step 1 | dens(mean 8.918406e-04/3.978044e-05, ratio 2.242e+01) | count(mean 178.996/7.984, ratio 2.242e+01, mae 171.012, total 1431.968/63.873) | pixels 200704
+[train] epoch 3/150 | loss 60.2644 | det 0.4626 seg 0.6950 cnt 47.7792 mi -2.8965
+[val] epoch 3 | det 0.3907 seg 0.6367 miou 0.5809 cnt 7.1661 dens 9.930722e-01 mae 6.1730 total_mae 39.3466 | ap50 0.1471 | combo 0.889923
+[ckpt] saved new best -> runs/mod_squad_plaintrain_sharedonly_mi_10per/best_combo.pt (combo 0.889923)
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 4/150 step 1 | dens(mean 1.429226e-05/2.919424e-05, ratio 4.896e-01) | count(mean 2.869/5.859, ratio 4.896e-01, mae 4.923, total 22.948/46.875) | pixels 200704
+[train] epoch 4/150 | loss 18.8167 | det 0.4065 seg 0.6038 cnt 7.9170 mi -5.5615
+[val] epoch 4 | det 0.3377 seg 0.6667 miou 0.5818 cnt 6.9758 dens 9.917635e-01 mae 5.9840 total_mae 44.1488 | ap50 0.2955 | combo 1.044384
+[ckpt] saved new best -> runs/mod_squad_plaintrain_sharedonly_mi_10per/best_combo.pt (combo 1.044384)
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 5/150 step 1 | dens(mean 1.620959e-05/5.013591e-05, ratio 3.233e-01) | count(mean 3.253/10.062, ratio 3.233e-01, mae 8.458, total 26.027/80.500) | pixels 200704
+[train] epoch 5/150 | loss 22.1621 | det 0.3548 seg 0.6125 cnt 11.9819 mi -8.2153
+[val] epoch 5 | det 0.3319 seg 0.6133 miou 0.5699 cnt 6.5662 dens 1.011501e+00 mae 5.5547 total_mae 27.8550 | ap50 0.3999 | combo 1.149809
+[ckpt] saved new best -> runs/mod_squad_plaintrain_sharedonly_mi_10per/best_combo.pt (combo 1.149809)
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 6/150 step 1 | dens(mean 2.656033e-05/3.674563e-05, ratio 7.228e-01) | count(mean 5.331/7.375, ratio 7.228e-01, mae 5.978, total 42.646/59.000) | pixels 200704
+[train] epoch 6/150 | loss 17.8797 | det 0.3855 seg 0.5162 cnt 8.0165 mi -9.8753
+[val] epoch 6 | det 0.3203 seg 0.6136 miou 0.5952 cnt 8.3631 dens 1.061793e+00 mae 7.3013 total_mae 37.5601 | ap50 0.4271 | combo 1.159284
+[ckpt] saved new best -> runs/mod_squad_plaintrain_sharedonly_mi_10per/best_combo.pt (combo 1.159284)
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 7/150 step 1 | dens(mean 3.868540e-05/3.121874e-05, ratio 1.239e+00) | count(mean 7.764/6.266, ratio 1.239e+00, mae 6.085, total 62.115/50.126) | pixels 200704
+[train] epoch 7/150 | loss 14.5258 | det 0.2778 seg 0.4867 cnt 6.5192 mi -10.6957
+[val] epoch 7 | det 0.3154 seg 0.6095 miou 0.6132 cnt 6.2196 dens 9.912126e-01 mae 5.2284 total_mae 34.9033 | ap50 0.4565 | combo 1.260955
+[ckpt] saved new best -> runs/mod_squad_plaintrain_sharedonly_mi_10per/best_combo.pt (combo 1.260955)
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 8/150 step 1 | dens(mean 2.029418e-05/5.153703e-05, ratio 3.938e-01) | count(mean 4.073/10.344, ratio 3.938e-01, mae 6.906, total 32.585/82.750) | pixels 200704
+[train] epoch 8/150 | loss 17.3896 | det 0.3029 seg 0.5146 cnt 8.7867 mi -11.6640
+[val] epoch 8 | det 0.3218 seg 0.6140 miou 0.6168 cnt 5.9756 dens 9.901488e-01 mae 4.9854 total_mae 31.6859 | ap50 0.4802 | combo 1.297557
+[ckpt] saved new best -> runs/mod_squad_plaintrain_sharedonly_mi_10per/best_combo.pt (combo 1.297557)
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 9/150 step 1 | dens(mean 2.027994e-05/2.296622e-05, ratio 8.830e-01) | count(mean 4.070/4.609, ratio 8.830e-01, mae 3.305, total 32.562/36.875) | pixels 200704
+[train] epoch 9/150 | loss 13.5401 | det 0.2580 seg 0.4110 cnt 6.4428 mi -12.2112
+[val] epoch 9 | det 0.2960 seg 0.6104 miou 0.6223 cnt 5.4774 dens 9.728170e-01 mae 4.5046 total_mae 29.0263 | ap50 0.5152 | combo 1.359474
+[ckpt] saved new best -> runs/mod_squad_plaintrain_sharedonly_mi_10per/best_combo.pt (combo 1.359474)
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 10/150 step 1 | dens(mean 2.562815e-05/3.853632e-05, ratio 6.650e-01) | count(mean 5.144/7.734, ratio 6.650e-01, mae 4.955, total 41.149/61.875) | pixels 200704
+[train] epoch 10/150 | loss 14.1077 | det 0.2451 seg 0.4568 cnt 6.8411 mi -12.7732
+[val] epoch 10 | det 0.3028 seg 0.6261 miou 0.6163 cnt 6.0337 dens 9.749573e-01 mae 5.0587 total_mae 34.8511 | ap50 0.5367 | combo 1.350672
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 11/150 step 1 | dens(mean 2.485899e-05/4.141673e-05, ratio 6.002e-01) | count(mean 4.989/8.313, ratio 6.002e-01, mae 5.213, total 39.914/66.500) | pixels 200704
+[train] epoch 11/150 | loss 14.7354 | det 0.3181 seg 0.4634 cnt 6.3235 mi -13.2721
+[val] epoch 11 | det 0.2856 seg 0.6060 miou 0.6253 cnt 5.6630 dens 9.627231e-01 mae 4.7003 total_mae 33.0920 | ap50 0.5465 | combo 1.384485
+[ckpt] saved new best -> runs/mod_squad_plaintrain_sharedonly_mi_10per/best_combo.pt (combo 1.384485)
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 12/150 step 1 | dens(mean 2.635412e-05/4.795696e-05, ratio 5.495e-01) | count(mean 5.289/9.625, ratio 5.495e-01, mae 5.697, total 42.315/77.001) | pixels 200704
+[train] epoch 12/150 | loss 12.4146 | det 0.2382 seg 0.4010 cnt 5.7018 mi -13.5734
+[val] epoch 12 | det 0.2966 seg 0.6148 miou 0.6175 cnt 5.0812 dens 9.455352e-01 mae 4.1356 total_mae 26.3560 | ap50 0.5602 | combo 1.419434
+[ckpt] saved new best -> runs/mod_squad_plaintrain_sharedonly_mi_10per/best_combo.pt (combo 1.419434)
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 13/150 step 1 | dens(mean 2.405439e-05/4.032621e-05, ratio 5.965e-01) | count(mean 4.828/8.094, ratio 5.965e-01, mae 4.578, total 38.623/64.749) | pixels 200704
+[train] epoch 13/150 | loss 12.1820 | det 0.2178 seg 0.3711 cnt 6.0153 mi -13.9386
+[val] epoch 13 | det 0.3138 seg 0.6278 miou 0.6167 cnt 5.0264 dens 9.578781e-01 mae 4.0685 total_mae 20.8770 | ap50 0.5784 | combo 1.440868
+[ckpt] saved new best -> runs/mod_squad_plaintrain_sharedonly_mi_10per/best_combo.pt (combo 1.440868)
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 14/150 step 1 | dens(mean 2.274223e-05/3.697882e-05, ratio 6.150e-01) | count(mean 4.564/7.422, ratio 6.150e-01, mae 4.611, total 36.516/59.374) | pixels 200704
+[train] epoch 14/150 | loss 12.5410 | det 0.2434 seg 0.3692 cnt 6.0074 mi -14.2690
+[val] epoch 14 | det 0.3137 seg 0.6451 miou 0.6179 cnt 4.8013 dens 9.225166e-01 mae 3.8788 total_mae 18.0907 | ap50 0.5752 | combo 1.450889
+[ckpt] saved new best -> runs/mod_squad_plaintrain_sharedonly_mi_10per/best_combo.pt (combo 1.450889)
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 15/150 step 1 | dens(mean 3.160155e-05/3.557765e-05, ratio 8.882e-01) | count(mean 6.343/7.141, ratio 8.882e-01, mae 2.639, total 50.740/57.125) | pixels 200704
+[train] epoch 15/150 | loss 12.6291 | det 0.2474 seg 0.3535 cnt 6.1623 mi -14.5155
+[val] epoch 15 | det 0.2979 seg 0.6386 miou 0.6172 cnt 5.1564 dens 9.212538e-01 mae 4.2351 total_mae 21.0757 | ap50 0.5763 | combo 1.429701
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 16/150 step 1 | dens(mean 3.339473e-05/3.526581e-05, ratio 9.469e-01) | count(mean 6.702/7.078, ratio 9.469e-01, mae 5.860, total 53.620/56.624) | pixels 200704
+[train] epoch 16/150 | loss 14.2873 | det 0.2315 seg 0.3657 cnt 7.9629 mi -14.7804
+[val] epoch 16 | det 0.2869 seg 0.6397 miou 0.6256 cnt 4.6367 dens 9.189555e-01 mae 3.7178 total_mae 23.5057 | ap50 0.5871 | combo 1.481726
+[ckpt] saved new best -> runs/mod_squad_plaintrain_sharedonly_mi_10per/best_combo.pt (combo 1.481726)
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 17/150 step 1 | dens(mean 4.469527e-05/6.119056e-05, ratio 7.304e-01) | count(mean 8.971/12.281, ratio 7.304e-01, mae 5.478, total 71.764/98.250) | pixels 200704
+[train] epoch 17/150 | loss 12.3915 | det 0.2436 seg 0.3115 cnt 6.3204 mi -15.0572
+[val] epoch 17 | det 0.3124 seg 0.6414 miou 0.6320 cnt 4.5639 dens 9.156902e-01 mae 3.6482 total_mae 22.5231 | ap50 0.5883 | combo 1.494379
+[ckpt] saved new best -> runs/mod_squad_plaintrain_sharedonly_mi_10per/best_combo.pt (combo 1.494379)
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 18/150 step 1 | dens(mean 3.299834e-05/5.068101e-05, ratio 6.511e-01) | count(mean 6.623/10.172, ratio 6.511e-01, mae 4.828, total 52.983/81.375) | pixels 200704
+[train] epoch 18/150 | loss 11.7071 | det 0.2289 seg 0.3137 cnt 5.8400 mi -15.3501
+[val] epoch 18 | det 0.3072 seg 0.6820 miou 0.6221 cnt 4.7814 dens 9.209402e-01 mae 3.8605 total_mae 23.6912 | ap50 0.5997 | combo 1.480786
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 19/150 step 1 | dens(mean 3.512702e-05/4.912418e-05, ratio 7.151e-01) | count(mean 7.050/9.859, ratio 7.151e-01, mae 4.703, total 56.401/78.875) | pixels 200704
+[train] epoch 19/150 | loss 11.1470 | det 0.2052 seg 0.3172 cnt 5.6094 mi -15.5531
+[val] epoch 19 | det 0.3052 seg 0.6448 miou 0.6321 cnt 4.2564 dens 9.056038e-01 mae 3.3508 total_mae 17.6325 | ap50 0.6043 | combo 1.534798
+[ckpt] saved new best -> runs/mod_squad_plaintrain_sharedonly_mi_10per/best_combo.pt (combo 1.534798)
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 20/150 step 1 | dens(mean 4.159910e-05/3.643663e-05, ratio 1.142e+00) | count(mean 8.349/7.313, ratio 1.142e+00, mae 3.039, total 66.793/58.504) | pixels 200704
+[train] epoch 20/150 | loss 10.2300 | det 0.1889 seg 0.2989 cnt 5.0831 mi -15.6746
+[val] epoch 20 | det 0.2957 seg 0.6799 miou 0.6200 cnt 4.2004 dens 8.996998e-01 mae 3.3007 total_mae 15.8081 | ap50 0.6098 | combo 1.532754
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 21/150 step 1 | dens(mean 3.750922e-05/4.227306e-05, ratio 8.873e-01) | count(mean 7.528/8.484, ratio 8.873e-01, mae 3.876, total 60.226/67.875) | pixels 200704
+[train] epoch 21/150 | loss 10.6429 | det 0.1912 seg 0.2882 cnt 5.5484 mi -15.8636
+[val] epoch 21 | det 0.3046 seg 0.6423 miou 0.6289 cnt 4.0670 dens 8.991020e-01 mae 3.1679 total_mae 17.0138 | ap50 0.5929 | combo 1.537473
+[ckpt] saved new best -> runs/mod_squad_plaintrain_sharedonly_mi_10per/best_combo.pt (combo 1.537473)
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 22/150 step 1 | dens(mean 2.691381e-05/3.114045e-05, ratio 8.643e-01) | count(mean 5.402/6.250, ratio 8.643e-01, mae 2.304, total 43.214/50.000) | pixels 200704
+[train] epoch 22/150 | loss 8.5069 | det 0.1851 seg 0.2723 cnt 3.6327 mi -16.0677
+[val] epoch 22 | det 0.2979 seg 0.6619 miou 0.6284 cnt 4.4091 dens 9.054708e-01 mae 3.5036 total_mae 22.8083 | ap50 0.6145 | combo 1.528276
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 23/150 step 1 | dens(mean 2.645530e-05/4.219483e-05, ratio 6.270e-01) | count(mean 5.310/8.469, ratio 6.270e-01, mae 3.568, total 42.477/67.749) | pixels 200704
+[train] epoch 23/150 | loss 9.5828 | det 0.1863 seg 0.2626 cnt 4.7673 mi -16.1117
+[val] epoch 23 | det 0.3082 seg 0.6494 miou 0.6334 cnt 4.8706 dens 8.936477e-01 mae 3.9770 total_mae 18.8143 | ap50 0.6215 | combo 1.506337
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 24/150 step 1 | dens(mean 3.933894e-05/3.534428e-05, ratio 1.113e+00) | count(mean 7.895/7.094, ratio 1.113e+00, mae 2.870, total 63.164/56.750) | pixels 200704
+[train] epoch 24/150 | loss 10.3741 | det 0.2143 seg 0.2815 cnt 4.9900 mi -16.4045
+[val] epoch 24 | det 0.2909 seg 0.6619 miou 0.6376 cnt 4.8764 dens 9.245819e-01 mae 3.9518 total_mae 26.6338 | ap50 0.6211 | combo 1.511787
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 25/150 step 1 | dens(mean 2.706245e-05/4.577599e-05, ratio 5.912e-01) | count(mean 5.432/9.187, ratio 5.912e-01, mae 4.557, total 43.452/73.499) | pixels 200704
+[train] epoch 25/150 | loss 10.9227 | det 0.1684 seg 0.2701 cnt 6.3183 mi -16.4618
+[val] epoch 25 | det 0.3043 seg 0.6834 miou 0.6302 cnt 4.6714 dens 9.132394e-01 mae 3.7581 total_mae 21.7338 | ap50 0.6204 | combo 1.516592
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 26/150 step 1 | dens(mean 3.492344e-05/5.130431e-05, ratio 6.807e-01) | count(mean 7.009/10.297, ratio 6.807e-01, mae 4.754, total 56.074/82.376) | pixels 200704
+[train] epoch 26/150 | loss 8.9796 | det 0.1592 seg 0.2853 cnt 4.3909 mi -16.4124
+[val] epoch 26 | det 0.3074 seg 0.6770 miou 0.6240 cnt 4.1432 dens 8.905748e-01 mae 3.2526 total_mae 19.1089 | ap50 0.6203 | combo 1.551657
+[ckpt] saved new best -> runs/mod_squad_plaintrain_sharedonly_mi_10per/best_combo.pt (combo 1.551657)
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 27/150 step 1 | dens(mean 6.360143e-05/5.877779e-05, ratio 1.082e+00) | count(mean 12.765/11.797, ratio 1.082e+00, mae 3.718, total 102.120/94.376) | pixels 200704
+[train] epoch 27/150 | loss 8.9188 | det 0.1723 seg 0.2762 cnt 4.2061 mi -16.3922
+[val] epoch 27 | det 0.3160 seg 0.6809 miou 0.6287 cnt 3.9981 dens 8.907362e-01 mae 3.1073 total_mae 17.7835 | ap50 0.6247 | combo 1.575205
+[ckpt] saved new best -> runs/mod_squad_plaintrain_sharedonly_mi_10per/best_combo.pt (combo 1.575205)
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 28/150 step 1 | dens(mean 4.855530e-05/4.764551e-05, ratio 1.019e+00) | count(mean 9.745/9.563, ratio 1.019e+00, mae 3.696, total 77.962/76.501) | pixels 200704
+[train] epoch 28/150 | loss 11.7967 | det 0.1878 seg 0.2683 cnt 6.9154 mi -16.5014
+[val] epoch 28 | det 0.3084 seg 0.7159 miou 0.6211 cnt 3.8242 dens 8.859827e-01 mae 2.9382 total_mae 14.7155 | ap50 0.6233 | combo 1.584712
+[ckpt] saved new best -> runs/mod_squad_plaintrain_sharedonly_mi_10per/best_combo.pt (combo 1.584712)
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 29/150 step 1 | dens(mean 5.657136e-05/5.262718e-05, ratio 1.075e+00) | count(mean 11.354/10.562, ratio 1.075e+00, mae 3.215, total 90.833/84.500) | pixels 200704
+[train] epoch 29/150 | loss 8.6205 | det 0.1673 seg 0.2646 cnt 4.0773 mi -16.6619
+[val] epoch 29 | det 0.3138 seg 0.7162 miou 0.6240 cnt 4.0079 dens 8.858415e-01 mae 3.1220 total_mae 15.2991 | ap50 0.6149 | combo 1.559218
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 30/150 step 1 | dens(mean 5.545977e-05/6.897612e-05, ratio 8.040e-01) | count(mean 11.131/13.844, ratio 8.040e-01, mae 4.386, total 89.048/110.750) | pixels 200704
+[train] epoch 30/150 | loss 10.1477 | det 0.1617 seg 0.2303 cnt 5.9633 mi -16.8001
+[val] epoch 30 | det 0.3010 seg 0.7010 miou 0.6355 cnt 4.0474 dens 8.920116e-01 mae 3.1554 total_mae 17.1804 | ap50 0.6303 | combo 1.582781
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 31/150 step 1 | dens(mean 2.146460e-05/2.078602e-05, ratio 1.033e+00) | count(mean 4.308/4.172, ratio 1.033e+00, mae 2.194, total 34.464/33.375) | pixels 200704
+[train] epoch 31/150 | loss 8.2468 | det 0.1659 seg 0.2459 cnt 3.8754 mi -16.8388
+[val] epoch 31 | det 0.3075 seg 0.6886 miou 0.6345 cnt 3.8167 dens 8.782673e-01 mae 2.9384 total_mae 13.9111 | ap50 0.6244 | combo 1.599254
+[ckpt] saved new best -> runs/mod_squad_plaintrain_sharedonly_mi_10per/best_combo.pt (combo 1.599254)
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 32/150 step 1 | dens(mean 4.600081e-05/6.150299e-05, ratio 7.479e-01) | count(mean 9.233/12.344, ratio 7.479e-01, mae 4.547, total 73.860/98.751) | pixels 200704
+[train] epoch 32/150 | loss 11.5961 | det 0.1492 seg 0.2424 cnt 7.5044 mi -17.0554
+[val] epoch 32 | det 0.3177 seg 0.7274 miou 0.6244 cnt 4.4158 dens 8.810576e-01 mae 3.5347 total_mae 18.6155 | ap50 0.6277 | combo 1.535034
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 33/150 step 1 | dens(mean 3.985542e-05/4.032606e-05, ratio 9.883e-01) | count(mean 7.999/8.094, ratio 9.883e-01, mae 2.908, total 63.993/64.749) | pixels 200704
+[train] epoch 33/150 | loss 9.5141 | det 0.1684 seg 0.2240 cnt 5.2814 mi -17.0926
+[val] epoch 33 | det 0.3037 seg 0.6897 miou 0.6313 cnt 3.9336 dens 8.990773e-01 mae 3.0345 total_mae 15.1020 | ap50 0.6325 | combo 1.593388
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 34/150 step 1 | dens(mean 4.272746e-05/4.795597e-05, ratio 8.910e-01) | count(mean 8.576/9.625, ratio 8.910e-01, mae 2.623, total 68.605/77.000) | pixels 200704
+[train] epoch 34/150 | loss 8.0450 | det 0.1309 seg 0.2350 cnt 4.2873 mi -17.2112
+[val] epoch 34 | det 0.3068 seg 0.6896 miou 0.6386 cnt 3.7607 dens 8.818792e-01 mae 2.8789 total_mae 14.2107 | ap50 0.6265 | combo 1.612536
+[ckpt] saved new best -> runs/mod_squad_plaintrain_sharedonly_mi_10per/best_combo.pt (combo 1.612536)
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 35/150 step 1 | dens(mean 3.956018e-05/4.032695e-05, ratio 9.810e-01) | count(mean 7.940/8.094, ratio 9.810e-01, mae 1.817, total 63.519/64.750) | pixels 200704
+[train] epoch 35/150 | loss 8.3079 | det 0.1570 seg 0.2173 cnt 4.3014 mi -17.3189
+[val] epoch 35 | det 0.3052 seg 0.7008 miou 0.6406 cnt 4.0625 dens 8.864329e-01 mae 3.1761 total_mae 17.4404 | ap50 0.6289 | combo 1.584408
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 36/150 step 1 | dens(mean 2.414116e-05/3.363126e-05, ratio 7.178e-01) | count(mean 4.845/6.750, ratio 7.178e-01, mae 3.316, total 38.762/53.999) | pixels 200704
+[train] epoch 36/150 | loss 8.3597 | det 0.1597 seg 0.2344 cnt 4.1756 mi -17.3859
+[val] epoch 36 | det 0.3244 seg 0.7053 miou 0.6301 cnt 4.1009 dens 8.752096e-01 mae 3.2257 total_mae 16.0540 | ap50 0.6277 | combo 1.567864
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 37/150 step 1 | dens(mean 2.842366e-05/2.008550e-05, ratio 1.415e+00) | count(mean 5.705/4.031, ratio 1.415e+00, mae 2.402, total 45.638/32.250) | pixels 200704
+[train] epoch 37/150 | loss 7.8879 | det 0.1446 seg 0.2267 cnt 3.9926 mi -17.3399
+[val] epoch 37 | det 0.3038 seg 0.7018 miou 0.6383 cnt 4.0311 dens 8.899081e-01 mae 3.1412 total_mae 17.9528 | ap50 0.6306 | combo 1.587210
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 38/150 step 1 | dens(mean 2.869406e-05/3.129422e-05, ratio 9.169e-01) | count(mean 5.759/6.281, ratio 9.169e-01, mae 1.752, total 46.072/50.247) | pixels 200704
+[train] epoch 38/150 | loss 7.3186 | det 0.1303 seg 0.2270 cnt 3.6363 mi -17.4875
+[val] epoch 38 | det 0.3031 seg 0.7002 miou 0.6270 cnt 3.7214 dens 8.749477e-01 mae 2.8465 total_mae 13.4544 | ap50 0.6355 | combo 1.613847
+[ckpt] saved new best -> runs/mod_squad_plaintrain_sharedonly_mi_10per/best_combo.pt (combo 1.613847)
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 39/150 step 1 | dens(mean 5.015792e-05/4.966927e-05, ratio 1.010e+00) | count(mean 10.067/9.969, ratio 1.010e+00, mae 2.288, total 80.535/79.751) | pixels 200704
+[train] epoch 39/150 | loss 8.5189 | det 0.1568 seg 0.2025 cnt 4.6349 mi -17.5912
+[val] epoch 39 | det 0.3128 seg 0.6855 miou 0.6289 cnt 3.7976 dens 8.827377e-01 mae 2.9149 total_mae 13.5251 | ap50 0.6274 | combo 1.599377
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 40/150 step 1 | dens(mean 3.302702e-05/4.071598e-05, ratio 8.112e-01) | count(mean 6.629/8.172, ratio 8.112e-01, mae 2.961, total 53.029/65.375) | pixels 200704
+[train] epoch 40/150 | loss 7.8700 | det 0.1394 seg 0.2058 cnt 4.2201 mi -17.6087
+[val] epoch 40 | det 0.3214 seg 0.7058 miou 0.6091 cnt 3.7239 dens 8.709178e-01 mae 2.8530 total_mae 14.4834 | ap50 0.6330 | combo 1.592653
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 41/150 step 1 | dens(mean 3.630824e-05/3.005053e-05, ratio 1.208e+00) | count(mean 7.287/6.031, ratio 1.208e+00, mae 2.539, total 58.298/48.250) | pixels 200704
+[train] epoch 41/150 | loss 7.0377 | det 0.1326 seg 0.1866 cnt 3.6445 mi -17.6439
+[val] epoch 41 | det 0.3055 seg 0.7142 miou 0.6139 cnt 3.7108 dens 8.723048e-01 mae 2.8385 total_mae 14.5585 | ap50 0.6289 | combo 1.595130
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 42/150 step 1 | dens(mean 3.275698e-05/2.514563e-05, ratio 1.303e+00) | count(mean 6.574/5.047, ratio 1.303e+00, mae 2.140, total 52.596/40.375) | pixels 200704
+[train] epoch 42/150 | loss 7.2533 | det 0.1471 seg 0.1908 cnt 3.6098 mi -17.7248
+[val] epoch 42 | det 0.3015 seg 0.6995 miou 0.6223 cnt 3.9129 dens 8.862774e-01 mae 3.0267 total_mae 16.5567 | ap50 0.6367 | combo 1.589386
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 43/150 step 1 | dens(mean 2.716946e-05/3.596820e-05, ratio 7.554e-01) | count(mean 5.453/7.219, ratio 7.554e-01, mae 2.504, total 43.624/57.752) | pixels 200704
+[train] epoch 43/150 | loss 7.5736 | det 0.1481 seg 0.2007 cnt 3.8362 mi -17.7574
+[val] epoch 43 | det 0.3079 seg 0.7221 miou 0.6283 cnt 3.8636 dens 8.726772e-01 mae 2.9910 total_mae 14.9092 | ap50 0.6351 | combo 1.597807
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 44/150 step 1 | dens(mean 4.051681e-05/4.188397e-05, ratio 9.674e-01) | count(mean 8.132/8.406, ratio 9.674e-01, mae 1.892, total 65.055/67.250) | pixels 200704
+[train] epoch 44/150 | loss 7.2368 | det 0.1235 seg 0.2072 cnt 3.8163 mi -17.8891
+[val] epoch 44 | det 0.3159 seg 0.7066 miou 0.6241 cnt 3.6762 dens 8.668694e-01 mae 2.8093 total_mae 13.0966 | ap50 0.6339 | combo 1.613962
+[ckpt] saved new best -> runs/mod_squad_plaintrain_sharedonly_mi_10per/best_combo.pt (combo 1.613962)
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 45/150 step 1 | dens(mean 3.386188e-05/3.230778e-05, ratio 1.048e+00) | count(mean 6.796/6.484, ratio 1.048e+00, mae 2.106, total 54.370/51.874) | pixels 200704
+[train] epoch 45/150 | loss 6.5003 | det 0.1119 seg 0.1946 cnt 3.3548 mi -17.8699
+[val] epoch 45 | det 0.3156 seg 0.7248 miou 0.6242 cnt 3.7994 dens 8.779350e-01 mae 2.9214 total_mae 15.2632 | ap50 0.6250 | combo 1.591471
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 46/150 step 1 | dens(mean 3.919353e-05/4.530780e-05, ratio 8.651e-01) | count(mean 7.866/9.093, ratio 8.651e-01, mae 2.356, total 62.930/72.748) | pixels 200704
+[train] epoch 46/150 | loss 7.9340 | det 0.1633 seg 0.1994 cnt 3.9783 mi -17.8585
+[val] epoch 46 | det 0.3291 seg 0.7198 miou 0.6278 cnt 4.0175 dens 8.729201e-01 mae 3.1446 total_mae 15.9361 | ap50 0.6317 | combo 1.577477
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 47/150 step 1 | dens(mean 1.477209e-04/1.409145e-04, ratio 1.048e+00) | count(mean 29.648/28.282, ratio 1.048e+00, mae 6.649, total 237.185/226.257) | pixels 200704
+[train] epoch 47/150 | loss 10.3706 | det 0.1225 seg 0.1782 cnt 7.1978 mi -17.9786
+[val] epoch 47 | det 0.3191 seg 0.7150 miou 0.6302 cnt 3.8047 dens 8.768464e-01 mae 2.9279 total_mae 14.1722 | ap50 0.6379 | combo 1.609593
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 48/150 step 1 | dens(mean 4.982120e-05/9.319121e-05, ratio 5.346e-01) | count(mean 9.999/18.704, ratio 5.346e-01, mae 10.042, total 79.995/149.631) | pixels 200704
+[train] epoch 48/150 | loss 9.7421 | det 0.1352 seg 0.1909 cnt 6.2772 mi -17.9799
+[val] epoch 48 | det 0.3249 seg 0.7180 miou 0.6344 cnt 4.0039 dens 8.814701e-01 mae 3.1224 total_mae 17.5945 | ap50 0.6315 | combo 1.586164
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 49/150 step 1 | dens(mean 5.001080e-05/5.535259e-05, ratio 9.035e-01) | count(mean 10.037/11.109, ratio 9.035e-01, mae 2.684, total 80.299/88.876) | pixels 200704
+[train] epoch 49/150 | loss 8.0068 | det 0.1443 seg 0.1801 cnt 4.4918 mi -18.0706
+[val] epoch 49 | det 0.3221 seg 0.7054 miou 0.6339 cnt 3.8308 dens 8.725869e-01 mae 2.9582 total_mae 14.5737 | ap50 0.6336 | combo 1.605460
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 50/150 step 1 | dens(mean 2.657026e-05/3.145144e-05, ratio 8.448e-01) | count(mean 5.333/6.312, ratio 8.448e-01, mae 2.148, total 42.662/50.499) | pixels 200704
+[train] epoch 50/150 | loss 6.8257 | det 0.1293 seg 0.1891 cnt 3.4626 mi -18.0620
+[val] epoch 50 | det 0.3264 seg 0.7402 miou 0.6306 cnt 3.7414 dens 8.718434e-01 mae 2.8696 total_mae 13.4163 | ap50 0.6338 | combo 1.612946
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 51/150 step 1 | dens(mean 3.327976e-05/3.425425e-05, ratio 9.716e-01) | count(mean 6.679/6.875, ratio 9.716e-01, mae 1.802, total 53.435/55.000) | pixels 200704
+[train] epoch 51/150 | loss 7.6918 | det 0.1758 seg 0.1615 cnt 3.8529 mi -18.1051
+[val] epoch 51 | det 0.3238 seg 0.7146 miou 0.6355 cnt 3.7223 dens 8.657331e-01 mae 2.8565 total_mae 13.5310 | ap50 0.6361 | combo 1.621626
+[ckpt] saved new best -> runs/mod_squad_plaintrain_sharedonly_mi_10per/best_combo.pt (combo 1.621626)
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 52/150 step 1 | dens(mean 5.675507e-05/5.893253e-05, ratio 9.631e-01) | count(mean 11.391/11.828, ratio 9.631e-01, mae 2.758, total 91.128/94.624) | pixels 200704
+[train] epoch 52/150 | loss 7.2500 | det 0.1229 seg 0.1848 cnt 4.0202 mi -18.2602
+[val] epoch 52 | det 0.3224 seg 0.7176 miou 0.6374 cnt 3.7028 dens 8.709800e-01 mae 2.8318 total_mae 14.9980 | ap50 0.6426 | combo 1.633085
+[ckpt] saved new best -> runs/mod_squad_plaintrain_sharedonly_mi_10per/best_combo.pt (combo 1.633085)
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 53/150 step 1 | dens(mean 5.291637e-05/6.578466e-05, ratio 8.044e-01) | count(mean 10.621/13.203, ratio 8.044e-01, mae 3.258, total 84.964/105.626) | pixels 200704
+[train] epoch 53/150 | loss 6.8668 | det 0.1082 seg 0.1857 cnt 3.8498 mi -18.2767
+[val] epoch 53 | det 0.3366 seg 0.7594 miou 0.6345 cnt 3.7058 dens 8.713770e-01 mae 2.8344 total_mae 15.6006 | ap50 0.6358 | combo 1.623103
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 54/150 step 1 | dens(mean 3.599645e-05/4.655509e-05, ratio 7.732e-01) | count(mean 7.225/9.344, ratio 7.732e-01, mae 2.729, total 57.797/74.750) | pixels 200704
+[train] epoch 54/150 | loss 7.2044 | det 0.1279 seg 0.1723 cnt 3.9989 mi -18.3218
+[val] epoch 54 | det 0.3235 seg 0.7360 miou 0.6311 cnt 4.0281 dens 8.737113e-01 mae 3.1544 total_mae 15.0253 | ap50 0.6401 | combo 1.588215
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 55/150 step 1 | dens(mean 3.096694e-05/3.191889e-05, ratio 9.702e-01) | count(mean 6.215/6.406, ratio 9.702e-01, mae 1.488, total 49.722/51.250) | pixels 200704
+[train] epoch 55/150 | loss 6.7315 | det 0.1235 seg 0.1728 cnt 3.5874 mi -18.2978
+[val] epoch 55 | det 0.3164 seg 0.7243 miou 0.6364 cnt 3.6575 dens 8.628412e-01 mae 2.7947 total_mae 13.3637 | ap50 0.6374 | combo 1.631606
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 56/150 step 1 | dens(mean 5.985300e-05/5.161535e-05, ratio 1.160e+00) | count(mean 12.013/10.359, ratio 1.160e+00, mae 3.144, total 96.102/82.875) | pixels 200704
+[train] epoch 56/150 | loss 7.7275 | det 0.1377 seg 0.1671 cnt 4.4180 mi -18.4513
+[val] epoch 56 | det 0.3358 seg 0.7359 miou 0.6383 cnt 3.9630 dens 8.857242e-01 mae 3.0772 total_mae 18.0171 | ap50 0.6392 | combo 1.602389
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 57/150 step 1 | dens(mean 4.601526e-05/5.550993e-05, ratio 8.290e-01) | count(mean 9.235/11.141, ratio 8.290e-01, mae 3.315, total 73.884/89.129) | pixels 200704
+[train] epoch 57/150 | loss 7.9662 | det 0.1553 seg 0.1681 cnt 4.3838 mi -18.4223
+[val] epoch 57 | det 0.3434 seg 0.7328 miou 0.6356 cnt 4.4238 dens 8.903065e-01 mae 3.5335 total_mae 22.3796 | ap50 0.6329 | combo 1.551471
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 58/150 step 1 | dens(mean 4.083539e-05/5.760993e-05, ratio 7.088e-01) | count(mean 8.196/11.563, ratio 7.088e-01, mae 4.274, total 65.567/92.500) | pixels 200704
+[train] epoch 58/150 | loss 8.7147 | det 0.1615 seg 0.1679 cnt 5.0405 mi -18.4184
+[val] epoch 58 | det 0.3510 seg 0.7362 miou 0.6307 cnt 4.1800 dens 8.921288e-01 mae 3.2879 total_mae 15.6131 | ap50 0.6400 | combo 1.574848
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 59/150 step 1 | dens(mean 3.242348e-05/3.472162e-05, ratio 9.338e-01) | count(mean 6.508/6.969, ratio 9.338e-01, mae 2.623, total 52.060/55.750) | pixels 200704
+[train] epoch 59/150 | loss 7.4706 | det 0.1342 seg 0.1596 cnt 4.2729 mi -18.4048
+[val] epoch 59 | det 0.3231 seg 0.7353 miou 0.6326 cnt 3.8765 dens 8.661844e-01 mae 3.0103 total_mae 14.8329 | ap50 0.6416 | combo 1.606471
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 60/150 step 1 | dens(mean 3.802942e-05/3.542165e-05, ratio 1.074e+00) | count(mean 7.633/7.109, ratio 1.074e+00, mae 2.209, total 61.061/56.874) | pixels 200704
+[train] epoch 60/150 | loss 6.5061 | det 0.1136 seg 0.1627 cnt 3.5935 mi -18.4914
+[val] epoch 60 | det 0.3214 seg 0.7590 miou 0.6374 cnt 3.6855 dens 8.620924e-01 mae 2.8234 total_mae 13.3622 | ap50 0.6326 | combo 1.624190
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 61/150 step 1 | dens(mean 4.210569e-05/4.312902e-05, ratio 9.763e-01) | count(mean 8.451/8.656, ratio 9.763e-01, mae 1.928, total 67.606/69.249) | pixels 200704
+[train] epoch 61/150 | loss 6.5669 | det 0.1422 seg 0.1784 cnt 3.1001 mi -18.5086
+[val] epoch 61 | det 0.3277 seg 0.7446 miou 0.6374 cnt 3.6858 dens 8.656852e-01 mae 2.8202 total_mae 14.8141 | ap50 0.6399 | combo 1.631865
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 62/150 step 1 | dens(mean 4.417159e-05/5.465092e-05, ratio 8.082e-01) | count(mean 8.865/10.969, ratio 8.082e-01, mae 2.547, total 70.923/87.749) | pixels 200704
+[train] epoch 62/150 | loss 6.5806 | det 0.1224 seg 0.1551 cnt 3.5971 mi -18.5294
+[val] epoch 62 | det 0.3377 seg 0.7349 miou 0.6427 cnt 4.3588 dens 8.664497e-01 mae 3.4924 total_mae 18.2534 | ap50 0.6377 | combo 1.566763
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 63/150 step 1 | dens(mean 5.584015e-05/5.325002e-05, ratio 1.049e+00) | count(mean 11.207/10.687, ratio 1.049e+00, mae 3.427, total 89.659/85.500) | pixels 200704
+[train] epoch 63/150 | loss 6.8070 | det 0.0978 seg 0.1560 cnt 4.1843 mi -18.4938
+[val] epoch 63 | det 0.3239 seg 0.7555 miou 0.6430 cnt 4.0333 dens 8.735609e-01 mae 3.1598 total_mae 19.5498 | ap50 0.6428 | combo 1.602241
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 64/150 step 1 | dens(mean 4.268015e-05/5.839069e-05, ratio 7.309e-01) | count(mean 8.566/11.719, ratio 7.309e-01, mae 3.913, total 68.529/93.754) | pixels 200704
+[train] epoch 64/150 | loss 8.1113 | det 0.1001 seg 0.1857 cnt 5.2181 mi -18.6312
+[val] epoch 64 | det 0.3323 seg 0.7901 miou 0.6414 cnt 3.8498 dens 8.651923e-01 mae 2.9846 total_mae 17.5777 | ap50 0.6399 | combo 1.616323
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 65/150 step 1 | dens(mean 3.041757e-05/3.674574e-05, ratio 8.278e-01) | count(mean 6.105/7.375, ratio 8.278e-01, mae 1.970, total 48.839/59.000) | pixels 200704
+[train] epoch 65/150 | loss 8.4640 | det 0.1111 seg 0.1861 cnt 5.4004 mi -18.4951
+[val] epoch 65 | det 0.3480 seg 0.7970 miou 0.6413 cnt 4.5460 dens 8.674703e-01 mae 3.6785 total_mae 20.7773 | ap50 0.6320 | combo 1.545095
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 66/150 step 1 | dens(mean 5.575988e-05/5.005670e-05, ratio 1.114e+00) | count(mean 11.191/10.047, ratio 1.114e+00, mae 2.445, total 89.530/80.373) | pixels 200704
+[train] epoch 66/150 | loss 6.2272 | det 0.1070 seg 0.1613 cnt 3.4249 mi -18.5875
+[val] epoch 66 | det 0.3216 seg 0.7789 miou 0.6399 cnt 3.8312 dens 8.670670e-01 mae 2.9641 total_mae 16.1137 | ap50 0.6445 | combo 1.621833
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 67/150 step 1 | dens(mean 2.203502e-05/2.592395e-05, ratio 8.500e-01) | count(mean 4.423/5.203, ratio 8.500e-01, mae 1.759, total 35.380/41.624) | pixels 200704
+[train] epoch 67/150 | loss 6.1316 | det 0.1033 seg 0.1560 cnt 3.4276 mi -18.7057
+[val] epoch 67 | det 0.3314 seg 0.7844 miou 0.6401 cnt 3.7036 dens 8.619426e-01 mae 2.8416 total_mae 13.7665 | ap50 0.6415 | combo 1.633464
+[ckpt] saved new best -> runs/mod_squad_plaintrain_sharedonly_mi_10per/best_combo.pt (combo 1.633464)
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 68/150 step 1 | dens(mean 6.161025e-05/6.461672e-05, ratio 9.535e-01) | count(mean 12.365/12.969, ratio 9.535e-01, mae 2.702, total 98.923/103.751) | pixels 200704
+[train] epoch 68/150 | loss 6.8876 | det 0.1285 seg 0.1467 cnt 3.8796 mi -18.7678
+[val] epoch 68 | det 0.3311 seg 0.7601 miou 0.6409 cnt 4.1727 dens 8.749422e-01 mae 3.2978 total_mae 20.9281 | ap50 0.6446 | combo 1.588663
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 69/150 step 1 | dens(mean 2.853258e-05/4.382869e-05, ratio 6.510e-01) | count(mean 5.727/8.797, ratio 6.510e-01, mae 3.271, total 45.813/70.373) | pixels 200704
+[train] epoch 69/150 | loss 5.7794 | det 0.0853 seg 0.1715 cnt 3.2221 mi -18.7369
+[val] epoch 69 | det 0.3338 seg 0.7522 miou 0.6514 cnt 3.8891 dens 8.599374e-01 mae 3.0291 total_mae 14.8788 | ap50 0.6442 | combo 1.625726
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 70/150 step 1 | dens(mean 3.206178e-05/2.771509e-05, ratio 1.157e+00) | count(mean 6.435/5.563, ratio 1.157e+00, mae 1.769, total 51.479/44.500) | pixels 200704
+[train] epoch 70/150 | loss 5.6602 | det 0.0894 seg 0.1668 cnt 3.0775 mi -18.7342
+[val] epoch 70 | det 0.3340 seg 0.7747 miou 0.6452 cnt 3.6425 dens 8.652030e-01 mae 2.7773 total_mae 13.6069 | ap50 0.6397 | combo 1.644911
+[ckpt] saved new best -> runs/mod_squad_plaintrain_sharedonly_mi_10per/best_combo.pt (combo 1.644911)
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 71/150 step 1 | dens(mean 5.283088e-05/6.375965e-05, ratio 8.286e-01) | count(mean 10.603/12.797, ratio 8.286e-01, mae 2.937, total 84.827/102.375) | pixels 200704
+[train] epoch 71/150 | loss 6.6582 | det 0.1324 seg 0.1625 cnt 3.4655 mi -18.7164
+[val] epoch 71 | det 0.3424 seg 0.7690 miou 0.6412 cnt 3.5665 dens 8.626648e-01 mae 2.7038 total_mae 13.9156 | ap50 0.6450 | combo 1.656003
+[ckpt] saved new best -> runs/mod_squad_plaintrain_sharedonly_mi_10per/best_combo.pt (combo 1.656003)
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 72/150 step 1 | dens(mean 3.026338e-05/2.935011e-05, ratio 1.031e+00) | count(mean 6.074/5.891, ratio 1.031e+00, mae 1.453, total 48.592/47.125) | pixels 200704
+[train] epoch 72/150 | loss 5.7630 | det 0.0994 seg 0.1409 cnt 3.2385 mi -18.8892
+[val] epoch 72 | det 0.3272 seg 0.7701 miou 0.6443 cnt 3.6009 dens 8.570277e-01 mae 2.7438 total_mae 12.9491 | ap50 0.6459 | combo 1.654657
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 73/150 step 1 | dens(mean 3.793487e-05/3.479933e-05, ratio 1.090e+00) | count(mean 7.614/6.984, ratio 1.090e+00, mae 1.615, total 60.909/55.875) | pixels 200704
+[train] epoch 73/150 | loss 6.4522 | det 0.1059 seg 0.1431 cnt 3.8127 mi -18.9441
+[val] epoch 73 | det 0.3414 seg 0.7587 miou 0.6498 cnt 3.8449 dens 8.735579e-01 mae 2.9713 total_mae 16.4023 | ap50 0.6430 | combo 1.629298
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 74/150 step 1 | dens(mean 4.433591e-05/5.620898e-05, ratio 7.888e-01) | count(mean 8.898/11.281, ratio 7.888e-01, mae 3.098, total 71.187/90.251) | pixels 200704
+[train] epoch 74/150 | loss 7.0679 | det 0.1399 seg 0.1624 cnt 3.7649 mi -18.9460
+[val] epoch 74 | det 0.3414 seg 0.7691 miou 0.6446 cnt 3.5680 dens 8.578015e-01 mae 2.7102 total_mae 12.8459 | ap50 0.6356 | combo 1.649163
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 75/150 step 1 | dens(mean 4.217168e-05/3.775821e-05, ratio 1.117e+00) | count(mean 8.464/7.578, ratio 1.117e+00, mae 1.690, total 67.712/60.626) | pixels 200704
+[train] epoch 75/150 | loss 5.9887 | det 0.1154 seg 0.1291 cnt 3.3196 mi -18.9914
+[val] epoch 75 | det 0.3331 seg 0.7663 miou 0.6446 cnt 3.5513 dens 8.608069e-01 mae 2.6905 total_mae 12.8782 | ap50 0.6467 | combo 1.663000
+[ckpt] saved new best -> runs/mod_squad_plaintrain_sharedonly_mi_10per/best_combo.pt (combo 1.663000)
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 76/150 step 1 | dens(mean 3.587101e-05/4.149473e-05, ratio 8.645e-01) | count(mean 7.199/8.328, ratio 8.645e-01, mae 2.004, total 57.596/66.625) | pixels 200704
+[train] epoch 76/150 | loss 5.9221 | det 0.1090 seg 0.1379 cnt 3.2788 mi -18.8839
+[val] epoch 76 | det 0.3363 seg 0.7658 miou 0.6456 cnt 3.6728 dens 8.585972e-01 mae 2.8142 total_mae 12.8196 | ap50 0.6485 | combo 1.649375
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 77/150 step 1 | dens(mean 4.409560e-05/4.655494e-05, ratio 9.472e-01) | count(mean 8.850/9.344, ratio 9.472e-01, mae 1.463, total 70.801/74.750) | pixels 200704
+[train] epoch 77/150 | loss 5.4655 | det 0.1093 seg 0.1427 cnt 2.7785 mi -19.0082
+[val] epoch 77 | det 0.3470 seg 0.7676 miou 0.6483 cnt 3.6006 dens 8.603284e-01 mae 2.7403 total_mae 13.5278 | ap50 0.6461 | combo 1.659280
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 78/150 step 1 | dens(mean 3.857960e-05/4.071618e-05, ratio 9.475e-01) | count(mean 7.743/8.172, ratio 9.475e-01, mae 1.687, total 61.945/65.375) | pixels 200704
+[train] epoch 78/150 | loss 6.0127 | det 0.1007 seg 0.1431 cnt 3.4529 mi -19.1229
+[val] epoch 78 | det 0.3541 seg 0.7923 miou 0.6431 cnt 3.5733 dens 8.601840e-01 mae 2.7131 total_mae 14.0316 | ap50 0.6414 | combo 1.653067
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 79/150 step 1 | dens(mean 3.306114e-05/3.752410e-05, ratio 8.811e-01) | count(mean 6.636/7.531, ratio 8.811e-01, mae 2.062, total 53.084/60.250) | pixels 200704
+[train] epoch 79/150 | loss 5.4433 | det 0.0855 seg 0.1302 cnt 3.2148 mi -19.0967
+[val] epoch 79 | det 0.3465 seg 0.7695 miou 0.6514 cnt 3.8745 dens 8.591309e-01 mae 3.0154 total_mae 14.4697 | ap50 0.6425 | combo 1.625536
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 80/150 step 1 | dens(mean 3.718685e-05/3.822485e-05, ratio 9.728e-01) | count(mean 7.464/7.672, ratio 9.728e-01, mae 1.673, total 59.708/61.375) | pixels 200704
+[train] epoch 80/150 | loss 5.3986 | det 0.0956 seg 0.1314 cnt 3.0092 mi -19.1084
+[val] epoch 80 | det 0.3330 seg 0.7953 miou 0.6363 cnt 3.6680 dens 8.586663e-01 mae 2.8093 total_mae 15.2144 | ap50 0.6451 | combo 1.637340
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 81/150 step 1 | dens(mean 4.152161e-05/4.764528e-05, ratio 8.715e-01) | count(mean 8.334/9.563, ratio 8.715e-01, mae 1.753, total 66.668/76.501) | pixels 200704
+[train] epoch 81/150 | loss 5.4791 | det 0.0979 seg 0.1303 cnt 3.0642 mi -19.1055
+[val] epoch 81 | det 0.3481 seg 0.7926 miou 0.6404 cnt 3.5954 dens 8.556753e-01 mae 2.7397 total_mae 13.0599 | ap50 0.6437 | combo 1.649100
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 82/150 step 1 | dens(mean 3.633236e-05/3.549993e-05, ratio 1.023e+00) | count(mean 7.292/7.125, ratio 1.023e+00, mae 1.573, total 58.336/57.000) | pixels 200704
+[train] epoch 82/150 | loss 5.9471 | det 0.1170 seg 0.1483 cnt 3.1022 mi -19.1710
+[val] epoch 82 | det 0.3601 seg 0.7842 miou 0.6404 cnt 3.6105 dens 8.565546e-01 mae 2.7540 total_mae 13.4442 | ap50 0.6464 | combo 1.649866
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 83/150 step 1 | dens(mean 2.873074e-05/2.771542e-05, ratio 1.037e+00) | count(mean 5.766/5.563, ratio 1.037e+00, mae 1.615, total 46.131/44.501) | pixels 200704
+[train] epoch 83/150 | loss 5.9179 | det 0.1260 seg 0.1347 cnt 3.0467 mi -19.2179
+[val] epoch 83 | det 0.3407 seg 0.7872 miou 0.6402 cnt 3.5856 dens 8.595003e-01 mae 2.7261 total_mae 13.3921 | ap50 0.6446 | combo 1.651616
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 84/150 step 1 | dens(mean 4.175244e-05/4.857923e-05, ratio 8.595e-01) | count(mean 8.380/9.750, ratio 8.595e-01, mae 1.966, total 67.039/78.000) | pixels 200704
+[train] epoch 84/150 | loss 5.2614 | det 0.0795 seg 0.1447 cnt 3.0072 mi -19.2509
+[val] epoch 84 | det 0.3386 seg 0.7989 miou 0.6354 cnt 3.5069 dens 8.537065e-01 mae 2.6531 total_mae 12.4333 | ap50 0.6474 | combo 1.659691
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 85/150 step 1 | dens(mean 7.351031e-05/7.154494e-05, ratio 1.027e+00) | count(mean 14.754/14.359, ratio 1.027e+00, mae 1.610, total 118.031/114.875) | pixels 200704
+[train] epoch 85/150 | loss 5.6171 | det 0.0786 seg 0.1308 cnt 3.4881 mi -19.2880
+[val] epoch 85 | det 0.3504 seg 0.7964 miou 0.6392 cnt 3.5359 dens 8.583024e-01 mae 2.6776 total_mae 13.2900 | ap50 0.6392 | combo 1.651937
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 86/150 step 1 | dens(mean 4.355079e-05/4.375064e-05, ratio 9.954e-01) | count(mean 8.741/8.781, ratio 9.954e-01, mae 1.581, total 69.927/70.247) | pixels 200704
+[train] epoch 86/150 | loss 5.7949 | det 0.1328 seg 0.1391 cnt 2.7862 mi -19.3478
+[val] epoch 86 | det 0.3688 seg 0.7738 miou 0.6433 cnt 3.5478 dens 8.557946e-01 mae 2.6920 total_mae 12.8943 | ap50 0.6467 | combo 1.661415
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 87/150 step 1 | dens(mean 2.686565e-05/2.662509e-05, ratio 1.009e+00) | count(mean 5.392/5.344, ratio 1.009e+00, mae 1.063, total 43.136/42.750) | pixels 200704
+[train] epoch 87/150 | loss 5.4377 | det 0.1219 seg 0.1274 cnt 2.6866 mi -19.3542
+[val] epoch 87 | det 0.3707 seg 0.8020 miou 0.6427 cnt 3.5412 dens 8.561681e-01 mae 2.6850 total_mae 12.7048 | ap50 0.6514 | combo 1.666560
+[ckpt] saved new best -> runs/mod_squad_plaintrain_sharedonly_mi_10per/best_combo.pt (combo 1.666560)
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 88/150 step 1 | dens(mean 2.849441e-05/2.763664e-05, ratio 1.031e+00) | count(mean 5.719/5.547, ratio 1.031e+00, mae 1.287, total 45.752/44.374) | pixels 200704
+[train] epoch 88/150 | loss 4.9785 | det 0.0880 seg 0.1284 cnt 2.7294 mi -19.4253
+[val] epoch 88 | det 0.3399 seg 0.7838 miou 0.6473 cnt 3.6728 dens 8.583999e-01 mae 2.8144 total_mae 15.0992 | ap50 0.6489 | combo 1.651595
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 89/150 step 1 | dens(mean 3.890664e-05/4.250853e-05, ratio 9.153e-01) | count(mean 7.809/8.532, ratio 9.153e-01, mae 1.398, total 62.470/68.253) | pixels 200704
+[train] epoch 89/150 | loss 5.1627 | det 0.0912 seg 0.1450 cnt 2.7319 mi -19.4030
+[val] epoch 89 | det 0.3458 seg 0.7846 miou 0.6469 cnt 3.7532 dens 8.525482e-01 mae 2.9007 total_mae 14.2097 | ap50 0.6460 | combo 1.637589
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 90/150 step 1 | dens(mean 3.621076e-05/3.285360e-05, ratio 1.102e+00) | count(mean 7.268/6.594, ratio 1.102e+00, mae 1.426, total 58.141/52.751) | pixels 200704
+[train] epoch 90/150 | loss 4.2378 | det 0.0714 seg 0.1319 cnt 2.2080 mi -19.4025
+[val] epoch 90 | det 0.3570 seg 0.8314 miou 0.6408 cnt 3.6149 dens 8.572592e-01 mae 2.7577 total_mae 13.5490 | ap50 0.6412 | combo 1.644578
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 91/150 step 1 | dens(mean 3.759821e-05/3.830241e-05, ratio 9.816e-01) | count(mean 7.546/7.687, ratio 9.816e-01, mae 1.860, total 60.369/61.500) | pixels 200704
+[train] epoch 91/150 | loss 5.4199 | det 0.1025 seg 0.1248 cnt 2.9812 mi -19.4281
+[val] epoch 91 | det 0.3412 seg 0.7896 miou 0.6484 cnt 3.7819 dens 8.543166e-01 mae 2.9276 total_mae 14.1709 | ap50 0.6480 | combo 1.637994
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 92/150 step 1 | dens(mean 4.904200e-05/4.398563e-05, ratio 1.115e+00) | count(mean 9.843/8.828, ratio 1.115e+00, mae 2.196, total 78.743/70.625) | pixels 200704
+[train] epoch 92/150 | loss 6.1791 | det 0.1506 seg 0.1260 cnt 3.0087 mi -19.3586
+[val] epoch 92 | det 0.3561 seg 0.7959 miou 0.6463 cnt 3.7998 dens 8.634221e-01 mae 2.9364 total_mae 14.5705 | ap50 0.6475 | combo 1.634360
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 93/150 step 1 | dens(mean 2.520323e-05/2.670284e-05, ratio 9.438e-01) | count(mean 5.058/5.359, ratio 9.438e-01, mae 1.572, total 40.467/42.875) | pixels 200704
+[train] epoch 93/150 | loss 5.4061 | det 0.0739 seg 0.1204 cnt 3.4316 mi -19.4830
+[val] epoch 93 | det 0.3625 seg 0.7926 miou 0.6488 cnt 3.8897 dens 8.536888e-01 mae 3.0360 total_mae 14.6772 | ap50 0.6439 | combo 1.622084
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 94/150 step 1 | dens(mean 4.046890e-05/3.760209e-05, ratio 1.076e+00) | count(mean 8.122/7.547, ratio 1.076e+00, mae 1.914, total 64.978/60.375) | pixels 200704
+[train] epoch 94/150 | loss 5.6153 | det 0.0957 seg 0.1346 cnt 3.2007 mi -19.4915
+[val] epoch 94 | det 0.3607 seg 0.8013 miou 0.6465 cnt 3.5360 dens 8.543560e-01 mae 2.6817 total_mae 14.1152 | ap50 0.6428 | combo 1.662128
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 95/150 step 1 | dens(mean 4.309415e-05/4.787775e-05, ratio 9.001e-01) | count(mean 8.649/9.609, ratio 9.001e-01, mae 1.874, total 69.193/76.874) | pixels 200704
+[train] epoch 95/150 | loss 5.2338 | det 0.0950 seg 0.1220 cnt 2.9298 mi -19.4457
+[val] epoch 95 | det 0.3669 seg 0.7831 miou 0.6487 cnt 3.5127 dens 8.519524e-01 mae 2.6607 total_mae 12.7679 | ap50 0.6445 | combo 1.669034
+[ckpt] saved new best -> runs/mod_squad_plaintrain_sharedonly_mi_10per/best_combo.pt (combo 1.669034)
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 96/150 step 1 | dens(mean 4.509142e-05/4.912410e-05, ratio 9.179e-01) | count(mean 9.050/9.859, ratio 9.179e-01, mae 1.982, total 72.400/78.875) | pixels 200704
+[train] epoch 96/150 | loss 7.3760 | det 0.1075 seg 0.1151 cnt 4.9392 mi -19.5127
+[val] epoch 96 | det 0.3647 seg 0.7956 miou 0.6467 cnt 3.6278 dens 8.576933e-01 mae 2.7701 total_mae 14.9597 | ap50 0.6478 | combo 1.655510
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 97/150 step 1 | dens(mean 6.220993e-05/7.442442e-05, ratio 8.359e-01) | count(mean 12.486/14.937, ratio 8.359e-01, mae 3.143, total 99.886/119.498) | pixels 200704
+[train] epoch 97/150 | loss 5.6551 | det 0.1138 seg 0.1093 cnt 3.1708 mi -19.5120
+[val] epoch 97 | det 0.3607 seg 0.8264 miou 0.6419 cnt 3.6981 dens 8.640116e-01 mae 2.8341 total_mae 13.4889 | ap50 0.6484 | combo 1.643136
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 98/150 step 1 | dens(mean 2.576634e-05/2.646944e-05, ratio 9.734e-01) | count(mean 5.171/5.313, ratio 9.734e-01, mae 1.413, total 41.371/42.500) | pixels 200704
+[train] epoch 98/150 | loss 6.8924 | det 0.1190 seg 0.1145 cnt 4.2891 mi -19.5476
+[val] epoch 98 | det 0.3618 seg 0.8228 miou 0.6464 cnt 3.9990 dens 8.535387e-01 mae 3.1455 total_mae 16.3619 | ap50 0.6424 | combo 1.606725
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 99/150 step 1 | dens(mean 4.652542e-05/3.884756e-05, ratio 1.198e+00) | count(mean 9.338/7.797, ratio 1.198e+00, mae 2.325, total 74.703/62.375) | pixels 200704
+[train] epoch 99/150 | loss 7.0548 | det 0.0924 seg 0.1281 cnt 4.7411 mi -19.5749
+[val] epoch 99 | det 0.3636 seg 0.8245 miou 0.6408 cnt 3.8341 dens 8.619915e-01 mae 2.9721 total_mae 15.9498 | ap50 0.6444 | combo 1.621579
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 100/150 step 1 | dens(mean 2.555167e-05/3.238573e-05, ratio 7.890e-01) | count(mean 5.128/6.500, ratio 7.890e-01, mae 1.829, total 41.027/52.000) | pixels 200704
+[train] epoch 100/150 | loss 6.5966 | det 0.1186 seg 0.1926 cnt 3.3750 mi -19.4340
+[val] epoch 100 | det 0.3608 seg 0.8292 miou 0.6437 cnt 3.5282 dens 8.524065e-01 mae 2.6758 total_mae 12.7220 | ap50 0.6442 | combo 1.661620
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 101/150 step 1 | dens(mean 6.829565e-05/7.068965e-05, ratio 9.661e-01) | count(mean 13.707/14.188, ratio 9.661e-01, mae 2.131, total 109.658/113.502) | pixels 200704
+[train] epoch 101/150 | loss 6.1891 | det 0.1083 seg 0.1686 cnt 3.3134 mi -19.4310
+[val] epoch 101 | det 0.3603 seg 0.7997 miou 0.6359 cnt 3.6114 dens 8.569137e-01 mae 2.7545 total_mae 13.1250 | ap50 0.6453 | combo 1.644202
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 102/150 step 1 | dens(mean 2.870367e-05/3.005053e-05, ratio 9.552e-01) | count(mean 5.761/6.031, ratio 9.552e-01, mae 1.247, total 46.088/48.250) | pixels 200704
+[train] epoch 102/150 | loss 5.7640 | det 0.0979 seg 0.1497 cnt 3.1951 mi -19.3866
+[val] epoch 102 | det 0.3560 seg 0.8163 miou 0.6343 cnt 3.7782 dens 8.619196e-01 mae 2.9163 total_mae 14.9465 | ap50 0.6514 | combo 1.628682
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 103/150 step 1 | dens(mean 4.145384e-05/4.966916e-05, ratio 8.346e-01) | count(mean 8.320/9.969, ratio 8.346e-01, mae 2.460, total 66.560/79.750) | pixels 200704
+[train] epoch 103/150 | loss 4.9720 | det 0.0879 seg 0.1317 cnt 2.6969 mi -19.4103
+[val] epoch 103 | det 0.3702 seg 0.8179 miou 0.6164 cnt 3.5199 dens 8.505165e-01 mae 2.6694 total_mae 12.6792 | ap50 0.6477 | combo 1.638749
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 104/150 step 1 | dens(mean 3.591928e-05/3.503374e-05, ratio 1.025e+00) | count(mean 7.209/7.031, ratio 1.025e+00, mae 1.261, total 57.673/56.251) | pixels 200704
+[train] epoch 104/150 | loss 5.2337 | det 0.0910 seg 0.1374 cnt 2.8662 mi -19.4627
+[val] epoch 104 | det 0.3804 seg 0.8093 miou 0.6235 cnt 3.5188 dens 8.504308e-01 mae 2.6683 total_mae 12.8012 | ap50 0.6479 | combo 1.646164
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 105/150 step 1 | dens(mean 4.186177e-05/4.390803e-05, ratio 9.534e-01) | count(mean 8.402/8.813, ratio 9.534e-01, mae 1.278, total 67.215/70.500) | pixels 200704
+[train] epoch 105/150 | loss 4.6389 | det 0.0728 seg 0.1243 cnt 2.6499 mi -19.4795
+[val] epoch 105 | det 0.3854 seg 0.8008 miou 0.6212 cnt 3.6355 dens 8.489838e-01 mae 2.7865 total_mae 13.3488 | ap50 0.6427 | combo 1.622751
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 106/150 step 1 | dens(mean 5.049447e-05/4.639916e-05, ratio 1.088e+00) | count(mean 10.134/9.312, ratio 1.088e+00, mae 1.690, total 81.076/74.500) | pixels 200704
+[train] epoch 106/150 | loss 5.1660 | det 0.1031 seg 0.1340 cnt 2.6447 mi -19.4804
+[val] epoch 106 | det 0.3768 seg 0.8338 miou 0.6205 cnt 3.5017 dens 8.508821e-01 mae 2.6508 total_mae 12.8433 | ap50 0.6466 | combo 1.644304
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 107/150 step 1 | dens(mean 7.197673e-05/8.135379e-05, ratio 8.847e-01) | count(mean 14.446/16.328, ratio 8.847e-01, mae 2.335, total 115.568/130.624) | pixels 200704
+[train] epoch 107/150 | loss 5.3207 | det 0.1067 seg 0.1265 cnt 2.8061 mi -19.5856
+[val] epoch 107 | det 0.3799 seg 0.7925 miou 0.6280 cnt 3.5576 dens 8.512385e-01 mae 2.7063 total_mae 13.2133 | ap50 0.6469 | combo 1.644441
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 108/150 step 1 | dens(mean 4.308070e-05/4.686567e-05, ratio 9.192e-01) | count(mean 8.646/9.406, ratio 9.192e-01, mae 1.895, total 69.172/75.249) | pixels 200704
+[train] epoch 108/150 | loss 5.4035 | det 0.1121 seg 0.1274 cnt 2.8014 mi -19.5943
+[val] epoch 108 | det 0.3722 seg 0.8087 miou 0.6312 cnt 3.5266 dens 8.476115e-01 mae 2.6789 total_mae 12.7312 | ap50 0.6432 | combo 1.647625
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 109/150 step 1 | dens(mean 2.942440e-05/2.639123e-05, ratio 1.115e+00) | count(mean 5.906/5.297, ratio 1.115e+00, mae 1.030, total 47.245/42.375) | pixels 200704
+[train] epoch 109/150 | loss 4.7305 | det 0.0937 seg 0.1135 cnt 2.5154 mi -19.6352
+[val] epoch 109 | det 0.3636 seg 0.8058 miou 0.6318 cnt 3.4802 dens 8.495750e-01 mae 2.6306 total_mae 12.6459 | ap50 0.6448 | combo 1.656682
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 110/150 step 1 | dens(mean 3.105120e-05/3.160742e-05, ratio 9.824e-01) | count(mean 6.232/6.344, ratio 9.824e-01, mae 1.230, total 49.857/50.750) | pixels 200704
+[train] epoch 110/150 | loss 3.9309 | det 0.0694 seg 0.1203 cnt 2.0254 mi -19.6139
+[val] epoch 110 | det 0.3465 seg 0.8348 miou 0.6319 cnt 3.4980 dens 8.491715e-01 mae 2.6488 total_mae 12.6991 | ap50 0.6460 | combo 1.655352
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 111/150 step 1 | dens(mean 5.384773e-05/5.239359e-05, ratio 1.028e+00) | count(mean 10.807/10.516, ratio 1.028e+00, mae 1.383, total 86.460/84.125) | pixels 200704
+[train] epoch 111/150 | loss 4.4748 | det 0.0863 seg 0.1080 cnt 2.4137 mi -19.6661
+[val] epoch 111 | det 0.3600 seg 0.8328 miou 0.6281 cnt 3.5455 dens 8.533234e-01 mae 2.6922 total_mae 14.4728 | ap50 0.6455 | combo 1.645065
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 112/150 step 1 | dens(mean 3.676927e-05/4.336288e-05, ratio 8.479e-01) | count(mean 7.380/8.703, ratio 8.479e-01, mae 1.751, total 59.038/69.625) | pixels 200704
+[train] epoch 112/150 | loss 4.1368 | det 0.0749 seg 0.1091 cnt 2.2389 mi -19.7165
+[val] epoch 112 | det 0.3804 seg 0.8197 miou 0.6287 cnt 3.5336 dens 8.476574e-01 mae 2.6860 total_mae 12.4230 | ap50 0.6432 | combo 1.644294
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 113/150 step 1 | dens(mean 4.360820e-05/4.803421e-05, ratio 9.079e-01) | count(mean 8.752/9.641, ratio 9.079e-01, mae 1.446, total 70.019/77.125) | pixels 200704
+[train] epoch 113/150 | loss 4.2178 | det 0.0717 seg 0.1065 cnt 2.3890 mi -19.7570
+[val] epoch 113 | det 0.3778 seg 0.8202 miou 0.6305 cnt 3.6171 dens 8.539443e-01 mae 2.7631 total_mae 14.4308 | ap50 0.6424 | combo 1.634811
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 114/150 step 1 | dens(mean 3.965431e-05/4.702154e-05, ratio 8.433e-01) | count(mean 7.959/9.437, ratio 8.433e-01, mae 2.007, total 63.670/75.499) | pixels 200704
+[train] epoch 114/150 | loss 5.1931 | det 0.0913 seg 0.1210 cnt 2.9546 mi -19.7872
+[val] epoch 114 | det 0.3730 seg 0.8010 miou 0.6301 cnt 3.5700 dens 8.479697e-01 mae 2.7220 total_mae 12.8637 | ap50 0.6462 | combo 1.643630
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 115/150 step 1 | dens(mean 5.087173e-05/4.172772e-05, ratio 1.219e+00) | count(mean 10.210/8.375, ratio 1.219e+00, mae 2.588, total 81.681/66.999) | pixels 200704
+[train] epoch 115/150 | loss 4.6463 | det 0.0838 seg 0.1071 cnt 2.6315 mi -19.7737
+[val] epoch 115 | det 0.3745 seg 0.8356 miou 0.6299 cnt 3.5450 dens 8.487714e-01 mae 2.6963 total_mae 12.9304 | ap50 0.6493 | combo 1.650022
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 116/150 step 1 | dens(mean 3.571878e-05/4.040405e-05, ratio 8.840e-01) | count(mean 7.169/8.109, ratio 8.840e-01, mae 1.653, total 57.351/64.874) | pixels 200704
+[train] epoch 116/150 | loss 4.9080 | det 0.1143 seg 0.1208 cnt 2.3257 mi -19.8121
+[val] epoch 116 | det 0.3827 seg 0.8191 miou 0.6304 cnt 3.5024 dens 8.485235e-01 mae 2.6538 total_mae 12.7967 | ap50 0.6480 | combo 1.655154
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 117/150 step 1 | dens(mean 5.085473e-05/5.379503e-05, ratio 9.453e-01) | count(mean 10.207/10.797, ratio 9.453e-01, mae 1.632, total 81.654/86.375) | pixels 200704
+[train] epoch 117/150 | loss 4.5029 | det 0.0842 seg 0.1028 cnt 2.5172 mi -19.8231
+[val] epoch 117 | det 0.3898 seg 0.8185 miou 0.6309 cnt 3.5618 dens 8.462913e-01 mae 2.7155 total_mae 12.6488 | ap50 0.6423 | combo 1.641508
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 118/150 step 1 | dens(mean 5.549839e-05/5.371748e-05, ratio 1.033e+00) | count(mean 11.139/10.781, ratio 1.033e+00, mae 1.963, total 89.110/86.251) | pixels 200704
+[train] epoch 118/150 | loss 4.9968 | det 0.0959 seg 0.1163 cnt 2.7275 mi -19.9100
+[val] epoch 118 | det 0.3940 seg 0.8236 miou 0.6344 cnt 3.5616 dens 8.489303e-01 mae 2.7127 total_mae 14.0796 | ap50 0.6409 | combo 1.643902
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 119/150 step 1 | dens(mean 3.260798e-05/3.822490e-05, ratio 8.531e-01) | count(mean 6.545/7.672, ratio 8.531e-01, mae 1.628, total 52.356/61.375) | pixels 200704
+[train] epoch 119/150 | loss 3.9890 | det 0.0695 seg 0.0992 cnt 2.2515 mi -19.8411
+[val] epoch 119 | det 0.4057 seg 0.8327 miou 0.6349 cnt 3.6015 dens 8.468166e-01 mae 2.7546 total_mae 13.2555 | ap50 0.6471 | combo 1.645024
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 120/150 step 1 | dens(mean 3.522420e-05/3.246195e-05, ratio 1.085e+00) | count(mean 7.070/6.515, ratio 1.085e+00, mae 1.419, total 56.557/52.122) | pixels 200704
+[train] epoch 120/150 | loss 5.4835 | det 0.0956 seg 0.1078 cnt 3.2869 mi -19.8497
+[val] epoch 120 | det 0.3715 seg 0.8241 miou 0.6334 cnt 3.7175 dens 8.545683e-01 mae 2.8629 total_mae 16.5097 | ap50 0.6458 | combo 1.628484
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 121/150 step 1 | dens(mean 4.528370e-05/6.243687e-05, ratio 7.253e-01) | count(mean 9.089/12.531, ratio 7.253e-01, mae 3.696, total 72.709/100.251) | pixels 200704
+[train] epoch 121/150 | loss 6.5071 | det 0.0769 seg 0.1084 cnt 4.5865 mi -19.9030
+[val] epoch 121 | det 0.3680 seg 0.8251 miou 0.6343 cnt 3.5785 dens 8.461297e-01 mae 2.7324 total_mae 12.7842 | ap50 0.6408 | combo 1.641099
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 122/150 step 1 | dens(mean 6.879006e-05/5.535203e-05, ratio 1.243e+00) | count(mean 13.806/11.109, ratio 1.243e+00, mae 3.026, total 110.452/88.875) | pixels 200704
+[train] epoch 122/150 | loss 5.1055 | det 0.1043 seg 0.1117 cnt 2.7460 mi -19.8534
+[val] epoch 122 | det 0.3834 seg 0.8323 miou 0.6314 cnt 3.5364 dens 8.497301e-01 mae 2.6867 total_mae 13.4275 | ap50 0.6507 | combo 1.654260
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 123/150 step 1 | dens(mean 4.841355e-05/5.519656e-05, ratio 8.771e-01) | count(mean 9.717/11.078, ratio 8.771e-01, mae 1.762, total 77.734/88.625) | pixels 200704
+[train] epoch 123/150 | loss 4.6219 | det 0.0753 seg 0.1182 cnt 2.6457 mi -19.8467
+[val] epoch 123 | det 0.3793 seg 0.8199 miou 0.6387 cnt 3.4580 dens 8.460671e-01 mae 2.6119 total_mae 12.6819 | ap50 0.6440 | combo 1.665577
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 124/150 step 1 | dens(mean 2.258808e-05/2.452449e-05, ratio 9.210e-01) | count(mean 4.534/4.922, ratio 9.210e-01, mae 1.204, total 36.268/39.377) | pixels 200704
+[train] epoch 124/150 | loss 5.4830 | det 0.0869 seg 0.1129 cnt 3.3769 mi -19.9585
+[val] epoch 124 | det 0.3972 seg 0.8346 miou 0.6371 cnt 3.4815 dens 8.484281e-01 mae 2.6330 total_mae 12.6064 | ap50 0.6480 | combo 1.664925
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 125/150 step 1 | dens(mean 3.701484e-05/3.915930e-05, ratio 9.452e-01) | count(mean 7.429/7.859, ratio 9.452e-01, mae 1.396, total 59.432/62.875) | pixels 200704
+[train] epoch 125/150 | loss 4.9348 | det 0.1212 seg 0.1162 cnt 2.2869 mi -19.8967
+[val] epoch 125 | det 0.3861 seg 0.8286 miou 0.6366 cnt 3.5515 dens 8.471361e-01 mae 2.7044 total_mae 12.6711 | ap50 0.6462 | combo 1.652538
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 126/150 step 1 | dens(mean 6.497218e-05/6.453846e-05, ratio 1.007e+00) | count(mean 13.040/12.953, ratio 1.007e+00, mae 2.259, total 104.321/103.625) | pixels 200704
+[train] epoch 126/150 | loss 5.0293 | det 0.1083 seg 0.1088 cnt 2.6340 mi -19.9342
+[val] epoch 126 | det 0.3872 seg 0.8344 miou 0.6432 cnt 3.5224 dens 8.495788e-01 mae 2.6728 total_mae 12.4711 | ap50 0.6444 | combo 1.661805
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 127/150 step 1 | dens(mean 5.231115e-05/5.184864e-05, ratio 1.009e+00) | count(mean 10.499/10.406, ratio 1.009e+00, mae 1.753, total 83.992/83.250) | pixels 200704
+[train] epoch 127/150 | loss 5.3929 | det 0.0706 seg 0.1002 cnt 3.6317 mi -20.0126
+[val] epoch 127 | det 0.3776 seg 0.8215 miou 0.6411 cnt 3.4524 dens 8.450976e-01 mae 2.6073 total_mae 12.3328 | ap50 0.6513 | combo 1.676008
+[ckpt] saved new best -> runs/mod_squad_plaintrain_sharedonly_mi_10per/best_combo.pt (combo 1.676008)
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 128/150 step 1 | dens(mean 5.743047e-05/5.496286e-05, ratio 1.045e+00) | count(mean 11.527/11.031, ratio 1.045e+00, mae 1.633, total 92.212/88.250) | pixels 200704
+[train] epoch 128/150 | loss 5.2252 | det 0.0883 seg 0.1108 cnt 3.1146 mi -20.0706
+[val] epoch 128 | det 0.3931 seg 0.8305 miou 0.6413 cnt 3.6049 dens 8.446800e-01 mae 2.7602 total_mae 12.9077 | ap50 0.6479 | combo 1.651466
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 129/150 step 1 | dens(mean 4.273994e-05/3.775701e-05, ratio 1.132e+00) | count(mean 8.578/7.578, ratio 1.132e+00, mae 1.681, total 68.625/60.624) | pixels 200704
+[train] epoch 129/150 | loss 5.2009 | det 0.0758 seg 0.1027 cnt 3.3429 mi -20.0680
+[val] epoch 129 | det 0.3669 seg 0.8457 miou 0.6385 cnt 3.4921 dens 8.507816e-01 mae 2.6413 total_mae 13.4198 | ap50 0.6444 | combo 1.661501
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 130/150 step 1 | dens(mean 2.857007e-05/3.448806e-05, ratio 8.284e-01) | count(mean 5.734/6.922, ratio 8.284e-01, mae 1.421, total 45.873/55.375) | pixels 200704
+[train] epoch 130/150 | loss 5.2204 | det 0.1110 seg 0.1153 cnt 2.7340 mi -20.0136
+[val] epoch 130 | det 0.3858 seg 0.8239 miou 0.6464 cnt 3.4968 dens 8.450600e-01 mae 2.6518 total_mae 12.4299 | ap50 0.6458 | combo 1.669297
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 131/150 step 1 | dens(mean 3.437049e-05/3.417621e-05, ratio 1.006e+00) | count(mean 6.898/6.859, ratio 1.006e+00, mae 1.054, total 55.186/54.874) | pixels 200704
+[train] epoch 131/150 | loss 4.3032 | det 0.0873 seg 0.1023 cnt 2.2757 mi -20.0912
+[val] epoch 131 | det 0.3835 seg 0.8459 miou 0.6382 cnt 3.6354 dens 8.523599e-01 mae 2.7830 total_mae 15.2264 | ap50 0.6468 | combo 1.644273
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 132/150 step 1 | dens(mean 3.643064e-05/3.931485e-05, ratio 9.266e-01) | count(mean 7.312/7.891, ratio 9.266e-01, mae 1.264, total 58.494/63.125) | pixels 200704
+[train] epoch 132/150 | loss 4.9313 | det 0.0702 seg 0.0974 cnt 3.1991 mi -20.0691
+[val] epoch 132 | det 0.3854 seg 0.8511 miou 0.6420 cnt 3.5207 dens 8.467809e-01 mae 2.6740 total_mae 12.7978 | ap50 0.6490 | combo 1.664951
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 133/150 step 1 | dens(mean 3.680705e-05/4.063817e-05, ratio 9.057e-01) | count(mean 7.387/8.156, ratio 9.057e-01, mae 1.407, total 59.099/65.250) | pixels 200704
+[train] epoch 133/150 | loss 5.3515 | det 0.0780 seg 0.1102 cnt 3.3994 mi -19.9935
+[val] epoch 133 | det 0.3822 seg 0.8460 miou 0.6435 cnt 3.4731 dens 8.437262e-01 mae 2.6294 total_mae 12.0867 | ap50 0.6420 | combo 1.665832
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 134/150 step 1 | dens(mean 4.141680e-05/3.939241e-05, ratio 1.051e+00) | count(mean 8.313/7.906, ratio 1.051e+00, mae 1.545, total 66.500/63.250) | pixels 200704
+[train] epoch 134/150 | loss 4.1738 | det 0.0789 seg 0.0985 cnt 2.3034 mi -20.1230
+[val] epoch 134 | det 0.4013 seg 0.8420 miou 0.6443 cnt 3.4707 dens 8.459182e-01 mae 2.6248 total_mae 12.4055 | ap50 0.6452 | combo 1.670507
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 135/150 step 1 | dens(mean 3.714596e-05/3.557851e-05, ratio 1.044e+00) | count(mean 7.455/7.141, ratio 1.044e+00, mae 1.063, total 59.643/57.126) | pixels 200704
+[train] epoch 135/150 | loss 4.4246 | det 0.0866 seg 0.1043 cnt 2.3919 mi -20.1386
+[val] epoch 135 | det 0.3891 seg 0.8485 miou 0.6456 cnt 3.4390 dens 8.430607e-01 mae 2.5959 total_mae 12.1976 | ap50 0.6479 | combo 1.678722
+[ckpt] saved new best -> runs/mod_squad_plaintrain_sharedonly_mi_10per/best_combo.pt (combo 1.678722)
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 136/150 step 1 | dens(mean 2.719420e-05/2.724814e-05, ratio 9.980e-01) | count(mean 5.458/5.469, ratio 9.980e-01, mae 0.918, total 43.664/43.750) | pixels 200704
+[train] epoch 136/150 | loss 4.4915 | det 0.0970 seg 0.1088 cnt 2.2676 mi -20.1812
+[val] epoch 136 | det 0.3911 seg 0.8300 miou 0.6452 cnt 3.4539 dens 8.419112e-01 mae 2.6120 total_mae 12.1064 | ap50 0.6483 | combo 1.676405
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 137/150 step 1 | dens(mean 5.526917e-05/4.865700e-05, ratio 1.136e+00) | count(mean 11.093/9.766, ratio 1.136e+00, mae 1.836, total 88.742/78.125) | pixels 200704
+[train] epoch 137/150 | loss 5.0601 | det 0.0924 seg 0.1063 cnt 2.9247 mi -20.1389
+[val] epoch 137 | det 0.3779 seg 0.8709 miou 0.6371 cnt 3.4646 dens 8.440120e-01 mae 2.6206 total_mae 12.7519 | ap50 0.6476 | combo 1.666310
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 138/150 step 1 | dens(mean 4.407301e-05/4.647755e-05, ratio 9.483e-01) | count(mean 8.846/9.328, ratio 9.483e-01, mae 1.405, total 70.765/74.626) | pixels 200704
+[train] epoch 138/150 | loss 5.1233 | det 0.0634 seg 0.1002 cnt 3.4704 mi -20.1216
+[val] epoch 138 | det 0.3883 seg 0.8404 miou 0.6447 cnt 3.5348 dens 8.427553e-01 mae 2.6921 total_mae 12.4468 | ap50 0.6426 | combo 1.658841
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 139/150 step 1 | dens(mean 9.024570e-05/1.006657e-04, ratio 8.965e-01) | count(mean 18.113/20.204, ratio 8.965e-01, mae 3.330, total 144.901/161.632) | pixels 200704
+[train] epoch 139/150 | loss 5.3630 | det 0.0776 seg 0.0951 cnt 3.5396 mi -20.1754
+[val] epoch 139 | det 0.3841 seg 0.8633 miou 0.6378 cnt 3.6066 dens 8.490528e-01 mae 2.7575 total_mae 14.9728 | ap50 0.6442 | combo 1.644612
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 140/150 step 1 | dens(mean 2.847421e-05/3.168541e-05, ratio 8.987e-01) | count(mean 5.715/6.359, ratio 8.987e-01, mae 1.030, total 45.719/50.875) | pixels 200704
+[train] epoch 140/150 | loss 4.8730 | det 0.0728 seg 0.0985 cnt 3.0942 mi -20.2385
+[val] epoch 140 | det 0.3681 seg 0.8581 miou 0.6443 cnt 3.4830 dens 8.445277e-01 mae 2.6384 total_mae 12.1363 | ap50 0.6478 | combo 1.671053
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 141/150 step 1 | dens(mean 5.312612e-05/5.901123e-05, ratio 9.003e-01) | count(mean 10.663/11.844, ratio 9.003e-01, mae 1.716, total 85.301/94.750) | pixels 200704
+[train] epoch 141/150 | loss 6.8113 | det 0.0860 seg 0.0983 cnt 4.8364 mi -20.2380
+[val] epoch 141 | det 0.3894 seg 0.8461 miou 0.6452 cnt 3.9525 dens 8.457969e-01 mae 3.1067 total_mae 16.1421 | ap50 0.6480 | combo 1.615049
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 142/150 step 1 | dens(mean 6.250120e-05/5.013403e-05, ratio 1.247e+00) | count(mean 12.544/10.062, ratio 1.247e+00, mae 2.667, total 100.354/80.497) | pixels 200704
+[train] epoch 142/150 | loss 5.1726 | det 0.0854 seg 0.1011 cnt 3.1829 mi -20.1514
+[val] epoch 142 | det 0.3974 seg 0.8599 miou 0.6443 cnt 3.5662 dens 8.523649e-01 mae 2.7139 total_mae 13.0784 | ap50 0.6397 | combo 1.652483
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 143/150 step 1 | dens(mean 3.841263e-05/3.853616e-05, ratio 9.968e-01) | count(mean 7.710/7.734, ratio 9.968e-01, mae 1.105, total 61.677/61.875) | pixels 200704
+[train] epoch 143/150 | loss 5.2329 | det 0.0800 seg 0.1093 cnt 3.2589 mi -20.2278
+[val] epoch 143 | det 0.3975 seg 0.8594 miou 0.6430 cnt 3.6901 dens 8.501486e-01 mae 2.8399 total_mae 16.1455 | ap50 0.6461 | combo 1.641252
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 144/150 step 1 | dens(mean 2.995899e-05/3.511114e-05, ratio 8.533e-01) | count(mean 6.013/7.047, ratio 8.533e-01, mae 1.519, total 48.103/56.376) | pixels 200704
+[train] epoch 144/150 | loss 4.7289 | det 0.0810 seg 0.0950 cnt 2.8554 mi -20.1580
+[val] epoch 144 | det 0.3875 seg 0.8513 miou 0.6459 cnt 3.6121 dens 8.436065e-01 mae 2.7685 total_mae 13.3059 | ap50 0.6523 | combo 1.659476
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 145/150 step 1 | dens(mean 2.880187e-05/2.483431e-05, ratio 1.160e+00) | count(mean 5.781/4.984, ratio 1.160e+00, mae 1.235, total 46.245/39.875) | pixels 200704
+[train] epoch 145/150 | loss 4.1388 | det 0.0719 seg 0.0948 cnt 2.4034 mi -20.2297
+[val] epoch 145 | det 0.3934 seg 0.8494 miou 0.6446 cnt 3.5064 dens 8.446269e-01 mae 2.6618 total_mae 12.7993 | ap50 0.6455 | combo 1.665718
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 146/150 step 1 | dens(mean 3.010297e-05/3.075095e-05, ratio 9.789e-01) | count(mean 6.042/6.172, ratio 9.789e-01, mae 1.273, total 48.334/49.375) | pixels 200704
+[train] epoch 146/150 | loss 4.1709 | det 0.0770 seg 0.0913 cnt 2.3868 mi -20.3261
+[val] epoch 146 | det 0.3933 seg 0.8662 miou 0.6433 cnt 3.4512 dens 8.438950e-01 mae 2.6073 total_mae 12.6148 | ap50 0.6462 | combo 1.673049
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 147/150 step 1 | dens(mean 2.994921e-05/3.145168e-05, ratio 9.522e-01) | count(mean 6.011/6.312, ratio 9.522e-01, mae 0.888, total 48.087/50.500) | pixels 200704
+[train] epoch 147/150 | loss 4.2984 | det 0.0923 seg 0.0982 cnt 2.2297 mi -20.2536
+[val] epoch 147 | det 0.3922 seg 0.8622 miou 0.6427 cnt 3.4545 dens 8.428093e-01 mae 2.6117 total_mae 12.2342 | ap50 0.6482 | combo 1.673794
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 148/150 step 1 | dens(mean 4.885223e-05/4.888939e-05, ratio 9.992e-01) | count(mean 9.805/9.812, ratio 9.992e-01, mae 1.465, total 78.439/78.498) | pixels 200704
+[train] epoch 148/150 | loss 4.3392 | det 0.0749 seg 0.1036 cnt 2.4879 mi -20.2085
+[val] epoch 148 | det 0.3890 seg 0.8506 miou 0.6460 cnt 3.4839 dens 8.441668e-01 mae 2.6398 total_mae 12.5297 | ap50 0.6448 | combo 1.669663
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 149/150 step 1 | dens(mean 6.701381e-05/6.959944e-05, ratio 9.628e-01) | count(mean 13.450/13.969, ratio 9.628e-01, mae 1.802, total 107.600/111.751) | pixels 200704
+[train] epoch 149/150 | loss 4.4446 | det 0.0633 seg 0.1021 cnt 2.7801 mi -20.3323
+[val] epoch 149 | det 0.3953 seg 0.8674 miou 0.6436 cnt 3.5292 dens 8.419659e-01 mae 2.6873 total_mae 12.6533 | ap50 0.6437 | combo 1.659365
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt
+[diag][cnt][train] epoch 150/150 step 1 | dens(mean 6.926327e-05/6.578442e-05, ratio 1.053e+00) | count(mean 13.901/13.203, ratio 1.053e+00, mae 1.680, total 111.211/105.626) | pixels 200704
+[train] epoch 150/150 | loss 4.3813 | det 0.0854 seg 0.0994 cnt 2.4076 mi -20.3293
+[val] epoch 150 | det 0.4013 seg 0.8542 miou 0.6451 cnt 3.4422 dens 8.426736e-01 mae 2.5995 total_mae 12.5734 | ap50 0.6458 | combo 1.675547
+[ckpt] saved last -> runs/mod_squad_plaintrain_sharedonly_mi_10per/last.pt

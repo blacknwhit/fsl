@@ -1,0 +1,560 @@
+{
+  "checkpoint": "/data/xiangyuyue/ULLM-zf/fsl-20260209/runs/115_mainonly_1_10per/best_combo.pt",
+  "output_dir": "/data/xiangyuyue/ULLM-zf/fsl-20260209/runs/115_mainonly_1_10per/gradient_conflict_vis",
+  "seed": 42,
+  "max_batches": 200,
+  "batches_processed": 11,
+  "stop_reason": "all_requested_blocks_found",
+  "visualized_parameter": "shared LoRA-A",
+  "tasks": [
+    "det",
+    "seg",
+    "cnt"
+  ],
+  "pair_order": [
+    "det_seg",
+    "det_cnt",
+    "seg_cnt"
+  ],
+  "block_mapping": {
+    "6": 5,
+    "12": 11,
+    "18": 17,
+    "24": 23
+  },
+  "num_shared_experts": 6,
+  "min_mixed_experts": 4,
+  "selection_rule": "for each requested block, stop at the first batch where at least min_mixed_experts experts have both positive and negative valid cosine values",
+  "selected_blocks": {
+    "24": {
+      "batch_index": 2,
+      "block_internal": 23,
+      "task_losses": {
+        "det": 0.11740720272064209,
+        "seg": 0.5780842304229736,
+        "cnt": 9.71986198425293
+      },
+      "task_batch_meta": {
+        "det": {
+          "batch_size": 2,
+          "image_ids": [
+            3746,
+            3054
+          ]
+        },
+        "seg": {
+          "batch_size": 2,
+          "image_shape": [
+            2,
+            3,
+            448,
+            448
+          ],
+          "mask_shape": [
+            2,
+            448,
+            448
+          ]
+        },
+        "cnt": {
+          "batch_size": 2,
+          "image_shape": [
+            2,
+            3,
+            448,
+            448
+          ],
+          "density_shape": [
+            2,
+            8,
+            448,
+            448
+          ]
+        }
+      },
+      "block_summary": {
+        "block_internal": 23,
+        "pairs": {
+          "det_seg": {
+            "valid_points": 6,
+            "invalid_points": 0,
+            "negative_points": 3,
+            "negative_ratio": 0.5,
+            "mean_cosine": -0.009102798662206766,
+            "min_cosine": -0.43947669184524124,
+            "max_cosine": 0.44697809630145585
+          },
+          "det_cnt": {
+            "valid_points": 5,
+            "invalid_points": 1,
+            "negative_points": 2,
+            "negative_ratio": 0.4,
+            "mean_cosine": 0.09833988716122903,
+            "min_cosine": -0.20580079124055353,
+            "max_cosine": 0.5345594441361832
+          },
+          "seg_cnt": {
+            "valid_points": 5,
+            "invalid_points": 1,
+            "negative_points": 3,
+            "negative_ratio": 0.6,
+            "mean_cosine": -0.048278622049248134,
+            "min_cosine": -0.22553212671147493,
+            "max_cosine": 0.09601675410353451
+          }
+        }
+      },
+      "filter": {
+        "block_internal": 23,
+        "mixed_sign_experts": [
+          0,
+          2,
+          3,
+          4
+        ],
+        "mixed_sign_expert_count": 4,
+        "keep": true,
+        "expert_details": {
+          "0": {
+            "valid_pair_count": 3,
+            "positive_count": 1,
+            "negative_count": 2,
+            "is_mixed_sign": true
+          },
+          "1": {
+            "valid_pair_count": 1,
+            "positive_count": 0,
+            "negative_count": 1,
+            "is_mixed_sign": false
+          },
+          "2": {
+            "valid_pair_count": 3,
+            "positive_count": 1,
+            "negative_count": 2,
+            "is_mixed_sign": true
+          },
+          "3": {
+            "valid_pair_count": 3,
+            "positive_count": 2,
+            "negative_count": 1,
+            "is_mixed_sign": true
+          },
+          "4": {
+            "valid_pair_count": 3,
+            "positive_count": 1,
+            "negative_count": 2,
+            "is_mixed_sign": true
+          },
+          "5": {
+            "valid_pair_count": 3,
+            "positive_count": 3,
+            "negative_count": 0,
+            "is_mixed_sign": false
+          }
+        }
+      },
+      "outputs": {
+        "cosine_csv": "/data/xiangyuyue/ULLM-zf/fsl-20260209/runs/115_mainonly_1_10per/gradient_conflict_vis/block_24_shared_loraA_gradient_cosines.csv",
+        "figure_png": "/data/xiangyuyue/ULLM-zf/fsl-20260209/runs/115_mainonly_1_10per/gradient_conflict_vis/block_24_shared_loraA_gradient_cosines.png"
+      }
+    },
+    "18": {
+      "batch_index": 3,
+      "block_internal": 17,
+      "task_losses": {
+        "det": 0.15119580924510956,
+        "seg": 0.1801212877035141,
+        "cnt": 2.3582026958465576
+      },
+      "task_batch_meta": {
+        "det": {
+          "batch_size": 2,
+          "image_ids": [
+            3133,
+            5486
+          ]
+        },
+        "seg": {
+          "batch_size": 2,
+          "image_shape": [
+            2,
+            3,
+            448,
+            448
+          ],
+          "mask_shape": [
+            2,
+            448,
+            448
+          ]
+        },
+        "cnt": {
+          "batch_size": 2,
+          "image_shape": [
+            2,
+            3,
+            448,
+            448
+          ],
+          "density_shape": [
+            2,
+            8,
+            448,
+            448
+          ]
+        }
+      },
+      "block_summary": {
+        "block_internal": 17,
+        "pairs": {
+          "det_seg": {
+            "valid_points": 4,
+            "invalid_points": 2,
+            "negative_points": 2,
+            "negative_ratio": 0.5,
+            "mean_cosine": 0.09281227457656524,
+            "min_cosine": -0.21154635696155022,
+            "max_cosine": 0.5711477920648369
+          },
+          "det_cnt": {
+            "valid_points": 6,
+            "invalid_points": 0,
+            "negative_points": 2,
+            "negative_ratio": 0.3333333333333333,
+            "mean_cosine": -0.020701709600392658,
+            "min_cosine": -0.2618646419288861,
+            "max_cosine": 0.11578619558121821
+          },
+          "seg_cnt": {
+            "valid_points": 4,
+            "invalid_points": 2,
+            "negative_points": 3,
+            "negative_ratio": 0.75,
+            "mean_cosine": -0.05977965591488765,
+            "min_cosine": -0.14766480618241118,
+            "max_cosine": 0.04185584768527915
+          }
+        }
+      },
+      "filter": {
+        "block_internal": 17,
+        "mixed_sign_experts": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "mixed_sign_expert_count": 4,
+        "keep": true,
+        "expert_details": {
+          "0": {
+            "valid_pair_count": 1,
+            "positive_count": 1,
+            "negative_count": 0,
+            "is_mixed_sign": false
+          },
+          "1": {
+            "valid_pair_count": 1,
+            "positive_count": 1,
+            "negative_count": 0,
+            "is_mixed_sign": false
+          },
+          "2": {
+            "valid_pair_count": 3,
+            "positive_count": 2,
+            "negative_count": 1,
+            "is_mixed_sign": true
+          },
+          "3": {
+            "valid_pair_count": 3,
+            "positive_count": 1,
+            "negative_count": 2,
+            "is_mixed_sign": true
+          },
+          "4": {
+            "valid_pair_count": 3,
+            "positive_count": 1,
+            "negative_count": 2,
+            "is_mixed_sign": true
+          },
+          "5": {
+            "valid_pair_count": 3,
+            "positive_count": 1,
+            "negative_count": 2,
+            "is_mixed_sign": true
+          }
+        }
+      },
+      "outputs": {
+        "cosine_csv": "/data/xiangyuyue/ULLM-zf/fsl-20260209/runs/115_mainonly_1_10per/gradient_conflict_vis/block_18_shared_loraA_gradient_cosines.csv",
+        "figure_png": "/data/xiangyuyue/ULLM-zf/fsl-20260209/runs/115_mainonly_1_10per/gradient_conflict_vis/block_18_shared_loraA_gradient_cosines.png"
+      }
+    },
+    "6": {
+      "batch_index": 8,
+      "block_internal": 5,
+      "task_losses": {
+        "det": 0.05324758589267731,
+        "seg": 0.45722681283950806,
+        "cnt": 3.079129457473755
+      },
+      "task_batch_meta": {
+        "det": {
+          "batch_size": 2,
+          "image_ids": [
+            3644,
+            944
+          ]
+        },
+        "seg": {
+          "batch_size": 2,
+          "image_shape": [
+            2,
+            3,
+            448,
+            448
+          ],
+          "mask_shape": [
+            2,
+            448,
+            448
+          ]
+        },
+        "cnt": {
+          "batch_size": 2,
+          "image_shape": [
+            2,
+            3,
+            448,
+            448
+          ],
+          "density_shape": [
+            2,
+            8,
+            448,
+            448
+          ]
+        }
+      },
+      "block_summary": {
+        "block_internal": 5,
+        "pairs": {
+          "det_seg": {
+            "valid_points": 4,
+            "invalid_points": 2,
+            "negative_points": 0,
+            "negative_ratio": 0.0,
+            "mean_cosine": 0.016112478699515362,
+            "min_cosine": 0.004102221630873819,
+            "max_cosine": 0.024512478733817185
+          },
+          "det_cnt": {
+            "valid_points": 6,
+            "invalid_points": 0,
+            "negative_points": 5,
+            "negative_ratio": 0.8333333333333334,
+            "mean_cosine": 0.0025958558879581937,
+            "min_cosine": -0.015413348752407366,
+            "max_cosine": 0.04192636502509842
+          },
+          "seg_cnt": {
+            "valid_points": 4,
+            "invalid_points": 2,
+            "negative_points": 3,
+            "negative_ratio": 0.75,
+            "mean_cosine": -0.010736740598046137,
+            "min_cosine": -0.0421964715778567,
+            "max_cosine": 0.023538314670579687
+          }
+        }
+      },
+      "filter": {
+        "block_internal": 5,
+        "mixed_sign_experts": [
+          0,
+          1,
+          2,
+          5
+        ],
+        "mixed_sign_expert_count": 4,
+        "keep": true,
+        "expert_details": {
+          "0": {
+            "valid_pair_count": 3,
+            "positive_count": 1,
+            "negative_count": 2,
+            "is_mixed_sign": true
+          },
+          "1": {
+            "valid_pair_count": 3,
+            "positive_count": 1,
+            "negative_count": 2,
+            "is_mixed_sign": true
+          },
+          "2": {
+            "valid_pair_count": 3,
+            "positive_count": 2,
+            "negative_count": 1,
+            "is_mixed_sign": true
+          },
+          "3": {
+            "valid_pair_count": 1,
+            "positive_count": 1,
+            "negative_count": 0,
+            "is_mixed_sign": false
+          },
+          "4": {
+            "valid_pair_count": 1,
+            "positive_count": 0,
+            "negative_count": 1,
+            "is_mixed_sign": false
+          },
+          "5": {
+            "valid_pair_count": 3,
+            "positive_count": 1,
+            "negative_count": 2,
+            "is_mixed_sign": true
+          }
+        }
+      },
+      "outputs": {
+        "cosine_csv": "/data/xiangyuyue/ULLM-zf/fsl-20260209/runs/115_mainonly_1_10per/gradient_conflict_vis/block_06_shared_loraA_gradient_cosines.csv",
+        "figure_png": "/data/xiangyuyue/ULLM-zf/fsl-20260209/runs/115_mainonly_1_10per/gradient_conflict_vis/block_06_shared_loraA_gradient_cosines.png"
+      }
+    },
+    "12": {
+      "batch_index": 11,
+      "block_internal": 11,
+      "task_losses": {
+        "det": 0.19770659506320953,
+        "seg": 2.2608723640441895,
+        "cnt": 5.147109031677246
+      },
+      "task_batch_meta": {
+        "det": {
+          "batch_size": 2,
+          "image_ids": [
+            1088,
+            5123
+          ]
+        },
+        "seg": {
+          "batch_size": 2,
+          "image_shape": [
+            2,
+            3,
+            448,
+            448
+          ],
+          "mask_shape": [
+            2,
+            448,
+            448
+          ]
+        },
+        "cnt": {
+          "batch_size": 2,
+          "image_shape": [
+            2,
+            3,
+            448,
+            448
+          ],
+          "density_shape": [
+            2,
+            8,
+            448,
+            448
+          ]
+        }
+      },
+      "block_summary": {
+        "block_internal": 11,
+        "pairs": {
+          "det_seg": {
+            "valid_points": 5,
+            "invalid_points": 1,
+            "negative_points": 2,
+            "negative_ratio": 0.4,
+            "mean_cosine": 0.08289243357389606,
+            "min_cosine": -0.11398216899356384,
+            "max_cosine": 0.23264165358593303
+          },
+          "det_cnt": {
+            "valid_points": 6,
+            "invalid_points": 0,
+            "negative_points": 4,
+            "negative_ratio": 0.6666666666666666,
+            "mean_cosine": -0.09115685733383105,
+            "min_cosine": -0.30366400609065397,
+            "max_cosine": 0.054912430071094115
+          },
+          "seg_cnt": {
+            "valid_points": 5,
+            "invalid_points": 1,
+            "negative_points": 3,
+            "negative_ratio": 0.6,
+            "mean_cosine": -0.009044425631171363,
+            "min_cosine": -0.05763325545534096,
+            "max_cosine": 0.055283448881358846
+          }
+        }
+      },
+      "filter": {
+        "block_internal": 11,
+        "mixed_sign_experts": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "mixed_sign_expert_count": 5,
+        "keep": true,
+        "expert_details": {
+          "0": {
+            "valid_pair_count": 3,
+            "positive_count": 1,
+            "negative_count": 2,
+            "is_mixed_sign": true
+          },
+          "1": {
+            "valid_pair_count": 3,
+            "positive_count": 1,
+            "negative_count": 2,
+            "is_mixed_sign": true
+          },
+          "2": {
+            "valid_pair_count": 3,
+            "positive_count": 1,
+            "negative_count": 2,
+            "is_mixed_sign": true
+          },
+          "3": {
+            "valid_pair_count": 3,
+            "positive_count": 1,
+            "negative_count": 2,
+            "is_mixed_sign": true
+          },
+          "4": {
+            "valid_pair_count": 3,
+            "positive_count": 2,
+            "negative_count": 1,
+            "is_mixed_sign": true
+          },
+          "5": {
+            "valid_pair_count": 1,
+            "positive_count": 1,
+            "negative_count": 0,
+            "is_mixed_sign": false
+          }
+        }
+      },
+      "outputs": {
+        "cosine_csv": "/data/xiangyuyue/ULLM-zf/fsl-20260209/runs/115_mainonly_1_10per/gradient_conflict_vis/block_12_shared_loraA_gradient_cosines.csv",
+        "figure_png": "/data/xiangyuyue/ULLM-zf/fsl-20260209/runs/115_mainonly_1_10per/gradient_conflict_vis/block_12_shared_loraA_gradient_cosines.png"
+      }
+    }
+  },
+  "missing_blocks": []
+}

@@ -1,0 +1,12 @@
+[lora] enabled: replaced_linear=48, trainable_params=1966080
+[params] trainable_total=35741127
+epoch 1/100 step 20 | loss 948613.3500 | det 3.9334 seg 2.5454 cnt 1081765.6250
+epoch 1/100 step 40 | loss 709768.7723 | det 3.6947 seg 1.9786 cnt 203390.3906
+epoch 1/100 step 60 | loss 509047.3768 | det 3.1193 seg 1.5616 cnt 49897.9766
+epoch 1/100 step 80 | loss 388832.4401 | det 0.8132 seg 1.0399 cnt 14671.5625
+epoch 1/100 step 100 | loss 312828.3785 | det 0.8939 seg 0.8075 cnt 4829.8296
+epoch 1/100 step 120 | loss 261197.5230 | det 0.7687 seg 0.8911 cnt 1658.7689
+epoch 1/100 step 140 | loss 224039.3913 | det 0.5725 seg 1.4154 cnt 616.4621
+epoch 1/100 step 160 | loss 196087.3365 | det 0.5992 seg 0.7329 cnt 244.3330
+epoch 1/100 step 180 | loss 174320.4981 | det 0.5211 seg 1.1769 cnt 76.0565
+epoch 1/100 step 200 | loss 156895.6695 | det 0.4484 seg 0.8168 cnt 28.7226

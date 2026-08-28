@@ -1,0 +1,30 @@
+{
+  "checkpoint": "/data/xiangyuyue/ULLM-zf/fsl-20260209/runs/113_mtlora_vision_10per/best_combo.pt",
+  "device": "cuda:0",
+  "model_config": {
+    "model_name": "dinov3_vitl16",
+    "image_size": 448,
+    "lora_rank": 8,
+    "num_shared_experts": 13,
+    "lora_alpha": 32.0,
+    "adapter_dropout": 0.05,
+    "routing_group_size": 256,
+    "grad_checkpointing": true,
+    "det_num_classes": 20,
+    "seg_num_classes": 11,
+    "cnt_num_classes": 8,
+    "det_out_channels": 256,
+    "loss_weights": [
+      15.0,
+      8.0,
+      1.0
+    ],
+    "cnt_count_loss_weight": 1.0,
+    "det_ap_score_thr": 0.0,
+    "blc_alpha": 0.01,
+    "spectral_reg_lambda": 0.5,
+    "spectral_reg_frequency": 1,
+    "epochs": 150,
+    "validation_start_epoch": 101
+  }
+}

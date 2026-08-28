@@ -1,0 +1,31 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 189, in _run_module_as_main
+  File "<frozen runpy>", line 159, in _get_module_details
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/113_test/train.py", line 2347
+    bash /data/xiangyuyue/ULLM-zf/fsl-20260209/113_test/train_10per.sh
+                                                  ^
+SyntaxError: invalid decimal literal
+[warn] Using first-order MAML (stop-grad through inner update).
+[train] using --loss-weight-bias as base/init: [15.000, 8.000, 1.000]
+[warn] Backbone is forced frozen for Full MAML (ignoring unfreeze flags).
+[LoRA-MoE] LoRA params: 6561792
+[LoRA-MoE] Det head params: 14875060
+[LoRA-MoE] Seg head params: 9451531
+[LoRA-MoE] Cnt head params: 9448456
+[train] Learnable loss weights MLP enabled (Full MAML), multilayer_grads=off, arch=joint, grad_vec_normalize=l2, prior_fuse=add, joint_task_proj64=on, joint_out=leakyrelu, joint_leaky_slope=0.010, weight_net_dropout=0.000, seg_classwise_grad=off, cnt_extra_conv_grad=on
+[init] g0 initialized on rank0 from first inner-batch gradients and broadcast to all ranks.
+[warn] Using first-order MAML (stop-grad through inner update).
+[train] using --loss-weight-bias as base/init: [15.000, 8.000, 1.000]
+[warn] Backbone is forced frozen for Full MAML (ignoring unfreeze flags).
+[LoRA-MoE] LoRA params: 6561792
+[LoRA-MoE] Det head params: 14875060
+[LoRA-MoE] Seg head params: 9451531
+[LoRA-MoE] Cnt head params: 9448456
+[train] Learnable loss weights MLP enabled (Full MAML), multilayer_grads=off, arch=joint, grad_vec_normalize=l2, prior_fuse=add, joint_task_proj64=on, joint_out=leakyrelu, joint_leaky_slope=0.010, weight_net_dropout=0.000, seg_classwise_grad=off, cnt_extra_conv_grad=off
+[init] g0 initialized on rank0 from first inner-batch gradients and broadcast to all ranks.
+[stage1] epoch 1/100 step 20 | loss 711931.0344 | det 1.7895 seg 1.5579 cnt 686385.1078 | w [15.090, 7.998, 1.058]
+[stage1] epoch 1/100 step 40 | loss 442425.5439 | det 1.3515 seg 1.3731 cnt 426380.4074 | w [15.118, 7.997, 1.001]
+[stage1] epoch 1/100 step 60 | loss 309907.6649 | det 1.1505 seg 1.3777 cnt 298873.3526 | w [15.097, 7.998, 1.050]

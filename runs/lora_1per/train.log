@@ -1,0 +1,360 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 189, in _run_module_as_main
+  File "<frozen runpy>", line 159, in _get_module_details
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/lora_multitask/train.py", line 1034
+    if is_main_process and best_state is not None:
+    ^
+IndentationError: expected an indented block after 'if' statement on line 1033
+[lora] enabled: replaced_linear=48, trainable_params=1966080
+[params] trainable_total=35741127
+epoch 1/100 step 20 | loss 1035123.8656 | det 3.7569 seg 2.3468 cnt 1412447.0000
+epoch 1/100 | train 864886.5701 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 2/100 step 20 | loss 167784.8789 | det 3.3377 seg 1.3695 cnt 78221.0156
+epoch 2/100 | train 111436.8508 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 3/100 step 20 | loss 14669.4267 | det 0.9241 seg 0.6227 cnt 8320.7607
+epoch 3/100 | train 10480.6907 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 4/100 step 20 | loss 2054.5458 | det 0.3135 seg 1.4064 cnt 1839.6471
+epoch 4/100 | train 1506.0097 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 5/100 step 20 | loss 367.1872 | det 0.5051 seg 0.8505 cnt 158.3213
+epoch 5/100 | train 273.0839 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 6/100 step 20 | loss 70.9231 | det 0.6622 seg 0.5588 cnt 24.5064
+epoch 6/100 | train 55.1376 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 7/100 step 20 | loss 25.3229 | det 0.1913 seg 0.6189 cnt 11.0842
+epoch 7/100 | train 26.5864 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 8/100 step 20 | loss 22.8662 | det 1.2063 seg 0.3279 cnt 10.4751
+epoch 8/100 | train 22.1711 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 9/100 step 20 | loss 19.8231 | det 0.2677 seg 0.6057 cnt 7.2518
+epoch 9/100 | train 20.6383 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 10/100 step 20 | loss 26.1353 | det 0.2452 seg 0.5172 cnt 5.7621
+epoch 10/100 | train 22.6639 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 11/100 step 20 | loss 16.8866 | det 0.1993 seg 0.3323 cnt 4.1774
+epoch 11/100 | train 17.4982 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 12/100 step 20 | loss 15.3315 | det 0.2260 seg 0.2483 cnt 19.5808
+epoch 12/100 | train 16.3436 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 13/100 step 20 | loss 16.7773 | det 0.3667 seg 0.1948 cnt 23.5128
+epoch 13/100 | train 16.2775 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 14/100 step 20 | loss 17.3347 | det 0.1869 seg 0.3146 cnt 8.9622
+epoch 14/100 | train 16.7480 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 15/100 step 20 | loss 13.8221 | det 0.2950 seg 0.3203 cnt 5.3900
+epoch 15/100 | train 15.3357 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 16/100 step 20 | loss 14.0806 | det 0.2227 seg 0.5653 cnt 3.8000
+epoch 16/100 | train 14.4755 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 17/100 step 20 | loss 15.3145 | det 0.2413 seg 0.2754 cnt 5.1624
+epoch 17/100 | train 15.1532 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+[lora] enabled: replaced_linear=48, trainable_params=1966080
+[params] trainable_total=35741127
+epoch 1/100 step 20 | loss 962349.0344 | det 3.8103 seg 2.1934 cnt 1165477.5000
+epoch 1/100 | train 797357.9932 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 2/100 step 20 | loss 154869.6254 | det 3.2837 seg 1.3778 cnt 72535.5469
+epoch 2/100 | train 102953.9942 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 3/100 step 20 | loss 13926.4531 | det 0.9122 seg 0.6310 cnt 7849.8931
+epoch 3/100 | train 9937.6672 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+[lora] enabled: replaced_linear=48, trainable_params=1966080
+[params] trainable_total=35741127
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1024, 1024]
+bucket_view.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1024, 1024]
+bucket_view.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1024, 1024]
+bucket_view.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1024, 1024]
+bucket_view.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1024, 1024]
+bucket_view.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1024, 1024]
+bucket_view.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1024, 1024]
+bucket_view.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/autograd/graph.py:825: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1024, 1024]
+bucket_view.sizes() = [8, 1024, 1, 1], strides() = [1024, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:327.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+epoch 1/100 | train 1081300.4500 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 2/100 | train 1081543.9750 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 3/100 | train 1086114.5750 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 4/100 | train 1147382.9750 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 5/100 | train 998276.7875 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 6/100 | train 641589.9750 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 7/100 | train 421458.8438 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 8/100 | train 303906.9188 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 9/100 | train 196540.2719 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 10/100 | train 142933.1141 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 11/100 | train 92249.8578 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 12/100 | train 65827.2719 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 13/100 | train 45691.0664 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 14/100 | train 33582.7879 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 15/100 | train 25049.5824 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 16/100 | train 19935.0008 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 17/100 | train 14216.8084 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 18/100 | train 10284.8563 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 19/100 | train 7805.7941 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 20/100 | train 5687.0615 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 21/100 | train 4051.6499 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 22/100 | train 4020.8792 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 23/100 | train 2518.7214 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 24/100 | train 1847.4447 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 25/100 | train 1422.0027 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 26/100 | train 1266.0175 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 27/100 | train 863.2581 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 28/100 | train 798.4595 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 29/100 | train 527.6718 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 30/100 | train 364.8211 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 31/100 | train 293.5344 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 32/100 | train 262.1602 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 33/100 | train 183.0404 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 34/100 | train 132.1781 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 35/100 | train 121.2002 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 36/100 | train 93.3705 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 37/100 | train 94.7232 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 38/100 | train 53.9943 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 39/100 | train 43.1772 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 40/100 | train 29.6914 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 41/100 | train 31.8699 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 42/100 | train 30.6688 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 43/100 | train 24.4557 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 44/100 | train 16.5167 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 45/100 | train 20.2033 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 46/100 | train 18.4758 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 47/100 | train 14.1116 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 48/100 | train 20.7498 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 49/100 | train 20.4790 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 50/100 | train 13.2678 | val det 0.0000 seg 0.0000 miou 0.0000 cnt 0.0000 dens 0.000000e+00 mae 0.0000 total_mae 0.0000 | ap50 0.0000 | selected combo 100000000.000000
+epoch 51/100 | train 21.0932 | val det 0.3554 seg 0.9818 miou 0.5421 cnt 6.2752 dens 9.859662e-01 mae 5.2892 total_mae 30.1344 | ap50 0.2971 | selected combo 1.028290
+[ckpt] new best cached (combo 1.028290)
+epoch 52/100 | train 13.9495 | val det 0.3516 seg 1.0153 miou 0.5371 cnt 6.5593 dens 9.939248e-01 mae 5.5654 total_mae 28.7270 | ap50 0.3140 | selected combo 1.030832
+[ckpt] new best cached (combo 1.030832)
+epoch 53/100 | train 12.1092 | val det 0.3452 seg 1.0439 miou 0.5378 cnt 10.1140 dens 1.090648e+00 mae 9.0234 total_mae 58.9647 | ap50 0.3214 | selected combo 0.969939
+epoch 54/100 | train 15.3090 | val det 0.3414 seg 1.0273 miou 0.5441 cnt 9.1386 dens 1.084666e+00 mae 8.0539 total_mae 46.8521 | ap50 0.3210 | selected combo 0.989274
+epoch 55/100 | train 12.1047 | val det 0.3576 seg 1.0678 miou 0.5362 cnt 8.9599 dens 1.056355e+00 mae 7.9036 total_mae 45.4048 | ap50 0.3203 | selected combo 0.983022
+epoch 56/100 | train 16.4646 | val det 0.3475 seg 1.0566 miou 0.5330 cnt 7.7560 dens 1.014411e+00 mae 6.7416 total_mae 38.2022 | ap50 0.3344 | selected combo 1.015684
+epoch 57/100 | train 15.9434 | val det 0.3415 seg 1.0697 miou 0.5325 cnt 9.5365 dens 1.026651e+00 mae 8.5098 total_mae 53.8896 | ap50 0.3299 | selected combo 0.979964
+epoch 58/100 | train 11.7140 | val det 0.3376 seg 1.0961 miou 0.5346 cnt 6.7199 dens 9.853301e-01 mae 5.7346 total_mae 30.5703 | ap50 0.3403 | selected combo 1.049286
+[ckpt] new best cached (combo 1.049286)
+epoch 59/100 | train 7.5341 | val det 0.3397 seg 1.0812 miou 0.5173 cnt 8.3109 dens 9.920334e-01 mae 7.3188 total_mae 44.4472 | ap50 0.3447 | selected combo 0.998648
+epoch 60/100 | train 15.0570 | val det 0.3342 seg 1.0910 miou 0.5195 cnt 6.9761 dens 1.006809e+00 mae 5.9693 total_mae 33.8408 | ap50 0.3483 | selected combo 1.035343
+epoch 61/100 | train 12.4775 | val det 0.3333 seg 1.1008 miou 0.5214 cnt 6.6879 dens 1.026736e+00 mae 5.6611 total_mae 33.2751 | ap50 0.3450 | selected combo 1.043042
+epoch 62/100 | train 10.9846 | val det 0.3418 seg 1.0887 miou 0.5216 cnt 9.1467 dens 1.114888e+00 mae 8.0318 total_mae 50.0589 | ap50 0.3359 | selected combo 0.982094
+epoch 63/100 | train 10.9097 | val det 0.3343 seg 1.0364 miou 0.5181 cnt 8.6983 dens 1.172902e+00 mae 7.5254 total_mae 43.8841 | ap50 0.3557 | selected combo 1.006727
+epoch 64/100 | train 10.1559 | val det 0.3360 seg 1.0342 miou 0.5255 cnt 7.1340 dens 1.020422e+00 mae 6.1136 total_mae 33.0586 | ap50 0.3562 | selected combo 1.045210
+epoch 65/100 | train 8.4757 | val det 0.3371 seg 1.0483 miou 0.5313 cnt 11.7094 dens 1.025950e+00 mae 10.6835 total_mae 74.4720 | ap50 0.3447 | selected combo 0.969590
+epoch 66/100 | train 9.6395 | val det 0.3417 seg 1.0402 miou 0.5331 cnt 7.1178 dens 9.760002e-01 mae 6.1418 total_mae 33.7659 | ap50 0.3447 | selected combo 1.040575
+epoch 67/100 | train 12.7462 | val det 0.3351 seg 1.0352 miou 0.5408 cnt 7.1799 dens 9.783876e-01 mae 6.2015 total_mae 34.0189 | ap50 0.3542 | selected combo 1.056202
+[ckpt] new best cached (combo 1.056202)
+epoch 68/100 | train 9.9936 | val det 0.3328 seg 1.0340 miou 0.5398 cnt 7.0871 dens 9.907391e-01 mae 6.0963 total_mae 34.3049 | ap50 0.3485 | selected combo 1.052337
+epoch 69/100 | train 11.6950 | val det 0.3354 seg 1.0222 miou 0.5421 cnt 6.1962 dens 9.822071e-01 mae 5.2140 total_mae 26.7428 | ap50 0.3615 | selected combo 1.095409
+[ckpt] new best cached (combo 1.095409)
+epoch 70/100 | train 9.9474 | val det 0.3445 seg 1.0311 miou 0.5338 cnt 6.4125 dens 9.688108e-01 mae 5.4436 total_mae 28.3008 | ap50 0.3622 | selected combo 1.079638
+epoch 71/100 | train 9.4384 | val det 0.3336 seg 1.0307 miou 0.5367 cnt 6.6932 dens 9.735812e-01 mae 5.7197 total_mae 30.5555 | ap50 0.3542 | selected combo 1.065729
+epoch 72/100 | train 10.1247 | val det 0.3308 seg 1.0510 miou 0.5356 cnt 7.3748 dens 9.790177e-01 mae 6.3958 total_mae 36.8739 | ap50 0.3565 | selected combo 1.048398
+epoch 73/100 | train 8.7351 | val det 0.3265 seg 1.0574 miou 0.5411 cnt 9.0115 dens 9.729371e-01 mae 8.0386 total_mae 53.0188 | ap50 0.3592 | selected combo 1.024711
+epoch 74/100 | train 9.5011 | val det 0.3387 seg 1.0745 miou 0.5326 cnt 8.9628 dens 9.775582e-01 mae 7.9853 total_mae 52.5131 | ap50 0.3578 | selected combo 1.015605
+epoch 75/100 | train 9.0951 | val det 0.3314 seg 1.0450 miou 0.5364 cnt 7.7388 dens 9.805632e-01 mae 6.7582 total_mae 40.4490 | ap50 0.3601 | selected combo 1.044507
+epoch 76/100 | train 10.8553 | val det 0.3285 seg 1.0785 miou 0.5372 cnt 7.3695 dens 9.926329e-01 mae 6.3768 total_mae 36.7348 | ap50 0.3669 | selected combo 1.060880
+epoch 77/100 | train 13.0583 | val det 0.3347 seg 1.0913 miou 0.5334 cnt 5.9063 dens 9.623122e-01 mae 4.9440 total_mae 25.2067 | ap50 0.3630 | selected combo 1.098662
+[ckpt] new best cached (combo 1.098662)
+epoch 78/100 | train 7.9263 | val det 0.3356 seg 1.0784 miou 0.5409 cnt 6.5550 dens 9.699943e-01 mae 5.5850 total_mae 28.3901 | ap50 0.3633 | selected combo 1.083264
+epoch 79/100 | train 8.6809 | val det 0.3403 seg 1.0689 miou 0.5433 cnt 7.5260 dens 1.000644e+00 mae 6.5253 total_mae 33.2316 | ap50 0.3614 | selected combo 1.057976
+epoch 80/100 | train 8.9481 | val det 0.3354 seg 1.0749 miou 0.5396 cnt 6.4589 dens 9.785048e-01 mae 5.4804 total_mae 29.1705 | ap50 0.3655 | selected combo 1.087543
+epoch 81/100 | train 16.4117 | val det 0.3326 seg 1.1183 miou 0.5346 cnt 6.6555 dens 9.598376e-01 mae 5.6957 total_mae 32.2585 | ap50 0.3737 | selected combo 1.083894
+epoch 82/100 | train 12.7341 | val det 0.3363 seg 1.0654 miou 0.5425 cnt 6.4053 dens 9.628084e-01 mae 5.4425 total_mae 29.2390 | ap50 0.3699 | selected combo 1.096101
+epoch 83/100 | train 8.8828 | val det 0.3351 seg 1.0499 miou 0.5394 cnt 6.7596 dens 9.634979e-01 mae 5.7961 total_mae 33.8102 | ap50 0.3657 | selected combo 1.077646
+epoch 84/100 | train 11.3358 | val det 0.3450 seg 1.0621 miou 0.5340 cnt 5.9777 dens 9.608568e-01 mae 5.0168 total_mae 26.4893 | ap50 0.3676 | selected combo 1.100880
+[ckpt] new best cached (combo 1.100880)
+epoch 85/100 | train 14.1960 | val det 0.3374 seg 1.0566 miou 0.5305 cnt 5.9008 dens 9.513819e-01 mae 4.9494 total_mae 26.4878 | ap50 0.3643 | selected combo 1.096881
+epoch 86/100 | train 8.5955 | val det 0.3358 seg 1.0581 miou 0.5364 cnt 5.7007 dens 9.554226e-01 mae 4.7452 total_mae 25.1746 | ap50 0.3704 | selected combo 1.117513
+[ckpt] new best cached (combo 1.117513)
+epoch 87/100 | train 10.1498 | val det 0.3416 seg 1.0723 miou 0.5318 cnt 6.2653 dens 9.601431e-01 mae 5.3051 total_mae 29.7318 | ap50 0.3655 | selected combo 1.085773
+epoch 88/100 | train 12.4457 | val det 0.3426 seg 1.1225 miou 0.5376 cnt 7.2059 dens 9.849768e-01 mae 6.2209 total_mae 35.6580 | ap50 0.3689 | selected combo 1.067226
+epoch 89/100 | train 6.9603 | val det 0.3387 seg 1.0827 miou 0.5304 cnt 8.5842 dens 1.016257e+00 mae 7.5680 total_mae 45.5239 | ap50 0.3701 | selected combo 1.032638
+epoch 90/100 | train 6.3637 | val det 0.3462 seg 1.0752 miou 0.5313 cnt 7.3682 dens 9.649925e-01 mae 6.4032 total_mae 37.0935 | ap50 0.3735 | selected combo 1.060983
+epoch 91/100 | train 7.5895 | val det 0.3420 seg 1.0917 miou 0.5322 cnt 7.0022 dens 9.618865e-01 mae 6.0403 total_mae 32.9619 | ap50 0.3647 | selected combo 1.062490
+epoch 92/100 | train 9.1314 | val det 0.3482 seg 1.0748 miou 0.5327 cnt 6.8950 dens 9.624203e-01 mae 5.9326 total_mae 30.6788 | ap50 0.3545 | selected combo 1.055762
+epoch 93/100 | train 7.2365 | val det 0.3445 seg 1.0808 miou 0.5342 cnt 6.6214 dens 9.597764e-01 mae 5.6616 total_mae 31.1082 | ap50 0.3779 | selected combo 1.088803
+epoch 94/100 | train 10.2821 | val det 0.3415 seg 1.1054 miou 0.5326 cnt 7.4623 dens 9.527168e-01 mae 6.5096 total_mae 39.9016 | ap50 0.3712 | selected combo 1.057402
+epoch 95/100 | train 9.0503 | val det 0.3524 seg 1.0926 miou 0.5353 cnt 6.5347 dens 9.509905e-01 mae 5.5837 total_mae 29.0292 | ap50 0.3661 | selected combo 1.080503
+epoch 96/100 | train 9.7770 | val det 0.3388 seg 1.1134 miou 0.5319 cnt 5.9454 dens 9.539007e-01 mae 4.9915 total_mae 25.0308 | ap50 0.3668 | selected combo 1.099035
+epoch 97/100 | train 7.2799 | val det 0.3409 seg 1.1283 miou 0.5293 cnt 5.6091 dens 9.550064e-01 mae 4.6541 total_mae 24.7844 | ap50 0.3723 | selected combo 1.116477
+epoch 98/100 | train 9.0183 | val det 0.3405 seg 1.1010 miou 0.5271 cnt 5.8363 dens 9.634040e-01 mae 4.8729 total_mae 26.0998 | ap50 0.3787 | selected combo 1.111021
+epoch 99/100 | train 8.4296 | val det 0.3497 seg 1.0997 miou 0.5312 cnt 5.9772 dens 9.705883e-01 mae 5.0066 total_mae 26.5658 | ap50 0.3783 | selected combo 1.109247
+epoch 100/100 | train 8.8619 | val det 0.3462 seg 1.1003 miou 0.5349 cnt 6.1185 dens 9.596294e-01 mae 5.1589 total_mae 28.1685 | ap50 0.3720 | selected combo 1.100730
+[ckpt] saved best -> runs/lora_1per/best_combo.pt (combo 1.117513)
+[run] project: /data/xiangyuyue/ULLM-zf/fsl-20260209
+[run] ckpt: runs/lora_1per/best_combo.pt
+[run] stats: runs/lora_1per/stats_eval_best_combo_20260416_223152
+[run] cmd: /data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/bin/python -m lora_multitask.eval --checkpoint runs/lora_1per/best_combo.pt --tasks det,seg,cnt --stats-dir runs/lora_1per/stats_eval_best_combo_20260416_223152 --device cuda --image-size 448 --model-name dinov3_vitl16 --det-data-root /data/xiangyuyue/ULLM-zf/fsl-20260209/data/det/coco --det-ann-file /data/xiangyuyue/ULLM-zf/fsl-20260209/data/det/coco/annotations/instances_test.json --det-img-dir /data/xiangyuyue/ULLM-zf/fsl-20260209/data/det/coco/images/test --det-backbone-checkpoint /data/xiangyuyue/ULLM-zf/fsl-20260209/dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth --det-score-thr 0 --seg-data-dir /data/xiangyuyue/ULLM-zf/fsl-20260209/data/seg/nas/liyangguang103/newdataset/CD-SematicSeg/EvLab-SS/mydataset/test --seg-backbone-checkpoint /data/xiangyuyue/ULLM-zf/fsl-20260209/dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth --cnt-data-root /data/xiangyuyue/ULLM-zf/fsl-20260209/data/cnt/nas/liyangguang103/newdataset/CD-Count/DSACA --cnt-test-dir /data/xiangyuyue/ULLM-zf/fsl-20260209/data/cnt/nas/liyangguang103/newdataset/CD-Count/DSACA/test_data_class8 --cnt-backbone-checkpoint /data/xiangyuyue/ULLM-zf/fsl-20260209/dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth --det-use-coco-eval
+
+[lora] enabled: replaced_linear=48, trainable_params=1966080
+[multitask/eval] shared(full): total=464, matched=464 (100.0%), missing=0, unexpected=0
+[multitask/eval] detector: missing=464 (expected_shared_missing=464, real_missing=0), unexpected=0
+[multitask/eval] seg_head: missing=0, unexpected=0
+[multitask/eval] cnt_head: missing=0, unexpected=0
+[multitask/eval][det] processed 50/367
+[multitask/eval][det] processed 100/367
+[multitask/eval][det] processed 150/367
+[multitask/eval][det] processed 200/367
+[multitask/eval][det] processed 250/367
+[multitask/eval][det] processed 300/367
+[multitask/eval][det] processed 350/367
+loading annotations into memory...
+Done (t=0.49s)
+creating index...
+index created!
+Loading and preparing results...
+DONE (t=0.48s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=47.46s).
+Accumulating evaluation results...
+DONE (t=3.39s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.084
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.221
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.052
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.022
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.168
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.083
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.142
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.149
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.003
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.052
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.280
+Saved predictions to runs/lora_1per/stats_eval_best_combo_20260416_223152/predictions_det_instances_test.json
+Saved metrics to runs/lora_1per/stats_eval_best_combo_20260416_223152/metrics_det_instances_test.json
+[multitask/eval][seg] processed 0/1112
+[multitask/eval][seg] processed 10/1112
+[multitask/eval][seg] processed 20/1112
+[multitask/eval][seg] processed 30/1112
+[multitask/eval][seg] processed 40/1112
+[multitask/eval][seg] processed 50/1112
+[multitask/eval][seg] processed 60/1112
+[multitask/eval][seg] processed 70/1112
+[multitask/eval][seg] processed 80/1112
+[multitask/eval][seg] processed 90/1112
+[multitask/eval][seg] processed 100/1112
+[multitask/eval][seg] processed 110/1112
+[multitask/eval][seg] processed 120/1112
+[multitask/eval][seg] processed 130/1112
+[multitask/eval][seg] processed 140/1112
+[multitask/eval][seg] processed 150/1112
+[multitask/eval][seg] processed 160/1112
+[multitask/eval][seg] processed 170/1112
+[multitask/eval][seg] processed 180/1112
+[multitask/eval][seg] processed 190/1112
+[multitask/eval][seg] processed 200/1112
+[multitask/eval][seg] processed 210/1112
+[multitask/eval][seg] processed 220/1112
+[multitask/eval][seg] processed 230/1112
+[multitask/eval][seg] processed 240/1112
+[multitask/eval][seg] processed 250/1112
+[multitask/eval][seg] processed 260/1112
+[multitask/eval][seg] processed 270/1112
+[multitask/eval][seg] processed 280/1112
+[multitask/eval][seg] processed 290/1112
+[multitask/eval][seg] processed 300/1112
+[multitask/eval][seg] processed 310/1112
+[multitask/eval][seg] processed 320/1112
+[multitask/eval][seg] processed 330/1112
+[multitask/eval][seg] processed 340/1112
+[multitask/eval][seg] processed 350/1112
+[multitask/eval][seg] processed 360/1112
+[multitask/eval][seg] processed 370/1112
+[multitask/eval][seg] processed 380/1112
+[multitask/eval][seg] processed 390/1112
+[multitask/eval][seg] processed 400/1112
+[multitask/eval][seg] processed 410/1112
+[multitask/eval][seg] processed 420/1112
+[multitask/eval][seg] processed 430/1112
+[multitask/eval][seg] processed 440/1112
+[multitask/eval][seg] processed 450/1112
+[multitask/eval][seg] processed 460/1112
+[multitask/eval][seg] processed 470/1112
+[multitask/eval][seg] processed 480/1112
+[multitask/eval][seg] processed 490/1112
+[multitask/eval][seg] processed 500/1112
+[multitask/eval][seg] processed 510/1112
+[multitask/eval][seg] processed 520/1112
+[multitask/eval][seg] processed 530/1112
+[multitask/eval][seg] processed 540/1112
+[multitask/eval][seg] processed 550/1112
+[multitask/eval][seg] processed 560/1112
+[multitask/eval][seg] processed 570/1112
+[multitask/eval][seg] processed 580/1112
+[multitask/eval][seg] processed 590/1112
+[multitask/eval][seg] processed 600/1112
+[multitask/eval][seg] processed 610/1112
+[multitask/eval][seg] processed 620/1112
+[multitask/eval][seg] processed 630/1112
+[multitask/eval][seg] processed 640/1112
+[multitask/eval][seg] processed 650/1112
+[multitask/eval][seg] processed 660/1112
+[multitask/eval][seg] processed 670/1112
+[multitask/eval][seg] processed 680/1112
+[multitask/eval][seg] processed 690/1112
+[multitask/eval][seg] processed 700/1112
+[multitask/eval][seg] processed 710/1112
+[multitask/eval][seg] processed 720/1112
+[multitask/eval][seg] processed 730/1112
+[multitask/eval][seg] processed 740/1112
+[multitask/eval][seg] processed 750/1112
+[multitask/eval][seg] processed 760/1112
+[multitask/eval][seg] processed 770/1112
+[multitask/eval][seg] processed 780/1112
+[multitask/eval][seg] processed 790/1112
+[multitask/eval][seg] processed 800/1112
+[multitask/eval][seg] processed 810/1112
+[multitask/eval][seg] processed 820/1112
+[multitask/eval][seg] processed 830/1112
+[multitask/eval][seg] processed 840/1112
+[multitask/eval][seg] processed 850/1112
+[multitask/eval][seg] processed 860/1112
+[multitask/eval][seg] processed 870/1112
+[multitask/eval][seg] processed 880/1112
+[multitask/eval][seg] processed 890/1112
+[multitask/eval][seg] processed 900/1112
+[multitask/eval][seg] processed 910/1112
+[multitask/eval][seg] processed 920/1112
+[multitask/eval][seg] processed 930/1112
+[multitask/eval][seg] processed 940/1112
+[multitask/eval][seg] processed 950/1112
+[multitask/eval][seg] processed 960/1112
+[multitask/eval][seg] processed 970/1112
+[multitask/eval][seg] processed 980/1112
+[multitask/eval][seg] processed 990/1112
+[multitask/eval][seg] processed 1000/1112
+[multitask/eval][seg] processed 1010/1112
+[multitask/eval][seg] processed 1020/1112
+[multitask/eval][seg] processed 1030/1112
+[multitask/eval][seg] processed 1040/1112
+[multitask/eval][seg] processed 1050/1112
+[multitask/eval][seg] processed 1060/1112
+[multitask/eval][seg] processed 1070/1112
+[multitask/eval][seg] processed 1080/1112
+[multitask/eval][seg] processed 1090/1112
+[multitask/eval][seg] processed 1100/1112
+[multitask/eval][seg] processed 1110/1112
+Saved metrics to runs/lora_1per/stats_eval_best_combo_20260416_223152/metrics_seg_test.json
+Saved metrics to runs/lora_1per/stats_eval_best_combo_20260416_223152/metrics_cnt_test_data_class8.json
+[multitask/eval] wrote full-model summary: runs/lora_1per/stats_eval_best_combo_20260416_223152/multitask_full_model_eval_summary.json

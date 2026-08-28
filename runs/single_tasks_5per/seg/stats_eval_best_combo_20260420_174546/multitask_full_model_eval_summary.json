@@ -1,0 +1,46 @@
+{
+  "checkpoint": "/data/xiangyuyue/ULLM-zf/fsl-20260209/runs/single_tasks_5per/seg/best_combo.pt",
+  "stats_dir": "/data/xiangyuyue/ULLM-zf/fsl-20260209/runs/single_tasks_5per/seg/stats_eval_best_combo_20260420_174546",
+  "tasks": [
+    "seg"
+  ],
+  "meta": {
+    "checkpoint": "/data/xiangyuyue/ULLM-zf/fsl-20260209/runs/single_tasks_5per/seg/best_combo.pt",
+    "model_name": "dinov3_vitl16",
+    "image_size": 448,
+    "device": "cuda:0",
+    "det_fg_classes": 1,
+    "det_out_channels": 256,
+    "seg_num_classes": 11,
+    "cnt_num_classes": 8,
+    "use_lora": true,
+    "lora_cfg": {
+      "use_lora": true,
+      "lora_rank": 8,
+      "lora_alpha": 16.0,
+      "lora_dropout": 0.05
+    }
+  },
+  "results": {
+    "seg": {
+      "task": "segmentation",
+      "data_dir": "/data/xiangyuyue/ULLM-zf/fsl-20260209/data/seg/nas/liyangguang103/newdataset/CD-SematicSeg/EvLab-SS/mydataset/test",
+      "num_classes": 11,
+      "image_size": 448,
+      "per_class_iou": [
+        0.7930964733172209,
+        0.7375517462381543,
+        0.37058554840235175,
+        0.6870251597728151,
+        0.45513040416098216,
+        0.7550842177928397,
+        0.5232307371874895,
+        0.487156512965905,
+        0.49807988190842684,
+        0.5334815580968607,
+        0.9177551961182444
+      ],
+      "miou": 0.6143797669055718
+    }
+  }
+}

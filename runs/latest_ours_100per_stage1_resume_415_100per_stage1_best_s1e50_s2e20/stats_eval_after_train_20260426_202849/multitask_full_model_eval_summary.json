@@ -1,0 +1,110 @@
+{
+  "meta": {
+    "det_fg_classes": 20,
+    "seg_num_classes": 11,
+    "cnt_num_classes": 8,
+    "use_lora": true,
+    "use_lora_moe": true,
+    "model_name": "dinov3_vitl16",
+    "image_size": 448,
+    "lora_cfg": {
+      "use_lora": true,
+      "lora_rank": 8,
+      "lora_alpha": 16.0,
+      "lora_dropout": 0.05
+    },
+    "moe_cfg": {
+      "use_lora_moe": true,
+      "use_private_experts": true,
+      "use_shared_experts": true,
+      "task_num": 3,
+      "lora_rank": 8,
+      "num_experts_private": 3,
+      "num_experts_shared": 6,
+      "moe_k_private": 2,
+      "moe_k_shared": 2
+    }
+  },
+  "tasks": [
+    "det",
+    "seg",
+    "cnt"
+  ],
+  "results": {
+    "det": {
+      "AP@[.50:.95]": 0.38441419449092606,
+      "AP@0.50": 0.6162477595704494,
+      "AP@0.75": 0.40930968034969056,
+      "AP_small": 0.022879002305637195,
+      "AP_medium": 0.27842862589874734,
+      "AP_large": 0.6253144668971683,
+      "AR@1": 0.2695468779330233,
+      "AR@10": 0.43072729358964085,
+      "AR@100": 0.4517494463917743,
+      "AR_small": 0.04374324184107197,
+      "AR_medium": 0.3374221052440467,
+      "AR_large": 0.7068173224947722,
+      "task": "detection",
+      "ann_file": "/data/xiangyuyue/ULLM-zf/fsl-20260209/data/det/coco/annotations/instances_test.json",
+      "img_dir": "/data/xiangyuyue/ULLM-zf/fsl-20260209/data/det/coco/images/test",
+      "score_thr": 0.0,
+      "num_predictions": 164741,
+      "use_coco_eval": true
+    },
+    "seg": {
+      "task": "segmentation",
+      "data_dir": "/data/xiangyuyue/ULLM-zf/fsl-20260209/data/seg/nas/liyangguang103/newdataset/CD-SematicSeg/EvLab-SS/mydataset/test",
+      "num_classes": 11,
+      "image_size": 448,
+      "ignore_indices": [
+        255,
+        11
+      ],
+      "per_class_iou": [
+        0.9563338656509772,
+        0.8781477620650252,
+        0.8332990713702635,
+        0.8259249187166243,
+        0.722082679107606,
+        0.8729695324872194,
+        0.7283754556240087,
+        0.7289240896653771,
+        0.7945835571869682,
+        0.8026867944637796,
+        0.9651061586696924
+      ],
+      "miou": 0.8280394440915946
+    },
+    "cnt": {
+      "task": "counting",
+      "data_root": "/data/xiangyuyue/ULLM-zf/fsl-20260209/data/cnt/nas/liyangguang103/newdataset/CD-Count/DSACA",
+      "test_dir": "/data/xiangyuyue/ULLM-zf/fsl-20260209/data/cnt/nas/liyangguang103/newdataset/CD-Count/DSACA/test_data_class8",
+      "num_classes": 8,
+      "image_size": 448,
+      "keep_aspect": true,
+      "per_class_mae": [
+        6.348065785656642,
+        1.5461173585498516,
+        4.035769082551455,
+        2.0835423970034808,
+        0.904768872085403,
+        1.7051412227281424,
+        0.3217864438880925,
+        3.4650205875901308
+      ],
+      "per_class_rmse": [
+        10.1623611447864,
+        2.506776513845851,
+        6.144285292615656,
+        3.540217191720858,
+        1.5618192849073687,
+        2.7618288600178906,
+        0.7430068462584586,
+        5.143420300942928
+      ],
+      "mae": 2.5512764687566496,
+      "rmse": 4.070464429386926,
+      "n_images": 548
+    }
+  }
+}

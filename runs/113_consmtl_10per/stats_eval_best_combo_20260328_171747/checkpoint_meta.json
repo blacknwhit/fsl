@@ -1,0 +1,55 @@
+{
+  "checkpoint": "/data/xiangyuyue/ULLM-zf/fsl-20260209/runs/113_consmtl_10per/best_combo.pt",
+  "device": "cuda:0",
+  "model_config": {
+    "model_name": "dinov3_vitl16",
+    "image_size": 448,
+    "use_lora": true,
+    "lora_rank": 8,
+    "lora_alpha": 16.0,
+    "lora_dropout": 0.05,
+    "det_num_classes": 20,
+    "seg_num_classes": 11,
+    "cnt_num_classes": 8,
+    "det_out_channels": 256,
+    "det_train_backbone": false,
+    "seg_train_backbone": false,
+    "cnt_train_backbone": false
+  },
+  "checkpoint_info": {
+    "model_config": {
+      "model_name": "dinov3_vitl16",
+      "image_size": 448,
+      "use_lora": true,
+      "lora_rank": 8,
+      "lora_alpha": 16.0,
+      "lora_dropout": 0.05,
+      "det_num_classes": 20,
+      "seg_num_classes": 11,
+      "cnt_num_classes": 8,
+      "det_out_channels": 256,
+      "det_train_backbone": false,
+      "seg_train_backbone": false,
+      "cnt_train_backbone": false
+    },
+    "cons_config": {
+      "cons_lambda": 1.0,
+      "cons_extra_clip_factor": 0.1
+    },
+    "train_strategy": "consmtl_lora_heads",
+    "metrics": {
+      "best_metric": 1.5486042528654016,
+      "best_epoch": 144,
+      "val_det_loss": 0.2999346274774594,
+      "val_seg_loss": 1.3785334072100057,
+      "val_seg_miou": 0.6372758775028395,
+      "val_cnt_loss": 5.318004217111006,
+      "val_cnt_density_mse": 0.9267617910985321,
+      "val_cnt_mae": 4.391242410961725,
+      "val_cnt_total_mae": 32.759976688223,
+      "val_ap50": 0.6836023911391155,
+      "selected_metric": 1.5486042528654016
+    },
+    "epoch": 144
+  }
+}

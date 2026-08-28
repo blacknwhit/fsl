@@ -1,0 +1,323 @@
+[train] fixed task weights det/seg/cnt = [15.000, 8.000, 1.000]
+[train] mi_loss_weight = 0.005000
+[train] trainable params | shared=42275328 det=14875060 seg=9451531 cnt=9448456
+[train] primary task loader = seg
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/train.py", line 884, in <module>
+    main()
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/train.py", line 753, in main
+    det_loss, seg_loss, cnt_loss, cnt_stats = _compute_losses(
+                                              ^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/train.py", line 658, in _compute_losses
+    pred_dens, pred_counts = model(
+                             ^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/models.py", line 396, in forward
+    return self.forward_cnt(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/models.py", line 372, in forward_cnt
+    tokens = self.shared.forward_features(x, task_id=self.TASK_ID_CNT)["x_norm_patchtokens"]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/models.py", line 165, in forward_features
+    return self._forward_features_with_task_gated_lora_moe(x, task_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/models.py", line 186, in _forward_features_with_task_gated_lora_moe
+    x = wrapped_block(x, task_id=task_id, rope=rope)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/dinov3_moe_wrapper.py", line 223, in forward
+    attn_out = self.moe_attn(self.block.norm1(x), task_id=task_id, rope=rope)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/dinov3_moe_wrapper.py", line 104, in forward
+    q = self.q_proj.map(x, task_id=task_id)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/lora_moe.py", line 170, in map
+    lora_A = self.lora_A_map[task_id, self.batch_expert]
+             ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 790.00 MiB. GPU 0 has a total capacity of 79.18 GiB of which 468.31 MiB is free. Including non-PyTorch memory, this process has 78.71 GiB memory in use. Of the allocated memory 77.57 GiB is allocated by PyTorch, and 478.34 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[train] fixed task weights det/seg/cnt = [15.000, 8.000, 1.000]
+[train] mi_loss_weight = 0.005000
+[train] trainable params | shared=42275328 det=14875060 seg=9451531 cnt=9448456
+[train] primary task loader = seg
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/train.py", line 884, in <module>
+    main()
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/train.py", line 753, in main
+    det_loss, seg_loss, cnt_loss, cnt_stats = _compute_losses(
+                                              ^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/train.py", line 658, in _compute_losses
+    pred_dens, pred_counts = model(
+                             ^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/models.py", line 396, in forward
+    return self.forward_cnt(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/models.py", line 372, in forward_cnt
+    tokens = self.shared.forward_features(x, task_id=self.TASK_ID_CNT)["x_norm_patchtokens"]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/models.py", line 165, in forward_features
+    return self._forward_features_with_task_gated_lora_moe(x, task_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/models.py", line 186, in _forward_features_with_task_gated_lora_moe
+    x = wrapped_block(x, task_id=task_id, rope=rope)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/dinov3_moe_wrapper.py", line 223, in forward
+    attn_out = self.moe_attn(self.block.norm1(x), task_id=task_id, rope=rope)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/dinov3_moe_wrapper.py", line 104, in forward
+    q = self.q_proj.map(x, task_id=task_id)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/mod_squad_plaintrain/lora_moe.py", line 170, in map
+    lora_A = self.lora_A_map[task_id, self.batch_expert]
+             ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 790.00 MiB. GPU 0 has a total capacity of 79.18 GiB of which 468.31 MiB is free. Including non-PyTorch memory, this process has 78.71 GiB memory in use. Of the allocated memory 77.57 GiB is allocated by PyTorch, and 478.34 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[train] fixed task weights det/seg/cnt = [15.000, 8.000, 1.000]
+[train] mi_loss_weight = 0.005000
+[train] trainable params | shared=42275328 det=14875060 seg=9451531 cnt=9448456
+[train] primary task loader = seg
+[diag][cnt][train] epoch 1/150 step 1 | dens(mean 7.077381e-01/4.266140e-05, ratio 1.659e+04) | count(mean 142045.875/8.562, ratio 1.659e+04, mae 142037.312, total 1136367.000/68.499) | pixels 200704
+[train] epoch 1/150 step 20 | loss 446260.9000 | det 1.3825 seg 2.3002 cnt 446221.7594 mi 0.0268
+[train] epoch 1/150 step 40 | loss 300440.1895 | det 0.9552 seg 2.1861 cnt 300408.3727 mi -0.2778
+[train] epoch 1/150 step 60 | loss 227732.0607 | det 0.7507 seg 2.1937 cnt 227703.2549 mi -0.8524
+[train] epoch 1/150 step 80 | loss 181868.9749 | det 0.6557 seg 2.1462 cnt 181841.9774 mi -1.5785
+[train] epoch 1/150 step 100 | loss 150520.9342 | det 0.6055 seg 2.1107 cnt 150494.9773 mi -2.3266
+[train] epoch 1/150 step 120 | loss 127754.0826 | det 0.5655 seg 2.0981 cnt 127728.8311 mi -3.1117
+[train] epoch 1/150 step 140 | loss 110596.2603 | det 0.5584 seg 2.0916 cnt 110571.1711 mi -3.8778
+[train] epoch 1/150 step 160 | loss 97366.4446 | det 0.5393 seg 2.0912 cnt 97341.6482 mi -4.6307
+[train] epoch 1/150 step 180 | loss 86852.6385 | det 0.5387 seg 2.0872 cnt 86827.8870 mi -5.3899
+[train] epoch 1/150 step 200 | loss 78324.8988 | det 0.5398 seg 2.0879 cnt 78300.1279 mi -6.0546
+[train] epoch 1/150 step 220 | loss 71284.9138 | det 0.5395 seg 2.0883 cnt 71260.1479 mi -6.6117
+[train] epoch 1/150 step 240 | loss 65390.1976 | det 0.5405 seg 2.0875 cnt 65365.4258 mi -7.0835
+[train] epoch 1/150 step 260 | loss 60384.4848 | det 0.5314 seg 2.0953 cnt 60359.7878 mi -7.4877
+[train] epoch 1/150 step 280 | loss 56084.0372 | det 0.5311 seg 2.0957 cnt 56059.3450 mi -7.8388
+[train] epoch 1/150 step 300 | loss 52352.8773 | det 0.5226 seg 2.0906 cnt 52328.3534 mi -8.1464
+[train] epoch 1/150 step 320 | loss 49085.3324 | det 0.5158 seg 2.0887 cnt 49060.9280 mi -8.4232
+[train] epoch 1/150 | loss 46337.0584 | det 0.5127 seg 2.0835 cnt 46312.7437 mi -8.6617
+[val] epoch 1 | det 0.3699 seg 3.2492 miou 0.0280 cnt 18.7533 dens 1.022856e+00 mae 17.7305 total_mae 121.7270 | ap50 0.0000 | combo 0.084358
+[ckpt] saved new best -> runs/mod_squad_plaintrain_10per/best_combo.pt (combo 0.084358)
+[ckpt] saved last -> runs/mod_squad_plaintrain_10per/last.pt
+[diag][cnt][train] epoch 2/150 step 1 | dens(mean 9.705094e-05/6.414905e-05, ratio 1.513e+00) | count(mean 19.479/12.875, ratio 1.513e+00, mae 15.342, total 155.828/103.000) | pixels 200704
+[train] epoch 2/150 step 20 | loss 39.5212 | det 0.3912 seg 2.1138 cnt 16.8075 mi -12.7617
+[train] epoch 2/150 step 40 | loss 38.3245 | det 0.3910 seg 2.1478 cnt 15.3410 mi -12.7892
+[train] epoch 2/150 step 60 | loss 37.5668 | det 0.3927 seg 2.1827 cnt 14.2788 mi -12.8119
+[train] epoch 2/150 step 80 | loss 35.8135 | det 0.3774 seg 2.1248 cnt 13.2180 mi -12.8280
+[train] epoch 2/150 step 100 | loss 35.1233 | det 0.4070 seg 2.0821 cnt 12.4256 mi -12.8411
+[train] epoch 2/150 step 120 | loss 34.5655 | det 0.4083 seg 2.0607 cnt 12.0199 mi -12.8517
+[train] epoch 2/150 step 140 | loss 34.1315 | det 0.4291 seg 2.0243 cnt 11.5655 mi -12.8605
+[train] epoch 2/150 step 160 | loss 33.5821 | det 0.4282 seg 2.0113 cnt 11.1328 mi -12.8677
+[train] epoch 2/150 step 180 | loss 33.0967 | det 0.4269 seg 2.0076 cnt 10.6967 mi -12.8743
+[train] epoch 2/150 step 200 | loss 33.4388 | det 0.4354 seg 1.9961 cnt 11.0033 mi -12.8804
+[train] epoch 2/150 step 220 | loss 33.3213 | det 0.4318 seg 1.9789 cnt 11.0776 mi -12.8860
+[train] epoch 2/150 step 240 | loss 33.1835 | det 0.4329 seg 1.9729 cnt 10.9716 mi -12.8911
+[train] epoch 2/150 step 260 | loss 32.8655 | det 0.4315 seg 1.9710 cnt 10.6896 mi -12.8957
+[train] epoch 2/150 step 280 | loss 32.6984 | det 0.4351 seg 1.9664 cnt 10.5043 mi -12.8997
+[train] epoch 2/150 step 300 | loss 32.5368 | det 0.4387 seg 1.9604 cnt 10.3372 mi -12.9016
+[train] epoch 2/150 step 320 | loss 32.3886 | det 0.4416 seg 1.9589 cnt 10.1576 mi -12.9052
+[train] epoch 2/150 | loss 32.2974 | det 0.4345 seg 1.9534 cnt 10.2169 mi -12.9084
+[val] epoch 2 | det 0.3723 seg 1.8378 miou 0.0965 cnt 6.7535 dens 9.883476e-01 mae 5.7651 total_mae 40.9968 | ap50 0.0000 | combo 0.269969
+[ckpt] saved new best -> runs/mod_squad_plaintrain_10per/best_combo.pt (combo 0.269969)
+[ckpt] saved last -> runs/mod_squad_plaintrain_10per/last.pt
+[diag][cnt][train] epoch 3/150 step 1 | dens(mean 4.094695e-05/3.643435e-05, ratio 1.124e+00) | count(mean 8.218/7.313, ratio 1.124e+00, mae 6.536, total 65.746/58.500) | pixels 200704
+[train] epoch 3/150 step 20 | loss 34.1396 | det 0.4859 seg 1.8168 cnt 12.3818 mi -12.9606
+[train] epoch 3/150 step 40 | loss 31.4056 | det 0.4383 seg 1.8471 cnt 10.1193 mi -12.9608
+[train] epoch 3/150 step 60 | loss 31.0648 | det 0.4500 seg 1.9104 cnt 9.0975 mi -12.9616
+[train] epoch 3/150 step 80 | loss 30.8036 | det 0.4273 seg 1.9108 cnt 9.1726 mi -12.9620
+[train] epoch 3/150 step 100 | loss 30.4882 | det 0.4223 seg 1.9053 cnt 8.9760 mi -12.9628
+[train] epoch 3/150 step 120 | loss 30.4688 | det 0.4184 seg 1.9071 cnt 9.0004 mi -12.9634
+[train] epoch 3/150 step 140 | loss 30.0685 | det 0.4163 seg 1.8954 cnt 8.7260 mi -12.9641
+[train] epoch 3/150 step 160 | loss 30.4987 | det 0.4243 seg 1.9143 cnt 8.8847 mi -12.9647
+[train] epoch 3/150 step 180 | loss 30.1485 | det 0.4192 seg 1.9123 cnt 8.6270 mi -12.9653
+[train] epoch 3/150 step 200 | loss 30.1295 | det 0.4179 seg 1.9052 cnt 8.6844 mi -12.9659
+[train] epoch 3/150 step 220 | loss 30.3904 | det 0.4239 seg 1.9014 cnt 8.8863 mi -12.9664
+[train] epoch 3/150 step 240 | loss 30.4238 | det 0.4282 seg 1.8957 cnt 8.9002 mi -12.9668
+[train] epoch 3/150 step 260 | loss 30.7044 | det 0.4347 seg 1.8978 cnt 9.0665 mi -12.9672
+[train] epoch 3/150 step 280 | loss 30.4675 | det 0.4298 seg 1.8964 cnt 8.9140 mi -12.9676
+[train] epoch 3/150 step 300 | loss 30.4635 | det 0.4306 seg 1.9004 cnt 8.8659 mi -12.9663
+[train] epoch 3/150 step 320 | loss 30.4801 | det 0.4353 seg 1.9031 cnt 8.7916 mi -12.9667
+[train] epoch 3/150 | loss 30.3008 | det 0.4329 seg 1.8980 cnt 8.6879 mi -12.9671
+[val] epoch 3 | det 0.3676 seg 1.6661 miou 0.1343 cnt 7.2324 dens 9.900849e-01 mae 6.2423 total_mae 47.9738 | ap50 0.0000 | combo 0.294505
+[ckpt] saved new best -> runs/mod_squad_plaintrain_10per/best_combo.pt (combo 0.294505)
+[ckpt] saved last -> runs/mod_squad_plaintrain_10per/last.pt
+[diag][cnt][train] epoch 4/150 step 1 | dens(mean 3.299832e-05/5.574176e-05, ratio 5.920e-01) | count(mean 6.623/11.188, ratio 5.920e-01, mae 7.513, total 52.983/89.501) | pixels 200704
+[train] epoch 4/150 step 20 | loss 29.9547 | det 0.5088 seg 1.8315 cnt 7.7351 mi -12.9739
+[train] epoch 4/150 step 40 | loss 30.8033 | det 0.4682 seg 1.9360 cnt 8.3579 mi -12.9753
+[train] epoch 4/150 step 60 | loss 31.7043 | det 0.4430 seg 1.9107 cnt 9.8384 mi -12.9763
+[train] epoch 4/150 step 80 | loss 31.1382 | det 0.4528 seg 1.9043 cnt 9.1762 mi -12.9772
+[train] epoch 4/150 step 100 | loss 31.1096 | det 0.4473 seg 1.9012 cnt 9.2552 mi -12.9782
+[train] epoch 4/150 step 120 | loss 30.6011 | det 0.4409 seg 1.9001 cnt 8.8514 mi -12.9785
+[train] epoch 4/150 step 140 | loss 30.6886 | det 0.4377 seg 1.9043 cnt 8.9533 mi -12.9790
+[train] epoch 4/150 step 160 | loss 30.5790 | det 0.4458 seg 1.8911 cnt 8.8284 mi -12.9793
+[train] epoch 4/150 step 180 | loss 30.3726 | det 0.4467 seg 1.8868 cnt 8.6429 mi -12.9797
+[train] epoch 4/150 step 200 | loss 30.4053 | det 0.4549 seg 1.8898 cnt 8.5282 mi -12.9799
+[train] epoch 4/150 step 220 | loss 30.8352 | det 0.4579 seg 1.9014 cnt 8.8204 mi -12.9802
+[train] epoch 4/150 step 240 | loss 30.5217 | det 0.4523 seg 1.8908 cnt 8.6763 mi -12.9805
+[train] epoch 4/150 step 260 | loss 30.6174 | det 0.4498 seg 1.8955 cnt 8.7708 mi -12.9810
+[train] epoch 4/150 step 280 | loss 30.6340 | det 0.4498 seg 1.8912 cnt 8.8233 mi -12.9813
+[train] epoch 4/150 step 300 | loss 30.3305 | det 0.4453 seg 1.8786 cnt 8.6864 mi -12.9799
+[train] epoch 4/150 step 320 | loss 30.3244 | det 0.4535 seg 1.8792 cnt 8.5532 mi -12.9800
+[train] epoch 4/150 | loss 30.2491 | det 0.4538 seg 1.8744 cnt 8.5121 mi -12.9804
+[val] epoch 4 | det 0.4125 seg 1.9388 miou 0.1106 cnt 6.2757 dens 9.846116e-01 mae 5.2911 total_mae 27.9330 | ap50 0.0000 | combo 0.299559
+[ckpt] saved new best -> runs/mod_squad_plaintrain_10per/best_combo.pt (combo 0.299559)
+[ckpt] saved last -> runs/mod_squad_plaintrain_10per/last.pt
+[diag][cnt][train] epoch 5/150 step 1 | dens(mean 2.888583e-05/3.238642e-05, ratio 8.919e-01) | count(mean 5.798/6.500, ratio 8.919e-01, mae 4.666, total 46.380/52.001) | pixels 200704
+[train] epoch 5/150 step 20 | loss 29.3023 | det 0.4721 seg 1.9098 cnt 7.0073 mi -12.9851
+[train] epoch 5/150 step 40 | loss 29.4413 | det 0.4501 seg 1.8988 cnt 7.5640 mi -12.9843
+[train] epoch 5/150 step 60 | loss 29.4433 | det 0.4528 seg 1.8916 cnt 7.5834 mi -12.9843
+[train] epoch 5/150 step 80 | loss 29.4818 | det 0.4799 seg 1.8522 cnt 7.5309 mi -12.9845
+[train] epoch 5/150 step 100 | loss 29.8262 | det 0.4767 seg 1.8576 cnt 7.8800 mi -12.9845
+[train] epoch 5/150 step 120 | loss 29.6910 | det 0.4756 seg 1.8448 cnt 7.8636 mi -12.9842
+[train] epoch 5/150 step 140 | loss 30.2312 | det 0.4857 seg 1.8466 cnt 8.2379 mi -12.9843
+[train] epoch 5/150 step 160 | loss 30.6095 | det 0.4802 seg 1.8508 cnt 8.6660 mi -12.9845
+[train] epoch 5/150 step 180 | loss 30.4668 | det 0.4856 seg 1.8479 cnt 8.4654 mi -12.9846
+[train] epoch 5/150 step 200 | loss 30.6234 | det 0.4901 seg 1.8519 cnt 8.5212 mi -12.9847
+[train] epoch 5/150 step 220 | loss 30.6318 | det 0.4964 seg 1.8531 cnt 8.4256 mi -12.9848
+[train] epoch 5/150 step 240 | loss 30.5903 | det 0.4984 seg 1.8447 cnt 8.4220 mi -12.9845
+[train] epoch 5/150 step 260 | loss 30.6894 | det 0.5005 seg 1.8584 cnt 8.3798 mi -12.9844
+[train] epoch 5/150 step 280 | loss 30.6407 | det 0.4943 seg 1.8602 cnt 8.4095 mi -12.9845
+[train] epoch 5/150 step 300 | loss 30.9625 | det 0.4934 seg 1.8554 cnt 8.7826 mi -12.9829
+[train] epoch 5/150 step 320 | loss 30.9480 | det 0.4969 seg 1.8565 cnt 8.7076 mi -12.9830
+[train] epoch 5/150 | loss 30.7930 | det 0.4940 seg 1.8480 cnt 8.6643 mi -12.9830
+[val] epoch 5 | det 0.4191 seg 2.2798 miou 0.0763 cnt 6.3589 dens 9.865438e-01 mae 5.3723 total_mae 35.5227 | ap50 0.0009 | combo 0.263431
+[ckpt] saved last -> runs/mod_squad_plaintrain_10per/last.pt
+[diag][cnt][train] epoch 6/150 step 1 | dens(mean 2.584246e-05/4.577643e-05, ratio 5.645e-01) | count(mean 5.187/9.188, ratio 5.645e-01, mae 6.030, total 41.493/73.500) | pixels 200704
+[train] epoch 6/150 step 20 | loss 27.2767 | det 0.4031 seg 1.8777 cnt 6.2743 mi -12.9851
+[train] epoch 6/150 step 40 | loss 30.7129 | det 0.4496 seg 1.8611 cnt 9.1447 mi -12.9843
+[train] epoch 6/150 step 60 | loss 30.1602 | det 0.4606 seg 1.8765 cnt 8.3035 mi -12.9842
+[train] epoch 6/150 step 80 | loss 30.0113 | det 0.4603 seg 1.8389 cnt 8.4606 mi -12.9842
+[train] epoch 6/150 step 100 | loss 30.5463 | det 0.4736 seg 1.8682 cnt 8.5614 mi -12.9841
+[train] epoch 6/150 step 120 | loss 30.5023 | det 0.4983 seg 1.8627 cnt 8.1917 mi -12.9839
+[train] epoch 6/150 step 140 | loss 30.7397 | det 0.4911 seg 1.8608 cnt 8.5516 mi -12.9839
+[train] epoch 6/150 step 160 | loss 30.4163 | det 0.4819 seg 1.8578 cnt 8.3900 mi -12.9838
+[train] epoch 6/150 step 180 | loss 30.3109 | det 0.4769 seg 1.8537 cnt 8.3930 mi -12.9836
+[train] epoch 6/150 step 200 | loss 30.7911 | det 0.4759 seg 1.8530 cnt 8.8944 mi -12.9836
+[train] epoch 6/150 step 220 | loss 30.8931 | det 0.4784 seg 1.8428 cnt 9.0398 mi -12.9835
+[train] epoch 6/150 step 240 | loss 30.8331 | det 0.4817 seg 1.8437 cnt 8.9234 mi -12.9836
+[train] epoch 6/150 step 260 | loss 30.7766 | det 0.4807 seg 1.8400 cnt 8.9111 mi -12.9838
+[train] epoch 6/150 step 280 | loss 30.9314 | det 0.4964 seg 1.8428 cnt 8.8085 mi -12.9839
+[train] epoch 6/150 step 300 | loss 30.6284 | det 0.4910 seg 1.8372 cnt 8.6301 mi -12.9824
+[train] epoch 6/150 step 320 | loss 30.7175 | det 0.4984 seg 1.8358 cnt 8.6198 mi -12.9826
+[train] epoch 6/150 | loss 30.6908 | det 0.5003 seg 1.8293 cnt 8.6166 mi -12.9828
+[val] epoch 6 | det 0.4327 seg 1.5763 miou 0.1493 cnt 11.2420 dens 9.954800e-01 mae 10.2465 total_mae 67.3293 | ap50 0.0028 | combo 0.249733
+[ckpt] saved last -> runs/mod_squad_plaintrain_10per/last.pt
+[diag][cnt][train] epoch 7/150 step 1 | dens(mean 2.682185e-05/2.989538e-05, ratio 8.972e-01) | count(mean 5.383/6.000, ratio 8.972e-01, mae 3.794, total 43.066/48.001) | pixels 200704
+[train] epoch 7/150 step 20 | loss 29.0454 | det 0.5515 seg 1.6587 cnt 7.5676 mi -12.9835
+[train] epoch 7/150 step 40 | loss 28.5138 | det 0.4792 seg 1.7556 cnt 7.3458 mi -12.9849
+[train] epoch 7/150 step 60 | loss 29.0842 | det 0.4845 seg 1.7742 cnt 7.6884 mi -12.9855
+[train] epoch 7/150 step 80 | loss 29.3055 | det 0.4943 seg 1.7829 cnt 7.6926 mi -12.9858
+[train] epoch 7/150 step 100 | loss 29.7314 | det 0.4980 seg 1.7816 cnt 8.0728 mi -12.9865
+[train] epoch 7/150 step 120 | loss 30.0721 | det 0.5042 seg 1.7952 cnt 8.2130 mi -12.9866
+[train] epoch 7/150 step 140 | loss 29.7879 | det 0.4966 seg 1.7786 cnt 8.1748 mi -12.9871
+[train] epoch 7/150 step 160 | loss 29.8236 | det 0.4906 seg 1.7912 cnt 8.2004 mi -12.9871
+[train] epoch 7/150 step 180 | loss 29.5789 | det 0.4875 seg 1.7907 cnt 8.0051 mi -12.9868
+[train] epoch 7/150 step 200 | loss 29.9904 | det 0.4849 seg 1.7982 cnt 8.3958 mi -12.9867
+[train] epoch 7/150 step 220 | loss 29.7023 | det 0.4785 seg 1.7944 cnt 8.2348 mi -12.9866
+[train] epoch 7/150 step 240 | loss 30.2257 | det 0.4915 seg 1.7984 cnt 8.5303 mi -12.9866
+[train] epoch 7/150 step 260 | loss 30.0524 | det 0.4896 seg 1.7965 cnt 8.4016 mi -12.9866
+[train] epoch 7/150 step 280 | loss 30.0498 | det 0.4923 seg 1.8008 cnt 8.3238 mi -12.9868
+[train] epoch 7/150 step 300 | loss 30.0286 | det 0.4884 seg 1.8045 cnt 8.3324 mi -12.9853
+[train] epoch 7/150 step 320 | loss 29.9571 | det 0.4875 seg 1.8022 cnt 8.2919 mi -12.9855
+[train] epoch 7/150 | loss 29.9877 | det 0.4891 seg 1.8019 cnt 8.3002 mi -12.9856
+[train] fixed task weights det/seg/cnt = [15.000, 8.000, 1.000]
+[train] mi_loss_weight = 0.005000
+[train] trainable params | shared=16323072 det=14875060 seg=9451531 cnt=9448456
+[train] primary task loader = seg
+[diag][cnt][train] epoch 1/150 step 1 | dens(mean 6.799487e-01/7.006606e-05, ratio 9.704e+03) | count(mean 136468.438/14.063, ratio 9.704e+03, mae 136454.375, total 1091747.500/112.500) | pixels 200704
+[train] epoch 1/150 step 20 | loss 425096.5984 | det 1.3493 seg 2.2029 cnt 425058.7367 mi -0.1048
+[train] epoch 1/150 step 40 | loss 284245.9725 | det 0.9871 seg 2.2133 cnt 284213.4670 mi -1.3514
+[train] epoch 1/150 step 60 | loss 213046.3975 | det 0.8164 seg 2.1911 cnt 213016.6391 mi -3.2121
+[train] epoch 1/150 step 80 | loss 168572.0214 | det 0.7360 seg 2.1616 cnt 168543.7137 mi -5.1662
+[train] epoch 1/150 step 100 | loss 138496.1115 | det 0.7079 seg 2.1243 cnt 138468.5340 mi -7.2133
+[train] epoch 1/150 step 120 | loss 117041.5232 | det 0.6731 seg 2.1035 cnt 117014.6452 mi -9.3480
+[train] epoch 1/150 step 140 | loss 101090.0607 | det 0.6286 seg 2.1104 cnt 101063.8059 mi -11.3292
+[train] epoch 1/150 step 160 | loss 88830.8131 | det 0.6207 seg 2.1034 cnt 88804.7398 mi -12.9319
+[train] epoch 1/150 step 180 | loss 79149.1094 | det 0.6002 seg 2.1056 cnt 79123.3324 mi -14.2193
+[train] epoch 1/150 step 200 | loss 71327.2562 | det 0.5860 seg 2.0956 cnt 71301.7770 mi -15.2707
+[train] epoch 1/150 step 220 | loss 64889.8356 | det 0.5745 seg 2.0996 cnt 64864.5022 mi -16.1494
+[train] epoch 1/150 step 240 | loss 59506.6709 | det 0.5556 seg 2.0838 cnt 59481.7508 mi -16.8982
+[train] epoch 1/150 step 260 | loss 54942.0806 | det 0.5602 seg 2.0849 cnt 54917.0857 mi -17.5449
+[train] epoch 1/150 step 280 | loss 51024.8976 | det 0.5558 seg 2.0875 cnt 50999.9518 mi -18.1060
+[train] epoch 1/150 step 300 | loss 47627.7128 | det 0.5601 seg 2.0765 cnt 47602.7917 mi -18.5960
+[train] epoch 1/150 step 320 | loss 44653.7103 | det 0.5530 seg 2.0689 cnt 44628.9586 mi -19.0329
+[train] epoch 1/150 | loss 42153.0821 | det 0.5444 seg 2.0695 cnt 42128.4578 mi -19.4028
+[val] epoch 1 | det 0.3681 seg 1.9070 miou 0.0695 cnt 31.1433 dens 1.072718e+00 mae 30.0706 total_mae 231.0288 | ap50 0.0000 | combo 0.102709
+[ckpt] saved new best -> runs/mod_squad_plaintrain_10per/best_combo.pt (combo 0.102709)
+[ckpt] saved last -> runs/mod_squad_plaintrain_10per/last.pt
+[diag][cnt][train] epoch 2/150 step 1 | dens(mean 6.362775e-05/7.785174e-05, ratio 8.173e-01) | count(mean 12.770/15.625, ratio 8.173e-01, mae 17.103, total 102.163/125.001) | pixels 200704
+[train] epoch 2/150 step 20 | loss 37.1593 | det 0.4790 seg 1.9915 cnt 14.1707 mi -25.6636
+[train] epoch 2/150 step 40 | loss 35.5185 | det 0.4609 seg 2.0285 cnt 12.5060 mi -25.6756
+[train] epoch 2/150 step 60 | loss 34.6440 | det 0.4473 seg 2.0296 cnt 11.8269 mi -25.6880
+[train] epoch 2/150 step 80 | loss 35.0264 | det 0.4609 seg 2.0124 cnt 12.1423 mi -25.6986
+[train] epoch 2/150 step 100 | loss 34.2299 | det 0.4550 seg 1.9869 cnt 11.6378 mi -25.7096
+[train] epoch 2/150 step 120 | loss 33.6814 | det 0.4366 seg 1.9817 cnt 11.4072 mi -25.7190
+[train] epoch 2/150 step 140 | loss 33.1858 | det 0.4446 seg 1.9730 cnt 10.8618 mi -25.7279
+[train] epoch 2/150 step 160 | loss 32.7709 | det 0.4424 seg 1.9774 cnt 10.4447 mi -25.7364
+[train] epoch 2/150 step 180 | loss 32.5023 | det 0.4493 seg 1.9684 cnt 10.1438 mi -25.7441
+[train] epoch 2/150 step 200 | loss 32.1122 | det 0.4499 seg 1.9474 cnt 9.9129 mi -25.7517
+[train] epoch 2/150 step 220 | loss 32.0168 | det 0.4515 seg 1.9391 cnt 9.8593 mi -25.7592
+[train] epoch 2/150 step 240 | loss 31.7416 | det 0.4434 seg 1.9430 cnt 9.6758 mi -25.7664
+[train] epoch 2/150 step 260 | loss 31.6195 | det 0.4389 seg 1.9462 cnt 9.5946 mi -25.7732
+[train] epoch 2/150 step 280 | loss 31.5009 | det 0.4379 seg 1.9422 cnt 9.5234 mi -25.7795
+[train] epoch 2/150 step 300 | loss 31.6568 | det 0.4396 seg 1.9386 cnt 9.6836 mi -25.7817
+[train] epoch 2/150 step 320 | loss 31.5829 | det 0.4481 seg 1.9294 cnt 9.5547 mi -25.7875
+[train] epoch 2/150 | loss 31.5930 | det 0.4432 seg 1.9340 cnt 9.6024 mi -25.7927
+[val] epoch 2 | det 0.3748 seg 1.6991 miou 0.1165 cnt 25.9986 dens 1.114869e+00 mae 24.8838 total_mae 190.0336 | ap50 0.0000 | combo 0.156710
+[ckpt] saved new best -> runs/mod_squad_plaintrain_10per/best_combo.pt (combo 0.156710)
+[ckpt] saved last -> runs/mod_squad_plaintrain_10per/last.pt
+[diag][cnt][train] epoch 3/150 step 1 | dens(mean 3.397048e-05/4.390797e-05, ratio 7.737e-01) | count(mean 6.818/8.813, ratio 7.737e-01, mae 4.863, total 54.544/70.500) | pixels 200704
+[train] epoch 3/150 step 20 | loss 36.2640 | det 0.5684 seg 1.9871 cnt 11.9712 mi -25.8795
+[train] epoch 3/150 step 40 | loss 34.3730 | det 0.4928 seg 1.9349 cnt 11.6317 mi -25.8819
+[train] epoch 3/150 step 60 | loss 32.7424 | det 0.4597 seg 1.9275 cnt 10.5568 mi -25.8848
+[train] epoch 3/150 step 80 | loss 31.2821 | det 0.4420 seg 1.9136 cnt 9.4734 mi -25.8867
+[train] epoch 3/150 step 100 | loss 30.7619 | det 0.4348 seg 1.9027 cnt 9.1480 mi -25.8885
+[train] epoch 3/150 step 120 | loss 30.6048 | det 0.4385 seg 1.9048 cnt 8.9189 mi -25.8861
+[train] epoch 3/150 step 140 | loss 30.3461 | det 0.4242 seg 1.9050 cnt 8.8722 mi -25.8856
+[train] epoch 3/150 step 160 | loss 30.5277 | det 0.4244 seg 1.9127 cnt 8.9886 mi -25.8838
+[train] epoch 3/150 step 180 | loss 30.4063 | det 0.4324 seg 1.8944 cnt 8.8942 mi -25.8829
+[train] epoch 3/150 step 200 | loss 30.3429 | det 0.4335 seg 1.9007 cnt 8.7647 mi -25.8846
+[train] epoch 3/150 step 220 | loss 30.4628 | det 0.4452 seg 1.8862 cnt 8.8245 mi -25.8850
+[train] epoch 3/150 step 240 | loss 30.3157 | det 0.4461 seg 1.8859 cnt 8.6669 mi -25.8857
+[train] epoch 3/150 step 260 | loss 30.1031 | det 0.4429 seg 1.8759 cnt 8.5821 mi -25.8869
+[train] epoch 3/150 step 280 | loss 30.3975 | det 0.4560 seg 1.8784 cnt 8.6594 mi -25.8870
+[train] epoch 3/150 step 300 | loss 30.3560 | det 0.4578 seg 1.8757 cnt 8.6136 mi -25.8824
+[train] epoch 3/150 step 320 | loss 30.7157 | det 0.4632 seg 1.8802 cnt 8.8554 mi -25.8838
+[train] epoch 3/150 | loss 30.7831 | det 0.4669 seg 1.8887 cnt 8.8001 mi -25.8853
+[val] epoch 3 | det 0.4490 seg 1.7707 miou 0.1281 cnt 6.3041 dens 9.849087e-01 mae 5.3192 total_mae 29.2541 | ap50 0.0004 | combo 0.316513
+[ckpt] saved new best -> runs/mod_squad_plaintrain_10per/best_combo.pt (combo 0.316513)
+[ckpt] saved last -> runs/mod_squad_plaintrain_10per/last.pt

@@ -1,0 +1,59 @@
+{
+  "checkpoint": "/data/xiangyuyue/ULLM-zf/fsl-20260209/runs/113_selupdate_10per_same/best_combo.pt",
+  "device": "cuda:0",
+  "model_config": {
+    "model_name": "dinov3_vitl16",
+    "image_size": 448,
+    "use_lora": true,
+    "lora_rank": 8,
+    "lora_alpha": 16.0,
+    "lora_dropout": 0.05,
+    "det_num_classes": 20,
+    "seg_num_classes": 11,
+    "cnt_num_classes": 8,
+    "det_out_channels": 256,
+    "det_train_backbone": true,
+    "seg_train_backbone": true,
+    "cnt_train_backbone": true
+  },
+  "checkpoint_info": {
+    "model_config": {
+      "model_name": "dinov3_vitl16",
+      "image_size": 448,
+      "use_lora": true,
+      "lora_rank": 8,
+      "lora_alpha": 16.0,
+      "lora_dropout": 0.05,
+      "det_num_classes": 20,
+      "seg_num_classes": 11,
+      "cnt_num_classes": 8,
+      "det_out_channels": 256,
+      "det_train_backbone": true,
+      "seg_train_backbone": true,
+      "cnt_train_backbone": true
+    },
+    "sel_config": {
+      "sel_prepos": 640,
+      "sel_affin_decay": 0.0002,
+      "sel_preference": 0.6,
+      "sel_convergence_iter": 100,
+      "sel_max_cluster_retries": 20,
+      "sel_group_norm": true
+    },
+    "train_strategy": "selective_task_group_updates",
+    "metrics": {
+      "best_metric": 1.6926841664843413,
+      "best_epoch": 138,
+      "val_det_loss": 0.342210393254156,
+      "val_seg_loss": 1.2209284914405432,
+      "val_seg_miou": 0.6369428037592368,
+      "val_cnt_loss": 3.4859824846556156,
+      "val_cnt_density_mse": 0.8388454711731569,
+      "val_cnt_mae": 2.647137025072251,
+      "val_cnt_total_mae": 12.0182332639341,
+      "val_ap50": 0.6779747452328702,
+      "selected_metric": 1.6926841664843413
+    },
+    "epoch": 138
+  }
+}

@@ -1,0 +1,4 @@
+[time] 2026-04-02T10:03:52+08:00
+[pwd]  /data/xiangyuyue/ULLM-zf/fsl-20260209
+[script] /data/xiangyuyue/ULLM-zf/fsl-20260209/lora_multitask/train_single_tasks_10per.sh
+[task] det

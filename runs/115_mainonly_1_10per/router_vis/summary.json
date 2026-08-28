@@ -1,0 +1,88 @@
+{
+  "checkpoint": "/data/xiangyuyue/ULLM-zf/fsl-20260209/runs/115_mainonly_1_10per/best_combo.pt",
+  "output_dir": "/data/xiangyuyue/ULLM-zf/fsl-20260209/runs/115_mainonly_1_10per/router_vis",
+  "routing_statistic": "top-k routing count",
+  "normalization": {
+    "shared": "row-wise count / sum(counts) over shared experts",
+    "private": "row-wise count / sum(counts) over private experts"
+  },
+  "task_names": [
+    "det",
+    "seg",
+    "cnt"
+  ],
+  "expert_labels": {
+    "shared": [
+      "S0",
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5"
+    ],
+    "private": [
+      "P0",
+      "P1",
+      "P2"
+    ]
+  },
+  "private_label_semantics": "P0..Pk denote each task's own private experts within that row, not a shared cross-task index space.",
+  "block_mapping": {
+    "6": 5,
+    "12": 11,
+    "18": 17,
+    "24": 23
+  },
+  "max_batches_per_task": 16,
+  "task_stats": {
+    "det": {
+      "batches": 16,
+      "images": 32,
+      "patch_tokens": 25088
+    },
+    "seg": {
+      "batches": 16,
+      "images": 32,
+      "patch_tokens": 25088
+    },
+    "cnt": {
+      "batches": 16,
+      "images": 32,
+      "patch_tokens": 25088
+    }
+  },
+  "outputs": {
+    "6": {
+      "internal_block": 5,
+      "shared_counts_csv": "/data/xiangyuyue/ULLM-zf/fsl-20260209/runs/115_mainonly_1_10per/router_vis/block_06_shared_counts.csv",
+      "shared_frequency_csv": "/data/xiangyuyue/ULLM-zf/fsl-20260209/runs/115_mainonly_1_10per/router_vis/block_06_shared_frequency.csv",
+      "private_counts_csv": "/data/xiangyuyue/ULLM-zf/fsl-20260209/runs/115_mainonly_1_10per/router_vis/block_06_private_counts.csv",
+      "private_frequency_csv": "/data/xiangyuyue/ULLM-zf/fsl-20260209/runs/115_mainonly_1_10per/router_vis/block_06_private_frequency.csv",
+      "heatmap_png": "/data/xiangyuyue/ULLM-zf/fsl-20260209/runs/115_mainonly_1_10per/router_vis/block_06_router_heatmap.png"
+    },
+    "12": {
+      "internal_block": 11,
+      "shared_counts_csv": "/data/xiangyuyue/ULLM-zf/fsl-20260209/runs/115_mainonly_1_10per/router_vis/block_12_shared_counts.csv",
+      "shared_frequency_csv": "/data/xiangyuyue/ULLM-zf/fsl-20260209/runs/115_mainonly_1_10per/router_vis/block_12_shared_frequency.csv",
+      "private_counts_csv": "/data/xiangyuyue/ULLM-zf/fsl-20260209/runs/115_mainonly_1_10per/router_vis/block_12_private_counts.csv",
+      "private_frequency_csv": "/data/xiangyuyue/ULLM-zf/fsl-20260209/runs/115_mainonly_1_10per/router_vis/block_12_private_frequency.csv",
+      "heatmap_png": "/data/xiangyuyue/ULLM-zf/fsl-20260209/runs/115_mainonly_1_10per/router_vis/block_12_router_heatmap.png"
+    },
+    "18": {
+      "internal_block": 17,
+      "shared_counts_csv": "/data/xiangyuyue/ULLM-zf/fsl-20260209/runs/115_mainonly_1_10per/router_vis/block_18_shared_counts.csv",
+      "shared_frequency_csv": "/data/xiangyuyue/ULLM-zf/fsl-20260209/runs/115_mainonly_1_10per/router_vis/block_18_shared_frequency.csv",
+      "private_counts_csv": "/data/xiangyuyue/ULLM-zf/fsl-20260209/runs/115_mainonly_1_10per/router_vis/block_18_private_counts.csv",
+      "private_frequency_csv": "/data/xiangyuyue/ULLM-zf/fsl-20260209/runs/115_mainonly_1_10per/router_vis/block_18_private_frequency.csv",
+      "heatmap_png": "/data/xiangyuyue/ULLM-zf/fsl-20260209/runs/115_mainonly_1_10per/router_vis/block_18_router_heatmap.png"
+    },
+    "24": {
+      "internal_block": 23,
+      "shared_counts_csv": "/data/xiangyuyue/ULLM-zf/fsl-20260209/runs/115_mainonly_1_10per/router_vis/block_24_shared_counts.csv",
+      "shared_frequency_csv": "/data/xiangyuyue/ULLM-zf/fsl-20260209/runs/115_mainonly_1_10per/router_vis/block_24_shared_frequency.csv",
+      "private_counts_csv": "/data/xiangyuyue/ULLM-zf/fsl-20260209/runs/115_mainonly_1_10per/router_vis/block_24_private_counts.csv",
+      "private_frequency_csv": "/data/xiangyuyue/ULLM-zf/fsl-20260209/runs/115_mainonly_1_10per/router_vis/block_24_private_frequency.csv",
+      "heatmap_png": "/data/xiangyuyue/ULLM-zf/fsl-20260209/runs/115_mainonly_1_10per/router_vis/block_24_router_heatmap.png"
+    }
+  }
+}

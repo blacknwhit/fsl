@@ -1,0 +1,38 @@
+{
+  "checkpoint": "runs/group3_single_full_fullft/cnt/best_combo.pt",
+  "stats_dir": "runs/group3_single_full_fullft/cnt/stats_eval_cnt_best_combo_20260402_152743",
+  "tasks": [
+    "cnt"
+  ],
+  "runs": {
+    "cnt": {
+      "cmd": [
+        "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/bin/python",
+        "counting/eval.py",
+        "--checkpoint",
+        "runs/group3_single_full_fullft/cnt/best_combo.pt",
+        "--stats-dir",
+        "runs/group3_single_full_fullft/cnt/stats_eval_cnt_best_combo_20260402_152743",
+        "--data-root",
+        "/data/xiangyuyue/ULLM-zf/fsl-20260209/data/cnt/nas/liyangguang103/newdataset/CD-Count/DSACA",
+        "--test-dir",
+        "/data/xiangyuyue/ULLM-zf/fsl-20260209/data/cnt/nas/liyangguang103/newdataset/CD-Count/DSACA/test_data_class8",
+        "--image-size",
+        "448",
+        "--model-name",
+        "dinov3_vitl16",
+        "--device",
+        "cuda",
+        "--backbone-checkpoint",
+        "/data/xiangyuyue/ULLM-zf/fsl-20260209/dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth",
+        "--batch-size",
+        "32"
+      ],
+      "returncode": 0,
+      "elapsed_sec": 48.76691150665283,
+      "artifacts": {
+        "metrics": "runs/group3_single_full_fullft/cnt/stats_eval_cnt_best_combo_20260402_152743/metrics_cnt_test_data_class8.json"
+      }
+    }
+  }
+}

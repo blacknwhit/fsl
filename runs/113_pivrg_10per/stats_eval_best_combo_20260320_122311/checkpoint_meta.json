@@ -1,0 +1,16 @@
+{
+  "checkpoint": "/data/xiangyuyue/ULLM-zf/fsl-20260209/runs/113_pivrg_10per/best_combo.pt",
+  "device": "cuda:0",
+  "model_config": {
+    "model_name": "dinov3_vitl16",
+    "image_size": 448,
+    "use_lora": true,
+    "lora_rank": 8,
+    "lora_alpha": 16.0,
+    "lora_dropout": 0.05,
+    "det_num_classes": 20,
+    "seg_num_classes": 11,
+    "cnt_num_classes": 8,
+    "det_out_channels": 256
+  }
+}

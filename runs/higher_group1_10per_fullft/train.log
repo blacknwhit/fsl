@@ -1,0 +1,328 @@
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/113_higher/train.py", line 1424, in <module>
+    main()
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/113_higher/train.py", line 774, in main
+    device, use_ddp, rank, local_rank, world_size, is_main = _setup_dist(args)
+                                                             ^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/113_higher/train.py", line 119, in _setup_dist
+    torch.cuda.set_device(local_rank)
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/cuda/__init__.py", line 478, in set_device
+    torch._C._cuda_setDevice(device)
+RuntimeError: CUDA error: invalid device ordinal
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/113_higher/train.py", line 1424, in <module>
+    main()
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/113_higher/train.py", line 774, in main
+    device, use_ddp, rank, local_rank, world_size, is_main = _setup_dist(args)
+                                                             ^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/113_higher/train.py", line 119, in _setup_dist
+    torch.cuda.set_device(local_rank)
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/cuda/__init__.py", line 478, in set_device
+    torch._C._cuda_setDevice(device)
+RuntimeError: CUDA error: invalid device ordinal
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/113_higher/train.py", line 1424, in <module>
+    main()
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/113_higher/train.py", line 774, in main
+    device, use_ddp, rank, local_rank, world_size, is_main = _setup_dist(args)
+                                                             ^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/113_higher/train.py", line 119, in _setup_dist
+    torch.cuda.set_device(local_rank)
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/cuda/__init__.py", line 478, in set_device
+    torch._C._cuda_setDevice(device)
+RuntimeError: CUDA error: invalid device ordinal
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/113_higher/train.py", line 1424, in <module>
+    main()
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/113_higher/train.py", line 774, in main
+    device, use_ddp, rank, local_rank, world_size, is_main = _setup_dist(args)
+                                                             ^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/113_higher/train.py", line 119, in _setup_dist
+    torch.cuda.set_device(local_rank)
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/cuda/__init__.py", line 478, in set_device
+    torch._C._cuda_setDevice(device)
+RuntimeError: CUDA error: invalid device ordinal
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/113_higher/train.py", line 1424, in <module>
+    main()
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/113_higher/train.py", line 774, in main
+    device, use_ddp, rank, local_rank, world_size, is_main = _setup_dist(args)
+                                                             ^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/113_higher/train.py", line 119, in _setup_dist
+    torch.cuda.set_device(local_rank)
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/cuda/__init__.py", line 478, in set_device
+    torch._C._cuda_setDevice(device)
+RuntimeError: CUDA error: invalid device ordinal
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/113_higher/train.py", line 1424, in <module>
+    main()
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/113_higher/train.py", line 774, in main
+    device, use_ddp, rank, local_rank, world_size, is_main = _setup_dist(args)
+                                                             ^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/113_higher/train.py", line 119, in _setup_dist
+    torch.cuda.set_device(local_rank)
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/cuda/__init__.py", line 478, in set_device
+    torch._C._cuda_setDevice(device)
+RuntimeError: CUDA error: invalid device ordinal
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+W0405 07:54:44.313000 7454 miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 7573 closing signal SIGTERM
+W0405 07:54:44.316000 7454 miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 7574 closing signal SIGTERM
+W0405 07:54:44.316000 7454 miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 7575 closing signal SIGTERM
+W0405 07:54:44.316000 7454 miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 7577 closing signal SIGTERM
+W0405 07:54:44.317000 7454 miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 7578 closing signal SIGTERM
+W0405 07:54:44.317000 7454 miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 7579 closing signal SIGTERM
+W0405 07:54:44.317000 7454 miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 7580 closing signal SIGTERM
+E0405 07:54:44.494000 7454 miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 3 (pid: 7576) of binary: /data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/bin/python
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/run.py", line 923, in <module>
+    main()
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/run.py", line 919, in main
+    run(args)
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/run.py", line 910, in run
+    elastic_launch(
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+113_higher.train FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-04-05_07:54:44
+  host      : app-589282473804479ca815133d67d3c6a4-86bd4dc47f-j7lqg
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 7576)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/113_higher/train.py", line 1424, in <module>
+    main()
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/113_higher/train.py", line 774, in main
+    device, use_ddp, rank, local_rank, world_size, is_main = _setup_dist(args)
+                                                             ^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/113_higher/train.py", line 119, in _setup_dist
+    torch.cuda.set_device(local_rank)
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/cuda/__init__.py", line 478, in set_device
+    torch._C._cuda_setDevice(device)
+RuntimeError: CUDA error: invalid device ordinal
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/113_higher/train.py", line 1424, in <module>
+    main()
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/113_higher/train.py", line 774, in main
+    device, use_ddp, rank, local_rank, world_size, is_main = _setup_dist(args)
+                                                             ^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/113_higher/train.py", line 119, in _setup_dist
+    torch.cuda.set_device(local_rank)
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/cuda/__init__.py", line 478, in set_device
+    torch._C._cuda_setDevice(device)
+RuntimeError: CUDA error: invalid device ordinal
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/113_higher/train.py", line 1424, in <module>
+    main()
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/113_higher/train.py", line 774, in main
+    device, use_ddp, rank, local_rank, world_size, is_main = _setup_dist(args)
+                                                             ^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/113_higher/train.py", line 119, in _setup_dist
+    torch.cuda.set_device(local_rank)
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/cuda/__init__.py", line 478, in set_device
+    torch._C._cuda_setDevice(device)
+RuntimeError: CUDA error: invalid device ordinal
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/113_higher/train.py", line 1424, in <module>
+    main()
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/113_higher/train.py", line 774, in main
+    device, use_ddp, rank, local_rank, world_size, is_main = _setup_dist(args)
+                                                             ^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/113_higher/train.py", line 119, in _setup_dist
+    torch.cuda.set_device(local_rank)
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/cuda/__init__.py", line 478, in set_device
+    torch._C._cuda_setDevice(device)
+RuntimeError: CUDA error: invalid device ordinal
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/113_higher/train.py", line 1424, in <module>
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/113_higher/train.py", line 1424, in <module>
+        main()main()
+
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/113_higher/train.py", line 774, in main
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/113_higher/train.py", line 774, in main
+    device, use_ddp, rank, local_rank, world_size, is_main = _setup_dist(args)    
+device, use_ddp, rank, local_rank, world_size, is_main = _setup_dist(args)
+                                                                                                                       ^ ^ ^ ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/113_higher/train.py", line 119, in _setup_dist
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/113_higher/train.py", line 119, in _setup_dist
+    torch.cuda.set_device(local_rank)
+    torch.cuda.set_device(local_rank)
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/cuda/__init__.py", line 478, in set_device
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/cuda/__init__.py", line 478, in set_device
+        torch._C._cuda_setDevice(device)torch._C._cuda_setDevice(device)
+
+RuntimeError: RuntimeErrorCUDA error: invalid device ordinal
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+: 
+CUDA error: invalid device ordinal
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+W0405 07:57:06.093000 9435 miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 9558 closing signal SIGTERM
+W0405 07:57:06.097000 9435 miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 9565 closing signal SIGTERM
+E0405 07:57:06.324000 9435 miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 2 (pid: 9566) of binary: /data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/bin/python
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/run.py", line 923, in <module>
+    main()
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/run.py", line 919, in main
+    run(args)
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/run.py", line 910, in run
+    elastic_launch(
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/xiangyuyue/ULLM-zf/fsl-20260209/miniconda3/envs/fsl/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+113_higher.train FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2026-04-05_07:57:06
+  host      : app-589282473804479ca815133d67d3c6a4-86bd4dc47f-j7lqg
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 9567)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2026-04-05_07:57:06
+  host      : app-589282473804479ca815133d67d3c6a4-86bd4dc47f-j7lqg
+  rank      : 4 (local_rank: 4)
+  exitcode  : 1 (pid: 9568)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2026-04-05_07:57:06
+  host      : app-589282473804479ca815133d67d3c6a4-86bd4dc47f-j7lqg
+  rank      : 5 (local_rank: 5)
+  exitcode  : 1 (pid: 9569)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[4]:
+  time      : 2026-04-05_07:57:06
+  host      : app-589282473804479ca815133d67d3c6a4-86bd4dc47f-j7lqg
+  rank      : 6 (local_rank: 6)
+  exitcode  : 1 (pid: 9570)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[5]:
+  time      : 2026-04-05_07:57:06
+  host      : app-589282473804479ca815133d67d3c6a4-86bd4dc47f-j7lqg
+  rank      : 7 (local_rank: 7)
+  exitcode  : 1 (pid: 9571)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-04-05_07:57:06
+  host      : app-589282473804479ca815133d67d3c6a4-86bd4dc47f-j7lqg
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 9566)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+[stage1] epoch 1/100 step 10 | support [3.0511, 2.2828, 12.1599] | meta 13.6198 | w [15.159, 7.998, 1.309]
