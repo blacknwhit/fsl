@@ -1,0 +1,252 @@
+backbone_checkpoint:
+  desc: ''
+  sort: 2
+  value: /data/xiangyuyue/ULLM-zf/fsl-20260209/dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth
+backbone_lr_mult:
+  desc: ''
+  sort: 36
+  value: 0.1
+beta_kl:
+  desc: ''
+  sort: 49
+  value: 0.02
+cnt_backbone_grad_mult:
+  desc: ''
+  sort: 26
+  value: 1.0
+cnt_batch_size:
+  desc: ''
+  sort: 24
+  value: 2
+cnt_count_loss_weight:
+  desc: ''
+  sort: 25
+  value: 1.0
+cnt_data_root:
+  desc: ''
+  sort: 20
+  value: /data/xiangyuyue/ULLM-zf/fsl-20260209/data/cnt/nas/liyangguang103/newdataset/CD-Count/DSACA
+cnt_keep_aspect:
+  desc: ''
+  sort: 27
+  value: 1
+cnt_num_classes:
+  desc: ''
+  sort: 23
+  value: 8
+cnt_train_dir:
+  desc: ''
+  sort: 21
+  value: /data/xiangyuyue/ULLM-zf/fsl-20260209/data/cnt/nas/liyangguang103/newdataset/CD-Count/DSACA/train_data_class8_10per
+cnt_train_size:
+  desc: ''
+  sort: 60
+  value: 393
+cnt_val_dir:
+  desc: ''
+  sort: 22
+  value: /data/xiangyuyue/ULLM-zf/fsl-20260209/data/cnt/nas/liyangguang103/newdataset/CD-Count/DSACA/val_data_class8
+cnt_val_size:
+  desc: ''
+  sort: 61
+  value: 1294
+det_ap_score_thr:
+  desc: ''
+  sort: 15
+  value: 0.0
+det_batch_size:
+  desc: ''
+  sort: 14
+  value: 2
+det_data_root:
+  desc: ''
+  sort: 11
+  value: /data/xiangyuyue/ULLM-zf/fsl-20260209/data/det/coco
+det_train_ann:
+  desc: ''
+  sort: 12
+  value: /data/xiangyuyue/ULLM-zf/fsl-20260209/data/det/coco/annotations/instances_train_10per.json
+det_train_size:
+  desc: ''
+  sort: 56
+  value: 561
+det_val_ann:
+  desc: ''
+  sort: 13
+  value: /data/xiangyuyue/ULLM-zf/fsl-20260209/data/det/coco/annotations/instances_val.json
+det_val_size:
+  desc: ''
+  sort: 57
+  value: 5863
+device:
+  desc: ''
+  sort: 38
+  value: cuda
+generator_hidden_dim:
+  desc: ''
+  sort: 47
+  value: 192
+grad_checkpointing:
+  desc: ''
+  sort: 10
+  value: 1
+grad_clip_norm:
+  desc: ''
+  sort: 41
+  value: 100.0
+image_size:
+  desc: ''
+  sort: 1
+  value: 448
+log_interval:
+  desc: ''
+  sort: 44
+  value: 10
+lora_rank:
+  desc: ''
+  sort: 5
+  value: 8
+max_train_steps:
+  desc: ''
+  sort: 42
+  value: 0
+max_val_steps:
+  desc: ''
+  sort: 43
+  value: 0
+meta_seed:
+  desc: ''
+  sort: 31
+  value: 42
+meta_split:
+  desc: ''
+  sort: 30
+  value: 0.2
+model_name:
+  desc: ''
+  sort: 0
+  value: dinov3_vitl16
+moe_k_private:
+  desc: ''
+  sort: 8
+  value: 2
+moe_k_shared:
+  desc: ''
+  sort: 9
+  value: 2
+num_experts_private:
+  desc: ''
+  sort: 6
+  value: 3
+num_experts_shared:
+  desc: ''
+  sort: 7
+  value: 6
+num_workers:
+  desc: ''
+  sort: 37
+  value: 16
+policy_weight_prior:
+  desc: ''
+  sort: 48
+  value: 15,8,1
+save_dir:
+  desc: ''
+  sort: 40
+  value: runs/113_higher
+seed:
+  desc: ''
+  sort: 39
+  value: 42
+seg_batch_size:
+  desc: ''
+  sort: 19
+  value: 2
+seg_num_classes:
+  desc: ''
+  sort: 18
+  value: 11
+seg_train_dir:
+  desc: ''
+  sort: 16
+  value: /data/xiangyuyue/ULLM-zf/fsl-20260209/data/seg/nas/liyangguang103/newdataset/CD-SematicSeg/EvLab-SS/mydataset/train_5500_10per
+seg_train_size:
+  desc: ''
+  sort: 58
+  value: 678
+seg_val_dir:
+  desc: ''
+  sort: 17
+  value: /data/xiangyuyue/ULLM-zf/fsl-20260209/data/seg/nas/liyangguang103/newdataset/CD-SematicSeg/EvLab-SS/mydataset/val
+seg_val_size:
+  desc: ''
+  sort: 59
+  value: 12118
+select_best_from_stage2:
+  desc: ''
+  sort: 46
+  value: 1
+skip_validation:
+  desc: ''
+  sort: 45
+  value: 0
+stage1_epochs:
+  desc: ''
+  sort: 28
+  value: 100
+stage1_inner_lr:
+  desc: ''
+  sort: 32
+  value: 0.0001
+stage1_phi_lr:
+  desc: ''
+  sort: 33
+  value: 0.001
+stage2_epochs:
+  desc: ''
+  sort: 29
+  value: 50
+stage2_lr:
+  desc: ''
+  sort: 34
+  value: 0.0001
+stage2_weight_decay:
+  desc: ''
+  sort: 35
+  value: 0.0001
+state_matrix_proj_dim:
+  desc: ''
+  sort: 50
+  value: 128
+state_task_dim:
+  desc: ''
+  sort: 52
+  value: 128
+state_task_hidden_dim:
+  desc: ''
+  sort: 51
+  value: 128
+theta_param_count:
+  desc: ''
+  sort: 62
+  value: 40336839
+unfreeze_backbone:
+  desc: ''
+  sort: 3
+  value: 0
+use_ddp:
+  desc: ''
+  sort: 55
+  value: 0
+use_lora_moe:
+  desc: ''
+  sort: 4
+  value: 1
+use_swanlab:
+  desc: ''
+  sort: 53
+  value: 1
+world_size:
+  desc: ''
+  sort: 54
+  value: 1

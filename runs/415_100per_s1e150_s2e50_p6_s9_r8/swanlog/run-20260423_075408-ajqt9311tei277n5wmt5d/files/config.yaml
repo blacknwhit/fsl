@@ -1,0 +1,288 @@
+backbone_checkpoint:
+  desc: ''
+  sort: 2
+  value: /data/xiangyuyue/ULLM-zf/fsl-20260209/dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth
+backbone_lr_mult:
+  desc: ''
+  sort: 39
+  value: 0.1
+backbone_param_count:
+  desc: ''
+  sort: 62
+  value: 0
+block_selection_epoch_summary_path:
+  desc: ''
+  sort: 71
+  value: runs/415_100per_s1e150_s2e50_p6_s9_r8/block_task_selection_epoch_summary.json
+block_selection_history_path:
+  desc: ''
+  sort: 70
+  value: runs/415_100per_s1e150_s2e50_p6_s9_r8/block_task_selection_history.jsonl
+cnt_backbone_grad_mult:
+  desc: ''
+  sort: 52
+  value: 1.0
+cnt_batch_size:
+  desc: ''
+  sort: 37
+  value: 4
+cnt_count_loss_weight:
+  desc: ''
+  sort: 28
+  value: 1.0
+cnt_data_root:
+  desc: ''
+  sort: 23
+  value: /data/xiangyuyue/ULLM-zf/fsl-20260209/data/cnt/train_10per
+cnt_head_param_count:
+  desc: ''
+  sort: 66
+  value: 9448456
+cnt_keep_aspect:
+  desc: ''
+  sort: 29
+  value: 1
+cnt_num_classes:
+  desc: ''
+  sort: 27
+  value: 8
+cnt_train_dir:
+  desc: ''
+  sort: 24
+  value: /data/xiangyuyue/ULLM-zf/fsl-20260209/data/cnt/nas/liyangguang103/newdataset/CD-Count/DSACA/train_data_class8
+cnt_val_dir:
+  desc: ''
+  sort: 25
+  value: /data/xiangyuyue/ULLM-zf/fsl-20260209/data/cnt/nas/liyangguang103/newdataset/CD-Count/DSACA/val_data_class8
+debug_step_timing:
+  desc: ''
+  sort: 43
+  value: 0
+debug_step_timing_interval:
+  desc: ''
+  sort: 44
+  value: 1
+det_ap_score_thr:
+  desc: ''
+  sort: 18
+  value: 0.0
+det_batch_size:
+  desc: ''
+  sort: 35
+  value: 4
+det_data_root:
+  desc: ''
+  sort: 11
+  value: /data/xiangyuyue/ULLM-zf/fsl-20260209/data/det/train_10per
+det_head_param_count:
+  desc: ''
+  sort: 64
+  value: 14875060
+det_train_ann:
+  desc: ''
+  sort: 12
+  value: /data/xiangyuyue/ULLM-zf/fsl-20260209/data/det/coco/annotations/instances_train.json
+det_train_img_dir:
+  desc: ''
+  sort: 14
+  value: /data/xiangyuyue/ULLM-zf/fsl-20260209/data/det/coco
+det_val_ann:
+  desc: ''
+  sort: 13
+  value: /data/xiangyuyue/ULLM-zf/fsl-20260209/data/det/coco/annotations/instances_val.json
+det_val_img_dir:
+  desc: ''
+  sort: 15
+  value: /data/xiangyuyue/ULLM-zf/fsl-20260209/data/det/coco
+device:
+  desc: ''
+  sort: 47
+  value: cuda
+grad_checkpointing:
+  desc: ''
+  sort: 10
+  value: 1
+grad_clip_norm:
+  desc: ''
+  sort: 45
+  value: 100.0
+image_size:
+  desc: ''
+  sort: 1
+  value: 448
+log_interval:
+  desc: ''
+  sort: 42
+  value: 1
+lora_moe_param_count:
+  desc: ''
+  sort: 63
+  value: 11722752
+lora_rank:
+  desc: ''
+  sort: 5
+  value: 8
+loss_weights:
+  desc: ''
+  sort: 34
+  value: '[15.0, 8.0, 1.0]'
+lr:
+  desc: ''
+  sort: 38
+  value: 0.0001
+max_train_steps:
+  desc: ''
+  sort: 49
+  value: 0
+max_val_steps:
+  desc: ''
+  sort: 50
+  value: 0
+model_name:
+  desc: ''
+  sort: 0
+  value: dinov3_vitl16
+moe_k_private:
+  desc: ''
+  sort: 8
+  value: 2
+moe_k_shared:
+  desc: ''
+  sort: 9
+  value: 2
+num_experts_private:
+  desc: ''
+  sort: 6
+  value: 6
+num_experts_shared:
+  desc: ''
+  sort: 7
+  value: 9
+num_workers:
+  desc: ''
+  sort: 46
+  value: 16
+save_dir:
+  desc: ''
+  sort: 41
+  value: runs/415_100per_s1e150_s2e50_p6_s9_r8
+seed:
+  desc: ''
+  sort: 48
+  value: 42
+seg_batch_size:
+  desc: ''
+  sort: 36
+  value: 4
+seg_head_param_count:
+  desc: ''
+  sort: 65
+  value: 9451531
+seg_num_classes:
+  desc: ''
+  sort: 22
+  value: 11
+seg_train_dir:
+  desc: ''
+  sort: 19
+  value: /data/xiangyuyue/ULLM-zf/fsl-20260209/data/seg/nas/liyangguang103/newdataset/CD-SematicSeg/EvLab-SS/mydataset/train_5500
+seg_val_dir:
+  desc: ''
+  sort: 20
+  value: /data/xiangyuyue/ULLM-zf/fsl-20260209/data/seg/nas/liyangguang103/newdataset/CD-SematicSeg/EvLab-SS/mydataset/val
+shared_expert_block_count:
+  desc: ''
+  sort: 67
+  value: 24
+shared_expert_dynamic_param_count:
+  desc: ''
+  sort: 69
+  value: 3538944
+shared_expert_matrix_unit_count:
+  desc: ''
+  sort: 68
+  value: 432
+shared_update_rule:
+  desc: ''
+  sort: 61
+  value: local_top_pair_per_matrix_unit
+skip_stage1:
+  desc: ''
+  sort: 60
+  value: 1
+skip_validation:
+  desc: ''
+  sort: 51
+  value: 0
+stage1_epochs:
+  desc: ''
+  sort: 30
+  value: 0
+stage1_val_last_k_epochs:
+  desc: ''
+  sort: 33
+  value: 50
+stage2_cnt_val_dir:
+  desc: ''
+  sort: 26
+  value: /data/xiangyuyue/ULLM-zf/fsl-20260209/data/cnt/nas/liyangguang103/newdataset/CD-Count/DSACA/val_data_class8
+stage2_det_val_ann:
+  desc: ''
+  sort: 16
+  value: /data/xiangyuyue/ULLM-zf/fsl-20260209/data/det/coco/annotations/instances_val.json
+stage2_det_val_img_dir:
+  desc: ''
+  sort: 17
+  value: /data/xiangyuyue/ULLM-zf/fsl-20260209/data/det/coco
+stage2_epochs:
+  desc: ''
+  sort: 31
+  value: 50
+stage2_init_checkpoint:
+  desc: ''
+  sort: 32
+  value: /data/xiangyuyue/ULLM-zf/fsl-20260209/runs/415_100per_s1e150_s2e50_p6_s9_r8/stage1_best.pt
+stage2_seg_val_dir:
+  desc: ''
+  sort: 21
+  value: /data/xiangyuyue/ULLM-zf/fsl-20260209/data/seg/nas/liyangguang103/newdataset/CD-SematicSeg/EvLab-SS/mydataset/val
+swanlab_experiment_name:
+  desc: ''
+  sort: 55
+  value: 415_100per_s1e150_s2e50_p6_s9_r8
+swanlab_logdir:
+  desc: ''
+  sort: 56
+  value: runs/415_100per_s1e150_s2e50_p6_s9_r8/swanlog
+swanlab_project:
+  desc: ''
+  sort: 54
+  value: 115_grpo_mainonly
+training_mode:
+  desc: ''
+  sort: 59
+  value: two_stage
+unfreeze_backbone:
+  desc: ''
+  sort: 3
+  value: 0
+use_ddp:
+  desc: ''
+  sort: 58
+  value: 1
+use_lora_moe:
+  desc: ''
+  sort: 4
+  value: 1
+use_swanlab:
+  desc: ''
+  sort: 53
+  value: 1
+weight_decay:
+  desc: ''
+  sort: 40
+  value: 0.0001
+world_size:
+  desc: ''
+  sort: 57
+  value: 8

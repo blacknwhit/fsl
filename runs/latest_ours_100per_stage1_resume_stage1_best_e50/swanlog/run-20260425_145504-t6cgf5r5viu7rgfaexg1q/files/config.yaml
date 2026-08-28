@@ -1,0 +1,328 @@
+backbone_checkpoint:
+  desc: ''
+  sort: 2
+  value: /data/xiangyuyue/ULLM-zf/fsl-20260209/dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth
+backbone_lr_mult:
+  desc: ''
+  sort: 47
+  value: 0.1
+backbone_param_count:
+  desc: ''
+  sort: 71
+  value: 0
+block_selection_epoch_summary_path:
+  desc: ''
+  sort: 81
+  value: runs/latest_ours_100per_stage1_resume_stage1_best_e50/block_task_selection_epoch_summary.json
+block_selection_history_path:
+  desc: ''
+  sort: 80
+  value: runs/latest_ours_100per_stage1_resume_stage1_best_e50/block_task_selection_history.jsonl
+cnt_backbone_grad_mult:
+  desc: ''
+  sort: 60
+  value: 1.0
+cnt_batch_size:
+  desc: ''
+  sort: 45
+  value: 4
+cnt_count_loss_weight:
+  desc: ''
+  sort: 35
+  value: 1.0
+cnt_data_root:
+  desc: ''
+  sort: 30
+  value: /data/xiangyuyue/ULLM-zf/fsl-20260209/data/cnt/train_10per
+cnt_head_param_count:
+  desc: ''
+  sort: 76
+  value: 9448456
+cnt_keep_aspect:
+  desc: ''
+  sort: 36
+  value: 1
+cnt_num_classes:
+  desc: ''
+  sort: 34
+  value: 8
+cnt_train_dir:
+  desc: ''
+  sort: 31
+  value: /data/xiangyuyue/ULLM-zf/fsl-20260209/data/cnt/nas/liyangguang103/newdataset/CD-Count/DSACA/train_data_class8
+cnt_val_dir:
+  desc: ''
+  sort: 32
+  value: /data/xiangyuyue/ULLM-zf/fsl-20260209/data/cnt/nas/liyangguang103/newdataset/CD-Count/DSACA/val_data_class8
+debug_step_timing:
+  desc: ''
+  sort: 51
+  value: 0
+debug_step_timing_interval:
+  desc: ''
+  sort: 52
+  value: 1
+det_ap_score_thr:
+  desc: ''
+  sort: 25
+  value: 0.0
+det_batch_size:
+  desc: ''
+  sort: 43
+  value: 4
+det_data_root:
+  desc: ''
+  sort: 17
+  value: /data/xiangyuyue/ULLM-zf/fsl-20260209/data/det/train_10per
+det_head_param_count:
+  desc: ''
+  sort: 74
+  value: 14875060
+det_out_channels:
+  desc: ''
+  sort: 24
+  value: 256
+det_train_ann:
+  desc: ''
+  sort: 18
+  value: /data/xiangyuyue/ULLM-zf/fsl-20260209/data/det/coco/annotations/instances_train.json
+det_train_img_dir:
+  desc: ''
+  sort: 20
+  value: /data/xiangyuyue/ULLM-zf/fsl-20260209/data/det/coco
+det_val_ann:
+  desc: ''
+  sort: 19
+  value: /data/xiangyuyue/ULLM-zf/fsl-20260209/data/det/coco/annotations/instances_val.json
+det_val_img_dir:
+  desc: ''
+  sort: 21
+  value: /data/xiangyuyue/ULLM-zf/fsl-20260209/data/det/coco
+device:
+  desc: ''
+  sort: 55
+  value: cuda
+grad_checkpointing:
+  desc: ''
+  sort: 16
+  value: 1
+grad_clip_norm:
+  desc: ''
+  sort: 53
+  value: 100.0
+image_size:
+  desc: ''
+  sort: 1
+  value: 448
+log_interval:
+  desc: ''
+  sort: 50
+  value: 1
+lora:
+  desc: ''
+  sort: 4
+  value: 1
+lora_alpha:
+  desc: ''
+  sort: 7
+  value: 16.0
+lora_dropout:
+  desc: ''
+  sort: 8
+  value: 0.05
+lora_moe_param_count:
+  desc: ''
+  sort: 73
+  value: 6561792
+lora_rank:
+  desc: ''
+  sort: 6
+  value: 8
+lora_weight_decay:
+  desc: ''
+  sort: 9
+  value: 0.0
+loss_weights:
+  desc: ''
+  sort: 42
+  value: '[15.0, 8.0, 1.0]'
+lr:
+  desc: ''
+  sort: 46
+  value: 0.0001
+max_train_steps:
+  desc: ''
+  sort: 57
+  value: 0
+max_val_steps:
+  desc: ''
+  sort: 58
+  value: 0
+model_name:
+  desc: ''
+  sort: 0
+  value: dinov3_vitl16
+moe_k_private:
+  desc: ''
+  sort: 12
+  value: 2
+moe_k_shared:
+  desc: ''
+  sort: 13
+  value: 2
+num_experts_private:
+  desc: ''
+  sort: 10
+  value: 3
+num_experts_shared:
+  desc: ''
+  sort: 11
+  value: 6
+num_workers:
+  desc: ''
+  sort: 54
+  value: 16
+plain_lora_param_count:
+  desc: ''
+  sort: 72
+  value: 1966080
+save_dir:
+  desc: ''
+  sort: 49
+  value: runs/latest_ours_100per_stage1_resume_stage1_best_e50
+seed:
+  desc: ''
+  sort: 56
+  value: 42
+seg_batch_size:
+  desc: ''
+  sort: 44
+  value: 4
+seg_head_param_count:
+  desc: ''
+  sort: 75
+  value: 9451531
+seg_num_classes:
+  desc: ''
+  sort: 29
+  value: 11
+seg_train_dir:
+  desc: ''
+  sort: 26
+  value: /data/xiangyuyue/ULLM-zf/fsl-20260209/data/seg/nas/liyangguang103/newdataset/CD-SematicSeg/EvLab-SS/mydataset/train_5500
+seg_val_dir:
+  desc: ''
+  sort: 27
+  value: /data/xiangyuyue/ULLM-zf/fsl-20260209/data/seg/nas/liyangguang103/newdataset/CD-SematicSeg/EvLab-SS/mydataset/val
+shared_expert_block_count:
+  desc: ''
+  sort: 77
+  value: 24
+shared_expert_dynamic_param_count:
+  desc: ''
+  sort: 79
+  value: 2359296
+shared_expert_matrix_unit_count:
+  desc: ''
+  sort: 78
+  value: 288
+shared_update_rule:
+  desc: ''
+  sort: 70
+  value: local_top_pair_per_matrix_unit
+skip_stage1:
+  desc: ''
+  sort: 69
+  value: 0
+skip_validation:
+  desc: ''
+  sort: 59
+  value: 0
+stage1_epochs:
+  desc: ''
+  sort: 37
+  value: 50
+stage1_only:
+  desc: ''
+  sort: 40
+  value: 1
+stage1_resume_checkpoint:
+  desc: ''
+  sort: 39
+  value: /data/xiangyuyue/ULLM-zf/fsl-20260209/runs/415_10per_lora_shared_experts/stage1_best.pt
+stage1_val_last_k_epochs:
+  desc: ''
+  sort: 41
+  value: 50
+stage2_cnt_val_dir:
+  desc: ''
+  sort: 33
+  value: /data/xiangyuyue/ULLM-zf/fsl-20260209/data/cnt/nas/liyangguang103/newdataset/CD-Count/DSACA/val_data_class8
+stage2_det_val_ann:
+  desc: ''
+  sort: 22
+  value: /data/xiangyuyue/ULLM-zf/fsl-20260209/data/det/coco/annotations/instances_val.json
+stage2_det_val_img_dir:
+  desc: ''
+  sort: 23
+  value: /data/xiangyuyue/ULLM-zf/fsl-20260209/data/det/coco
+stage2_epochs:
+  desc: ''
+  sort: 38
+  value: 50
+stage2_seg_val_dir:
+  desc: ''
+  sort: 28
+  value: /data/xiangyuyue/ULLM-zf/fsl-20260209/data/seg/nas/liyangguang103/newdataset/CD-SematicSeg/EvLab-SS/mydataset/val
+swanlab_experiment_name:
+  desc: ''
+  sort: 63
+  value: latest_ours_100per_stage1_resume_stage1_best_e50
+swanlab_logdir:
+  desc: ''
+  sort: 64
+  value: runs/latest_ours_100per_stage1_resume_stage1_best_e50/swanlog
+swanlab_project:
+  desc: ''
+  sort: 62
+  value: latest_ours
+training_mode:
+  desc: ''
+  sort: 67
+  value: two_stage
+unfreeze_backbone:
+  desc: ''
+  sort: 3
+  value: 0
+use_ddp:
+  desc: ''
+  sort: 66
+  value: 1
+use_lora:
+  desc: ''
+  sort: 68
+  value: 1
+use_lora_moe:
+  desc: ''
+  sort: 5
+  value: 1
+use_private_experts:
+  desc: ''
+  sort: 14
+  value: 1
+use_shared_experts:
+  desc: ''
+  sort: 15
+  value: 1
+use_swanlab:
+  desc: ''
+  sort: 61
+  value: 1
+weight_decay:
+  desc: ''
+  sort: 48
+  value: 0.0001
+world_size:
+  desc: ''
+  sort: 65
+  value: 8
